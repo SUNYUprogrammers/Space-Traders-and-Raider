@@ -9,6 +9,7 @@ public class Frigate_Class : Ship_Class
         base.Start();
 
 		ship_type = "Frigate";
+        size = 5;
         pos = this.gameObject.transform.position;
     }
 

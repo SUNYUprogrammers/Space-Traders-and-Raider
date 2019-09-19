@@ -62,6 +62,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Component_Class.cs" />
+    <Compile Include="Assets\Scripts\Ship Component Subclasses\Beam_Class.cs" />
+    <Compile Include="Assets\Scripts\Ship Component Subclasses\Missile_Class.cs" />
+    <Compile Include="Assets\Scripts\Ship Component Subclasses\Thruster_Class.cs" />
     <Compile Include="Assets\Scripts\Ship Type Subclasses\Frigate_Class.cs" />
     <Compile Include="Assets\Scripts\Ship_Class.cs" />
     <Reference Include="Unity.Timeline.Editor">

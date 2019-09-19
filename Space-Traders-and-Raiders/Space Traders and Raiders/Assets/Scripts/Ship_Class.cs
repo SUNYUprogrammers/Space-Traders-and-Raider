@@ -10,13 +10,17 @@ abstract public class Ship_Class : MonoBehaviour
     protected bool selected;
 
 	protected int size;                         //How many slots the ship has
-    //protected Component[] parts_list;         //What component is in each slot
+    protected Component_Class[] parts_list;     //What component is in each slot
     protected int ship_speed;                   //How fast can the ship move, calculated from stored thrusters
     [SerializeField]
     protected int moves_left;                   //How many more squares the ship can move
-	protected int[] storage;                    //What resources is the ship carrying
+	protected int[] storage;                    //What resources is the ship carrying, might take up a slot so may become component?
     [SerializeField]
 	protected Vector3 pos;                      //Where is the ship on the grid
+
+    protected int beamDamage;                   //Combat statistics
+    protected int missileDamage;
+    protected int marineComplement;
 
     protected int x_max;                        //World border, detect when to transition when the designers figure out what to do for that
     protected int y_max;
@@ -26,21 +30,24 @@ abstract public class Ship_Class : MonoBehaviour
     public void Start()
     {
         ship_speed = 8;                         /*TEMPORARY*/
-        moves_left = ship_speed;
-
         x_max = 6;
         x_min = -1;
 
         y_max = 7;
         y_min = 0;
-        //parts_list = new Component[size];     //Set component list size to the amount of slots it has
+        parts_list = new Component_Class[size];     //Set component list size to the amount of slots it has
 
-        /*foreach(Component i in parts_list)    //Calculate ship speed by adding all thruster component values together
-         * {
-         *      if(i.getType == "Thruster")
-         *          ship_speed =+ i.value;
-         * }
-         */
+        foreach(Component_Class i in parts_list)    //Calculate ship speed by adding all thruster component values together
+          {
+            if(i.getType() == "Thruster")
+                ship_speed =+ i.getTier();
+            if (i.getType() == "Beam")
+                beamDamage =+ i.getTier();
+            if (i.getType() == "Missile")
+                missileDamage =+ i.getTier();
+        }
+        moves_left = ship_speed;
+
     }
 
     public void Update()
@@ -152,10 +159,10 @@ abstract public class Ship_Class : MonoBehaviour
         {
             Vector3 temp = new Vector3(0, 0, 0);
 
-            if ((Mathf.Abs(x) + Mathf.Abs(y) <= ship_speed))                  //Find if position is within move range and determine move type (bool)
+            if ((Mathf.Abs(x) + Mathf.Abs(y) <= ship_speed))                    //Find if position is within move range and determine move type (bool)
             {
-                if (x_min > pos.x + x || pos.x + x > x_max)                   //Set to loop on reaching world border, if that's what designers decide
-                {                                                             //Does not work for righ click movements
+                if (x_min > pos.x + x || pos.x + x > x_max)                     //Set to loop on reaching world border, if that's what designers decide
+                {                                                               //Does not work for righ click movements
                     print("Out of area");
                     if (pos.x + x < x_min)
                     {
@@ -257,14 +264,49 @@ abstract public class Ship_Class : MonoBehaviour
 
     }
 
-    public void storeItem(int i, int j)                                          //Store resources by location in array, and amount
+    public void storeItem(int i, int j)                                             //Store resources by location in array, and amount
     {
         storage[i] = +j;                                                            //Add [j] of item type [i] to storage
     }
 
-    public void removeItem(int i, int j)                                         //Store resources by location in array, and amount
+    public void removeItem(int i, int j)                                            //Store resources by location in array, and amount
     {
         if( (storage[i] != 0) && (storage[i] >= j) )                                //Check if storage is empty and that there are enough resources to pull
             storage[i] = -j;                                                        //Add [j] of item type [i] to storage
+    }
+
+    public void boardMarines(int i)                                                 //Store resources by location in array, and amount
+    {
+        marineComplement =+ i;                                                      //Add [j] of item type [i] to storage
+    }
+
+    public void disembarkMarines(int i)                                             //Store resources by location in array, and amount
+    {
+        if ((marineComplement != 0) && (marineComplement >= i))                     //Check if storage is empty and that there are enough resources to pull
+            marineComplement =- i;                                                  //Add [j] of item type [i] to storage
+    }
+
+    public void installComponent(Component_Class i, int j)
+    {
+        if (true)                                                   //If at drydock, and part exists, etc.
+        {
+            parts_list[j] = i;
+            if (i.getType() == "Thruster")
+            {
+                parts_list = new Component_Class[size];             //Set component list size to the amount of slots it has
+                foreach (Component_Class k in parts_list)           //Recalculate ship speed by adding all thruster component tiers together
+                {
+                    if (k.getType() == "Thruster")
+                        ship_speed = +k.getTier();
+                }
+            }
+        }
+    }
+
+    public Component_Class removeComponent(int i)
+    {
+        Component_Class temp = parts_list[i];
+        parts_list[i] = null;
+        return temp;
     }
 }
