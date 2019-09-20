@@ -13,6 +13,8 @@ abstract public class Ship_Class : MonoBehaviour
     protected Component_Class[] parts_list;     //What component is in each slot
     protected int ship_speed;                   //How fast can the ship move, calculated from stored thrusters
     [SerializeField]
+    protected GameObject rangeIndicator;        //How far the ship can move, represented visually
+    [SerializeField]
     protected int moves_left;                   //How many more squares the ship can move
 	protected int[] storage;                    //What resources is the ship carrying, might take up a slot so may become component?
     [SerializeField]
@@ -29,7 +31,7 @@ abstract public class Ship_Class : MonoBehaviour
 
     public void Start()
     {
-        ship_speed = 8;                         /*TEMPORARY*/
+        ship_speed = 4;                         /*TEMPORARY*/
         x_max = 6;
         x_min = -1;
 
@@ -52,6 +54,14 @@ abstract public class Ship_Class : MonoBehaviour
 
     public void Update()
     {
+        if (selected)
+        {
+            rangeIndicator.SetActive(true);
+            rangeIndicator.transform.localScale = new Vector3(3f* (float) moves_left, 3f * (float)moves_left, 1);
+        }
+        else
+            rangeIndicator.SetActive(false);
+
         if(Input.GetMouseButtonDown(0))                                                                                     //Detect player click
         {
             //print("Click");
@@ -62,14 +72,14 @@ abstract public class Ship_Class : MonoBehaviour
                 //print("You selected " + hit.transform.name+" : "+this.transform.name);                                    //Ensure you picked right object
                 if(hit.transform.gameObject.GetComponent<Ship_Class>() != null && hit.transform.name == this.transform.name)
                 {
-                    if(hit.transform.gameObject.GetComponent<Ship_Class>().selected == false)
+                    /*if(hit.transform.gameObject.GetComponent<Ship_Class>().selected == false)
                     {
                         Ship_Class[] temp = GameObject.FindObjectsOfType<Ship_Class>();
-                        foreach(Ship_Class i in temp)                                                                       //Deselect others
+                        foreach(Ship_Class i in temp)                                                                       //Deselect others, 
                         {
                             i.selected = false;
                         }
-                    }
+                    }*/
                     hit.transform.gameObject.GetComponent<Ship_Class>().selected = !hit.transform.gameObject.GetComponent<Ship_Class>().selected;
                 }
             }
@@ -77,6 +87,7 @@ abstract public class Ship_Class : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1) && selected)                                                                        //Detect player click
         {
+            //print("Click Move");
             Vector3 pos_temp = pos;
             Vector3 temp = Input.mousePosition;
             temp.z = 10f;
