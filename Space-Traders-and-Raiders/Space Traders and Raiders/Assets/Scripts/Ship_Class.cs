@@ -7,7 +7,9 @@ abstract public class Ship_Class : MonoBehaviour
 	[SerializeField]
 	protected string ship_type;                 //What class of ship it is
     [SerializeField]
-    protected bool selected;
+    public bool selected;
+    [SerializeField]
+    public string faction;
 
 	protected int size;                         //How many slots the ship has
     protected Component_Class[] parts_list;     //What component is in each slot
@@ -19,6 +21,8 @@ abstract public class Ship_Class : MonoBehaviour
 	protected int[] storage;                    //What resources is the ship carrying, might take up a slot so may become component?
     [SerializeField]
 	protected Vector3 pos;                      //Where is the ship on the grid
+    [SerializeField]
+    public SpriteRenderer hostile;              //Marker for other players to identify you as hostile
 
     protected int beamDamage;                   //Combat statistics
     protected int missileDamage;
@@ -34,6 +38,8 @@ abstract public class Ship_Class : MonoBehaviour
         ship_speed = 4;                         /*TEMPORARY*/
         x_max = 6;
         x_min = -1;
+
+        hostile.enabled = false;
 
         y_max = 7;
         y_min = 0;
@@ -319,5 +325,14 @@ abstract public class Ship_Class : MonoBehaviour
         Component_Class temp = parts_list[i];
         parts_list[i] = null;
         return temp;
+    }
+
+    public void OnTriggerStay(Collider other)
+    {
+        //print(other.name);
+        if (other.GetComponent<Ship_Class>() != null && this.gameObject.GetComponent<Ship_Class>().selected)
+        {
+            print("Ships overlapping");
+        }
     }
 }
