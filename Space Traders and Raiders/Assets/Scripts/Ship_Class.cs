@@ -64,6 +64,7 @@ abstract public class Ship_Class : MonoBehaviour
         {
             rangeIndicator.SetActive(true);
             rangeIndicator.transform.localScale = new Vector3(3f* (float) moves_left, 3f * (float)moves_left, 1);
+            hostile.enabled = false;
         }
         else
             rangeIndicator.SetActive(false);
@@ -172,11 +173,13 @@ abstract public class Ship_Class : MonoBehaviour
             }
         }
 
+        print("Moves left " + moves_left);
+
         if (moves_left >= 0)
         {
-            Vector3 temp = new Vector3(0, 0, 0);
-
-            if ((Mathf.Abs(x) + Mathf.Abs(y) <= ship_speed))                    //Find if position is within move range and determine move type (bool)
+            Vector3 temp = pos;
+            if(true)
+            //if ((Mathf.Abs(x) + Mathf.Abs(y) <= ship_speed))                  //Find if position is within move range and determine move type (bool), now void
             {
                 if (x_min > pos.x + x || pos.x + x > x_max)                     //Set to loop on reaching world border, if that's what designers decide
                 {                                                               //Does not work for righ click movements
@@ -205,10 +208,18 @@ abstract public class Ship_Class : MonoBehaviour
 
                 temp = new Vector3(pos.x + x, pos.y + y, 0);
             }
+           
             /*if((Mathf.Abs(pos.x - x) + Mathf.Abs(pos.y - y) <= ship_speed) && exact)  //Find if position is within move range and determine move type
             {
                  temp = new Vector3(x, y, 0);
             }*/
+
+            print("Temp "+temp);
+            if(temp == pos)
+            {
+                print("Move Cancelled");
+                moves_left = temp_move;
+            }
 
             pos = temp;
             gameObject.transform.position = pos;                                        //Set new position
