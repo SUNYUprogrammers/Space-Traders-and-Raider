@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Component_Class.cs" />
+    <Compile Include="Assets\Scripts\Movement_Conflict_Detect.cs" />
     <Compile Include="Assets\Scripts\Ship Component Subclasses\Beam_Class.cs" />
     <Compile Include="Assets\Scripts\Ship Component Subclasses\Missile_Class.cs" />
     <Compile Include="Assets\Scripts\Ship Component Subclasses\Thruster_Class.cs" />
