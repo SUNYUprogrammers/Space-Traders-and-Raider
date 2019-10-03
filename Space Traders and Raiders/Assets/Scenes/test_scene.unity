@@ -1964,6 +1964,8 @@ MonoBehaviour:
   moves_left: 0
   pos: {x: 0, y: 0, z: 0}
   hostile: {fileID: 2118919171}
+  shipsInStack: []
+  selectFromStack: 0
 --- !u!4 &701161181
 Transform:
   m_ObjectHideFlags: 0
@@ -2477,6 +2479,50 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &768665992
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 768665994}
+  - component: {fileID: 768665993}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &768665993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768665992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59ecbf53616998a4d88103ef83805c3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stackerRunning: 0
+--- !u!4 &768665994
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768665992}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.2293942, y: 3.4920578, z: -17.03125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &847626548
 GameObject:
   m_ObjectHideFlags: 0
@@ -4551,6 +4597,8 @@ MonoBehaviour:
   moves_left: 0
   pos: {x: 0, y: 0, z: 0}
   hostile: {fileID: 1342640855}
+  shipsInStack: []
+  selectFromStack: 0
 --- !u!65 &1363381517
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4576,7 +4624,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -5506,7 +5554,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -5542,6 +5590,8 @@ MonoBehaviour:
   moves_left: 0
   pos: {x: 0, y: 0, z: 0}
   hostile: {fileID: 1181769498}
+  shipsInStack: []
+  selectFromStack: 0
 --- !u!4 &1756176433
 Transform:
   m_ObjectHideFlags: 0
