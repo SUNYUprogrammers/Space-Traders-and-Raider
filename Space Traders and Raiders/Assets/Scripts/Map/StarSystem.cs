@@ -10,27 +10,27 @@ public class StarSystem
     private Vector2Int position = Vector2Int.zero;
 
     //Stores the type (color)
-    private SystemType type;
+    //private SystemType type;
 
-    // Start is called before the first frame update
-    public StarSystem()
-    {
-        //determines the system type based on probabilites.
-        int prob = Random.Range(0, 100);
-        if(prob <= (int)MapGenerator.SystemType.YELLOW)
-        {
-            this.type = MapGenerator.SystemType.YELLOW;
-        } else if (prob <= (int)MapGenerator.SystemType.GREEN)
-        {
-            this.type = MapGenerator.SystemType.GREEN;
-        } else if (prob <= (int)MapGenerator.SystemType.BLUE)
-        {
-            this.type = MapGenerator.SystemType.BLUE;
-        } else if (prob <= (int)MapGenerator.SystemType.RED)
-        {
-            this.type = MapGenerator.SystemType.RED;
-        }
-    }
+    //// Start is called before the first frame update
+    //public StarSystem()
+    //{
+    //    //determines the system type based on probabilites.
+    //    int prob = Random.Range(0, 100);
+    //    if(prob <= (int)MapGenerator.SystemType.YELLOW)
+    //    {
+    //        this.type = MapGenerator.SystemType.YELLOW;
+    //    } else if (prob <= (int)MapGenerator.SystemType.GREEN)
+    //    {
+    //        this.type = MapGenerator.SystemType.GREEN;
+    //    } else if (prob <= (int)MapGenerator.SystemType.BLUE)
+    //    {
+    //        this.type = MapGenerator.SystemType.BLUE;
+    //    } else if (prob <= (int)MapGenerator.SystemType.RED)
+    //    {
+    //        this.type = MapGenerator.SystemType.RED;
+    //    }
+    //}
 
     public bool setPosition(int x, int y)
     {

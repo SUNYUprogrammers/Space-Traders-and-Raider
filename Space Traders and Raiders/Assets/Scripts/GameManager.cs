@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))                                                                //Detect player click
         {
-            print("Click " + Input.GetKey(KeyCode.LeftControl) + Input.GetKey(KeyCode.LeftShift));
+            //print("Click " + Input.GetKey(KeyCode.LeftControl) + Input.GetKey(KeyCode.LeftShift));
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit))                                                         //If selection found
@@ -98,20 +98,20 @@ public class GameManager : MonoBehaviour
         int j = 0;                                                              //Number of ships in that location
         Ship_Class[] shipStack = new Ship_Class[temp.Length];                   //Ships in stack
 
-        foreach (Ship_Class i in temp)
+        foreach (Ship_Class i in temp)//put ships into an array
         {
             if (pos == i.pos)
             {
                 shipStack[j] = i;
-                print("Overlap "+shipStack[j].name);
+                print("Overlap "+shipStack[j].name);//what ship is overlapped
                 j++;
             }
         }
-        foreach(Ship_Class i in shipStack)
+        foreach(Ship_Class i in shipStack)//ignore
         {
             if (i != null)
             {
-                print("Ship " + i.name);
+                print("Ship " + i.name);//Name of ship overlapped
                 i.shipsInStack = shipStack;
             }
         }
