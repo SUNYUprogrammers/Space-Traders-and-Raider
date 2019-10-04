@@ -4,38 +4,32 @@ using UnityEngine;
 
 public class StarSystem
 {
-    public enum SystemType
-    {
-        YELLOW = 55, GREEN = 30, BLUE = 12, RED = 3
-    }
+    //Probablities for different system colors (type)
+    
 
     private Vector2Int position = Vector2Int.zero;
 
+    //Stores the type (color)
     private SystemType type;
 
     // Start is called before the first frame update
-    void Start()
+    public StarSystem()
     {
-        int prob = Random.Range(1, 100);
-        if(prob <= (int)SystemType.YELLOW)
+        //determines the system type based on probabilites.
+        int prob = Random.Range(0, 100);
+        if(prob <= (int)MapGenerator.SystemType.YELLOW)
         {
-            this.type = SystemType.YELLOW;
-        } else if (prob <= (int)SystemType.GREEN)
+            this.type = MapGenerator.SystemType.YELLOW;
+        } else if (prob <= (int)MapGenerator.SystemType.GREEN)
         {
-            this.type = SystemType.GREEN;
-        } else if (prob <= (int)SystemType.BLUE)
+            this.type = MapGenerator.SystemType.GREEN;
+        } else if (prob <= (int)MapGenerator.SystemType.BLUE)
         {
-            this.type = SystemType.BLUE;
-        } else if (prob <= (int)SystemType.RED)
+            this.type = MapGenerator.SystemType.BLUE;
+        } else if (prob <= (int)MapGenerator.SystemType.RED)
         {
-            this.type = SystemType.RED;
+            this.type = MapGenerator.SystemType.RED;
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public bool setPosition(int x, int y)

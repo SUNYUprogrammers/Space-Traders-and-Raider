@@ -2,36 +2,52 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Sector : MonoBehaviour
+public class Sector
 {
+    
+
     StarSystem[] systems;
 
     // Start is called before the first frame update
-    void Start()
+    public Sector()
     {
-        systems = new StarSystem[Random.Range(4,4)];
-        for(int i = 0; i < systems.Length; i++)
+        //determine how many systems are going to be present
+        int numSystems = Random.Range(0, 100);
+        if(numSystems <= (int)MapGenerator.SystemCount.TWOSYS)
+        {
+            numSystems = 2;
+        }
+        else if (numSystems <= (int)MapGenerator.SystemCount.THREESYS)
+        {
+            numSystems = 3;
+        }
+        else if (numSystems <= (int)MapGenerator.SystemCount.ONESYS)
+        {
+            numSystems = 1;
+        }
+
+        systems = new StarSystem[numSystems];
+
+        for (int i = 0; i < systems.Length; i++)
         {
             systems[i] = new StarSystem();
+            bool noConflict = false;
 
-            for (int j = 0; j < i; j++)
+            //Normally would use !noConflict, but that got confusing
+            while (noConflict == false)
             {
-                while (systems[i].getPosition() == systems[j].getPosition())
+                //check if there's a conflict
+                noConflict = true;
+                for (int j = 0; j < i && noConflict; j++)
                 {
-                    systems[i].setPosition(Random.Range(0, 3), Random.Range(0, 3));
+                    noConflict = !(systems[i].getPosition() == systems[j].getPosition());
+                }
+
+                if (!noConflict)
+                {
+                    systems[i].setPosition(Random.Range(0, 4), Random.Range(0, 4));
                 }
             }
         }
-
-        for(int i = 0; i < systems.Length; i++)
-        {
-            Debug.Log(systems[i].getPosition());
-        }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
