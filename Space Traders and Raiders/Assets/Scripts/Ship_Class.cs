@@ -20,7 +20,7 @@ abstract public class Ship_Class : MonoBehaviour
     protected int moves_left;                   //How many more squares the ship can move
 	protected int[] storage;                    //What resources is the ship carrying, might take up a slot so may become component?
     [SerializeField]
-	protected Vector3 pos;                      //Where is the ship on the grid
+	public Vector3 pos;                      //Where is the ship on the grid
     [SerializeField]
     public SpriteRenderer hostile;              //Marker for other players to identify you as hostile
 
@@ -32,6 +32,9 @@ abstract public class Ship_Class : MonoBehaviour
     protected int y_max;
     protected int x_min;
     protected int y_min;
+
+    public Ship_Class[] shipsInStack;
+    public int selectFromStack = 0;
 
     public void Start()
     {
@@ -64,54 +67,105 @@ abstract public class Ship_Class : MonoBehaviour
         {
             rangeIndicator.SetActive(true);
             rangeIndicator.transform.localScale = new Vector3(3f* (float) moves_left, 3f * (float)moves_left, 1);
+            hostile.enabled = false;
         }
         else
             rangeIndicator.SetActive(false);
 
-        if(Input.GetMouseButtonDown(0))                                                                                     //Detect player click
+        /*if (Input.GetMouseButtonDown(0))                                                                //Detect player click
         {
-            //print("Click");
+            print("Click "+ Input.GetKey(KeyCode.LeftControl) + Input.GetKey(KeyCode.LeftShift));
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out hit))                                                                              //If selection found
+            if (Physics.Raycast(ray, out hit))                                                         //If selection found
             {
-                //print("You selected " + hit.transform.name+" : "+this.transform.name);                                    //Ensure you picked right object
-                if(hit.transform.gameObject.GetComponent<Ship_Class>() != null && hit.transform.name == this.transform.name)
-                {
-                    /*if(hit.transform.gameObject.GetComponent<Ship_Class>().selected == false)
+                //print("You selected " + hit.transform.name+" : "+this.transform.name);               //Ensure you picked right object
+                if (hit.transform.gameObject.GetComponent<Ship_Class>() != null && hit.transform.name == this.transform.name)
+                {                                                                                      //If current player owns ship and is only left clicking
+                    if (true/*faction == factionCurrent && !Input.GetKey(KeyCode.LeftControl) && !Input.GetKey(KeyCode.LeftShift))
                     {
-                        Ship_Class[] temp = GameObject.FindObjectsOfType<Ship_Class>();
-                        foreach(Ship_Class i in temp)                                                                       //Deselect others, 
+                        hit.transform.gameObject.GetComponent<Ship_Class>().selected = !hit.transform.gameObject.GetComponent<Ship_Class>().selected;
+                    }                                                                                  //If current player owns ship and is only shift left clicking
+                    if (true/*faction == factionCurrent && !Input.GetKey(KeyCode.LeftControl) && Input.GetKey(KeyCode.LeftShift))
+                    {
+                        foreach (Ship_Class i in shipsInStack)
                         {
-                            i.selected = false;
+                            if (i != null && true/*faction == factionCurrent)
+                            {
+                                print("Cycle through and select "+i.name);
+
+                                if (hit.transform.gameObject.GetComponent<Ship_Class>().selected == true)
+                                    i.selected = false;
+                                else
+                                    i.selected = true;
+                            }
+
+
                         }
-                    }*/
-                    hit.transform.gameObject.GetComponent<Ship_Class>().selected = !hit.transform.gameObject.GetComponent<Ship_Class>().selected;
+                    }                                                                               //If current player owns ship and is only control left clicking
+                    if (true/*faction == factionCurrent && Input.GetKey(KeyCode.LeftControl) && !Input.GetKey(KeyCode.LeftShift))
+                    {
+                        selectFromStack++;
+                        if (hit.transform.gameObject.GetComponent<Ship_Class>().shipsInStack[selectFromStack] == null)
+                        {
+                            selectFromStack = 0;
+                        }
+
+                        foreach (Ship_Class i in shipsInStack)
+                        {
+                            if (true/*faction == factionCurrent && i != null)
+                            {
+                                print("Ship from stack " + i.name);
+
+                                //print("");
+
+                                if (hit.transform.gameObject.GetComponent<Ship_Class>().shipsInStack[selectFromStack] == i)
+                                {
+                                    print("Selected " + i.name);
+                                    i.selected = true;
+                                }
+                                else
+                                    i.selected = false;
+                            }
+                        }
+                    }                                                                            //If current player owns ship and is alt left clicking
+                    if (true/*faction == factionCurrent && Input.GetKey(KeyCode.LeftAlt))
+                    {
+                        foreach (Ship_Class i in shipsInStack)
+                        {
+                            if (i != null)
+                            { 
+                                i.selected = false;
+                            }
+                        }
+                    }
+
                 }
             }
-        }
+        }*/
 
-        if (Input.GetMouseButtonDown(1) && selected)                                                                        //Detect player click
-        {
-            //print("Click Move");
-            Vector3 pos_temp = pos;
-            Vector3 temp = Input.mousePosition;
-            temp.z = 10f;
-            temp = Camera.main.ScreenToWorldPoint(temp);                                                                    //Find coord to move to
+            if (Input.GetMouseButtonDown(1) && selected)                                                                        //Detect player click
+            {
+                //print("Click Move");
+                Vector3 pos_temp = pos;
+                Vector3 temp = Input.mousePosition;
+                temp.z = 10f;
+                temp = Camera.main.ScreenToWorldPoint(temp);                                                                    //Find coord to move to
 
-            print("Move ship to: "+temp.x+" "+temp.y);
-            pos_temp.x = temp.x - pos_temp.x;
-            pos_temp.y = temp.y - pos_temp.y;
-            //print("Move ship in direction: " + (int)pos_temp.x + " " + (int)pos_temp.y);
-            pos_temp.x = Mathf.RoundToInt(pos_temp.x);
-            pos_temp.y = Mathf.RoundToInt(pos_temp.y);
-            MoveShipTo((int)pos_temp.x,(int)pos_temp.y);
-        }
+                print("Move ship to: " + temp.x + " " + temp.y);
+                pos_temp.x = temp.x - pos_temp.x;
+                pos_temp.y = temp.y - pos_temp.y;
+                //print("Move ship in direction: " + (int)pos_temp.x + " " + (int)pos_temp.y);
+                pos_temp.x = Mathf.RoundToInt(pos_temp.x);
+                pos_temp.y = Mathf.RoundToInt(pos_temp.y);
+                MoveShipTo((int)pos_temp.x, (int)pos_temp.y);
+            }
 
-        if (selected)
-        {
-            MoveShipDirection();
-        }
+            if (selected)
+            {
+                MoveShipDirection();
+            }
+        
     }
 
     public void newTurn()
@@ -172,11 +226,13 @@ abstract public class Ship_Class : MonoBehaviour
             }
         }
 
+        print("Moves left " + moves_left);
+
         if (moves_left >= 0)
         {
-            Vector3 temp = new Vector3(0, 0, 0);
-
-            if ((Mathf.Abs(x) + Mathf.Abs(y) <= ship_speed))                    //Find if position is within move range and determine move type (bool)
+            Vector3 temp = pos;
+            if(true)
+            //if ((Mathf.Abs(x) + Mathf.Abs(y) <= ship_speed))                  //Find if position is within move range and determine move type (bool), now void
             {
                 if (x_min > pos.x + x || pos.x + x > x_max)                     //Set to loop on reaching world border, if that's what designers decide
                 {                                                               //Does not work for righ click movements
@@ -205,10 +261,18 @@ abstract public class Ship_Class : MonoBehaviour
 
                 temp = new Vector3(pos.x + x, pos.y + y, 0);
             }
+           
             /*if((Mathf.Abs(pos.x - x) + Mathf.Abs(pos.y - y) <= ship_speed) && exact)  //Find if position is within move range and determine move type
             {
                  temp = new Vector3(x, y, 0);
             }*/
+
+            //print("Temp "+temp);
+            if(temp == pos)
+            {
+                print("Move Cancelled");
+                moves_left = temp_move;
+            }
 
             pos = temp;
             gameObject.transform.position = pos;                                        //Set new position
@@ -327,12 +391,13 @@ abstract public class Ship_Class : MonoBehaviour
         return temp;
     }
 
-    public void OnTriggerStay(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
         //print(other.name);
         if (other.GetComponent<Ship_Class>() != null && this.gameObject.GetComponent<Ship_Class>().selected)
         {
             print("Ships overlapping");
+            GameObject.FindObjectOfType<GameManager>().ShipStacker(pos);
         }
     }
 }
