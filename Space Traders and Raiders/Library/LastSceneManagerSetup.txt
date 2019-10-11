@@ -1,5 +1,21 @@
 sceneSetups:
+<<<<<<< Updated upstream
 - path: Assets/Scenes/Map_Test.unity
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+- path: Assets/Scenes/GameBoard.unity
+=======
+- path: Assets/Scenes/Combat_Test.unity
+>>>>>>> Combat
+=======
+- path: Assets/Scenes/Combat_Test.unity
+>>>>>>> Combat
+=======
+- path: Assets/Scenes/Map_Test.unity
+>>>>>>> Map
+>>>>>>> Stashed changes
   isLoaded: 1
   isActive: 1
   isSubScene: 0
