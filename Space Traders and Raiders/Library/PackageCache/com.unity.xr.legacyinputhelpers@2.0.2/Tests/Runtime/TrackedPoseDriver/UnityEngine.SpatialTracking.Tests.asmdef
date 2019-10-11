@@ -1,4 +1,38 @@
 <<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+>>>>>>> Stashed changes
+{
+    "name": "UnityEngine.SpatialTracking.Tests",
+    "references": [
+        "UnityEngine.SpatialTracking"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+<<<<<<< Updated upstream
+=======
+=======
+{
+    "name": "UnityEngine.SpatialTracking.Tests",
+    "references": [
+        "UnityEngine.SpatialTracking"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+>>>>>>> Map
+>>>>>>> Stashed changes
+=======
+>>>>>>> Map
+<<<<<<< HEAD
 {
     "name": "UnityEngine.SpatialTracking.Tests",
     "references": [
@@ -20,5 +54,9 @@
     ],
     "includePlatforms": [],
     "excludePlatforms": []
+>>>>>>> Map
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 >>>>>>> Map
 }

@@ -16,11 +16,26 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: -75
     y: 119
 =======
     x: 0
     y: 43
+=======
+<<<<<<< Updated upstream
+    x: 0
+    y: 43
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    x: -75
+    y: 119
+=======
+    x: 0
+    y: 43
+>>>>>>> Map
 <<<<<<< HEAD
 >>>>>>> Combat
 =======
@@ -29,10 +44,25 @@ MonoBehaviour:
     x: 0
     y: 43
 >>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
     width: 1920
     height: 997
   m_ShowMode: 4
   m_Title: 
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+  m_RootView: {fileID: 6}
+  m_MinSize: {x: 950, y: 300}
+=======
+<<<<<<< HEAD
+>>>>>>> Map
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -48,6 +78,13 @@ MonoBehaviour:
   m_RootView: {fileID: 6}
   m_MinSize: {x: 950, y: 300}
 >>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -60,7 +97,24 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+>>>>>>> Map
+=======
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+=======
+>>>>>>> Map
+>>>>>>> Stashed changes
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Map
+>>>>>>> Stashed changes
 >>>>>>> Map
   m_EditorHideFlags: 1
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
@@ -75,6 +129,18 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+  m_MinSize: {x: 683, y: 494}
+  m_MaxSize: {x: 14004, y: 14044}
+  vertical: 0
+  controlID: 51
+=======
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
 <<<<<<< HEAD
   m_MinSize: {x: 679, y: 494}
   m_MaxSize: {x: 14002, y: 14044}
@@ -120,6 +186,13 @@ MonoBehaviour:
   vertical: 0
   controlID: 51
 >>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -128,6 +201,7 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -147,16 +221,57 @@ MonoBehaviour:
   - {fileID: 8}
   - {fileID: 2}
 =======
+=======
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+<<<<<<< HEAD
+>>>>>>> Stashed changes
+>>>>>>> Map
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
+  m_Children: []
+<<<<<<< HEAD
+>>>>>>> Map
+=======
+=======
+  m_Children:
+  - {fileID: 8}
+  - {fileID: 2}
+=======
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children: []
 >>>>>>> Map
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
   m_Position:
     serializedVersion: 2
     x: 1531
     y: 0
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+    width: 389
+    height: 947
+  m_MinSize: {x: 277, y: 72}
+  m_MaxSize: {x: 4002, y: 4022}
+=======
+<<<<<<< HEAD
+>>>>>>> Map
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -170,11 +285,26 @@ MonoBehaviour:
   m_MinSize: {x: 277, y: 72}
   m_MaxSize: {x: 4002, y: 4022}
 >>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
   m_Selected: 0
   m_LastSelected: 0
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
 <<<<<<< HEAD
 =======
 =======
@@ -191,6 +321,13 @@ MonoBehaviour:
 >>>>>>> Combat
 =======
 >>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -200,6 +337,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -217,15 +355,67 @@ MonoBehaviour:
   - {fileID: 7}
   - {fileID: 6}
 =======
+=======
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+<<<<<<< HEAD
+>>>>>>> Stashed changes
+>>>>>>> Map
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
+  m_Children: []
+<<<<<<< HEAD
+>>>>>>> Map
+=======
+=======
+  m_Children:
+  - {fileID: 5}
+  - {fileID: 7}
+  - {fileID: 6}
+=======
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children: []
 >>>>>>> Map
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    width: 379
+    height: 573
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+=======
+=======
+<<<<<<< Updated upstream
+>>>>>>> Map
+    width: 379
+    height: 572
+  m_MinSize: {x: 202, y: 222}
+  m_MaxSize: {x: 4002, y: 4022}
+<<<<<<< HEAD
+>>>>>>> Map
+=======
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -239,11 +429,24 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 222}
   m_MaxSize: {x: 4002, y: 4022}
 >>>>>>> Map
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
   m_Selected: 0
   m_LastSelected: 0
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
 <<<<<<< HEAD
 =======
 =======
@@ -258,6 +461,13 @@ MonoBehaviour:
 >>>>>>> Combat
 =======
 >>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -267,6 +477,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+=======
+<<<<<<< HEAD
+>>>>>>> Map
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -280,12 +497,20 @@ MonoBehaviour:
 =======
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
 >>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -297,6 +522,29 @@ MonoBehaviour:
     width: 1531
     height: 375
 >>>>>>> Map
+=======
+<<<<<<< Updated upstream
+    y: 572
+    width: 1531
+    height: 375
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    y: 573
+    width: 1531
+    height: 374
+=======
+    y: 572
+    width: 1531
+    height: 375
+>>>>>>> Map
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
   m_MinSize: {x: 232, y: 272}
   m_MaxSize: {x: 10002, y: 10022}
   m_ActualView: {fileID: 13}
@@ -305,6 +553,14 @@ MonoBehaviour:
   - {fileID: 18}
   m_Selected: 0
   m_LastSelected: 1
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
 <<<<<<< HEAD
 =======
 =======
@@ -321,6 +577,13 @@ MonoBehaviour:
 >>>>>>> Combat
 =======
 >>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -331,9 +594,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
 <<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> Map
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+>>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 >>>>>>> Map
   m_Script: {fileID: 12008, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -350,6 +625,14 @@ MonoBehaviour:
     height: 997
   m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
 <<<<<<< HEAD
 =======
   m_Script: {fileID: 12042, guid: 0000000000000000e000000000000000, type: 0}
@@ -379,6 +662,13 @@ MonoBehaviour:
 >>>>>>> Combat
 =======
 >>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -387,6 +677,7 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -412,6 +703,34 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+<<<<<<< HEAD
+>>>>>>> Stashed changes
+>>>>>>> Map
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12011, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+<<<<<<< HEAD
+>>>>>>> Map
+=======
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
   m_EditorHideFlags: 1
   m_Script: {fileID: 12011, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -421,12 +740,25 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 >>>>>>> Map
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
     y: 0
     width: 1920
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
 <<<<<<< HEAD
 =======
 =======
@@ -444,6 +776,13 @@ MonoBehaviour:
 >>>>>>> Combat
 =======
 >>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -453,6 +792,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+  m_Script: {fileID: 12042, guid: 0000000000000000e000000000000000, type: 0}
+=======
+<<<<<<< HEAD
+>>>>>>> Map
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -465,6 +811,13 @@ MonoBehaviour:
 =======
   m_Script: {fileID: 12042, guid: 0000000000000000e000000000000000, type: 0}
 >>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children: []
@@ -474,13 +827,38 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+>>>>>>> Map
+=======
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+=======
+>>>>>>> Map
+>>>>>>> Stashed changes
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Map
+>>>>>>> Stashed changes
 >>>>>>> Map
     y: 977
     width: 1920
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
 <<<<<<< HEAD
 =======
 =======
@@ -504,6 +882,13 @@ MonoBehaviour:
 >>>>>>> Combat
 =======
 >>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -513,9 +898,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
 <<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> Map
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+>>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 >>>>>>> Map
   m_EditorHideFlags: 1
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
@@ -531,6 +928,18 @@ MonoBehaviour:
     width: 1531
     height: 947
 <<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+  m_MinSize: {x: 406, y: 494}
+  m_MaxSize: {x: 10002, y: 14044}
+  vertical: 1
+  controlID: 52
+=======
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
+<<<<<<< HEAD
   m_MinSize: {x: 404, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
@@ -541,6 +950,13 @@ MonoBehaviour:
   vertical: 1
   controlID: 52
 >>>>>>> Map
+<<<<<<< HEAD
+--- !u!114 &10
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -549,6 +965,449 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> Stashed changes
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> Combat
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+>>>>>>> Combat
+=======
+>>>>>>> Map
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 4}
+  - {fileID: 11}
+  m_Position:
+    serializedVersion: 2
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    x: 0
+=======
+=======
+>>>>>>> Stashed changes
+<<<<<<< HEAD
+    x: 1150
+>>>>>>> Stashed changes
+    y: 0
+    width: 1531
+    height: 572
+  m_MinSize: {x: 406, y: 222}
+  m_MaxSize: {x: 8006, y: 4022}
+  vertical: 0
+  controlID: 53
+--- !u!114 &11
+<<<<<<< Updated upstream
+=======
+=======
+=======
+>>>>>>> Combat
+    width: 250
+    height: 947
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 16}
+  m_Panes:
+  - {fileID: 16}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &10
+<<<<<<< HEAD
+>>>>>>> Combat
+=======
+>>>>>>> Combat
+=======
+    x: 0
+    y: 0
+    width: 1531
+    height: 572
+  m_MinSize: {x: 406, y: 222}
+  m_MaxSize: {x: 8006, y: 4022}
+  vertical: 0
+  controlID: 53
+--- !u!114 &11
+>>>>>>> Map
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+<<<<<<< Updated upstream
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+=======
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+=======
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+>>>>>>> Map
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    x: 379
+    y: 0
+    width: 1152
+    height: 572
+=======
+=======
+>>>>>>> Stashed changes
+<<<<<<< HEAD
+    x: 1400
+    y: 0
+    width: 520
+    height: 947
+  m_MinSize: {x: 277, y: 72}
+  m_MaxSize: {x: 4002, y: 4022}
+  m_ActualView: {fileID: 18}
+  m_Panes:
+  - {fileID: 18}
+  - {fileID: 19}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &11
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
+>>>>>>> Combat
+=======
+>>>>>>> Combat
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Console
+    m_Image: {fileID: 111653112392082826, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD
+    x: 379
+    y: 0
+    width: 1152
+    height: 573
+=======
+    x: 379
+    y: 0
+    width: 1152
+    height: 572
+>>>>>>> Map
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+  m_MinSize: {x: 204, y: 222}
+  m_MaxSize: {x: 4004, y: 4022}
+  m_ActualView: {fileID: 16}
+  m_Panes:
+  - {fileID: 16}
+  - {fileID: 17}
+  - {fileID: 12}
+  m_Selected: 0
+  m_LastSelected: 1
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> Stashed changes
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> Combat
+    x: 0
+    y: 748
+    width: 1150
+    height: 253
+  m_ViewDataDictionary: {fileID: 0}
+<<<<<<< HEAD
+>>>>>>> Combat
+=======
+>>>>>>> Combat
+=======
+>>>>>>> Map
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+--- !u!114 &12
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12111, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 400, y: 100}
+  m_MaxSize: {x: 2048, y: 2048}
+  m_TitleContent:
+    m_Text: Asset Store
+    m_Image: {fileID: 357073275683767465, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Map
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+    x: 468
+    y: 181
+    width: 973
+    height: 501
+  m_ViewDataDictionary: {fileID: 0}
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> Stashed changes
+<<<<<<< HEAD
+=======
+    x: 0
+    y: 73
+    width: 1150
+    height: 656
+  m_ViewDataDictionary: {fileID: 0}
+  m_VSyncEnabled: 0
+  m_MaximizeOnPlay: 0
+  m_Gizmos: 0
+  m_Stats: 0
+  m_SelectedSizes: 05000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_TargetDisplay: 0
+  m_ZoomArea:
+    m_HRangeLocked: 0
+    m_VRangeLocked: 0
+    hZoomLockedByDefault: 0
+    vZoomLockedByDefault: 0
+    m_HBaseRangeMin: -568
+    m_HBaseRangeMax: 568
+    m_VBaseRangeMin: -319.5
+    m_VBaseRangeMax: 319.5
+    m_HAllowExceedBaseRangeMin: 1
+    m_HAllowExceedBaseRangeMax: 1
+    m_VAllowExceedBaseRangeMin: 1
+    m_VAllowExceedBaseRangeMax: 1
+    m_ScaleWithWindow: 0
+    m_HSlider: 0
+    m_VSlider: 0
+    m_IgnoreScrollWheelUntilClicked: 0
+    m_EnableMouseInput: 0
+    m_EnableSliderZoomHorizontal: 0
+    m_EnableSliderZoomVertical: 0
+    m_UniformScale: 1
+    m_UpDirection: 1
+    m_DrawArea:
+      serializedVersion: 2
+      x: 0
+      y: 17
+      width: 1150
+      height: 639
+    m_Scale: {x: 1.3342705, y: 1.3342705}
+    m_Translation: {x: 575, y: 319.49997}
+    m_MarginLeft: 0
+    m_MarginRight: 0
+    m_MarginTop: 0
+    m_MarginBottom: 0
+    m_LastShownAreaInsideMargins:
+      serializedVersion: 2
+      x: -430.9471
+      y: -239.45668
+      width: 861.8942
+      height: 478.9134
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_TargetTexture: {fileID: 0}
+  m_CurrentColorSpace: 0
+  m_LastWindowPixelSize: {x: 1150, y: 656}
+  m_ClearInEditMode: 1
+  m_NoCameraWarning: 1
+  m_LowResolutionForAspectRatios: 01000000000100000100
+  m_XRRenderMode: 0
+<<<<<<< HEAD
+>>>>>>> Combat
+=======
+>>>>>>> Combat
+=======
+>>>>>>> Map
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+--- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_TitleContent:
+    m_Text: Project
+    m_Image: {fileID: -7501376956915960154, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+<<<<<<< Updated upstream
+    y: 592
+    width: 1529
+    height: 353
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    y: 593
+    width: 1529
+    height: 352
+=======
+=======
+>>>>>>> Combat
+    y: 73
+    width: 1150
+    height: 656
+  m_ViewDataDictionary: {fileID: 0}
+  m_ShowContextualTools: 0
+  m_WindowGUID: 3f1fee2d86e0a3a4397aa43093d7d9e4
+  m_Gizmos: 1
+  m_SceneIsLit: 1
+  m_SceneLighting: 1
+  m_2DMode: 1
+  m_isRotationLocked: 0
+  m_PlayAudio: 0
+  m_AudioPlay: 0
+  m_Position:
+    m_Target: {x: 2.12027, y: 3.5870028, z: -44.82422}
+    speed: 2
+    m_Value: {x: 2.12027, y: 3.5870028, z: -44.82422}
+  m_RenderMode: 0
+  m_CameraMode:
+    drawMode: 0
+    name: Shaded
+    section: Shading Mode
+  m_ValidateTrueMetals: 0
+  m_DoValidateTrueMetals: 0
+  m_SceneViewState:
+    showFog: 1
+    showMaterialUpdate: 0
+    showSkybox: 1
+    showFlares: 1
+    showImageEffects: 1
+    showParticleSystems: 1
+  grid:
+    xGrid:
+      m_Target: 0
+      speed: 2
+      m_Value: 0
+    yGrid:
+      m_Target: 0
+      speed: 2
+      m_Value: 0
+    zGrid:
+      m_Target: 1
+      speed: 2
+      m_Value: 1
+  m_Rotation:
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    speed: 2
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
+  m_Size:
+    m_Target: 10.003999
+    speed: 2
+    m_Value: 10.003999
+  m_Ortho:
+    m_Target: 1
+    speed: 2
+    m_Value: 1
+  m_CameraSettings:
+    m_Speed: 1
+    m_SpeedNormalized: 0.5
+    m_SpeedMin: 0.01
+    m_SpeedMax: 2
+    m_EasingEnabled: 1
+    m_EasingDuration: 0.4
+    m_AccelerationEnabled: 1
+    m_FieldOfView: 90
+    m_NearClip: 0.03
+    m_FarClip: 10000
+    m_DynamicClip: 1
+    m_OcclusionCulling: 0
+  m_ShowGlobalGrid: 1
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewOrtho: 0
+  m_ReplacementShader: {fileID: 0}
+  m_ReplacementString: 
+  m_SceneVisActive: 1
+  m_LastLockedObject: {fileID: 0}
+  m_ViewIsLockedToObject: 0
+--- !u!114 &14
+>>>>>>> Map
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+<<<<<<< HEAD
   m_EditorHideFlags: 1
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
@@ -560,12 +1419,20 @@ MonoBehaviour:
 >>>>>>> Combat
 =======
 >>>>>>> Map
+=======
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
+>>>>>>> Map
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 4}
-  - {fileID: 11}
-  m_Position:
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Animator
+    m_Image: {fileID: 663490763026382308, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
     x: 1150
@@ -598,6 +1465,7 @@ MonoBehaviour:
 >>>>>>> Combat
 =======
     x: 0
+<<<<<<< HEAD
     y: 0
     width: 1531
     height: 572
@@ -606,6 +1474,51 @@ MonoBehaviour:
   vertical: 0
   controlID: 53
 --- !u!114 &11
+>>>>>>> Map
+=======
+    y: 73
+    width: 1500
+    height: 648
+  m_ViewDataDictionary: {fileID: 0}
+  m_ViewTransforms:
+    m_KeySerializationHelper:
+    - {fileID: 1107395557736537232, guid: 165a194d0f0affe4e9e6f99642d3a2f6, type: 2}
+    m_ValueSerializationHelper:
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  m_PreviewAnimator: {fileID: 0}
+  m_AnimatorController: {fileID: 9100000, guid: 165a194d0f0affe4e9e6f99642d3a2f6,
+    type: 2}
+  m_BreadCrumbs:
+  - m_Target: {fileID: 1107395557736537232, guid: 165a194d0f0affe4e9e6f99642d3a2f6,
+      type: 2}
+    m_ScrollPosition: {x: 0, y: 0}
+  stateMachineGraph: {fileID: 0}
+  stateMachineGraphGUI: {fileID: 0}
+  blendTreeGraph: {fileID: 0}
+  blendTreeGraphGUI: {fileID: 0}
+  m_AutoLiveLink: 1
+  m_MiniTool: 0
+  m_LockTracker:
+    m_IsLocked: 0
+  m_CurrentEditor: 1
+  m_LayerEditor:
+    m_SelectedLayerIndex: 0
+--- !u!114 &15
 >>>>>>> Map
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -617,6 +1530,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_EditorHideFlags: 1
+<<<<<<< HEAD
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
 =======
   m_EditorHideFlags: 0
@@ -625,11 +1539,21 @@ MonoBehaviour:
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
 >>>>>>> Map
+=======
+  m_Script: {fileID: 12111, guid: 0000000000000000e000000000000000, type: 0}
+>>>>>>> Map
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
+  m_MinSize: {x: 400, y: 100}
+  m_MaxSize: {x: 2048, y: 2048}
+  m_TitleContent:
+    m_Text: Asset Store
+    m_Image: {fileID: 357073275683767465, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: 1400
     y: 0
@@ -705,6 +1629,14 @@ MonoBehaviour:
 =======
 >>>>>>> Map
 --- !u!114 &12
+=======
+    x: 0
+    y: 73.6
+    width: 763
+    height: 468
+  m_ViewDataDictionary: {fileID: 0}
+--- !u!114 &16
+>>>>>>> Map
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -713,18 +1645,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12111, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 400, y: 100}
-  m_MaxSize: {x: 2048, y: 2048}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: Asset Store
-    m_Image: {fileID: 357073275683767465, guid: 0000000000000000d000000000000000,
+    m_Text: Hierarchy
+    m_Image: {fileID: -590624980919486359, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -803,6 +1736,43 @@ MonoBehaviour:
 =======
 >>>>>>> Map
 --- !u!114 &13
+=======
+    x: 1150
+    y: 73
+    width: 248
+    height: 928
+  m_ViewDataDictionary: {fileID: 0}
+  m_SceneHierarchy:
+    m_TreeViewState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: ec380000
+      m_LastClickedID: 14572
+      m_ExpandedIDs: 5cf7ffffa0f9ffff5cfaffff90faffffb4faffff6afbffff
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 9}
+      m_SearchString: 
+    m_ExpandedScenes: []
+    m_CurrenRootInstanceID: 0
+    m_LockTracker:
+      m_IsLocked: 0
+    m_CurrentSortingName: TransformSorting
+  m_WindowGUID: adc49cfa581173548bcfa7802113b324
+--- !u!114 &17
+>>>>>>> Map
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -810,7 +1780,7 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -824,6 +1794,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1077,6 +2048,8 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+=======
+>>>>>>> Map
     y: 748
     width: 1150
     height: 253
@@ -1085,6 +2058,13 @@ MonoBehaviour:
     y: 592
     width: 1529
     height: 353
+>>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 >>>>>>> Map
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
@@ -1101,6 +2081,13 @@ MonoBehaviour:
     m_SearchArea: 1
     m_Folders:
 <<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+    - Assets/Scripts/Map
+=======
+<<<<<<< HEAD
+>>>>>>> Map
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     - Assets/Scenes
@@ -1110,6 +2097,7 @@ MonoBehaviour:
 =======
     - Assets/Scripts/Ship Component Subclasses
 >>>>>>> Combat
+<<<<<<< HEAD
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
@@ -1140,6 +2128,20 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+=======
+>>>>>>> Stashed changes
+  m_ViewMode: 1
+  m_StartGridSize: 16
+  m_LastFolders:
+  - Assets/Scripts/Map
+  m_LastFoldersGridSize: 16
+  m_LastProjectPath: S:\PGP\Space-Traders-and-Raider\Space Traders and Raiders
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+<<<<<<< Updated upstream
+=======
+>>>>>>> Map
 >>>>>>> Combat
     scrollPos: {x: 0, y: 7}
     m_SelectedIDs: 34330000
@@ -1160,10 +2162,25 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 362f0000
     m_LastClickedID: 12086
     m_ExpandedIDs: 00000000002f0000542f0000303000004c320000c63200006633000000ca9a3b
+<<<<<<< HEAD
+>>>>>>> Map
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Map
+>>>>>>> Stashed changes
+=======
+>>>>>>> Map
+>>>>>>> Stashed changes
 >>>>>>> Map
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1183,6 +2200,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ClientGUIView: {fileID: 0}
 =======
       m_ClientGUIView: {fileID: 9}
@@ -1192,6 +2210,29 @@ MonoBehaviour:
 >>>>>>> Combat
 =======
       m_ClientGUIView: {fileID: 0}
+>>>>>>> Map
+=======
+<<<<<<< Updated upstream
+      m_ClientGUIView: {fileID: 0}
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      m_ClientGUIView: {fileID: 0}
+=======
+      m_ClientGUIView: {fileID: 9}
+>>>>>>> Combat
+=======
+      m_ClientGUIView: {fileID: 9}
+>>>>>>> Combat
+=======
+      m_ClientGUIView: {fileID: 0}
+>>>>>>> Map
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 >>>>>>> Map
     m_SearchString: 
     m_CreateAssetUtility:
@@ -1207,6 +2248,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000bc2c0000f82c0000722e0000c62e00001e2f0000
 =======
     m_ExpandedIDs: 00000000022f0000562f000056320000d432000074330000
@@ -1216,6 +2258,29 @@ MonoBehaviour:
 >>>>>>> Combat
 =======
     m_ExpandedIDs: 00000000002f0000542f00004c320000c632000066330000
+>>>>>>> Map
+=======
+<<<<<<< Updated upstream
+    m_ExpandedIDs: 00000000002f0000542f00004c320000c632000066330000
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    m_ExpandedIDs: 00000000bc2c0000f82c0000722e0000c62e00001e2f0000
+=======
+    m_ExpandedIDs: 00000000022f0000562f000056320000d432000074330000
+>>>>>>> Combat
+=======
+    m_ExpandedIDs: 00000000022f0000562f000056320000d432000074330000
+>>>>>>> Combat
+=======
+    m_ExpandedIDs: 00000000002f0000542f00004c320000c632000066330000
+>>>>>>> Map
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 >>>>>>> Map
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1245,6 +2310,13 @@ MonoBehaviour:
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
 <<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+    m_ExpandedInstanceIDs: c623000020300000de330000843e0000903e0000
+=======
+<<<<<<< HEAD
+>>>>>>> Map
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     m_ExpandedInstanceIDs: c6230000
@@ -1256,6 +2328,13 @@ MonoBehaviour:
 >>>>>>> Combat
 =======
     m_ExpandedInstanceIDs: c623000020300000de330000843e0000903e0000
+>>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 >>>>>>> Map
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1273,6 +2352,13 @@ MonoBehaviour:
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
 <<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+      m_ClientGUIView: {fileID: 5}
+=======
+<<<<<<< HEAD
+>>>>>>> Map
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       m_ClientGUIView: {fileID: 0}
@@ -1285,6 +2371,13 @@ MonoBehaviour:
 =======
       m_ClientGUIView: {fileID: 5}
 >>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1294,11 +2387,28 @@ MonoBehaviour:
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_GridSize: 64
   m_SkipHiddenPackages: 0
 <<<<<<< HEAD
   m_DirectoriesAreaWidth: 115
 --- !u!114 &14
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    m_GridSize: 16
+=======
+=======
+>>>>>>> Stashed changes
+<<<<<<< HEAD
+    m_GridSize: 64
+>>>>>>> Stashed changes
+  m_SkipHiddenPackages: 0
+  m_DirectoriesAreaWidth: 116
+--- !u!114 &14
+<<<<<<< Updated upstream
+=======
+>>>>>>> Map
 =======
   m_DirectoriesAreaWidth: 110
 --- !u!114 &18
@@ -1311,6 +2421,13 @@ MonoBehaviour:
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 116
 --- !u!114 &14
+>>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 >>>>>>> Map
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1333,14 +2450,34 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> Map
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+>>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 >>>>>>> Map
     x: 1533
     y: 20
     width: 387
     height: 925
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
 <<<<<<< HEAD
 =======
 =======
@@ -1355,6 +2492,13 @@ MonoBehaviour:
 >>>>>>> Combat
 =======
 >>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
   m_ObjectsLockedBeforeSerialization: []
@@ -1362,6 +2506,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewResizer:
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_CachedPref: 160
     m_ControlHash: -371814159
@@ -1372,6 +2517,23 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!114 &15
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    m_CachedPref: 351
+=======
+=======
+>>>>>>> Stashed changes
+<<<<<<< HEAD
+    m_CachedPref: 160
+>>>>>>> Stashed changes
+    m_ControlHash: -371814159
+    m_PrefName: Preview_InspectorPreview
+  m_PreviewWindow: {fileID: 0}
+--- !u!114 &15
+<<<<<<< Updated upstream
+=======
+>>>>>>> Map
 =======
 --- !u!114 &19
 >>>>>>> Combat
@@ -1384,6 +2546,13 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
 --- !u!114 &15
+>>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 >>>>>>> Map
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1406,6 +2575,16 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+    x: 0
+    y: 20
+    width: 377
+    height: 550
+=======
+<<<<<<< HEAD
+>>>>>>> Map
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     x: 0
@@ -1418,10 +2597,32 @@ MonoBehaviour:
     width: 377
     height: 550
 >>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+      m_SelectedIDs: e0340000
+      m_LastClickedID: 13536
+      m_ExpandedIDs: 74fbffffe0340000
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: Directional Light
+        m_OriginalName: Directional Light
+=======
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
 <<<<<<< HEAD
       m_SelectedIDs: a0f6ffff
       m_LastClickedID: -2400
@@ -1439,12 +2640,31 @@ MonoBehaviour:
         m_Name: Directional Light
         m_OriginalName: Directional Light
 >>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+        m_UserData: 13542
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 0
+=======
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
 <<<<<<< HEAD
         m_UserData: 0
         m_IsWaitingForDelay: 0
@@ -1456,6 +2676,13 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 0
 >>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -1465,9 +2692,25 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
 <<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+  m_WindowGUID: 4cde0c6e4a5332c4db12a14b87c99b65
+=======
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
+<<<<<<< HEAD
   m_WindowGUID: 75eadf013e8b76748b4ce150666f0985
 =======
   m_WindowGUID: 4cde0c6e4a5332c4db12a14b87c99b65
+>>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 >>>>>>> Map
 --- !u!114 &16
 MonoBehaviour:
@@ -1491,6 +2734,21 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    x: 379
+    y: 73
+    width: 1150
+    height: 553
+  m_ViewDataDictionary: {fileID: 0}
+  m_ShowContextualTools: 0
+  m_WindowGUID: cdad410f713eae948a121651262edcb8
+=======
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
+<<<<<<< HEAD
     x: 381
     y: 20
     width: 1148
@@ -1507,6 +2765,13 @@ MonoBehaviour:
   m_ShowContextualTools: 0
   m_WindowGUID: cdad410f713eae948a121651262edcb8
 >>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
   m_Gizmos: 1
   m_SceneIsLit: 1
   m_SceneLighting: 1
@@ -1516,6 +2781,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 527.66205, y: 221.99048, z: -267.3162}
     speed: 2
     m_Value: {x: 527.66205, y: 221.99048, z: -267.3162}
@@ -1523,6 +2789,29 @@ MonoBehaviour:
     m_Target: {x: 0.6826006, y: -0.5891426, z: -81.1761}
     speed: 2
     m_Value: {x: 0.6826006, y: -0.5891426, z: -81.1761}
+>>>>>>> Map
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    m_Target: {x: 0.6826006, y: -0.5891426, z: -81.1761}
+    speed: 2
+    m_Value: {x: 0.6826006, y: -0.5891426, z: -81.1761}
+=======
+=======
+>>>>>>> Stashed changes
+<<<<<<< HEAD
+    m_Target: {x: 527.66205, y: 221.99048, z: -267.3162}
+    speed: 2
+    m_Value: {x: 527.66205, y: 221.99048, z: -267.3162}
+=======
+    m_Target: {x: 0.6826006, y: -0.5891426, z: -81.1761}
+    speed: 2
+    m_Value: {x: 0.6826006, y: -0.5891426, z: -81.1761}
+>>>>>>> Map
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 >>>>>>> Map
   m_RenderMode: 0
   m_CameraMode:
@@ -1557,6 +2846,17 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
 <<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    m_Target: 6.757102
+    speed: 2
+    m_Value: 6.757102
+=======
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
+<<<<<<< HEAD
     m_Target: 747.209
     speed: 2
     m_Value: 747.209
@@ -1564,6 +2864,13 @@ MonoBehaviour:
     m_Target: 6.757102
     speed: 2
     m_Value: 6.757102
+>>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 >>>>>>> Map
   m_Ortho:
     m_Target: 1
@@ -1584,11 +2891,32 @@ MonoBehaviour:
     m_OcclusionCulling: 0
   m_ShowGlobalGrid: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
 =======
   m_LastSceneViewRotation: {x: 0.0010234504, y: 0.9737721, z: 0.004382073, w: -0.22748876}
   m_LastSceneViewOrtho: 1
+>>>>>>> Map
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+  m_LastSceneViewRotation: {x: 0.0010234504, y: 0.9737721, z: 0.004382073, w: -0.22748876}
+  m_LastSceneViewOrtho: 1
+=======
+=======
+>>>>>>> Stashed changes
+<<<<<<< HEAD
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewOrtho: 0
+=======
+  m_LastSceneViewRotation: {x: 0.0010234504, y: 0.9737721, z: 0.004382073, w: -0.22748876}
+  m_LastSceneViewOrtho: 1
+>>>>>>> Map
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 >>>>>>> Map
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -1617,6 +2945,18 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    x: 2299
+    y: 73
+    width: 1150
+    height: 553
+=======
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
+<<<<<<< HEAD
     x: 379
     y: 73
     width: 1150
@@ -1626,6 +2966,13 @@ MonoBehaviour:
     y: 73
     width: 1150
     height: 553
+>>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 >>>>>>> Map
   m_ViewDataDictionary: {fileID: 0}
   m_VSyncEnabled: 0
@@ -1640,15 +2987,41 @@ MonoBehaviour:
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
 <<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
+<<<<<<< HEAD
     m_HBaseRangeMin: -477.5
     m_HBaseRangeMax: 477.5
     m_VBaseRangeMin: -268.5
     m_VBaseRangeMax: 268.5
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
     m_HBaseRangeMin: -476.5
     m_HBaseRangeMax: 476.5
     m_VBaseRangeMin: -268
     m_VBaseRangeMax: 268
+<<<<<<< HEAD
+>>>>>>> Map
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Map
+>>>>>>> Stashed changes
+=======
+>>>>>>> Map
+>>>>>>> Stashed changes
 >>>>>>> Map
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
@@ -1669,6 +3042,17 @@ MonoBehaviour:
       y: 17
       width: 1150
 <<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+      height: 536
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 575, y: 268}
+=======
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
+<<<<<<< HEAD
       height: 537
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 575, y: 268.5}
@@ -1676,6 +3060,13 @@ MonoBehaviour:
       height: 536
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 575, y: 268}
+>>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 >>>>>>> Map
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -1685,6 +3076,17 @@ MonoBehaviour:
       serializedVersion: 2
       x: -575
 <<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+      y: -268
+      width: 1150
+      height: 536
+=======
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
+<<<<<<< HEAD
       y: -268.5
       width: 1150
       height: 537
@@ -1693,14 +3095,37 @@ MonoBehaviour:
       width: 1150
       height: 536
 >>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
 <<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+  m_LastWindowPixelSize: {x: 1150, y: 553}
+=======
+=======
+>>>>>>> Stashed changes
+>>>>>>> Map
+<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 1150, y: 554}
 =======
   m_LastWindowPixelSize: {x: 1150, y: 553}
+>>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 >>>>>>> Map
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
@@ -1728,6 +3153,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
     y: 646
     width: 1531
@@ -1741,6 +3167,24 @@ MonoBehaviour:
     width: 518
     height: 928
   m_ViewDataDictionary: {fileID: 0}
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    x: 1920
+    y: 645
+=======
+=======
+>>>>>>> Stashed changes
+<<<<<<< HEAD
+    x: 0
+    y: 646
+>>>>>>> Stashed changes
+    width: 1531
+    height: 356
+  m_ViewDataDictionary: {fileID: 0}
+<<<<<<< Updated upstream
+=======
+>>>>>>> Map
   m_PosLeft: {x: 0, y: 0}
   m_PosRight: {x: 0, y: 0}
   m_Scope: 1
@@ -1755,4 +3199,11 @@ MonoBehaviour:
     width: 1531
     height: 356
   m_ViewDataDictionary: {fileID: 0}
+>>>>>>> Map
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 >>>>>>> Map

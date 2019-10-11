@@ -1,7 +1,28 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 m_EditorVersion: 2019.2.6f1
 m_EditorVersionWithRevision: 2019.2.6f1 (fe82a0e88406)
 =======
 m_EditorVersion: 2019.2.5f1
 m_EditorVersionWithRevision: 2019.2.5f1 (9dace1eed4cc)
+>>>>>>> Map
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+m_EditorVersion: 2019.2.5f1
+m_EditorVersionWithRevision: 2019.2.5f1 (9dace1eed4cc)
+=======
+=======
+>>>>>>> Stashed changes
+<<<<<<< HEAD
+m_EditorVersion: 2019.2.6f1
+m_EditorVersionWithRevision: 2019.2.6f1 (fe82a0e88406)
+=======
+m_EditorVersion: 2019.2.5f1
+m_EditorVersionWithRevision: 2019.2.5f1 (9dace1eed4cc)
+>>>>>>> Map
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 >>>>>>> Map
