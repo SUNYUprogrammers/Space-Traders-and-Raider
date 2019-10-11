@@ -20,13 +20,20 @@ MonoBehaviour:
 =======
     x: 0
     y: 43
+<<<<<<< HEAD
+>>>>>>> Combat
+=======
 >>>>>>> Combat
     width: 1920
     height: 997
   m_ShowMode: 4
   m_Title: 
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootView: {fileID: 6}
+=======
+  m_RootView: {fileID: 4}
+>>>>>>> Combat
 =======
   m_RootView: {fileID: 4}
 >>>>>>> Combat
@@ -40,6 +47,7 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_EditorHideFlags: 1
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
@@ -67,6 +75,16 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+=======
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+>>>>>>> Combat
     y: 675
     width: 1150
     height: 272
@@ -78,6 +96,9 @@ MonoBehaviour:
   - {fileID: 11}
   m_Selected: 0
   m_LastSelected: 1
+<<<<<<< HEAD
+>>>>>>> Combat
+=======
 >>>>>>> Combat
 --- !u!114 &3
 MonoBehaviour:
@@ -88,8 +109,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+=======
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+>>>>>>> Combat
 =======
   m_EditorHideFlags: 0
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
@@ -104,6 +130,7 @@ MonoBehaviour:
     x: 1531
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 389
     height: 947
   m_MinSize: {x: 275, y: 50}
@@ -114,12 +141,17 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 0
 =======
+=======
+>>>>>>> Combat
     width: 1150
     height: 947
   m_MinSize: {x: 232, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
   controlID: 35
+<<<<<<< HEAD
+>>>>>>> Combat
+=======
 >>>>>>> Combat
 --- !u!114 &4
 MonoBehaviour:
@@ -131,7 +163,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+=======
+  m_Script: {fileID: 12008, guid: 0000000000000000e000000000000000, type: 0}
+>>>>>>> Combat
 =======
   m_Script: {fileID: 12008, guid: 0000000000000000e000000000000000, type: 0}
 >>>>>>> Combat
@@ -146,6 +182,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 379
     height: 573
   m_MinSize: {x: 200, y: 200}
@@ -156,10 +193,15 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 0
 =======
+=======
+>>>>>>> Combat
     width: 1920
     height: 997
   m_MinSize: {x: 950, y: 544}
   m_MaxSize: {x: 10000, y: 10000}
+<<<<<<< HEAD
+>>>>>>> Combat
+=======
 >>>>>>> Combat
 --- !u!114 &5
 MonoBehaviour:
@@ -171,7 +213,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+=======
+  m_Script: {fileID: 12011, guid: 0000000000000000e000000000000000, type: 0}
+>>>>>>> Combat
 =======
   m_Script: {fileID: 12011, guid: 0000000000000000e000000000000000, type: 0}
 >>>>>>> Combat
@@ -181,6 +227,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     y: 573
     width: 1531
@@ -194,12 +241,17 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 1
 =======
+=======
+>>>>>>> Combat
     y: 0
     width: 1920
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
+<<<<<<< HEAD
+>>>>>>> Combat
+=======
 >>>>>>> Combat
 --- !u!114 &6
 MonoBehaviour:
@@ -210,6 +262,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_Script: {fileID: 12008, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -234,11 +287,23 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+=======
+  m_Script: {fileID: 12042, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+>>>>>>> Combat
     y: 977
     width: 1920
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
+<<<<<<< HEAD
+>>>>>>> Combat
+=======
 >>>>>>> Combat
 --- !u!114 &7
 MonoBehaviour:
@@ -249,8 +314,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_EditorHideFlags: 1
   m_Script: {fileID: 12011, guid: 0000000000000000e000000000000000, type: 0}
+=======
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+>>>>>>> Combat
 =======
   m_EditorHideFlags: 0
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
@@ -265,6 +335,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 0
     width: 1920
     height: 30
@@ -272,6 +343,8 @@ MonoBehaviour:
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
 =======
+=======
+>>>>>>> Combat
     y: 30
     width: 1920
     height: 947
@@ -279,6 +352,9 @@ MonoBehaviour:
   m_MaxSize: {x: 18004, y: 14044}
   vertical: 0
   controlID: 34
+<<<<<<< HEAD
+>>>>>>> Combat
+=======
 >>>>>>> Combat
 --- !u!114 &8
 MonoBehaviour:
@@ -290,8 +366,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Script: {fileID: 12042, guid: 0000000000000000e000000000000000, type: 0}
 =======
+=======
+>>>>>>> Combat
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
 >>>>>>> Combat
   m_Name: 
@@ -301,12 +380,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 977
     width: 1920
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
 =======
+=======
+>>>>>>> Combat
     y: 0
     width: 1150
     height: 675
@@ -320,6 +402,9 @@ MonoBehaviour:
   - {fileID: 12}
   m_Selected: 0
   m_LastSelected: 3
+<<<<<<< HEAD
+>>>>>>> Combat
+=======
 >>>>>>> Combat
 --- !u!114 &9
 MonoBehaviour:
@@ -329,6 +414,7 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_EditorHideFlags: 1
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
@@ -358,6 +444,8 @@ MonoBehaviour:
   m_EditorHideFlags: 1
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
 =======
+=======
+>>>>>>> Combat
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
 >>>>>>> Combat
@@ -371,6 +459,7 @@ MonoBehaviour:
     x: 1150
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1531
     height: 573
   m_MinSize: {x: 404, y: 222}
@@ -379,6 +468,8 @@ MonoBehaviour:
   controlID: 99
 --- !u!114 &11
 =======
+=======
+>>>>>>> Combat
     width: 250
     height: 947
   m_MinSize: {x: 200, y: 200}
@@ -389,6 +480,9 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &10
+<<<<<<< HEAD
+>>>>>>> Combat
+=======
 >>>>>>> Combat
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -430,6 +524,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
+>>>>>>> Combat
+=======
 >>>>>>> Combat
   m_Name: 
   m_EditorClassIdentifier: 
@@ -442,6 +539,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: 379
     y: 0
@@ -457,11 +555,16 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 1
 =======
+=======
+>>>>>>> Combat
     x: 0
     y: 748
     width: 1150
     height: 253
   m_ViewDataDictionary: {fileID: 0}
+<<<<<<< HEAD
+>>>>>>> Combat
+=======
 >>>>>>> Combat
 --- !u!114 &12
 MonoBehaviour:
@@ -551,6 +654,9 @@ MonoBehaviour:
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
   m_XRRenderMode: 0
+<<<<<<< HEAD
+>>>>>>> Combat
+=======
 >>>>>>> Combat
 --- !u!114 &13
 MonoBehaviour:
@@ -575,10 +681,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 593
     width: 1529
     height: 352
 =======
+=======
+>>>>>>> Combat
     y: 73
     width: 1150
     height: 656
@@ -842,13 +951,18 @@ MonoBehaviour:
     m_SearchArea: 1
     m_Folders:
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/Scenes
+=======
+    - Assets/Scripts/Ship Component Subclasses
+>>>>>>> Combat
 =======
     - Assets/Scripts/Ship Component Subclasses
 >>>>>>> Combat
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
+<<<<<<< HEAD
 <<<<<<< HEAD
   - Assets/Scenes
   m_LastFoldersGridSize: -1
@@ -868,10 +982,21 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+=======
+  - Assets/Scripts/Ship Component Subclasses
+  m_LastFoldersGridSize: 16
+  m_LastProjectPath: S:\Space-Traders-and-Raider\Space Traders and Raiders
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+>>>>>>> Combat
     scrollPos: {x: 0, y: 7}
     m_SelectedIDs: 34330000
     m_LastClickedID: 13108
     m_ExpandedIDs: 00000000022f0000562f000056320000d43200007433000000ca9a3b
+<<<<<<< HEAD
+>>>>>>> Combat
+=======
 >>>>>>> Combat
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -889,7 +1014,11 @@ MonoBehaviour:
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ClientGUIView: {fileID: 0}
+=======
+      m_ClientGUIView: {fileID: 9}
+>>>>>>> Combat
 =======
       m_ClientGUIView: {fileID: 9}
 >>>>>>> Combat
@@ -905,7 +1034,11 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000bc2c0000f82c0000722e0000c62e00001e2f0000
+=======
+    m_ExpandedIDs: 00000000022f0000562f000056320000d432000074330000
+>>>>>>> Combat
 =======
     m_ExpandedIDs: 00000000022f0000562f000056320000d432000074330000
 >>>>>>> Combat
@@ -937,7 +1070,11 @@ MonoBehaviour:
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedInstanceIDs: c6230000
+=======
+    m_ExpandedInstanceIDs: 1c2c00000e2c000000000000
+>>>>>>> Combat
 =======
     m_ExpandedInstanceIDs: 1c2c00000e2c000000000000
 >>>>>>> Combat
@@ -957,7 +1094,11 @@ MonoBehaviour:
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ClientGUIView: {fileID: 0}
+=======
+      m_ClientGUIView: {fileID: 2}
+>>>>>>> Combat
 =======
       m_ClientGUIView: {fileID: 2}
 >>>>>>> Combat
@@ -977,6 +1118,9 @@ MonoBehaviour:
 =======
   m_DirectoriesAreaWidth: 110
 --- !u!114 &18
+<<<<<<< HEAD
+>>>>>>> Combat
+=======
 >>>>>>> Combat
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -999,15 +1143,21 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1533
     y: 20
     width: 387
     height: 925
 =======
+=======
+>>>>>>> Combat
     x: 1400
     y: 73
     width: 518
     height: 928
+<<<<<<< HEAD
+>>>>>>> Combat
+=======
 >>>>>>> Combat
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
@@ -1023,7 +1173,11 @@ MonoBehaviour:
   m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &15
+=======
+--- !u!114 &19
+>>>>>>> Combat
 =======
 --- !u!114 &19
 >>>>>>> Combat
@@ -1047,6 +1201,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: 0
     y: 20
@@ -1289,6 +1444,8 @@ MonoBehaviour:
     height: 355
   m_ViewDataDictionary: {fileID: 0}
 =======
+=======
+>>>>>>> Combat
     x: 1400
     y: 73
     width: 518
@@ -1298,4 +1455,7 @@ MonoBehaviour:
   m_PosRight: {x: 0, y: 0}
   m_Scope: 1
   m_SplitterFlex: 0.2
+<<<<<<< HEAD
+>>>>>>> Combat
+=======
 >>>>>>> Combat

@@ -1,6 +1,10 @@
 sceneSetups:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - path: Assets/Scenes/GameBoard.unity
+=======
+- path: Assets/Scenes/Combat_Test.unity
+>>>>>>> Combat
 =======
 - path: Assets/Scenes/Combat_Test.unity
 >>>>>>> Combat
