@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Sector
 {
-    
-
     StarSystem[] systems;
 
     // Start is called before the first frame update
@@ -49,5 +47,10 @@ public class Sector
                 }
             }
         }
+    }
+
+    public StarSystem[] getSystems()
+    {
+        return this.systems;
     }
 }

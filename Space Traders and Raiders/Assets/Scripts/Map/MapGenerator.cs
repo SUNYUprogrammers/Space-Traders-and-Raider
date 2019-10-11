@@ -7,11 +7,17 @@ public class MapGenerator : MonoBehaviour
     //Store the probability of different system counts
     public enum SystemCount
     {
-        TWOSYS = 80, THREESYS = TWOSYS + 15, ONESYS = THREESYS + 5
+        TWOSYS = 80,
+        THREESYS = TWOSYS + 15,
+        ONESYS = THREESYS + 5
     }
     public enum SystemType
     {
-        YELLOW = 55, GREEN = YELLOW + 30, BLUE = GREEN + 12, RED = GREEN + 3
+        EMPTY = 0,
+        YELLOW = 55,
+        GREEN = YELLOW + 30,
+        BLUE = GREEN + 12,
+        RED = BLUE + 3
     }
 
     private Sector[,] sectors;
@@ -25,6 +31,8 @@ public class MapGenerator : MonoBehaviour
     public Sprite blueSystem;
     public Sprite redSystem;
 
+    [SerializeField] private GameObject tilePrefab;
+
 
     void Start()
     {
@@ -34,6 +42,46 @@ public class MapGenerator : MonoBehaviour
             for (int j = 0; j < size.y; j++)
             {
                 sectors[i, j] = new Sector();
+                for(int y = 0; y < 4; y++)
+                {
+                    for(int x = 0; x < 4; x++)
+                    {
+                        GameObject newTile = Instantiate(tilePrefab, new Vector3((i - size.x / 2) * (4f/size.x) + ((float)x/size.x), (j - size.y / 2) * (4f/size.y) + ((float)y /size.y), 0), Quaternion.identity);
+                        newTile.transform.localScale = newTile.transform.localScale * (1f/((size.x+size.y)/2f));
+                        SpriteRenderer renderer = newTile.GetComponent("SpriteRenderer") as SpriteRenderer;
+                        bool hasSystem = false;
+                        SystemType theSystem = SystemType.EMPTY;
+                        foreach (StarSystem sys in sectors[i, j].getSystems()) {
+                            if(sys.getPosition().x == x && sys.getPosition().y == y)
+                            {
+                                hasSystem = true;
+                                theSystem = sys.getType();
+                            }
+                        }
+                        switch (theSystem)
+                        {
+                            case SystemType.YELLOW:
+                                renderer.sprite = yellowSystem;
+                                break;
+
+                            case SystemType.GREEN:
+                                renderer.sprite = greenSystem;
+                                break;
+
+                            case SystemType.BLUE:
+                                renderer.sprite = blueSystem;
+                                break;
+
+                            case SystemType.RED:
+                                renderer.sprite = redSystem;
+                                break;
+
+                            case SystemType.EMPTY:
+                                renderer.sprite = emptySystem;
+                                break;
+                        }
+                    }
+                }
             }
         }
     }

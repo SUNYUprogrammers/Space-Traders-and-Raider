@@ -15,6 +15,7 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: -75
     y: 119
 =======
@@ -24,10 +25,15 @@ MonoBehaviour:
 >>>>>>> Combat
 =======
 >>>>>>> Combat
+=======
+    x: 0
+    y: 43
+>>>>>>> Map
     width: 1920
     height: 997
   m_ShowMode: 4
   m_Title: 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_RootView: {fileID: 6}
@@ -38,6 +44,10 @@ MonoBehaviour:
   m_RootView: {fileID: 4}
 >>>>>>> Combat
   m_MinSize: {x: 950, y: 544}
+=======
+  m_RootView: {fileID: 6}
+  m_MinSize: {x: 950, y: 300}
+>>>>>>> Map
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -49,6 +59,9 @@ MonoBehaviour:
   m_Enabled: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Map
   m_EditorHideFlags: 1
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -62,6 +75,7 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
+<<<<<<< HEAD
   m_MinSize: {x: 679, y: 494}
   m_MaxSize: {x: 14002, y: 14044}
   vertical: 0
@@ -100,6 +114,12 @@ MonoBehaviour:
 >>>>>>> Combat
 =======
 >>>>>>> Combat
+=======
+  m_MinSize: {x: 683, y: 494}
+  m_MaxSize: {x: 14004, y: 14044}
+  vertical: 0
+  controlID: 51
+>>>>>>> Map
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -108,6 +128,7 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_EditorHideFlags: 1
@@ -125,21 +146,36 @@ MonoBehaviour:
   m_Children:
   - {fileID: 8}
   - {fileID: 2}
+=======
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+>>>>>>> Map
   m_Position:
     serializedVersion: 2
     x: 1531
     y: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 389
     height: 947
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+    width: 389
+    height: 947
+  m_MinSize: {x: 277, y: 72}
+  m_MaxSize: {x: 4002, y: 4022}
+>>>>>>> Map
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
   m_Selected: 0
   m_LastSelected: 0
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> Combat
@@ -153,6 +189,8 @@ MonoBehaviour:
 >>>>>>> Combat
 =======
 >>>>>>> Combat
+=======
+>>>>>>> Map
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -162,6 +200,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
@@ -177,21 +216,35 @@ MonoBehaviour:
   - {fileID: 5}
   - {fileID: 7}
   - {fileID: 6}
+=======
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+>>>>>>> Map
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 379
     height: 573
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+    width: 379
+    height: 572
+  m_MinSize: {x: 202, y: 222}
+  m_MaxSize: {x: 4002, y: 4022}
+>>>>>>> Map
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
   m_Selected: 0
   m_LastSelected: 0
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> Combat
@@ -203,6 +256,8 @@ MonoBehaviour:
 >>>>>>> Combat
 =======
 >>>>>>> Combat
+=======
+>>>>>>> Map
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -214,6 +269,7 @@ MonoBehaviour:
   m_EditorHideFlags: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
 =======
   m_Script: {fileID: 12011, guid: 0000000000000000e000000000000000, type: 0}
@@ -221,6 +277,9 @@ MonoBehaviour:
 =======
   m_Script: {fileID: 12011, guid: 0000000000000000e000000000000000, type: 0}
 >>>>>>> Combat
+=======
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+>>>>>>> Map
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children: []
@@ -229,9 +288,15 @@ MonoBehaviour:
     x: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 573
     width: 1531
     height: 374
+=======
+    y: 572
+    width: 1531
+    height: 375
+>>>>>>> Map
   m_MinSize: {x: 232, y: 272}
   m_MaxSize: {x: 10002, y: 10022}
   m_ActualView: {fileID: 13}
@@ -240,6 +305,7 @@ MonoBehaviour:
   - {fileID: 18}
   m_Selected: 0
   m_LastSelected: 1
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> Combat
@@ -253,6 +319,8 @@ MonoBehaviour:
 >>>>>>> Combat
 =======
 >>>>>>> Combat
+=======
+>>>>>>> Map
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -264,6 +332,9 @@ MonoBehaviour:
   m_EditorHideFlags: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Map
   m_Script: {fileID: 12008, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -279,6 +350,7 @@ MonoBehaviour:
     height: 997
   m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
+<<<<<<< HEAD
 =======
   m_Script: {fileID: 12042, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -305,6 +377,8 @@ MonoBehaviour:
 >>>>>>> Combat
 =======
 >>>>>>> Combat
+=======
+>>>>>>> Map
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -313,6 +387,7 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_EditorHideFlags: 1
@@ -336,12 +411,23 @@ MonoBehaviour:
     x: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12011, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+>>>>>>> Map
     y: 0
     width: 1920
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> Combat
@@ -356,6 +442,8 @@ MonoBehaviour:
 >>>>>>> Combat
 =======
 >>>>>>> Combat
+=======
+>>>>>>> Map
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -367,12 +455,16 @@ MonoBehaviour:
   m_EditorHideFlags: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Script: {fileID: 12042, guid: 0000000000000000e000000000000000, type: 0}
 =======
 =======
 >>>>>>> Combat
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
 >>>>>>> Combat
+=======
+  m_Script: {fileID: 12042, guid: 0000000000000000e000000000000000, type: 0}
+>>>>>>> Map
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children: []
@@ -381,11 +473,15 @@ MonoBehaviour:
     x: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Map
     y: 977
     width: 1920
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> Combat
@@ -406,6 +502,8 @@ MonoBehaviour:
 >>>>>>> Combat
 =======
 >>>>>>> Combat
+=======
+>>>>>>> Map
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -416,6 +514,9 @@ MonoBehaviour:
   m_Enabled: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Map
   m_EditorHideFlags: 1
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -429,10 +530,17 @@ MonoBehaviour:
     y: 0
     width: 1531
     height: 947
+<<<<<<< HEAD
   m_MinSize: {x: 404, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
   controlID: 56
+=======
+  m_MinSize: {x: 406, y: 494}
+  m_MaxSize: {x: 10002, y: 14044}
+  vertical: 1
+  controlID: 52
+>>>>>>> Map
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -443,12 +551,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> Combat
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
 >>>>>>> Combat
+=======
+>>>>>>> Map
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
@@ -456,6 +567,7 @@ MonoBehaviour:
   - {fileID: 11}
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1150
     y: 0
 <<<<<<< HEAD
@@ -484,6 +596,17 @@ MonoBehaviour:
 >>>>>>> Combat
 =======
 >>>>>>> Combat
+=======
+    x: 0
+    y: 0
+    width: 1531
+    height: 572
+  m_MinSize: {x: 406, y: 222}
+  m_MaxSize: {x: 8006, y: 4022}
+  vertical: 0
+  controlID: 53
+--- !u!114 &11
+>>>>>>> Map
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -492,16 +615,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
 =======
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+=======
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+>>>>>>> Map
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1400
     y: 0
     width: 520
@@ -545,6 +674,12 @@ MonoBehaviour:
     y: 0
     width: 1152
     height: 573
+=======
+    x: 379
+    y: 0
+    width: 1152
+    height: 572
+>>>>>>> Map
   m_MinSize: {x: 204, y: 222}
   m_MaxSize: {x: 4004, y: 4022}
   m_ActualView: {fileID: 16}
@@ -554,6 +689,7 @@ MonoBehaviour:
   - {fileID: 12}
   m_Selected: 0
   m_LastSelected: 1
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> Combat
@@ -566,6 +702,8 @@ MonoBehaviour:
 >>>>>>> Combat
 =======
 >>>>>>> Combat
+=======
+>>>>>>> Map
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -588,11 +726,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Map
     x: 468
     y: 181
     width: 973
     height: 501
   m_ViewDataDictionary: {fileID: 0}
+<<<<<<< HEAD
 =======
     x: 0
     y: 73
@@ -658,6 +800,8 @@ MonoBehaviour:
 >>>>>>> Combat
 =======
 >>>>>>> Combat
+=======
+>>>>>>> Map
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -680,6 +824,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     y: 593
@@ -936,6 +1081,11 @@ MonoBehaviour:
     width: 1150
     height: 253
 >>>>>>> Combat
+=======
+    y: 592
+    width: 1529
+    height: 353
+>>>>>>> Map
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -950,6 +1100,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     - Assets/Scenes
@@ -998,6 +1149,22 @@ MonoBehaviour:
 >>>>>>> Combat
 =======
 >>>>>>> Combat
+=======
+    - Assets/Scripts/Map
+  m_ViewMode: 1
+  m_StartGridSize: 16
+  m_LastFolders:
+  - Assets/Scripts/Map
+  m_LastFoldersGridSize: 16
+  m_LastProjectPath: S:\PGP\Space-Traders-and-Raider\Space Traders and Raiders
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 362f0000
+    m_LastClickedID: 12086
+    m_ExpandedIDs: 00000000002f0000542f0000303000004c320000c63200006633000000ca9a3b
+>>>>>>> Map
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1015,6 +1182,7 @@ MonoBehaviour:
       m_IsRenamingFilename: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ClientGUIView: {fileID: 0}
 =======
       m_ClientGUIView: {fileID: 9}
@@ -1022,6 +1190,9 @@ MonoBehaviour:
 =======
       m_ClientGUIView: {fileID: 9}
 >>>>>>> Combat
+=======
+      m_ClientGUIView: {fileID: 0}
+>>>>>>> Map
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -1035,6 +1206,7 @@ MonoBehaviour:
     m_LastClickedID: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000bc2c0000f82c0000722e0000c62e00001e2f0000
 =======
     m_ExpandedIDs: 00000000022f0000562f000056320000d432000074330000
@@ -1042,6 +1214,9 @@ MonoBehaviour:
 =======
     m_ExpandedIDs: 00000000022f0000562f000056320000d432000074330000
 >>>>>>> Combat
+=======
+    m_ExpandedIDs: 00000000002f0000542f00004c320000c632000066330000
+>>>>>>> Map
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1071,6 +1246,7 @@ MonoBehaviour:
     m_HadKeyboardFocusLastEvent: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedInstanceIDs: c6230000
 =======
     m_ExpandedInstanceIDs: 1c2c00000e2c000000000000
@@ -1078,6 +1254,9 @@ MonoBehaviour:
 =======
     m_ExpandedInstanceIDs: 1c2c00000e2c000000000000
 >>>>>>> Combat
+=======
+    m_ExpandedInstanceIDs: c623000020300000de330000843e0000903e0000
+>>>>>>> Map
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1095,6 +1274,7 @@ MonoBehaviour:
       m_IsRenamingFilename: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ClientGUIView: {fileID: 0}
 =======
       m_ClientGUIView: {fileID: 2}
@@ -1102,6 +1282,9 @@ MonoBehaviour:
 =======
       m_ClientGUIView: {fileID: 2}
 >>>>>>> Combat
+=======
+      m_ClientGUIView: {fileID: 5}
+>>>>>>> Map
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1110,6 +1293,7 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
+<<<<<<< HEAD
     m_GridSize: 64
   m_SkipHiddenPackages: 0
 <<<<<<< HEAD
@@ -1122,6 +1306,12 @@ MonoBehaviour:
 >>>>>>> Combat
 =======
 >>>>>>> Combat
+=======
+    m_GridSize: 16
+  m_SkipHiddenPackages: 0
+  m_DirectoriesAreaWidth: 116
+--- !u!114 &14
+>>>>>>> Map
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1144,10 +1334,14 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Map
     x: 1533
     y: 20
     width: 387
     height: 925
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> Combat
@@ -1159,6 +1353,8 @@ MonoBehaviour:
 >>>>>>> Combat
 =======
 >>>>>>> Combat
+=======
+>>>>>>> Map
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
   m_ObjectsLockedBeforeSerialization: []
@@ -1166,6 +1362,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewResizer:
+<<<<<<< HEAD
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
@@ -1181,6 +1378,13 @@ MonoBehaviour:
 =======
 --- !u!114 &19
 >>>>>>> Combat
+=======
+    m_CachedPref: 351
+    m_ControlHash: -371814159
+    m_PrefName: Preview_InspectorPreview
+  m_PreviewWindow: {fileID: 0}
+--- !u!114 &15
+>>>>>>> Map
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1203,14 +1407,22 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
     y: 20
     width: 377
     height: 551
+=======
+    x: 0
+    y: 20
+    width: 377
+    height: 550
+>>>>>>> Map
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: a0f6ffff
       m_LastClickedID: -2400
       m_ExpandedIDs: 3ef4ffffa0f6ffffeef6ffff30faffff6efbffffca3400009e350000e0350000
@@ -1218,16 +1430,32 @@ MonoBehaviour:
         m_UserAcceptedRename: 0
         m_Name: 
         m_OriginalName: 
+=======
+      m_SelectedIDs: e0340000
+      m_LastClickedID: 13536
+      m_ExpandedIDs: 74fbffffe0340000
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: Directional Light
+        m_OriginalName: Directional Light
+>>>>>>> Map
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
+<<<<<<< HEAD
         m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 11
+=======
+        m_UserData: 13542
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 0
+>>>>>>> Map
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -1236,7 +1464,11 @@ MonoBehaviour:
     m_LockTracker:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
+<<<<<<< HEAD
   m_WindowGUID: 75eadf013e8b76748b4ce150666f0985
+=======
+  m_WindowGUID: 4cde0c6e4a5332c4db12a14b87c99b65
+>>>>>>> Map
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1258,6 +1490,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 381
     y: 20
     width: 1148
@@ -1265,6 +1498,15 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 71d9b9095ea687f4bbc5edc1c56d3413
+=======
+    x: 379
+    y: 73
+    width: 1150
+    height: 553
+  m_ViewDataDictionary: {fileID: 0}
+  m_ShowContextualTools: 0
+  m_WindowGUID: cdad410f713eae948a121651262edcb8
+>>>>>>> Map
   m_Gizmos: 1
   m_SceneIsLit: 1
   m_SceneLighting: 1
@@ -1273,9 +1515,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 527.66205, y: 221.99048, z: -267.3162}
     speed: 2
     m_Value: {x: 527.66205, y: 221.99048, z: -267.3162}
+=======
+    m_Target: {x: 0.6826006, y: -0.5891426, z: -81.1761}
+    speed: 2
+    m_Value: {x: 0.6826006, y: -0.5891426, z: -81.1761}
+>>>>>>> Map
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1308,9 +1556,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 747.209
     speed: 2
     m_Value: 747.209
+=======
+    m_Target: 6.757102
+    speed: 2
+    m_Value: 6.757102
+>>>>>>> Map
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1329,8 +1583,13 @@ MonoBehaviour:
     m_DynamicClip: 1
     m_OcclusionCulling: 0
   m_ShowGlobalGrid: 1
+<<<<<<< HEAD
   m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
+=======
+  m_LastSceneViewRotation: {x: 0.0010234504, y: 0.9737721, z: 0.004382073, w: -0.22748876}
+  m_LastSceneViewOrtho: 1
+>>>>>>> Map
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
   m_SceneVisActive: 1
@@ -1357,10 +1616,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 379
     y: 73
     width: 1150
     height: 554
+=======
+    x: 2299
+    y: 73
+    width: 1150
+    height: 553
+>>>>>>> Map
   m_ViewDataDictionary: {fileID: 0}
   m_VSyncEnabled: 0
   m_MaximizeOnPlay: 0
@@ -1373,10 +1639,17 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
     m_HBaseRangeMin: -477.5
     m_HBaseRangeMax: 477.5
     m_VBaseRangeMin: -268.5
     m_VBaseRangeMax: 268.5
+=======
+    m_HBaseRangeMin: -476.5
+    m_HBaseRangeMax: 476.5
+    m_VBaseRangeMin: -268
+    m_VBaseRangeMax: 268
+>>>>>>> Map
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1395,9 +1668,15 @@ MonoBehaviour:
       x: 0
       y: 17
       width: 1150
+<<<<<<< HEAD
       height: 537
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 575, y: 268.5}
+=======
+      height: 536
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 575, y: 268}
+>>>>>>> Map
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -1405,14 +1684,24 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -575
+<<<<<<< HEAD
       y: -268.5
       width: 1150
       height: 537
+=======
+      y: -268
+      width: 1150
+      height: 536
+>>>>>>> Map
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
+<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 1150, y: 554}
+=======
+  m_LastWindowPixelSize: {x: 1150, y: 553}
+>>>>>>> Map
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1438,6 +1727,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 0
     y: 646
     width: 1531
@@ -1459,3 +1749,10 @@ MonoBehaviour:
 >>>>>>> Combat
 =======
 >>>>>>> Combat
+=======
+    x: 1920
+    y: 645
+    width: 1531
+    height: 356
+  m_ViewDataDictionary: {fileID: 0}
+>>>>>>> Map
