@@ -2,14 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Sector
+public class Sector : MonoBehaviour
 {
-    
-
     StarSystem[] systems;
 
     // Start is called before the first frame update
-    public Sector()
+    public void Start()
     {
         //determine how many systems are going to be present
         int numSystems = Random.Range(0, 100);

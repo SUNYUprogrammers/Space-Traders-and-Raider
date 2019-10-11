@@ -7,11 +7,16 @@ public class MapGenerator : MonoBehaviour
     //Store the probability of different system counts
     public enum SystemCount
     {
-        TWOSYS = 80, THREESYS = TWOSYS + 15, ONESYS = THREESYS + 5
+        TWOSYS = 80,
+        THREESYS = TWOSYS + 15,
+        ONESYS = THREESYS + 5
     }
     public enum SystemType
     {
-        YELLOW = 55, GREEN = YELLOW + 30, BLUE = GREEN + 12, RED = GREEN + 3
+        YELLOW = 55,
+        GREEN = YELLOW + 30,
+        BLUE = GREEN + 12,
+        RED = GREEN + 3
     }
 
     private Sector[,] sectors;

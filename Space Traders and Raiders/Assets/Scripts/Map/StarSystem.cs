@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StarSystem
+public class StarSystem : MonoBehaviour
 {
     //Probablities for different system colors (type)
     
@@ -10,10 +10,10 @@ public class StarSystem
     private Vector2Int position = Vector2Int.zero;
 
     //Stores the type (color)
-    private SystemType type;
+    private MapGenerator.SystemType type;
 
     // Start is called before the first frame update
-    public StarSystem()
+    public void Start()
     {
         //determines the system type based on probabilites.
         int prob = Random.Range(0, 100);
