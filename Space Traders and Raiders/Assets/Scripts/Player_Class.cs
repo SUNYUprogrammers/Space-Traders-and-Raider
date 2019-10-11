@@ -7,13 +7,14 @@ using UnityEngine;
 public class Player_Class : MonoBehaviour
 {
 
-    protected int commonMineral = 0;
-    protected int rareMineral = 0;
-    protected int veryRareMineral = 0;
+    protected int commonMineral = 100;
+    protected int rareMineral = 60;
+    protected int veryRareMineral = 40;
     protected StarSystem homeSystem;
     protected int Wealth = 0, Power = 0, Achievement = 0;
     public string playerFaction;
     public Ship_Class[] playerShips = new Ship_Class[5];
+    public bool currentTurn = false;
 
     //Determines what ships the player owns
     public Ship_Class[] getPlayerShips(string faction)
@@ -47,7 +48,7 @@ public class Player_Class : MonoBehaviour
     {
         if (sys != homeSystem)
         {
-           switch (sys.type)
+            switch (sys.type)
             {
                 case MapGenerator.SystemType.GREEN:
                     commonMineral += 30;
@@ -74,6 +75,13 @@ public class Player_Class : MonoBehaviour
                     break;
             }
         }
+        else
+        {
+            commonMineral += 50;
+            rareMineral += 30;
+            veryRareMineral += 20;
+            print("stuff");
+        }
     }
     
 
@@ -82,4 +90,31 @@ public class Player_Class : MonoBehaviour
         playerFaction = "Ron";
         getPlayerShips(playerFaction);
     }
+
+    private int getCommonMineral()
+    {
+        return commonMinerals;
+    }
+    private int getRareMineral()
+    {
+        return rareMinerals;
+    }
+    private int getVeryRareMineral()
+    {
+        return veryRareMinerals;
+    }
+    private int getWealth()
+    {
+        return Wealth;
+    }
+    private int getPower()
+    {
+        return Power;
+    }
+    private int getAchievement()
+    {
+        return Achievement;
+    }
+
+
 }

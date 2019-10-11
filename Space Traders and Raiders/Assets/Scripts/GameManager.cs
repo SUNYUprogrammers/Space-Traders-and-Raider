@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 
     public Player_Class[] players;
     public Player_Class currentPlayer;
+    bool currentTurn = true;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour
         players[1].playerFaction = "Player2";
 
         currentPlayer = players[0];
+        players[0].currentTurn = true;
     }
 
     // Update is called once per frame
@@ -128,7 +130,7 @@ public class GameManager : MonoBehaviour
     }
     public void playerTurn()
     {
-        
+        //onEndTurnClicked{player[]}
     }
 
 }
