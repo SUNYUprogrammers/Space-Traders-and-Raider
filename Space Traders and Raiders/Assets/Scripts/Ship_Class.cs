@@ -11,13 +11,15 @@ abstract public class Ship_Class : MonoBehaviour
     [SerializeField]
     public string faction;
 
+    public int power;
+
 	protected int size;                         //How many slots the ship has
     protected Component_Class[] parts_list;     //What component is in each slot
     protected int ship_speed;                   //How fast can the ship move, calculated from stored thrusters
     [SerializeField]
     protected GameObject rangeIndicator;        //How far the ship can move, represented visually
     [SerializeField]
-    protected int moves_left;                   //How many more squares the ship can move
+    public int moves_left;                   //How many more squares the ship can move
 	protected int[] storage;                    //What resources is the ship carrying, might take up a slot so may become component?
     [SerializeField]
 	public Vector3 pos;                      //Where is the ship on the grid

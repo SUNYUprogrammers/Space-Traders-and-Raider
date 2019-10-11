@@ -7,7 +7,7 @@ public class Battleship_Class : Ship_Class
     private new void Start()
     {
         base.Start();
-
+        power = 4;
         ship_type = "Battleship";
         size = 20;
         pos = this.gameObject.transform.position;
