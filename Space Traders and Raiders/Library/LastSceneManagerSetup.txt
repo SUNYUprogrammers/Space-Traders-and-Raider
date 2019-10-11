@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/GameBoard.unity
+=======
+- path: Assets/Scenes/Combat_Test.unity
+>>>>>>> Combat
   isLoaded: 1
   isActive: 1
   isSubScene: 0
