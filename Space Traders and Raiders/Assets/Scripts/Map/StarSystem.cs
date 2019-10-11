@@ -51,7 +51,6 @@ public class StarSystem
             this.type = MapGenerator.SystemType.RED;
         }
     }
->>>>>>> Map
 
     public bool setPosition(int x, int y)
     {
