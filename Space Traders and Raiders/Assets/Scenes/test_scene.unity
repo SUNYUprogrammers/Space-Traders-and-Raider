@@ -1782,12 +1782,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32a94560a34b1a3418364d027ec9b448, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerFaction: 
   playerShips:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  currentTurn: 0
 --- !u!4 &629344746
 Transform:
   m_ObjectHideFlags: 0
@@ -2008,7 +2010,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ship_type: 
   selected: 0
-  faction: Blue
+  faction: Player2
   rangeIndicator: {fileID: 997757366}
   moves_left: 0
   pos: {x: 0, y: 0, z: 0}
@@ -2558,6 +2560,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stackerRunning: 0
+  players:
+  - {fileID: 0}
+  - {fileID: 0}
+  currentPlayer: {fileID: 0}
 --- !u!4 &768665994
 Transform:
   m_ObjectHideFlags: 0
@@ -2570,7 +2576,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &847626548
 GameObject:
@@ -4641,7 +4647,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ship_type: 
   selected: 0
-  faction: Ron
+  faction: Player1
   rangeIndicator: {fileID: 354359352}
   moves_left: 0
   pos: {x: 0, y: 0, z: 0}
@@ -5634,7 +5640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ship_type: 
   selected: 0
-  faction: Ron
+  faction: Player1
   rangeIndicator: {fileID: 1163289815}
   moves_left: 0
   pos: {x: 0, y: 0, z: 0}

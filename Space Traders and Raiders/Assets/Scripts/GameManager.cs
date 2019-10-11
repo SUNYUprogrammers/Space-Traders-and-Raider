@@ -8,14 +8,13 @@ public class GameManager : MonoBehaviour
 
     public Player_Class[] players;
     public Player_Class currentPlayer;
-    bool currentTurn = true;
 
     // Start is called before the first frame update
     void Start()
     {
-        players[0] = new Player_Class();
+        players[0] = this.gameObject.AddComponent<Player_Class>();
         players[0].playerFaction = "Player1";
-        players[1] = new Player_Class();
+        players[1] = this.gameObject.AddComponent<Player_Class>();
         players[1].playerFaction = "Player2";
 
         currentPlayer = players[0];
@@ -35,7 +34,7 @@ public class GameManager : MonoBehaviour
                 //print("You selected " + hit.transform.name+" : "+this.transform.name);               //Ensure you picked right object
                 if (hit.transform.gameObject.GetComponent<Ship_Class>() != null /*&& hit.transform.name == this.transform.name*/)
                 {                                                                                      //If current player owns ship and is only left clicking
-                    if (true/*faction == factionCurrent*/ && !Input.GetKey(KeyCode.LeftControl) && !Input.GetKey(KeyCode.LeftShift))
+                    if (hit.transform.gameObject.GetComponent<Ship_Class>().faction == currentPlayer.playerFaction && !Input.GetKey(KeyCode.LeftControl) && !Input.GetKey(KeyCode.LeftShift))
                     {
                         hit.transform.gameObject.GetComponent<Ship_Class>().selected = !hit.transform.gameObject.GetComponent<Ship_Class>().selected;
                     }                                                                                  //If current player owns ship and is only shift left clicking
@@ -56,7 +55,7 @@ public class GameManager : MonoBehaviour
 
                         }
                     }                                                                               //If current player owns ship and is only control left clicking
-                    if (true/*faction == factionCurrent*/ && Input.GetKey(KeyCode.LeftControl) && !Input.GetKey(KeyCode.LeftShift))
+                    if (hit.transform.gameObject.GetComponent<Ship_Class>().faction == currentPlayer.playerFaction && Input.GetKey(KeyCode.LeftControl) && !Input.GetKey(KeyCode.LeftShift))
                     {
                         hit.transform.gameObject.GetComponent<Ship_Class>().selectFromStack++;
                         if (hit.transform.gameObject.GetComponent<Ship_Class>().selectFromStack >= hit.transform.gameObject.GetComponent<Ship_Class>().shipsInStack.Length)
@@ -128,9 +127,10 @@ public class GameManager : MonoBehaviour
 
         stackerRunning = false;
     }
-    public void playerTurn()
+    public void endTurn()
     {
-        //onEndTurnClicked{player[]}
+        players[0].currentTurn = !players[0].currentTurn;
+        players[1].currentTurn = !players[1].currentTurn;
     }
 
 }

@@ -83,38 +83,38 @@ public class Player_Class : MonoBehaviour
             print("stuff");
         }
     }
-    
 
-    public void Start()
+    public int getCommonMineral()
     {
-        playerFaction = "Ron";
-        getPlayerShips(playerFaction);
+        return commonMineral;
     }
-
-    private int getCommonMineral()
+    public int getRareMineral()
     {
-        return commonMinerals;
+        return rareMineral;
     }
-    private int getRareMineral()
+    public int getVeryRareMineral()
     {
-        return rareMinerals;
+        return veryRareMineral;
     }
-    private int getVeryRareMineral()
-    {
-        return veryRareMinerals;
-    }
-    private int getWealth()
+    public int getWealth()
     {
         return Wealth;
     }
-    private int getPower()
+    public int getPower()
     {
         return Power;
     }
-    private int getAchievement()
+    public int getAchievement()
     {
         return Achievement;
     }
+
+    public void Start()
+    {
+        //playerFaction = "Ron";
+        getPlayerShips(playerFaction);
+    }
+
 
 
 }
