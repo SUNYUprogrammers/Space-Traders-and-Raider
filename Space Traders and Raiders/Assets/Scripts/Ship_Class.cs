@@ -72,77 +72,7 @@ abstract public class Ship_Class : MonoBehaviour
         else
             rangeIndicator.SetActive(false);
 
-        /*if (Input.GetMouseButtonDown(0))                                                                //Detect player click
-        {
-            print("Click "+ Input.GetKey(KeyCode.LeftControl) + Input.GetKey(KeyCode.LeftShift));
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out hit))                                                         //If selection found
-            {
-                //print("You selected " + hit.transform.name+" : "+this.transform.name);               //Ensure you picked right object
-                if (hit.transform.gameObject.GetComponent<Ship_Class>() != null && hit.transform.name == this.transform.name)
-                {                                                                                      //If current player owns ship and is only left clicking
-                    if (true/*faction == factionCurrent && !Input.GetKey(KeyCode.LeftControl) && !Input.GetKey(KeyCode.LeftShift))
-                    {
-                        hit.transform.gameObject.GetComponent<Ship_Class>().selected = !hit.transform.gameObject.GetComponent<Ship_Class>().selected;
-                    }                                                                                  //If current player owns ship and is only shift left clicking
-                    if (true/*faction == factionCurrent && !Input.GetKey(KeyCode.LeftControl) && Input.GetKey(KeyCode.LeftShift))
-                    {
-                        foreach (Ship_Class i in shipsInStack)
-                        {
-                            if (i != null && true/*faction == factionCurrent)
-                            {
-                                print("Cycle through and select "+i.name);
-
-                                if (hit.transform.gameObject.GetComponent<Ship_Class>().selected == true)
-                                    i.selected = false;
-                                else
-                                    i.selected = true;
-                            }
-
-
-                        }
-                    }                                                                               //If current player owns ship and is only control left clicking
-                    if (true/*faction == factionCurrent && Input.GetKey(KeyCode.LeftControl) && !Input.GetKey(KeyCode.LeftShift))
-                    {
-                        selectFromStack++;
-                        if (hit.transform.gameObject.GetComponent<Ship_Class>().shipsInStack[selectFromStack] == null)
-                        {
-                            selectFromStack = 0;
-                        }
-
-                        foreach (Ship_Class i in shipsInStack)
-                        {
-                            if (true/*faction == factionCurrent && i != null)
-                            {
-                                print("Ship from stack " + i.name);
-
-                                //print("");
-
-                                if (hit.transform.gameObject.GetComponent<Ship_Class>().shipsInStack[selectFromStack] == i)
-                                {
-                                    print("Selected " + i.name);
-                                    i.selected = true;
-                                }
-                                else
-                                    i.selected = false;
-                            }
-                        }
-                    }                                                                            //If current player owns ship and is alt left clicking
-                    if (true/*faction == factionCurrent && Input.GetKey(KeyCode.LeftAlt))
-                    {
-                        foreach (Ship_Class i in shipsInStack)
-                        {
-                            if (i != null)
-                            { 
-                                i.selected = false;
-                            }
-                        }
-                    }
-
-                }
-            }
-        }*/
+        
 
             if (Input.GetMouseButtonDown(1) && selected)                                                                        //Detect player click
             {
@@ -171,6 +101,11 @@ abstract public class Ship_Class : MonoBehaviour
     public void newTurn()
     {
         moves_left = ship_speed;
+    }
+
+    public string getShipType()
+    {
+        return ship_type;
     }
 
     public void MoveShipTo(int x, int y)                                            //Move ship to relative coords
