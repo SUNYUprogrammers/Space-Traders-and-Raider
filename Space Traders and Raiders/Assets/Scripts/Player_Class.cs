@@ -16,7 +16,7 @@ public class Player_Class : MonoBehaviour
     public Ship_Class[] playerShips = new Ship_Class[5];
 
     //Determines what ships the player owns
-    public void getPlayerShips(string faction)
+    public Ship_Class[] getPlayerShips(string faction)
     {
         Ship_Class[] temp;
         temp = GameObject.FindObjectsOfType<Ship_Class>();
@@ -32,6 +32,7 @@ public class Player_Class : MonoBehaviour
                 j++;
             }
         }
+        return playerShips;
     }
 
     //Sets player's name
