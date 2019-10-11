@@ -10,7 +10,7 @@ public class StarSystem
     private Vector2Int position = Vector2Int.zero;
 
     //Stores the type (color)
-    private SystemType type;
+    public MapGenerator.SystemType type;
 
     // Start is called before the first frame update
     public StarSystem()

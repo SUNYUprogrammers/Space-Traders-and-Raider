@@ -6,10 +6,18 @@ public class GameManager : MonoBehaviour
 {
     public bool stackerRunning;
 
+    public Player_Class[] players;
+    public Player_Class currentPlayer;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        players[0] = new Player_Class();
+        players[0].playerFaction = "Player1";
+        players[1] = new Player_Class();
+        players[1].playerFaction = "Player2";
+
+        currentPlayer = players[0];
     }
 
     // Update is called once per frame
@@ -118,5 +126,10 @@ public class GameManager : MonoBehaviour
 
         stackerRunning = false;
     }
+    public void playerTurn()
+    {
+        
+    }
 
 }
+

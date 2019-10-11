@@ -11,8 +11,8 @@ public class Player_Class : MonoBehaviour
     protected int rareMineral = 0;
     protected int veryRareMineral = 0;
     protected StarSystem homeSystem;
-    protected int Wealth, Power, Achievement;
-    string playerFaction;
+    protected int Wealth = 0, Power = 0, Achievement = 0;
+    public string playerFaction;
     public Ship_Class[] playerShips = new Ship_Class[5];
 
     //Determines what ships the player owns
