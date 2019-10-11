@@ -108,6 +108,10 @@ public class Player_Class : MonoBehaviour
     {
         return Achievement;
     }
+    public int getVictoryPoints()
+    {
+        return (Achievement + Power + Wealth);
+    }
 
     public void Start()
     {
