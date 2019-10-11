@@ -238,6 +238,8 @@ MonoBehaviour:
   greenSystem: {fileID: 21300000, guid: c9987281b0a4cb8408868313a6dd178b, type: 3}
   blueSystem: {fileID: 21300000, guid: 32fb189f50724c949a54fa85a6810ea6, type: 3}
   redSystem: {fileID: 21300000, guid: 2374db6853864644394c0dc7ed75274a, type: 3}
+  tilePrefab: {fileID: 4200237318045957497, guid: 1880c4470982fbd45b72e056698af56f,
+    type: 3}
 --- !u!4 &1228812022
 Transform:
   m_ObjectHideFlags: 0
