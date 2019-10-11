@@ -5,6 +5,7 @@ sceneSetups:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - path: Assets/Scenes/GameBoard.unity
 =======
 - path: Assets/Scenes/Combat_Test.unity
@@ -15,6 +16,9 @@ sceneSetups:
 =======
 - path: Assets/Scenes/Map_Test.unity
 >>>>>>> Map
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   isLoaded: 1
   isActive: 1

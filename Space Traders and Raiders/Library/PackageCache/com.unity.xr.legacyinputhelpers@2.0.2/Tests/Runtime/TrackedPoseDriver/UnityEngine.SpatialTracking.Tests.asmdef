@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
 >>>>>>> Stashed changes
@@ -14,6 +15,31 @@
     "excludePlatforms": []
 <<<<<<< Updated upstream
 =======
+=======
+{
+    "name": "UnityEngine.SpatialTracking.Tests",
+    "references": [
+        "UnityEngine.SpatialTracking"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+>>>>>>> Map
+>>>>>>> Stashed changes
+=======
+<<<<<<< HEAD
+{
+    "name": "UnityEngine.SpatialTracking.Tests",
+    "references": [
+        "UnityEngine.SpatialTracking"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
 =======
 {
     "name": "UnityEngine.SpatialTracking.Tests",

@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
 >>>>>>> Stashed changes
@@ -8,6 +9,19 @@ Implementation of the Unity Ads API.
 
 <<<<<<< Updated upstream
 =======
+=======
+# Unity Ads
+
+Implementation of the Unity Ads API.
+
+>>>>>>> Map
+>>>>>>> Stashed changes
+=======
+<<<<<<< HEAD
+# Unity Ads
+
+Implementation of the Unity Ads API.
+
 =======
 # Unity Ads
 
