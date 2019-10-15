@@ -7,7 +7,7 @@ public class Cruiser_Class : Ship_Class
     private new void Start()
     {
         base.Start();
-
+        power = 3;
         ship_type = "Cruiser";
         size = 15;
         pos = this.gameObject.transform.position;

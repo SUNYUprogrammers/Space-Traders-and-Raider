@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public bool stackerRunning;
 
+    public int turnsSoFar = 0;
     public Player_Class[] players;
     public Player_Class currentPlayer;
 
@@ -135,8 +136,27 @@ public class GameManager : MonoBehaviour
     }
     public void endTurn()
     {
-        players[0].currentTurn = !players[0].currentTurn;
-        players[1].currentTurn = !players[1].currentTurn;
+        bool movesLeft = false;
+        foreach (Ship_Class temp in currentPlayer.playerShips)
+        {
+            if (temp.moves_left >= 0)
+            {
+                movesLeft = true;
+            }
+        }
+
+        if (movesLeft == false)
+        {
+            players[0].currentTurn = !players[0].currentTurn;
+            players[1].currentTurn = !players[1].currentTurn;
+            foreach (Player_Class temp in players)
+            {
+                temp.winCon();
+            }
+            turnsSoFar++;
+        }
+        else { GameObject.Find("confirm").GetComponent<Canvas>().enabled=true; }
+        
     }
 
 }

@@ -108,9 +108,17 @@ public class Player_Class : MonoBehaviour
     {
         return Achievement;
     }
-    public int getVictoryPoints()
+    public void calcVictoryPoints()
     {
-        return (Achievement + Power + Wealth);
+        Wealth = commonMineral / 10;
+        Wealth += (rareMineral/10)*2;
+        Wealth += (veryRareMineral / 10) * 3;
+        Power = 0;
+        foreach(Ship_Class temp in playerShips)
+        {
+            Power += temp.power;
+        }
+        Achievement = 1;
     }
 
     public void Start()
@@ -120,5 +128,11 @@ public class Player_Class : MonoBehaviour
     }
 
 
-
+    public void winCon()
+    { 
+    if ((Wealth >= 50) && (Power >= 50) && (Achievement >= 50))
+           {
+            print(playerFaction + " Wins");
+           }
+    }
 }
