@@ -1157,6 +1157,7 @@ MonoBehaviour:
   ship_type: 
   selected: 0
   faction: Ron
+  power: 0
   rangeIndicator: {fileID: 1944588782}
   moves_left: 0
   pos: {x: 0, y: 0, z: 0}
@@ -2727,6 +2728,7 @@ MonoBehaviour:
   ship_type: 
   selected: 0
   faction: Blue
+  power: 0
   rangeIndicator: {fileID: 626746147}
   moves_left: 0
   pos: {x: 0, y: 0, z: 0}
@@ -3645,12 +3647,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32a94560a34b1a3418364d027ec9b448, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerFaction: 
   playerShips:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  currentTurn: 0
 --- !u!4 &1143491167
 Transform:
   m_ObjectHideFlags: 0
@@ -4990,6 +4994,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stackerRunning: 0
+  turnsSoFar: 0
+  players: []
+  currentPlayer: {fileID: 0}
 --- !u!4 &1637944126
 Transform:
   m_ObjectHideFlags: 0
