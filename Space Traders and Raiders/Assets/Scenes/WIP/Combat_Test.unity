@@ -1156,7 +1156,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ship_type: 
   selected: 0
-  faction: Player1
+  faction: Ron
   power: 0
   rangeIndicator: {fileID: 1944588782}
   moves_left: 0
@@ -4995,9 +4995,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stackerRunning: 0
   turnsSoFar: 0
-  players:
-  - {fileID: 1143491166}
-  - {fileID: 0}
+  players: []
   currentPlayer: {fileID: 0}
 --- !u!4 &1637944126
 Transform:

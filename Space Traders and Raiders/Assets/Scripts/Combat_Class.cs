@@ -2,29 +2,61 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-/*Ship in stack[0] is ship that initated combat
- 0 == current player, 1 == ememy player
-     */
+//combat Version 1 , Notable things not included: No ship compents or Ship Targetting added
+//Next possible version can include ship targeting 
 public class Combat_Class : MonoBehaviour
 {
     public void Combat(Ship_Class[] shipStack)
     {
-        int placeinstack = -1;
-        foreach(Ship_Class i in shipStack)//ignore
+        print("Combat");
+        float hitchance = Random.Range(0,100);
+        float blockchance = Random.Range(0,100);
+        int z = 0;
+        int y = 0;
+        Ship_Class[] good = new Ship_Class[shipStack.Length];
+        Ship_Class[] bad = new Ship_Class[shipStack.Length];
+
+       
+        
+        foreach(Ship_Class i in shipStack)
         {
-            if (i != null)
+           if(i != null)
+           {
+               if(i.faction == "Ron")//get current faction
+                {
+                    good[z] = i;
+                     z++;
+                }
+                else
+                {
+                    bad[y] = i;
+                    y++;
+                }
+           }
+        }
+        z = 0;
+        foreach(Ship_Class b in good)
+        {
+            if(b != null)
             {
-                print("Ship " + i.name);//Name of ship overlapped
-                i.shipsInStack = shipStack;
-                placeinstack++;
-            }
-            print(placeinstack);
-            if(placeinstack == 1)
-            {
-                //GameObject.Destroy(shipStack[placeinstack].gameObject);
-                print("object destroyed");
+                if(hitchance < 50)
+                {
+                    if(blockchance < 50)
+                    {
+                        print(b.name + " has destroyed " + bad[z].name);
+                        Destroy(bad[z].gameObject);
+                    }
+                    else
+                    {
+                        print(bad[z] + " has survived the battle");
+                    }
+                }
+                else
+                {
+                    print(bad[z] + " has survived the battle ");
+                }
+                z++;
             }
         }
-       // print("combat");
     }
 }
