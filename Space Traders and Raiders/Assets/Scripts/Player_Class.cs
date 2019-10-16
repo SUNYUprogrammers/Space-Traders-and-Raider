@@ -114,9 +114,11 @@ public class Player_Class : MonoBehaviour
         Wealth += (rareMineral/10)*2;
         Wealth += (veryRareMineral / 10) * 3;
         Power = 0;
-        foreach(Ship_Class temp in playerShips)
+        foreach (Ship_Class temp in playerShips)
         {
-            Power += temp.power;
+            if(temp != null) {
+                Power += temp.power;
+            }
         }
         Achievement = 1;
 
@@ -131,10 +133,10 @@ public class Player_Class : MonoBehaviour
 
 
     public void winCon()
-    { 
-    if ((Wealth >= 50) && (Power >= 50) && (Achievement >= 50))
-           {
+    {
+        if ((Wealth >= 50) && (Power >= 50) && (Achievement >= 50))
+        {
             print(playerFaction + " Wins");
-           }
+        }
     }
 }

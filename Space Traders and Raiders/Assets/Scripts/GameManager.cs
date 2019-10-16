@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public Player_Class currentPlayer;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         players[0] = this.gameObject.AddComponent<Player_Class>();
         players[0].playerFaction = "Player1";
