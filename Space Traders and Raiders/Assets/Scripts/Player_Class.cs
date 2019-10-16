@@ -48,7 +48,7 @@ public class Player_Class : MonoBehaviour
     {
         if (sys != homeSystem)
         {
-            switch (sys.type)
+            switch (sys.getType())
             {
                 case MapGenerator.SystemType.GREEN:
                     commonMineral += 30;
@@ -108,7 +108,7 @@ public class Player_Class : MonoBehaviour
     {
         return Achievement;
     }
-    public void calcVictoryPoints()
+    public int calcVictoryPoints()
     {
         Wealth = commonMineral / 10;
         Wealth += (rareMineral/10)*2;
@@ -119,6 +119,8 @@ public class Player_Class : MonoBehaviour
             Power += temp.power;
         }
         Achievement = 1;
+
+        return (Wealth + Power + Achievement);
     }
 
     public void Start()
