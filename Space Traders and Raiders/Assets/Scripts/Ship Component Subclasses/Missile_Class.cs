@@ -5,7 +5,7 @@ using UnityEngine;
 public class Missile_Class : Component_Class
 {
     // Start is called before the first frame update
-    void Start()
+    public override void Awake()
     {
         type = "Missile";
     }

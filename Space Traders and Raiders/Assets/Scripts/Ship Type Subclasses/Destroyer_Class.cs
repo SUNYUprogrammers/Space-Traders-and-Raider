@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Destroyer_Class : Ship_Class
 {
-    private new void Start()
+    private new void Awake()
     {
-        base.Start();
         power = 2;
         ship_type = "Destroyer";
         size = 10;
         pos = this.gameObject.transform.position;
+
+        base.Awake();
     }
 
     // Update is called once per frame

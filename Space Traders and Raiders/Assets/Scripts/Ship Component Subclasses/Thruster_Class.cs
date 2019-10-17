@@ -6,7 +6,7 @@ public class Thruster_Class : Component_Class
 { 
 
     // Start is called before the first frame update
-    public void Start()
+    public override void Awake()
     {
         type = "Thruster";       
     }

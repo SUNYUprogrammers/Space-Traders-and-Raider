@@ -5,7 +5,7 @@ using UnityEngine;
 public class Repair_Class : Component_Class
 {
     // Start is called before the first frame update
-    void Start()
+    public override void Awake()
     {
         type = "Repair";
     }

@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Frigate_Class : Ship_Class
 {
-    private new void Start()
+    private new void Awake()
     {
-        base.Start();
         power = 1;
 		ship_type = "Frigate";
         size = 5;
         pos = this.gameObject.transform.position;
+
+        base.Awake();
     }
 
     // Update is called once per frame

@@ -141,14 +141,23 @@ public class Player_Class : MonoBehaviour
             homeSystem.owner = this;
             print(homeSystem.getPosition());
             GameObject temp = Instantiate((GameObject)Resources.Load("HomeSystem"), homeSystem.getTransform());
+            GameObject temp2 = Instantiate((GameObject)Resources.Load("Starter Ship"), homeSystem.getTransform());
+            this.playerShips[0] = temp2.GetComponent<Ship_Class>();
             switch (this.playerFaction)
             {
                 case "Player1":
                     temp.GetComponent<SpriteRenderer>().color = new Color(1,0,1,1);
+
+                    temp2.GetComponent<Ship_Class>().ship.color = new Color(1, 0, 1, 1);
+                    temp2.GetComponent<Ship_Class>().faction = "Player1";
+                    temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Thruster_Class>(),0);
                     break;
 
                 case "Player2":
                     temp.GetComponent<SpriteRenderer>().color = new Color(0, 1, 1, 1);
+                    temp2.GetComponent<Ship_Class>().ship.color = new Color(0, 1, 1, 1);
+                    temp2.GetComponent<Ship_Class>().faction = "Player2";
+                    temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Thruster_Class>(), 0);
                     break;
             }
         }

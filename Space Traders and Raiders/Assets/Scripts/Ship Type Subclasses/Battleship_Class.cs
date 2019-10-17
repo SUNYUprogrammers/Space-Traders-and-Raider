@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Battleship_Class : Ship_Class
 {
-    private new void Start()
+    private new void Awake()
     {
-        base.Start();
         power = 4;
         ship_type = "Battleship";
         size = 20;
         pos = this.gameObject.transform.position;
+
+        base.Awake();
     }
 
     // Update is called once per frame

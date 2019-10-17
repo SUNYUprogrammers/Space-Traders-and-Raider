@@ -16,6 +16,7 @@ abstract public class Ship_Class : MonoBehaviour
 	protected int size;                         //How many slots the ship has
     [SerializeField]
     protected Component_Class[] parts_list;     //What component is in each slot
+    [SerializeField]
     protected int ship_speed;                   //How fast can the ship move, calculated from stored thrusters
     [SerializeField]
     protected GameObject rangeIndicator;        //How far the ship can move, represented visually
@@ -39,9 +40,12 @@ abstract public class Ship_Class : MonoBehaviour
     public Ship_Class[] shipsInStack;
     public int selectFromStack = 0;
 
-    public void Start()
+    public SpriteRenderer ship;
+    public void Awake()
     {
-        ship_speed = 4;                         /*TEMPORARY*/
+        //print("Ship_Class Start function");
+
+        //ship_speed = 4;                         /*TEMPORARY*/
         x_max = 3;
         x_min = -4;
 
@@ -51,14 +55,20 @@ abstract public class Ship_Class : MonoBehaviour
         y_min = -3;
         parts_list = new Component_Class[size];     //Set component list size to the amount of slots it has
 
+        print(parts_list.Length + ", " + size);
+        ship_speed = 0;
         foreach(Component_Class i in parts_list)    //Calculate ship speed by adding all thruster component values together
-          {
-            if(i.getType() == "Thruster")
-                ship_speed =+ i.getTier();
-            if (i.getType() == "Beam")
-                beamDamage =+ i.getTier();
-            if (i.getType() == "Missile")
-                missileDamage =+ i.getTier();
+        {
+            if (i != null)
+            {
+                print(i.getType());
+                if (i.getType() == "Thruster")
+                    ship_speed = +1;
+                if (i.getType() == "Beam")
+                    beamDamage = +1;
+                if (i.getType() == "Missile")
+                    missileDamage = +1;
+            }
         }
         moves_left = ship_speed;
 
@@ -102,8 +112,9 @@ abstract public class Ship_Class : MonoBehaviour
     }
 
     public void newTurn()
-    {
+    {        
         moves_left = ship_speed;
+        print("New Turn "+moves_left+" "+ship_speed);
     }
 
     public string getShipType()
@@ -307,16 +318,29 @@ abstract public class Ship_Class : MonoBehaviour
 
     public void installComponent(Component_Class i, int j)
     {
+        i.setFaction(this.faction);
+
+        if (i.getType() == "")
+        {
+            i.Awake();
+        }
+
         if (true)                                                   //If at drydock, and part exists, etc.
         {
+            //print(i.getType()+" "+j);
             parts_list[j] = i;
+            print("Component installed " + parts_list[j].getType());
             if (i.getType() == "Thruster")
             {
-                parts_list = new Component_Class[size];             //Set component list size to the amount of slots it has
+                //parts_list = new Component_Class[size];             //Set component list size to the amount of slots it has
+                ship_speed = 0;
                 foreach (Component_Class k in parts_list)           //Recalculate ship speed by adding all thruster component tiers together
                 {
-                    if (k.getType() == "Thruster")
-                        ship_speed = +k.getTier();
+                    if (k != null)
+                    {
+                        if (k.getType() == "Thruster")
+                            ship_speed = +1;
+                    }
                 }
             }
         }
