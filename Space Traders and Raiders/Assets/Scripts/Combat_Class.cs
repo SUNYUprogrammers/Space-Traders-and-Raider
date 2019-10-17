@@ -6,28 +6,37 @@ using UnityEngine;
 //Next possible version can include ship targeting 
 public class Combat_Class : MonoBehaviour
 {
+    GameManager gm;
+    [SerializeField]
+    Ship_Class[] good;
+    [SerializeField]
+    Ship_Class[] bad;
+
+    public void Start()
+    {
+        gm = GameObject.FindObjectOfType<GameManager>();
+    }
+
     public void Combat(Ship_Class[] shipStack)
     {
         print("Combat");
         float hitchance = Random.Range(0,100);
         float blockchance = Random.Range(0,100);
+
+        good = new Ship_Class[shipStack.Length];
+        bad = new Ship_Class[shipStack.Length];
+
         int z = 0;
         int y = 0;
-        Ship_Class[] good = new Ship_Class[shipStack.Length];
-        Ship_Class[] bad = new Ship_Class[shipStack.Length];
-
-       
-        
-        foreach(Ship_Class i in shipStack)
+        foreach (Ship_Class i in shipStack)
         {
            if(i != null)
            {
-               if((i.faction == "Player1") || (i.faction == "Player2"))//get current faction (edited to work with ship types player class uses)
+                if(i.faction == gm.currentPlayer.playerFaction)
                 {
                     good[z] = i;
-                     z++;
-                }
-                else
+                    z++;
+                } else
                 {
                     bad[y] = i;
                     y++;

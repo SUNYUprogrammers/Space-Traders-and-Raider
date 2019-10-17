@@ -127,9 +127,8 @@ public class GameManager : MonoBehaviour
         }
         if (true)
         {
-            GameObject CombatObject = GameObject.Find("Combat");
-            Combat_Class combat = CombatObject.GetComponent<Combat_Class>();
-            combat.Combat(shipStack);
+            Combat_Class name = GameObject.FindObjectOfType<Combat_Class>();
+            name.Combat(shipStack);
         }
 
         stackerRunning = false;
