@@ -46,8 +46,8 @@ public class MapGenerator : MonoBehaviour
                 {
                     for(int x = 0; x < 4; x++)
                     {
-                        GameObject newTile = Instantiate(tilePrefab, new Vector3((i - size.x / 2) * (4f/size.x) + ((float)x/size.x), (j - size.y / 2) * (4f/size.y) + ((float)y /size.y), 0), Quaternion.identity);
-                        newTile.transform.localScale = newTile.transform.localScale * (1f/((size.x+size.y)/2f));
+                        GameObject newTile = Instantiate(tilePrefab, new Vector3((i - size.x/2) * 4f + ((float)x/size.x*2f), (j - size.y / 2) * 4f + ((float)y /size.y*2f) + 1, 0), Quaternion.identity);
+                        //newTile.transform.localScale = newTile.transform.localScale * (1f/((size.x+size.y)/2f));
                         SpriteRenderer renderer = newTile.GetComponent("SpriteRenderer") as SpriteRenderer;
                         bool hasSystem = false;
                         SystemType theSystem = SystemType.EMPTY;

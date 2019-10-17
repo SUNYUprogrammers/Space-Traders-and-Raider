@@ -53,6 +53,10 @@ public class HUD : MonoBehaviour
 
     public static bool IsPointerOverUIElement(GameObject obj)
     {
+        if(raycastResults == null)
+        {
+            Debug.Log("rayCastResults is null.... Don't know why. Too little time at the moment. Fix me. Please. I'm begging you.");
+        }
         for (int index = 0; index < raycastResults.Count; index++)
         {
             RaycastResult curRaycastResult = raycastResults[index];

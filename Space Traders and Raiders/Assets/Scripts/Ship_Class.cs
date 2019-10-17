@@ -41,13 +41,13 @@ abstract public class Ship_Class : MonoBehaviour
     public void Start()
     {
         ship_speed = 4;                         /*TEMPORARY*/
-        x_max = 6;
-        x_min = -1;
+        x_max = 3;
+        x_min = -4;
 
         hostile.enabled = false;
 
-        y_max = 7;
-        y_min = 0;
+        y_max = 4;
+        y_min = -3;
         parts_list = new Component_Class[size];     //Set component list size to the amount of slots it has
 
         foreach(Component_Class i in parts_list)    //Calculate ship speed by adding all thruster component values together

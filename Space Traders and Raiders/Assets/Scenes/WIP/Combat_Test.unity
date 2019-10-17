@@ -1156,7 +1156,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ship_type: 
   selected: 0
-  faction: Ron
+  faction: Player1
   power: 0
   rangeIndicator: {fileID: 1944588782}
   moves_left: 0
@@ -2727,7 +2727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ship_type: 
   selected: 0
-  faction: Blue
+  faction: Player2
   power: 0
   rangeIndicator: {fileID: 626746147}
   moves_left: 0

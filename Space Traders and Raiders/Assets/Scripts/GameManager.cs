@@ -136,26 +136,40 @@ public class GameManager : MonoBehaviour
     }
     public void endTurn()
     {
+        print(currentPlayer.playerFaction);
+
         bool movesLeft = false;
         foreach (Ship_Class temp in currentPlayer.playerShips)
         {
-            if (temp.moves_left >= 0)
+            if (temp != null)
             {
-                movesLeft = true;
+                if (temp.moves_left > 0)
+                {
+                    movesLeft = true;
+                }
+                temp.newTurn();
             }
         }
-
-        if (movesLeft == false)
+        print(movesLeft);
+        if (movesLeft == false || GameObject.Find("confirm").GetComponent<Canvas>().enabled == true)
         {
             players[0].currentTurn = !players[0].currentTurn;
             players[1].currentTurn = !players[1].currentTurn;
             foreach (Player_Class temp in players)
             {
                 temp.winCon();
+                if (temp.currentTurn)
+                    currentPlayer = temp;
             }
             turnsSoFar++;
+
+            GameObject.Find("Next Turn").GetComponent<Canvas>().enabled = true;
+            GameObject.Find("confirm").GetComponent<Canvas>().enabled = false;
         }
-        else { GameObject.Find("confirm").GetComponent<Canvas>().enabled=true; }
+        else
+        {
+            GameObject.Find("confirm").GetComponent<Canvas>().enabled=true;
+        }
         
     }
 
