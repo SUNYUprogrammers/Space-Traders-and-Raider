@@ -22,7 +22,7 @@ public class Combat_Class : MonoBehaviour
         {
            if(i != null)
            {
-               if(i.faction == "Ron")//get current faction
+               if((i.faction == "Player1") || (i.faction == "Player2"))//get current faction (edited to work with ship types player class uses)
                 {
                     good[z] = i;
                      z++;
