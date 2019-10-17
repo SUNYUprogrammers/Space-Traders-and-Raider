@@ -6,9 +6,13 @@ public class GameManager : MonoBehaviour
 {
     public bool stackerRunning;
 
+    [SerializeField] HUD hud;
+
     public int turnsSoFar = 0;
     public Player_Class[] players;
     public Player_Class currentPlayer;
+
+    public StarSystem[] systems = new StarSystem[0];
 
     // Start is called before the first frame update
     void Awake()
@@ -158,7 +162,11 @@ public class GameManager : MonoBehaviour
             {
                 temp.winCon();
                 if (temp.currentTurn)
+                {
                     currentPlayer = temp;
+                    this.scanSystems();
+                    hud.updateHUD();
+                }
             }
             turnsSoFar++;
 
@@ -172,5 +180,31 @@ public class GameManager : MonoBehaviour
         
     }
 
+    private void scanSystems()
+    {
+        foreach(StarSystem sys in systems)
+        {
+            sys.turnStart();
+        }
+    }
+
+    public void registerSystem(StarSystem theSys)
+    {
+        StarSystem[] temp = new StarSystem[systems.Length + 1];
+        systems.CopyTo(temp, 0);
+        systems = temp;
+        systems[systems.Length - 1] = theSys;
+    }
+
+    public StarSystem getVacantSystem()
+    {
+        int id = Random.Range(0, systems.Length);
+        while (systems[id].owner != null)
+        {
+            id = Random.Range(0, systems.Length);
+        }
+
+        return systems[id];
+    }
 }
 

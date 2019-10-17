@@ -49,13 +49,12 @@ public class MapGenerator : MonoBehaviour
                         GameObject newTile = Instantiate(tilePrefab, new Vector3((i - size.x/2) * 4f + ((float)x/size.x*2f), (j - size.y / 2) * 4f + ((float)y /size.y*2f) + 1, 0), Quaternion.identity);
                         //newTile.transform.localScale = newTile.transform.localScale * (1f/((size.x+size.y)/2f));
                         SpriteRenderer renderer = newTile.GetComponent("SpriteRenderer") as SpriteRenderer;
-                        bool hasSystem = false;
                         SystemType theSystem = SystemType.EMPTY;
                         foreach (StarSystem sys in sectors[i, j].getSystems()) {
                             if(sys.getPosition().x == x && sys.getPosition().y == y)
                             {
-                                hasSystem = true;
                                 theSystem = sys.getType();
+                                sys.tile = newTile;
                             }
                         }
                         switch (theSystem)

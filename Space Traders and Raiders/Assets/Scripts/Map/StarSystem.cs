@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class StarSystem
 {
-    //Probablities for different system colors (type)
-    
+    public Player_Class owner;
+    GameManager gm;
+
+    public GameObject tile;
 
     private Vector2Int position = Vector2Int.zero;
 
@@ -15,6 +17,9 @@ public class StarSystem
     // Start is called before the first frame update
     public StarSystem()
     {
+        gm = GameObject.FindObjectOfType<GameManager>();
+        gm.registerSystem(this);
+
         //determines the system type based on probabilites.
         int prob = Random.Range(0, 100);
         if(prob <= (int)MapGenerator.SystemType.YELLOW)
@@ -30,6 +35,11 @@ public class StarSystem
         {
             this.type = MapGenerator.SystemType.RED;
         }
+    }
+
+    public Transform getTransform()
+    {
+        return tile.transform;
     }
 
     public bool setPosition(int x, int y)
@@ -64,5 +74,13 @@ public class StarSystem
     public MapGenerator.SystemType getType()
     {
         return this.type;
+    }
+
+    public void turnStart()
+    {
+        if(gm.currentPlayer.Equals(this.owner))
+        {
+            this.owner.setResources(this);
+        }
     }
 }
