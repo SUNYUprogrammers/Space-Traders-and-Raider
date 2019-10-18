@@ -356,7 +356,7 @@ abstract public class Ship_Class : MonoBehaviour
     public void OnTriggerEnter(Collider other)
     {
         //print(other.name);
-        if (other.GetComponent<Ship_Class>() != null && this.gameObject.GetComponent<Ship_Class>().selected)
+        if (other.GetComponent<Ship_Class>() != null && this.faction == GameObject.FindObjectOfType<GameManager>().currentPlayer.playerFaction)
         {
             print("Ships overlapping");
             GameObject.FindObjectOfType<GameManager>().ShipStacker(pos);
