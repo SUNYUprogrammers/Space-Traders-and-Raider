@@ -4,8 +4,8 @@ using UnityEngine;
 
 abstract public class Ship_Class : MonoBehaviour
 {
-	[SerializeField]
-	protected string ship_type;                 //What class of ship it is
+    [SerializeField]
+    protected string ship_type;                 //What class of ship it is
     [SerializeField]
     public bool selected;
     [SerializeField]
@@ -13,7 +13,7 @@ abstract public class Ship_Class : MonoBehaviour
 
     public int power;
 
-	protected int size;                         //How many slots the ship has
+    protected int size;                         //How many slots the ship has
     [SerializeField]
     protected Component_Class[] parts_list;     //What component is in each slot
     [SerializeField]
@@ -22,9 +22,9 @@ abstract public class Ship_Class : MonoBehaviour
     protected GameObject rangeIndicator;        //How far the ship can move, represented visually
     [SerializeField]
     public int moves_left;                   //How many more squares the ship can move
-	protected int[] storage;                    //What resources is the ship carrying, might take up a slot so may become component?
+    protected int[] storage;                    //What resources is the ship carrying, might take up a slot so may become component?
     [SerializeField]
-	public Vector3 pos;                      //Where is the ship on the grid
+    public Vector3 pos;                      //Where is the ship on the grid
     [SerializeField]
     public SpriteRenderer hostile;              //Marker for other players to identify you as hostile
 
@@ -57,7 +57,7 @@ abstract public class Ship_Class : MonoBehaviour
 
         print(parts_list.Length + ", " + size);
         ship_speed = 0;
-        foreach(Component_Class i in parts_list)    //Calculate ship speed by adding all thruster component values together
+        foreach (Component_Class i in parts_list)    //Calculate ship speed by adding all thruster component values together
         {
             if (i != null)
             {
@@ -79,42 +79,42 @@ abstract public class Ship_Class : MonoBehaviour
         if (selected)
         {
             rangeIndicator.SetActive(true);
-            rangeIndicator.transform.localScale = new Vector3(3f* (float) moves_left, 3f * (float)moves_left, 1);
+            rangeIndicator.transform.localScale = new Vector3(3f * (float)moves_left, 3f * (float)moves_left, 1);
             hostile.enabled = false;
         }
         else
             rangeIndicator.SetActive(false);
 
-        
 
-            if (Input.GetMouseButtonDown(1) && selected)                                                                        //Detect player click
-            {
-                //print("Click Move");
-                Vector3 pos_temp = pos;
-                Vector3 temp = Input.mousePosition;
-                temp.z = 10f;
-                temp = Camera.main.ScreenToWorldPoint(temp);                                                                    //Find coord to move to
 
-                print("Move ship to: " + temp.x + " " + temp.y);
-                pos_temp.x = temp.x - pos_temp.x;
-                pos_temp.y = temp.y - pos_temp.y;
-                //print("Move ship in direction: " + (int)pos_temp.x + " " + (int)pos_temp.y);
-                pos_temp.x = Mathf.RoundToInt(pos_temp.x);
-                pos_temp.y = Mathf.RoundToInt(pos_temp.y);
-                MoveShipTo((int)pos_temp.x, (int)pos_temp.y);
-            }
+        if (Input.GetMouseButtonDown(1) && selected)                                                                        //Detect player click
+        {
+            //print("Click Move");
+            Vector3 pos_temp = pos;
+            Vector3 temp = Input.mousePosition;
+            temp.z = 10f;
+            temp = Camera.main.ScreenToWorldPoint(temp);                                                                    //Find coord to move to
 
-            if (selected)
-            {
-                MoveShipDirection();
-            }
-        
+            print("Move ship to: " + temp.x + " " + temp.y);
+            pos_temp.x = temp.x - pos_temp.x;
+            pos_temp.y = temp.y - pos_temp.y;
+            //print("Move ship in direction: " + (int)pos_temp.x + " " + (int)pos_temp.y);
+            pos_temp.x = Mathf.RoundToInt(pos_temp.x);
+            pos_temp.y = Mathf.RoundToInt(pos_temp.y);
+            MoveShipTo((int)pos_temp.x, (int)pos_temp.y);
+        }
+
+        if (selected)
+        {
+            MoveShipDirection();
+        }
+
     }
 
     public void newTurn()
-    {        
+    {
         moves_left = ship_speed;
-        print("New Turn "+moves_left+" "+ship_speed);
+        print("New Turn " + moves_left + " " + ship_speed);
     }
 
     public string getShipType()
@@ -169,7 +169,7 @@ abstract public class Ship_Class : MonoBehaviour
                 //print(moves_left);
             }
 
-            if(moves_left < 0)
+            if (moves_left < 0)
             {
                 print("Not enough moves left");
             }
@@ -180,7 +180,7 @@ abstract public class Ship_Class : MonoBehaviour
         if (moves_left >= 0)
         {
             Vector3 temp = pos;
-            if(true)
+            if (true)
             //if ((Mathf.Abs(x) + Mathf.Abs(y) <= ship_speed))                  //Find if position is within move range and determine move type (bool), now void
             {
                 if (x_min > pos.x + x || pos.x + x > x_max)                     //Set to loop on reaching world border, if that's what designers decide
@@ -210,14 +210,14 @@ abstract public class Ship_Class : MonoBehaviour
 
                 temp = new Vector3(pos.x + x, pos.y + y, 0);
             }
-           
+
             /*if((Mathf.Abs(pos.x - x) + Mathf.Abs(pos.y - y) <= ship_speed) && exact)  //Find if position is within move range and determine move type
             {
                  temp = new Vector3(x, y, 0);
             }*/
 
             //print("Temp "+temp);
-            if(temp == pos)
+            if (temp == pos)
             {
                 print("Move Cancelled");
                 moves_left = temp_move;
@@ -232,7 +232,7 @@ abstract public class Ship_Class : MonoBehaviour
             moves_left = temp_move;
         }
 
-        if(moves_left == 0)
+        if (moves_left == 0)
         {
             selected = false;
         }
@@ -245,14 +245,14 @@ abstract public class Ship_Class : MonoBehaviour
         if (Input.GetButtonDown("Move Up"))
         {
             print("Move Ship Up");
-            MoveShipTo(0,1);
+            MoveShipTo(0, 1);
             //moves_left--;
         }
         if (Input.GetButtonDown("Move Left"))
         {
             print("Move Ship Left");
             MoveShipTo(-1, 0);
-           //moves_left--;
+            //moves_left--;
         }
         if (Input.GetButtonDown("Move Right"))
         {
@@ -301,19 +301,19 @@ abstract public class Ship_Class : MonoBehaviour
 
     public void removeItem(int i, int j)                                            //Store resources by location in array, and amount
     {
-        if( (storage[i] != 0) && (storage[i] >= j) )                                //Check if storage is empty and that there are enough resources to pull
+        if ((storage[i] != 0) && (storage[i] >= j))                                //Check if storage is empty and that there are enough resources to pull
             storage[i] = -j;                                                        //Add [j] of item type [i] to storage
     }
 
     public void boardMarines(int i)                                                 //Store resources by location in array, and amount
     {
-        marineComplement =+ i;                                                      //Add [j] of item type [i] to storage
+        marineComplement = +i;                                                      //Add [j] of item type [i] to storage
     }
 
     public void disembarkMarines(int i)                                             //Store resources by location in array, and amount
     {
         if ((marineComplement != 0) && (marineComplement >= i))                     //Check if storage is empty and that there are enough resources to pull
-            marineComplement =- i;                                                  //Add [j] of item type [i] to storage
+            marineComplement = -i;                                                  //Add [j] of item type [i] to storage
     }
 
     public void installComponent(Component_Class i, int j)
@@ -345,7 +345,7 @@ abstract public class Ship_Class : MonoBehaviour
             }
         }
     }
-
+    //test
     public Component_Class removeComponent(int i)
     {
         Component_Class temp = parts_list[i];

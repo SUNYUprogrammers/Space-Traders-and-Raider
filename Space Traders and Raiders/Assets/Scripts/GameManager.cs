@@ -151,6 +151,7 @@ public class GameManager : MonoBehaviour
                     movesLeft = true;
                 }
                 temp.newTurn();
+                temp.select = false;
             }
         }
         print(movesLeft);
