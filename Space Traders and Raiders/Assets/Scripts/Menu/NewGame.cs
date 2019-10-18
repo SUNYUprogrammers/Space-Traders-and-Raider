@@ -16,9 +16,10 @@ public class NewGame : MonoBehaviour
         scenePaths = myLoadedAssetBundle.GetAllScenePaths();
     }
     */
-    void OnMouseDown()
+
+    private void OnMouseDown()
     {
-        print("New game");
+        //print("New game");//This is left in for future debugging
         SceneManager.LoadScene("Oct18");
     }
 }

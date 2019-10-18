@@ -21,10 +21,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 713, y: 494}
-  m_MaxSize: {x: 18008, y: 14044}
+  m_MinSize: {x: 711, y: 494}
+  m_MaxSize: {x: 18006, y: 14044}
   vertical: 0
-  controlID: 139
+  controlID: 10024
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -127,10 +127,10 @@ MonoBehaviour:
     y: 0
     width: 1348
     height: 947
-  m_MinSize: {x: 436, y: 494}
-  m_MaxSize: {x: 14006, y: 14044}
+  m_MinSize: {x: 434, y: 494}
+  m_MaxSize: {x: 14004, y: 14044}
   vertical: 1
-  controlID: 105
+  controlID: 10025
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -152,10 +152,10 @@ MonoBehaviour:
     y: 0
     width: 1348
     height: 508
-  m_MinSize: {x: 406, y: 222}
-  m_MaxSize: {x: 8006, y: 4022}
+  m_MinSize: {x: 402, y: 222}
+  m_MaxSize: {x: 8002, y: 4022}
   vertical: 0
-  controlID: 56
+  controlID: 10026
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -219,9 +219,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -3.0770378, y: 0.739293, z: -0.032491684}
+    m_Target: {x: 59.278736, y: -9.054105, z: -1.955287}
     speed: 2
-    m_Value: {x: -3.0770378, y: 0.739293, z: -0.032491684}
+    m_Value: {x: 59.278736, y: -9.054105, z: -1.955287}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -250,20 +250,20 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.02097996, y: -0.041978408, z: 0.0008816794, w: 0.99889815}
+    m_Target: {x: -0.017996848, y: 0.015903607, z: -0.00028683883, w: -0.99971646}
     speed: 2
-    m_Value: {x: 0.020979954, y: -0.041978396, z: 0.0008816792, w: 0.9988979}
+    m_Value: {x: -0.01799676, y: 0.015903529, z: -0.00028683743, w: -0.9997116}
   m_Size:
-    m_Target: 26.768103
+    m_Target: 15.780506
     speed: 2
-    m_Value: 26.768103
+    m_Value: 15.780506
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
     m_Speed: 1
-    m_SpeedNormalized: 0.5
+    m_SpeedNormalized: 0.49748743
     m_SpeedMin: 0.01
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -327,8 +327,8 @@ MonoBehaviour:
     y: 0
     width: 339
     height: 508
-  m_MinSize: {x: 204, y: 222}
-  m_MaxSize: {x: 4004, y: 4022}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 9}
   m_Panes:
   - {fileID: 9}
@@ -365,7 +365,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 98d3ffff94d5ffff5ad8ffff02d9ffff84d9ffff12dbffff50dbffffeedcfffffadcffffd4ddffff10deffffaedfffffbadfffffd6e0ffff12e1ffffb0e2ffffbce2ffffaee3ffffeae3ffff7ee6ffff8ee6ffff90ebffffbeedffff88f1ffffd2f9ffff6afbffffe435000092370000e4370000
+      m_ExpandedIDs: d0d5ffff7cf9ffff6afbffff6c350000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -381,7 +381,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
+        m_ClientGUIView: {fileID: 8}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -410,10 +410,10 @@ MonoBehaviour:
     y: 508
     width: 1348
     height: 439
-  m_MinSize: {x: 436, y: 272}
-  m_MaxSize: {x: 14006, y: 10022}
+  m_MinSize: {x: 434, y: 272}
+  m_MaxSize: {x: 14004, y: 10022}
   vertical: 0
-  controlID: 106
+  controlID: 9956
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -433,8 +433,8 @@ MonoBehaviour:
     y: 0
     width: 1005
     height: 439
-  m_MinSize: {x: 202, y: 222}
-  m_MaxSize: {x: 4002, y: 4022}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 2}
@@ -504,20 +504,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders: []
+    m_Folders:
+    - Assets/Scripts/Menu
   m_ViewMode: 0
   m_StartGridSize: 64
-  m_LastFolders:
-  - Assets
+  m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Space-Traders-and-Raider\Space Traders and Raiders
+  m_LastProjectPath: F:\Space-Traders-and-Raider\Space Traders and Raiders
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 0a410000
     m_LastClickedID: 16650
-    m_ExpandedIDs: 000000003a2f0000702f00008c2f0000902f0000fc2f000070300000883000009e300000b0310000c8310000ce310000a23200001e3300008a330000cc330000
+    m_ExpandedIDs: ffffffff000000003e2f0000902f0000942f000074300000a2300000d4310000a832000024330000a2330000d6330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -542,24 +542,24 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 385}
-    m_SelectedIDs: a6d0ffff
+    scrollPos: {x: 0, y: 13}
+    m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff000000003a2f0000702f00008c2f0000902f0000fc2f000070300000883000009e300000b0310000c8310000ce310000a23200001e3300008a33000098330000cc330000
+    m_ExpandedIDs: ffffffff000000003e2f0000902f0000942f000074300000a2300000d4310000a832000024330000a2330000d6330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: BackToMenu
-      m_OriginalName: BackToMenu
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 18318
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 12}
     m_SearchString: 
@@ -570,8 +570,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: a6d0ffff
-    m_LastClickedInstanceID: -12122
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -663,5 +663,5 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
-  m_LastInspectedObjectInstanceID: -12122
+  m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0

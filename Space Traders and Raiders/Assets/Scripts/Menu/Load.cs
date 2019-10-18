@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class Load : MonoBehaviour
 {
+    Camera LoadC;
+    Camera Main;
     private void OnMouseDown()
     {
-        print("To be made");
+        //print("Load");//This is left in for future debugging
+        LoadC = GameObject.Find("LoadCamera").GetComponent<Camera>();
+        Main = GameObject.Find("Main Camera").GetComponent<Camera>();
+        Main.enabled = false;
+        LoadC.enabled = true;
     }
 }

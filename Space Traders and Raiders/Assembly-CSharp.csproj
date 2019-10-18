@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\Map\MapGenerator.cs" />
     <Compile Include="Assets\Scripts\Map\Sector.cs" />
     <Compile Include="Assets\Scripts\Map\StarSystem.cs" />
+    <Compile Include="Assets\Scripts\Menu\Back.cs" />
     <Compile Include="Assets\Scripts\Menu\Exit.cs" />
     <Compile Include="Assets\Scripts\Menu\Load.cs" />
     <Compile Include="Assets\Scripts\Menu\NewGame.cs" />

@@ -21,7 +21,7 @@ public class Exit : MonoBehaviour
 
     void OnMouseDown()
     {
-        Debug.Log("Exit");
+        Debug.Log("Exit");//This is left in for future debugging
         Application.Quit();
     }
 }
