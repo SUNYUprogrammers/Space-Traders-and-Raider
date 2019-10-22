@@ -11,6 +11,7 @@ public class Player_Class : MonoBehaviour
     [SerializeField] protected int rareMineral = 60;
     [SerializeField] protected int veryRareMineral = 40;
     protected StarSystem homeSystem;
+    protected StarSystem[] systemsOwned;
     protected int Wealth = 0, Power = 0, Achievement = 0;
     public string playerFaction;
     public Ship_Class[] playerShips = new Ship_Class[5];
@@ -110,6 +111,14 @@ public class Player_Class : MonoBehaviour
     {
         return Achievement;
     }
+
+    public void chargeResources(int c,int r,int v)
+    {
+        commonMineral = commonMineral - c;
+        rareMineral = rareMineral - r;
+        veryRareMineral = veryRareMineral - v;
+    }
+
     public int calcVictoryPoints()
     {
         Wealth = commonMineral / 10;
@@ -151,6 +160,13 @@ public class Player_Class : MonoBehaviour
                     temp2.GetComponent<Ship_Class>().ship.color = new Color(1, 0, 1, 1);
                     temp2.GetComponent<Ship_Class>().faction = "Player1";
                     temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Thruster_Class>(),0);
+
+                    //Spawn in facilities here
+                    homeSystem.buildFacility(homeSystem.gameObject.AddComponent<Mine_Class>(),false);
+                    homeSystem.buildFacility(homeSystem.gameObject.AddComponent<Shipyard_Class>(),false);
+                    homeSystem.buildFacility(homeSystem.gameObject.AddComponent<SDS_Class>(),false);
+                    homeSystem.buildFacility(homeSystem.gameObject.AddComponent<Barracks_Class>(),false);
+                    homeSystem.buildFacility(homeSystem.gameObject.AddComponent<TradeCenter_Class>(),false);
                     break;
 
                 case "Player2":
@@ -158,6 +174,12 @@ public class Player_Class : MonoBehaviour
                     temp2.GetComponent<Ship_Class>().ship.color = new Color(0, 1, 1, 1);
                     temp2.GetComponent<Ship_Class>().faction = "Player2";
                     temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Thruster_Class>(), 0);
+
+                    homeSystem.buildFacility(homeSystem.gameObject.AddComponent<Mine_Class>(),false);
+                    homeSystem.buildFacility(homeSystem.gameObject.AddComponent<Shipyard_Class>(),false);
+                    homeSystem.buildFacility(homeSystem.gameObject.AddComponent<SDS_Class>(),false);
+                    homeSystem.buildFacility(homeSystem.gameObject.AddComponent<Barracks_Class>(),false);
+                    homeSystem.buildFacility(homeSystem.gameObject.AddComponent<TradeCenter_Class>(),false);
                     break;
             }
         }

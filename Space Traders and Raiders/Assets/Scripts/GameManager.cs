@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour
 
         currentPlayer = players[0];
         players[0].currentTurn = true;
+
+        Debug.Break();
     }
 
     // Update is called once per frame
@@ -151,7 +153,7 @@ public class GameManager : MonoBehaviour
                     movesLeft = true;
                 }
                 temp.newTurn();
-                temp.select = false;
+                temp.selected = false;
             }
         }
         print(movesLeft);

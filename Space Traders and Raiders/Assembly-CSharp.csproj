@@ -64,6 +64,12 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Combat_Class.cs" />
     <Compile Include="Assets\Scripts\Component_Class.cs" />
+    <Compile Include="Assets\Scripts\Facilities_Class.cs" />
+    <Compile Include="Assets\Scripts\Facility Subclasses\Barracks_Class.cs" />
+    <Compile Include="Assets\Scripts\Facility Subclasses\Mine_Class.cs" />
+    <Compile Include="Assets\Scripts\Facility Subclasses\SDS_Class.cs" />
+    <Compile Include="Assets\Scripts\Facility Subclasses\Shipyard_Class.cs" />
+    <Compile Include="Assets\Scripts\Facility Subclasses\TradeCenter_Class.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\HUD_Scripts\FrigateHoverMenu.cs" />
     <Compile Include="Assets\Scripts\HUD_Scripts\HUD.cs" />

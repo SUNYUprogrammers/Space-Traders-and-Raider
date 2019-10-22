@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StarSystem
+public class StarSystem : MonoBehaviour 
 {
     public Player_Class owner;
+    protected Facilities_Class[] facilities;
     GameManager gm;
 
     public GameObject tile;
@@ -34,6 +35,11 @@ public class StarSystem
         } else if (prob <= (int)MapGenerator.SystemType.RED)
         {
             this.type = MapGenerator.SystemType.RED;
+        }
+
+        if(type == MapGenerator.SystemType.EMPTY)
+        {
+            Destroy(this);
         }
     }
 
@@ -78,9 +84,26 @@ public class StarSystem
 
     public void turnStart()
     {
-        if(gm.currentPlayer.Equals(this.owner))
+        if(gm.currentPlayer.Equals(this.owner) && true)
         {
             this.owner.setResources(this);
+        }
+    }
+
+    public void buildFacility(Facilities_Class i, bool cost)
+    {
+        if (facilities[i.getType()] == null)
+            facilities[i.getType()] = i;
+        else
+        {
+            int temp;
+            temp = facilities[i.getType()].getTier();
+            facilities[i.getType()].setTier(temp++);
+        }
+
+        if(cost)
+        {
+            //owner.chargeResources();
         }
     }
 }
