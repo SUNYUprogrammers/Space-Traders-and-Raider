@@ -162,11 +162,11 @@ public class Player_Class : MonoBehaviour
                     temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Thruster_Class>(),0);
 
                     //Spawn in facilities here
-                    homeSystem.buildFacility(homeSystem.gameObject.AddComponent<Mine_Class>(),false);
-                    homeSystem.buildFacility(homeSystem.gameObject.AddComponent<Shipyard_Class>(),false);
-                    homeSystem.buildFacility(homeSystem.gameObject.AddComponent<SDS_Class>(),false);
-                    homeSystem.buildFacility(homeSystem.gameObject.AddComponent<Barracks_Class>(),false);
-                    homeSystem.buildFacility(homeSystem.gameObject.AddComponent<TradeCenter_Class>(),false);
+                    homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<Mine_Class>(),false);
+                    homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<Shipyard_Class>(),false);
+                    homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<SDS_Class>(),false);
+                    homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<Barracks_Class>(),false);
+                    homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<TradeCenter_Class>(),false);
                     break;
 
                 case "Player2":
@@ -175,11 +175,11 @@ public class Player_Class : MonoBehaviour
                     temp2.GetComponent<Ship_Class>().faction = "Player2";
                     temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Thruster_Class>(), 0);
 
-                    homeSystem.buildFacility(homeSystem.gameObject.AddComponent<Mine_Class>(),false);
-                    homeSystem.buildFacility(homeSystem.gameObject.AddComponent<Shipyard_Class>(),false);
-                    homeSystem.buildFacility(homeSystem.gameObject.AddComponent<SDS_Class>(),false);
-                    homeSystem.buildFacility(homeSystem.gameObject.AddComponent<Barracks_Class>(),false);
-                    homeSystem.buildFacility(homeSystem.gameObject.AddComponent<TradeCenter_Class>(),false);
+                    homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<Mine_Class>(),false);
+                    homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<Shipyard_Class>(),false);
+                    homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<SDS_Class>(),false);
+                    homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<Barracks_Class>(),false);
+                    homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<TradeCenter_Class>(),false);
                     break;
             }
             temp2.GetComponent<Ship_Class>().newTurn();

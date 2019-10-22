@@ -2,84 +2,45 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StarSystem : MonoBehaviour 
+public class StarSystem
 {
     public Player_Class owner;
-    //[SerializeField]
-    protected Facilities_Class[] facilities = new Facilities_Class[5];
     GameManager gm;
+    protected Facilities_Class[] facilities = new Facilities_Class[5];
 
     public GameObject tile;
 
     private Vector2Int position = Vector2Int.zero;
 
     //Stores the type (color)
-    [SerializeField]
     private MapGenerator.SystemType type;
 
     // Start is called before the first frame update
-
-    public void Inst()
+    public StarSystem()
     {
         gm = GameObject.FindObjectOfType<GameManager>();
         gm.registerSystem(this);
 
         //determines the system type based on probabilites.
         int prob = Random.Range(0, 100);
-
-       if (prob <= (int)MapGenerator.SystemType.YELLOW)                     
+        if(prob <= (int)MapGenerator.SystemType.YELLOW)
         {
             this.type = MapGenerator.SystemType.YELLOW;
-            //print("Yellow 55-84 " +prob);
-        } else if (prob <= (int)MapGenerator.SystemType.GREEN)                      //55+30 = 85
+        } else if (prob <= (int)MapGenerator.SystemType.GREEN)
         {
             this.type = MapGenerator.SystemType.GREEN;
-            //print("Green 85-97 " + prob);
-        } else if (prob <= (int)MapGenerator.SystemType.BLUE)                       //85+12 = 97
+        } else if (prob <= (int)MapGenerator.SystemType.BLUE)
         {
             this.type = MapGenerator.SystemType.BLUE;
-            //print("Blue 97-100 " + prob);
-        } else if (prob <= (int)MapGenerator.SystemType.RED)                        //97+3 = 100
+        } else if (prob <= (int)MapGenerator.SystemType.RED)
         {
             this.type = MapGenerator.SystemType.RED;
-            //print("Red 100 " + prob);
-        }
-
-        //print("Start function "+this.type+" "+prob);
-
-        switch (type)
-        {
-            case MapGenerator.SystemType.YELLOW:
-                this.gameObject.GetComponent<SpriteRenderer>().sprite = GameObject.FindObjectOfType<MapGenerator>().yellowSystem;
-                print(this.gameObject.GetComponent<SpriteRenderer>().sprite.name);
-                break;
-
-            case MapGenerator.SystemType.GREEN:
-                this.gameObject.GetComponent<SpriteRenderer>().sprite = GameObject.FindObjectOfType<MapGenerator>().greenSystem;
-                break;
-
-            case MapGenerator.SystemType.BLUE:
-                this.gameObject.GetComponent<SpriteRenderer>().sprite = GameObject.FindObjectOfType<MapGenerator>().blueSystem;
-                break;
-
-            case MapGenerator.SystemType.RED:
-                this.gameObject.GetComponent<SpriteRenderer>().sprite = GameObject.FindObjectOfType<MapGenerator>().redSystem;
-                break;
-
-            case MapGenerator.SystemType.EMPTY:
-                this.gameObject.GetComponent<SpriteRenderer>().sprite = GameObject.FindObjectOfType<MapGenerator>().emptySystem;
-                break;
-        }
-
-        if (type == MapGenerator.SystemType.EMPTY)
-        {
-            Destroy(this);
         }
     }
 
     public Transform getTransform()
     {
-        return this.gameObject.transform;
+        return tile.transform;
     }
 
     public bool setPosition(int x, int y)
@@ -118,7 +79,7 @@ public class StarSystem : MonoBehaviour
 
     public void turnStart()
     {
-        if(gm.currentPlayer.Equals(this.owner) && true)
+        if(gm.currentPlayer.Equals(this.owner))
         {
             this.owner.setResources(this);
         }
@@ -137,7 +98,7 @@ public class StarSystem : MonoBehaviour
             facilities[i.getType()].setTier(temp++);
         }
 
-        if(cost)
+        if (cost)
         {
             //owner.chargeResources();
         }
