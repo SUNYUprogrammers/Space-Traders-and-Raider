@@ -37,6 +37,7 @@ public class MapGenerator : MonoBehaviour
     void Start()
     {
         sectors = new Sector[size.x, size.y];
+        
         for(int i = 0; i < size.x; i++)
         {
             for (int j = 0; j < size.y; j++)
@@ -50,14 +51,16 @@ public class MapGenerator : MonoBehaviour
                         //newTile.transform.localScale = newTile.transform.localScale * (1f/((size.x+size.y)/2f));
                         SpriteRenderer renderer = newTile.GetComponent("SpriteRenderer") as SpriteRenderer;
                         SystemType theSystem = SystemType.EMPTY;
-                        foreach (StarSystem sys in sectors[i, j].getSystems()) {
+                        foreach (StarSystem sys in sectors[i, j].getSystems())
+                        {
                             if(sys.getPosition().x == x && sys.getPosition().y == y)
                             {
+                                print(sys.getType());
                                 theSystem = sys.getType();
                                 sys.tile = newTile;
                             }
                         }
-                        switch (theSystem)
+                        /*switch (theSystem)
                         {
                             case SystemType.YELLOW:
                                 renderer.sprite = yellowSystem;
@@ -78,7 +81,7 @@ public class MapGenerator : MonoBehaviour
                             case SystemType.EMPTY:
                                 renderer.sprite = emptySystem;
                                 break;
-                        }
+                        }*/
                     }
                 }
             }

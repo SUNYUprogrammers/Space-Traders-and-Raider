@@ -182,6 +182,7 @@ public class Player_Class : MonoBehaviour
                     homeSystem.buildFacility(homeSystem.gameObject.AddComponent<TradeCenter_Class>(),false);
                     break;
             }
+            temp2.GetComponent<Ship_Class>().newTurn();
         }
     }
 

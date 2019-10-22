@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
         currentPlayer = players[0];
         players[0].currentTurn = true;
 
-        Debug.Break();
+        //Debug.Break();
     }
 
     // Update is called once per frame
