@@ -6,6 +6,7 @@ public class StarSystem
 {
     public Player_Class owner;
     GameManager gm;
+    protected Facilities_Class[] facilities = new Facilities_Class[5];
 
     public GameObject tile;
 
@@ -81,6 +82,25 @@ public class StarSystem
         if(gm.currentPlayer.Equals(this.owner))
         {
             this.owner.setResources(this);
+        }
+    }
+
+    public void buildFacility(Facilities_Class i, bool cost)
+    {
+        //print("Building " + i.getTypeString());
+
+        if (facilities[i.getType()] == null)
+            facilities[i.getType()] = i;
+        else
+        {
+            int temp;
+            temp = facilities[i.getType()].getTier();
+            facilities[i.getType()].setTier(temp++);
+        }
+
+        if (cost)
+        {
+            //owner.chargeResources();
         }
     }
 }

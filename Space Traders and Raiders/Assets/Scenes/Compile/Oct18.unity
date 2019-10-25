@@ -866,6 +866,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   currentPlayer: {fileID: 0}
+  systems: []
 --- !u!4 &302040101
 Transform:
   m_ObjectHideFlags: 0
@@ -1646,6 +1647,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8386359321180623468, guid: 9e782ae5371142e46931806ca1522d8b,
+        type: 3}
+      propertyPath: tilePrefab
+      value: 
+      objectReference: {fileID: 4200237318045957497, guid: 7913e7ed6932bc6439b8e7e1fb1f870d,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e782ae5371142e46931806ca1522d8b, type: 3}
 --- !u!1 &1345572424
