@@ -100,7 +100,7 @@ public class StarSystem
 
         if (cost)
         {
-            //owner.chargeResources();
+            gm.calcResources(i.getTier(),i.getType(),owner);
         }
     }
 }
