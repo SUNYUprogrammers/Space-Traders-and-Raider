@@ -17,7 +17,7 @@ public class Player_Class : MonoBehaviour
     public Ship_Class[] playerShips = new Ship_Class[5];
     public bool currentTurn = false;
 
-   
+    public Color PlayerColor;
 
     //Determines what ships the player owns
     public Ship_Class[] getPlayerShips(string faction)
@@ -155,9 +155,9 @@ public class Player_Class : MonoBehaviour
             switch (this.playerFaction)
             {
                 case "Player1":
-                    temp.GetComponent<SpriteRenderer>().color = new Color(1,0,1,1);
-
-                    temp2.GetComponent<Ship_Class>().ship.color = new Color(1, 0, 1, 1);
+                    this.PlayerColor = new Color(1, 0, 1, 1);
+                    temp.GetComponent<SpriteRenderer>().color = PlayerColor;
+                    temp2.GetComponent<Ship_Class>().ship.color = PlayerColor;
                     temp2.GetComponent<Ship_Class>().faction = "Player1";
                     temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Thruster_Class>(),0);
 
@@ -170,8 +170,9 @@ public class Player_Class : MonoBehaviour
                     break;
 
                 case "Player2":
-                    temp.GetComponent<SpriteRenderer>().color = new Color(0, 1, 1, 1);
-                    temp2.GetComponent<Ship_Class>().ship.color = new Color(0, 1, 1, 1);
+                    this.PlayerColor = new Color(0, 1, 1, 1);
+                    temp.GetComponent<SpriteRenderer>().color = PlayerColor;
+                    temp2.GetComponent<Ship_Class>().ship.color = PlayerColor;
                     temp2.GetComponent<Ship_Class>().faction = "Player2";
                     temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Thruster_Class>(), 0);
 

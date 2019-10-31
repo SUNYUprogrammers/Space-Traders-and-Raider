@@ -19,9 +19,20 @@ public class GameManager : MonoBehaviour
     static int[,] cost2 = new int[5, 5];
     static int[,] cost3 = new int[5, 5];
 
+    public int x_max;                        //World border, detect when to transition when the designers figure out what to do for that
+    public int y_max;
+    public int x_min;
+    public int y_min;
+
     // Start is called before the first frame update
     void Awake()
     {
+        x_max = 3;                              //Need to link to map generator
+        x_min = -4;
+
+        y_max = 4;
+        y_min = -3;
+
         players[0] = this.gameObject.AddComponent<Player_Class>();
         players[0].playerFaction = "Player1";
         players[1] = this.gameObject.AddComponent<Player_Class>();

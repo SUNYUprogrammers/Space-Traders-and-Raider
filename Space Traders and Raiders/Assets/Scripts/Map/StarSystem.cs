@@ -89,6 +89,9 @@ public class StarSystem
     {
         //print("Building " + i.getTypeString());
 
+        i.faction = this.owner.playerFaction;
+        i.self = new Color(this.owner.PlayerColor.r, this.owner.PlayerColor.g, this.owner.PlayerColor.b,.5f);
+
         if (facilities[i.getType()] == null)
             facilities[i.getType()] = i;
         else
