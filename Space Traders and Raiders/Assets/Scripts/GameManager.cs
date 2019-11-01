@@ -14,9 +14,25 @@ public class GameManager : MonoBehaviour
 
     public StarSystem[] systems = new StarSystem[0];
 
+    //[SerializeField]
+    static int[,] cost1 = new int[5, 5];
+    static int[,] cost2 = new int[5, 5];
+    static int[,] cost3 = new int[5, 5];
+
+    public int x_max;                        //World border, detect when to transition when the designers figure out what to do for that
+    public int y_max;
+    public int x_min;
+    public int y_min;
+
     // Start is called before the first frame update
     void Awake()
     {
+        x_max = 3;                              //Need to link to map generator
+        x_min = -4;
+
+        y_max = 4;
+        y_min = -3;
+
         players[0] = this.gameObject.AddComponent<Player_Class>();
         players[0].playerFaction = "Player1";
         players[1] = this.gameObject.AddComponent<Player_Class>();
@@ -25,6 +41,95 @@ public class GameManager : MonoBehaviour
         currentPlayer = players[0];
         players[0].currentTurn = true;
 
+        cost1[0, 0] = 150;               //[-,X] X is facility type, - is upgrade level. Upgrade 0 is initial build cost
+        cost1[0, 1] = 150;               //Organized MINE, SHIPYARD, SDS, BARRACKS, TC
+        cost1[0, 2] = 30;
+        cost1[0, 3] = 30;
+        cost1[0, 4] = 30;
+
+        cost1[1, 0] = 70;
+        cost1[1, 1] = 100;
+        cost1[1, 2] = 0;
+        cost1[1, 3] = 0;
+        cost1[1, 4] = 20;
+
+        cost1[2, 0] = 100;
+        cost1[2, 1] = 170;
+        cost1[2, 2] = 0;
+        cost1[2, 3] = 0;
+        cost1[2, 4] = 40;
+
+        cost1[3, 0] = 120;
+        cost1[3, 1] = 220;
+        cost1[3, 2] = 0;
+        cost1[3, 3] = 0;
+        cost1[3, 4] = 80;
+
+        cost1[4, 0] = 150;
+        cost1[4, 1] = 300;
+        cost1[4, 2] = 0;
+        cost1[4, 3] = 0;
+        cost1[4, 4] = 150;
+
+        cost2[0, 0] = 20;               //[-,X] X is facility type, - is upgrade level. Upgrade 0 is initial build cost
+        cost2[0, 1] = 50;               //Organized MINE, SHIPYARD, SDS, BARRACKS, TC
+        cost2[0, 2] = 10;
+        cost2[0, 3] = 10;
+        cost2[0, 4] = 30;
+
+        cost2[1, 0] = 20;
+        cost2[1, 1] = 30;
+        cost2[1, 2] = 0;
+        cost2[1, 3] = 0;
+        cost2[1, 4] = 20;
+
+        cost2[2, 0] = 50;
+        cost2[2, 1] = 60;
+        cost2[2, 2] = 0;
+        cost2[2, 3] = 0;
+        cost2[2, 4] = 40;
+
+        cost2[3, 0] = 80;
+        cost2[3, 1] = 90;
+        cost2[3, 2] = 0;
+        cost2[3, 3] = 0;
+        cost2[3, 4] = 80;
+
+        cost2[4, 0] = 100;
+        cost2[4, 1] = 120;
+        cost2[4, 2] = 0;
+        cost2[4, 3] = 0;
+        cost2[4, 4] = 150;
+
+        cost3[0, 0] = 10;               //[-,X] X is facility type, - is upgrade level. Upgrade 0 is initial build cost
+        cost3[0, 1] = 20;               //Organized MINE, SHIPYARD, SDS, BARRACKS, TC
+        cost3[0, 2] = 0;
+        cost3[0, 3] = 0;
+        cost3[0, 4] = 30;
+
+        cost3[1, 0] = 10;
+        cost3[1, 1] = 10;
+        cost3[1, 2] = 0;
+        cost3[1, 3] = 0;
+        cost3[1, 4] = 20;
+
+        cost3[2, 0] = 30;
+        cost3[2, 1] = 30;
+        cost3[2, 2] = 0;
+        cost3[2, 3] = 0;
+        cost3[2, 4] = 40;
+
+        cost3[3, 0] = 50;
+        cost3[3, 1] = 60;
+        cost3[3, 2] = 0;
+        cost3[3, 3] = 0;
+        cost3[3, 4] = 80;
+
+        cost3[4, 0] = 80;
+        cost3[4, 1] = 90;
+        cost3[4, 2] = 0;
+        cost3[4, 3] = 0;
+        cost3[4, 4] = 120;
         //Debug.Break();
     }
 
@@ -208,6 +313,11 @@ public class GameManager : MonoBehaviour
         }
 
         return systems[id];
+    }
+
+    public void calcResources(int upgrade_lvl, int type, Player_Class owner)
+    {
+        owner.chargeResources(cost1[upgrade_lvl,type], cost2[upgrade_lvl, type], cost3[upgrade_lvl, type]);
     }
 }
 

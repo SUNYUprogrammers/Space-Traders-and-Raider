@@ -342,6 +342,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  ship_speed: 0
   rangeIndicator: {fileID: 892764602595998205}
   moves_left: 0
   pos: {x: 0, y: 0, z: 0}
@@ -360,8 +361,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.15, y: 0.15, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.088673174, y: 0.12103424, z: 0.2}
+  m_Center: {x: -0.0027875933, y: -0.0015609915, z: 0}
 --- !u!54 &892764603599711435
 Rigidbody:
   m_ObjectHideFlags: 0

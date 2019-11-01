@@ -32,10 +32,7 @@ abstract public class Ship_Class : MonoBehaviour
     protected int missileDamage;
     protected int marineComplement;
 
-    protected int x_max;                        //World border, detect when to transition when the designers figure out what to do for that
-    protected int y_max;
-    protected int x_min;
-    protected int y_min;
+    public GameManager gm;
 
     public Ship_Class[] shipsInStack;
     public int selectFromStack = 0;
@@ -46,13 +43,11 @@ abstract public class Ship_Class : MonoBehaviour
         //print("Ship_Class Start function");
 
         //ship_speed = 4;                         /*TEMPORARY*/
-        x_max = 3;
-        x_min = -4;
+
+        gm = GameObject.FindObjectOfType<GameManager>();
 
         hostile.enabled = false;
 
-        y_max = 4;
-        y_min = -3;
         parts_list = new Component_Class[size];     //Set component list size to the amount of slots it has
 
         print(parts_list.Length + ", " + size);
@@ -183,28 +178,28 @@ abstract public class Ship_Class : MonoBehaviour
             if (true)
             //if ((Mathf.Abs(x) + Mathf.Abs(y) <= ship_speed))                  //Find if position is within move range and determine move type (bool), now void
             {
-                if (x_min > pos.x + x || pos.x + x > x_max)                     //Set to loop on reaching world border, if that's what designers decide
+                if (gm.x_min > pos.x + x || pos.x + x > gm.x_max)                     //Set to loop on reaching world border, if that's what designers decide
                 {                                                               //Does not work for righ click movements
                     print("Out of area");
-                    if (pos.x + x < x_min)
+                    if (pos.x + x < gm.x_min)
                     {
-                        x = -x_min + x_max;
+                        x = -gm.x_min + gm.x_max;
                     }
-                    if (pos.x + x > x_max)
+                    if (pos.x + x > gm.x_max)
                     {
-                        x = -x_max + x_min;
+                        x = -gm.x_max + gm.x_min;
                     }
                 }
-                if (y_min > pos.y + y || pos.y + y > y_max)
+                if (gm.y_min > pos.y + y || pos.y + y > gm.y_max)
                 {
                     print("Out of area");
-                    if (pos.y + y < y_min)
+                    if (pos.y + y < gm.y_min)
                     {
-                        y = -y_min + y_max;
+                        y = -gm.y_min + gm.y_max;
                     }
-                    if (pos.y + y > y_max)
+                    if (pos.y + y > gm.y_max)
                     {
-                        y = -y_max + y_min;
+                        y = -gm.y_max + gm.y_min;
                     }
                 }
 
