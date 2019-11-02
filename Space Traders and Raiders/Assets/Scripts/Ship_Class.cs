@@ -36,7 +36,7 @@ abstract public class Ship_Class : MonoBehaviour
 
     public Ship_Class[] shipsInStack;
     public int selectFromStack = 0;
-
+    public string[] trade = new string[2];
     public SpriteRenderer ship;
     public void Awake()
     {

@@ -17,7 +17,7 @@ public class Parallax : MonoBehaviour
     {
         Vector3 newPos = Input.mousePosition * mouseGain;
 
-        Debug.Log(newPos);
+        //Debug.Log(newPos);
         float z = gameObject.transform.position.z;
         gameObject.transform.position = new Vector3(newPos.x % loopSpace, newPos.y, z);
     }
