@@ -1,9 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-//combat Version 1 , Notable things not included: No ship compents or Ship Targetting added
-//Next possible version can include ship targeting 
+//Working on ship targeting.
+
 public class Combat_Class : MonoBehaviour
 {
     GameManager gm;
@@ -12,6 +13,8 @@ public class Combat_Class : MonoBehaviour
     [SerializeField]
     Ship_Class[] bad;
 
+
+    [SerializeField] private /*somekind of GUI */ CombatUI = Game.FindObjectOfType<CombatGUI>();
     public void Start()
     {
         gm = GameObject.FindObjectOfType<GameManager>();
@@ -19,13 +22,20 @@ public class Combat_Class : MonoBehaviour
 
     public void Combat(Ship_Class[] shipStack)
     {
+        CombatUI.enable;
         print("Combat");
-        float hitchance = Random.Range(0,100);
-        float blockchance = Random.Range(0,100);
+        //float hitchance = Random.Range(0,100);
+       // float blockchance = Random.Range(0,100);
 
         good = new Ship_Class[shipStack.Length];
         bad = new Ship_Class[shipStack.Length];
 
+        seprate(shipStack);
+        
+    }
+
+    private void seprate(Ship_Class[] shipStack)
+    {
         int z = 0;
         int y = 0;
         foreach (Ship_Class i in shipStack)
@@ -43,29 +53,10 @@ public class Combat_Class : MonoBehaviour
                 }
            }
         }
-        z = 0;
-        foreach(Ship_Class b in good)
-        {
-            if(b != null)
-            {
-                if(hitchance < 50)
-                {
-                    if(blockchance < 50)
-                    {
-                        print(b.name + " has destroyed " + bad[z].name);
-                        Destroy(bad[z].gameObject);
-                    }
-                    else
-                    {
-                        print(bad[z] + " has survived the battle");
-                    }
-                }
-                else
-                {
-                    print(bad[z] + " has survived the battle ");
-                }
-                z++;
-            }
-        }
+    }
+
+    public void attack(int placeinarray)
+    {
+
     }
 }
