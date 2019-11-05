@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class Combat_Class : MonoBehaviour
 {
+   
     GameManager gm;
     [SerializeField]
     Ship_Class[] good;
@@ -14,7 +15,7 @@ public class Combat_Class : MonoBehaviour
     Ship_Class[] bad;
 
 
-    [SerializeField] private /*somekind of GUI */ CombatUI = Game.FindObjectOfType<CombatGUI>();
+    public Canvas CombatUI;
     public void Start()
     {
         gm = GameObject.FindObjectOfType<GameManager>();
@@ -22,11 +23,9 @@ public class Combat_Class : MonoBehaviour
 
     public void Combat(Ship_Class[] shipStack)
     {
-        CombatUI.enable;
-        print("Combat");
-        //float hitchance = Random.Range(0,100);
-       // float blockchance = Random.Range(0,100);
+        CombatUI.GetComponent<Canvas>().enabled = true;
 
+        print("Combat");
         good = new Ship_Class[shipStack.Length];
         bad = new Ship_Class[shipStack.Length];
 
