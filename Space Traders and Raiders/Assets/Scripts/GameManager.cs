@@ -208,31 +208,37 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
-        if(true)
+        if(false)
         {
-            TradeCenter_Class[] temp = GameObject.FindObjectsOfType<TradeCenter_Class>();
-            Ship_Class[] temp2 = GameObject.FindObjectsOfType<Ship_Class>();
-            int j,l,m;
+            //checkTrade();
+        }
+    }
 
-            foreach (Ship_Class k in temp2)
+    public void checkTrade()
+    {
+        TradeCenter_Class[] temp = GameObject.FindObjectsOfType<TradeCenter_Class>();
+        Ship_Class[] temp2 = GameObject.FindObjectsOfType<Ship_Class>();
+        int j, l, m;
+
+        foreach (Ship_Class k in temp2)
+        {
+            m = 0;
+            foreach (TradeCenter_Class i in temp)
             {
-                m = 0;
-                foreach (TradeCenter_Class i in temp)
+                for (j = 0; j < i.x.Length; j++)
                 {
-                    for (j = 0; j < i.x.Length; j++)
+                    for (l = 0; l < i.y.Length; l++)
                     {
-                        for (l = 0; l < i.y.Length; l++)
+                        if ((k.pos.x == i.x[j] && k.pos.y == i.y[l]) && k.faction != i.faction)
                         {
-                            if ((k.pos.x == i.x[j] && k.pos.y == i.y[l]) && k.faction != i.faction)
-                            {
-                                k.trade[m] = i.faction;
-                                m++;
-                            }
+                            k.trade[m] = i.faction;
+                            m++;
                         }
                     }
                 }
             }
         }
+       
     }
 
     public void ShipStacker(Vector3 pos)

@@ -5,7 +5,7 @@ using UnityEngine;
 public class TradeCenter_Class : Facilities_Class
 {
     public int[] x, y;
-
+    public int tier_temp;
     public GameManager gm;
 
     // Start is called before the first frame update
@@ -17,14 +17,18 @@ public class TradeCenter_Class : Facilities_Class
 
         type = 4;
         tier = 2;                                       //Set to two for sake of example, should start at 1 in actual game
-
+        tier_temp = tier;
         calcArea();
     }
 
     // Update is called once per frame
     new public void Update()
     {
-        
+        if(tier_temp != tier)
+        {
+            calcArea();
+            tier_temp = tier;
+        }
     }
 
     override public string getTypeString()
@@ -92,10 +96,16 @@ public class TradeCenter_Class : Facilities_Class
                         y[j + (tier-1)] = (int)tile.position.y + j;
                     }
                     //print("X " + x[i + (tier-1)] + ", Y " + y[j + (tier-1)]);
-                    GameObject temp = Instantiate((GameObject)Resources.Load("HomeSystem"), new Vector3(x[i+(tier-1)],y[j+(tier-1)],0), new Quaternion());
+                    GameObject temp = Instantiate((GameObject)Resources.Load("TradeRange"), new Vector3(x[i+(tier-1)],y[j+(tier-1)],0), new Quaternion());
                     temp.GetComponent<SpriteRenderer>().color = self;
+                    temp.GetComponent<TradeRange_Detect>().faction = faction;
+                    if(temp.transform.position == tile.position)
+                    {
+                        temp.GetComponent<SpriteRenderer>().enabled = false;
+                    }
                 }
             }
         }
+        gm.checkTrade();
     }
 }

@@ -17,7 +17,7 @@ public class Player_Class : MonoBehaviour
     public Ship_Class[] playerShips = new Ship_Class[5];
     public bool currentTurn = false;
 
-    public string[] trade;
+    public string[] trade = new string[2];
 
     public Color PlayerColor;
 
