@@ -131,11 +131,6 @@ public class GameManager : MonoBehaviour
                 i.shipsInStack = shipStack;
             }
         }
-        if (true)
-        {
-            Combat_Class name = GameObject.FindObjectOfType<Combat_Class>();
-            name.Combat(shipStack);
-        }
 
         stackerRunning = false;
     }

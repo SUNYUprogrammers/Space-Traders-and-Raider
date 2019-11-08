@@ -353,13 +353,29 @@ abstract public class Ship_Class : MonoBehaviour
         return temp;
     }
 
+    public Canvas askcombat;
     public void OnTriggerEnter(Collider other)
     {
-        //print(other.name);
+        //print(other.name);s
         if (other.GetComponent<Ship_Class>() != null && this.faction == GameObject.FindObjectOfType<GameManager>().currentPlayer.playerFaction)
         {
             print("Ships overlapping");
             GameObject.FindObjectOfType<GameManager>().ShipStacker(pos);
         }
+         
+         askcombat.GetComponent<Canvas>().enabled = true;
+
+    }
+
+       
+    public void BeginCombat()
+    {
+         Combat_Class name = GameObject.FindObjectOfType<Combat_Class>();
+         name.Combat(shipInStack);
+    }
+
+    public void Runaway()
+    {
+        askcombat.GetComponent<Canvas>().enabled = false;
     }
 }
