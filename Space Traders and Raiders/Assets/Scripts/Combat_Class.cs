@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 //Working on ship targeting.
 
-public class Combat_Class : MonoBehaviour
+public class Combat_Class : Ship_Class
 {
-   
+
     GameManager gm;
     [SerializeField]
     Ship_Class[] good;
@@ -21,8 +21,9 @@ public class Combat_Class : MonoBehaviour
         gm = GameObject.FindObjectOfType<GameManager>();
     }
 
-    public void Combat(Ship_Class[] shipStack)
+    public void Combat()
     {
+        Ship_Class[] shipStack = getShipsInStack();
         CombatUI.GetComponent<Canvas>().enabled = true;
 
         print("Combat");

@@ -371,11 +371,17 @@ abstract public class Ship_Class : MonoBehaviour
     public void BeginCombat()
     {
          Combat_Class name = GameObject.FindObjectOfType<Combat_Class>();
-         name.Combat(shipInStack);
+         name.Combat();
+         askcombat.GetComponent<Canvas>().enabled = false;
     }
 
     public void Runaway()
     {
         askcombat.GetComponent<Canvas>().enabled = false;
+    }
+
+    public Ship_Class[] getShipsInStack()
+    {
+        return shipsInStack;
     }
 }

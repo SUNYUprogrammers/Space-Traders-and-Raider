@@ -766,8 +766,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 830237a19de45954a9d31414a8640410, type: 3}
-        m_MethodName: 
+      - m_Target: {fileID: 734075161}
+        m_MethodName: BeginCombat
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -777,12 +777,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: 
+      - m_Target: {fileID: 734075161}
+        m_MethodName: Runaway
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -909,8 +909,9 @@ GameObject:
   - component: {fileID: 734075160}
   - component: {fileID: 734075159}
   - component: {fileID: 734075158}
+  - component: {fileID: 734075161}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: AskCombat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -928,8 +929,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1759280323}
-  m_Father: {fileID: 890309524}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -996,6 +997,35 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &734075161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734075156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e651da421972cfe4fb9e5f4908d110b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ship_type: 
+  selected: 0
+  faction: 
+  power: 0
+  parts_list: []
+  ship_speed: 0
+  rangeIndicator: {fileID: 0}
+  moves_left: 0
+  pos: {x: 0, y: 0, z: 0}
+  hostile: {fileID: 0}
+  shipsInStack: []
+  selectFromStack: 0
+  ship: {fileID: 0}
+  askcombat: {fileID: 0}
+  good: []
+  bad: []
+  CombatUI: {fileID: 184337592}
 --- !u!1 &758308496
 GameObject:
   m_ObjectHideFlags: 0
@@ -1202,37 +1232,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 847707294}
   m_CullTransparentMesh: 0
---- !u!1 &890309523
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 890309524}
-  m_Layer: 0
-  m_Name: ConfirmCombat
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &890309524
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 890309523}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 329.1855, y: 180.56418, z: -256.375}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 734075157}
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &896371062
 GameObject:
   m_ObjectHideFlags: 0
@@ -1549,6 +1548,11 @@ PrefabInstance:
       propertyPath: parts_list.Array.data[0]
       value: 
       objectReference: {fileID: 1194103631}
+    - target: {fileID: 892764603599711433, guid: 0448ddcb061db7d44bc8ae18656a64c4,
+        type: 3}
+      propertyPath: askcombat
+      value: 
+      objectReference: {fileID: 734075160}
     - target: {fileID: 892764603547101798, guid: 0448ddcb061db7d44bc8ae18656a64c4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1715,6 +1719,7 @@ MonoBehaviour:
   shipsInStack: []
   selectFromStack: 0
   ship: {fileID: 0}
+  askcombat: {fileID: 734075160}
 --- !u!4 &1344344849
 Transform:
   m_ObjectHideFlags: 0
@@ -1885,6 +1890,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e651da421972cfe4fb9e5f4908d110b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ship_type: 
+  selected: 0
+  faction: 
+  power: 0
+  parts_list: []
+  ship_speed: 0
+  rangeIndicator: {fileID: 0}
+  moves_left: 0
+  pos: {x: 0, y: 0, z: 0}
+  hostile: {fileID: 0}
+  shipsInStack: []
+  selectFromStack: 0
+  ship: {fileID: 0}
+  askcombat: {fileID: 0}
   good: []
   bad: []
   CombatUI: {fileID: 184337592}
