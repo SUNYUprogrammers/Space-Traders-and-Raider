@@ -38,9 +38,11 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 494}
   m_MaxSize: {x: 18008, y: 14044}
   vertical: 0
+<<<<<<< master
   controlID: 107
 =======
 <<<<<<< Updated upstream
+<<<<<<< Menu
 <<<<<<< Updated upstream
   m_MinSize: {x: 711, y: 494}
   m_MaxSize: {x: 18006, y: 14044}
@@ -71,6 +73,8 @@ MonoBehaviour:
 >>>>>>> Menu
 =======
 <<<<<<< Updated upstream
+=======
+>>>>>>> Started working on planet selection
   controlID: 682
 =======
   controlID: 1135
@@ -98,13 +102,18 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< Menu
+<<<<<<< Menu
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< master
+>>>>>>> Started working on planet selection
     x: 534
     y: 73
     width: 996
     height: 585
 =======
+<<<<<<< Menu
     x: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -132,6 +141,8 @@ MonoBehaviour:
 >>>>>>> Stashed changes
 >>>>>>> Menu
 =======
+=======
+>>>>>>> Started working on planet selection
 <<<<<<< Updated upstream
     x: 0
     y: 495.2
@@ -157,14 +168,19 @@ MonoBehaviour:
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
 <<<<<<< Menu
+<<<<<<< Menu
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< master
+>>>>>>> Started working on planet selection
     m_HBaseRangeMin: -498
     m_HBaseRangeMax: 498
     m_VBaseRangeMin: -280
     m_VBaseRangeMax: 280
 =======
 <<<<<<< Updated upstream
+<<<<<<< Menu
 <<<<<<< Updated upstream
     m_HBaseRangeMin: -358
     m_HBaseRangeMax: 358
@@ -194,6 +210,8 @@ MonoBehaviour:
 >>>>>>> Menu
 =======
 <<<<<<< Updated upstream
+=======
+>>>>>>> Started working on planet selection
     m_HBaseRangeMin: -194
     m_HBaseRangeMax: 194
     m_VBaseRangeMin: -109.200005
@@ -223,14 +241,19 @@ MonoBehaviour:
       x: 0
       y: 17
 <<<<<<< Menu
+<<<<<<< Menu
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< master
+>>>>>>> Started working on planet selection
       width: 996
       height: 568
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 498, y: 284}
 =======
 <<<<<<< Updated upstream
+<<<<<<< Menu
 <<<<<<< Updated upstream
       width: 1005
       height: 403
@@ -260,6 +283,8 @@ MonoBehaviour:
 >>>>>>> Menu
 =======
 <<<<<<< Updated upstream
+=======
+>>>>>>> Started working on planet selection
       width: 734
       height: 273
     m_Scale: {x: 1, y: 1}
@@ -278,14 +303,19 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
 <<<<<<< Menu
+<<<<<<< Menu
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< master
+>>>>>>> Started working on planet selection
       x: -498
       y: -284
       width: 996
       height: 568
 =======
 <<<<<<< Updated upstream
+<<<<<<< Menu
 <<<<<<< Updated upstream
       x: -502.5
       y: -201.5
@@ -315,6 +345,8 @@ MonoBehaviour:
 >>>>>>> Menu
 =======
 <<<<<<< Updated upstream
+=======
+>>>>>>> Started working on planet selection
       x: -367
       y: -136.5
       width: 734
@@ -330,6 +362,7 @@ MonoBehaviour:
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
+<<<<<<< Menu
 <<<<<<< Menu
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -353,6 +386,12 @@ MonoBehaviour:
 >>>>>>> Menu
 =======
 <<<<<<< Updated upstream
+=======
+<<<<<<< master
+  m_LastWindowPixelSize: {x: 996, y: 585}
+=======
+<<<<<<< Updated upstream
+>>>>>>> Started working on planet selection
   m_LastWindowPixelSize: {x: 917.5, y: 362.5}
 =======
   m_LastWindowPixelSize: {x: 1179, y: 613}
@@ -471,8 +510,12 @@ MonoBehaviour:
     x: 277
     y: 0
 <<<<<<< Menu
+<<<<<<< Menu
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< master
+>>>>>>> Started working on planet selection
     width: 1532
     height: 947
   m_MinSize: {x: 511, y: 494}
@@ -487,6 +530,7 @@ MonoBehaviour:
   controlID: 61
 =======
 <<<<<<< Updated upstream
+<<<<<<< Menu
 <<<<<<< Updated upstream
     width: 1348
     height: 947
@@ -515,6 +559,13 @@ MonoBehaviour:
 >>>>>>> Stashed changes
 >>>>>>> Menu
 =======
+=======
+    width: 1101
+    height: 731
+  m_MinSize: {x: 436, y: 494}
+  m_MaxSize: {x: 14006, y: 14044}
+  vertical: 1
+>>>>>>> Started working on planet selection
   controlID: 455
 =======
     width: 1595
@@ -543,7 +594,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< Menu
 <<<<<<< HEAD
+=======
+<<<<<<< master
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> Started working on planet selection
+>>>>>>> Started working on planet selection
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -552,7 +611,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< master
     width: 534
+=======
+    width: 414
+>>>>>>> Started working on planet selection
     height: 947
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
@@ -584,7 +647,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
+<<<<<<< master
     width: 534
+=======
+    width: 414
+>>>>>>> Started working on planet selection
     height: 928
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
@@ -593,7 +660,11 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewResizer:
+<<<<<<< master
     m_CachedPref: 278
+=======
+    m_CachedPref: 381
+>>>>>>> Started working on planet selection
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
@@ -606,6 +677,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< Menu
 <<<<<<< Menu
 =======
 >>>>>>> Combat
@@ -674,6 +746,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+=======
+<<<<<<< master
+=======
+>>>>>>> Started working on planet selection
 >>>>>>> Stashed changes
 >>>>>>> Started working on planet selection
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
@@ -685,6 +761,10 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< Menu
+<<<<<<< Menu
+=======
+<<<<<<< master
+>>>>>>> Started working on planet selection
     x: 534
 =======
 <<<<<<< Updated upstream
@@ -694,13 +774,31 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
     width: 998
+=======
+<<<<<<< Updated upstream
+    x: 0
+    y: 0
+    width: 1101
+    height: 422
+  m_MinSize: {x: 406, y: 222}
+  m_MaxSize: {x: 8006, y: 4022}
+  vertical: 0
+  controlID: 456
+--- !u!114 &5
+=======
+    x: 414
+    y: 0
+    width: 1181
+>>>>>>> Started working on planet selection
     height: 947
   m_MinSize: {x: 234, y: 494}
   m_MaxSize: {x: 10004, y: 14044}
   vertical: 1
+<<<<<<< master
   controlID: 62
 --- !u!114 &7
 =======
+<<<<<<< Menu
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
     width: 1348
@@ -734,6 +832,8 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 494}
   m_MaxSize: {x: 10004, y: 14044}
   vertical: 1
+=======
+>>>>>>> Started working on planet selection
   controlID: 1137
 --- !u!114 &7
 >>>>>>> Stashed changes
@@ -755,8 +855,12 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< Menu
+<<<<<<< Menu
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< master
+>>>>>>> Started working on planet selection
     width: 998
     height: 604
   m_MinSize: {x: 200, y: 200}
@@ -764,6 +868,7 @@ MonoBehaviour:
   m_ActualView: {fileID: 2}
 =======
 <<<<<<< Updated upstream
+<<<<<<< Menu
 <<<<<<< Updated upstream
     width: 1009
     height: 508
@@ -777,6 +882,8 @@ MonoBehaviour:
 >>>>>>> Menu
 =======
 <<<<<<< Updated upstream
+=======
+>>>>>>> Started working on planet selection
     width: 739
     height: 422
   m_MinSize: {x: 202, y: 222}
@@ -830,13 +937,18 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< Menu
+<<<<<<< Menu
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< master
+>>>>>>> Started working on planet selection
     x: 534
     y: 73
     width: 996
     height: 656
 =======
+<<<<<<< Menu
 =======
 <<<<<<< Updated upstream
 >>>>>>> Started working on planet selection
@@ -857,6 +969,14 @@ MonoBehaviour:
     width: 1215
     height: 654
 >>>>>>> Combat
+=======
+<<<<<<< Updated upstream
+    x: 0
+    y: 73.6
+    width: 739
+    height: 403
+>>>>>>> Started working on planet selection
+>>>>>>> Started working on planet selection
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 3c5ae082392f4da4f96503777dc4451f
@@ -874,8 +994,11 @@ MonoBehaviour:
   m_Gizmos: 1
   m_SceneIsLit: 1
 <<<<<<< Menu
+<<<<<<< Menu
 >>>>>>> Menu
 =======
+=======
+>>>>>>> Started working on planet selection
 =======
     x: 277
     y: 73
@@ -887,6 +1010,9 @@ MonoBehaviour:
   m_Gizmos: 1
   m_SceneIsLit: 0
 >>>>>>> Stashed changes
+<<<<<<< Menu
+>>>>>>> Started working on planet selection
+=======
 >>>>>>> Started working on planet selection
   m_SceneLighting: 1
   m_2DMode: 1
@@ -895,13 +1021,18 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< Menu
+<<<<<<< Menu
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< master
+>>>>>>> Started working on planet selection
     m_Target: {x: -1.0079064, y: 0.107228756, z: -10.256992}
     speed: 2
     m_Value: {x: -1.0079064, y: 0.107228756, z: -10.256992}
 =======
 <<<<<<< Updated upstream
+<<<<<<< Menu
 <<<<<<< Updated upstream
     m_Target: {x: 59.278736, y: -9.054105, z: -1.955287}
     speed: 2
@@ -927,6 +1058,8 @@ MonoBehaviour:
 >>>>>>> Menu
 =======
 <<<<<<< Updated upstream
+=======
+>>>>>>> Started working on planet selection
     m_Target: {x: 5.8488836, y: 0.7023531, z: 59.94213}
     speed: 2
     m_Value: {x: 5.8488836, y: 0.7023531, z: 59.94213}
@@ -948,10 +1081,13 @@ MonoBehaviour:
     showMaterialUpdate: 0
     showSkybox: 0
 <<<<<<< Menu
+<<<<<<< Menu
     showFlares: 0
     showImageEffects: 0
     showParticleSystems: 0
 =======
+=======
+>>>>>>> Started working on planet selection
     showFlares: 1
     showImageEffects: 1
     showParticleSystems: 1
@@ -975,13 +1111,18 @@ MonoBehaviour:
     m_Value: {x: 0.021089286, y: 0.49716154, z: -0.012086558, w: 0.8673175}
   m_Size:
 <<<<<<< Menu
+<<<<<<< Menu
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< master
+>>>>>>> Started working on planet selection
     m_Target: 33.404354
     speed: 2
     m_Value: 33.404354
 =======
+<<<<<<< Menu
 =======
 <<<<<<< Updated upstream
 >>>>>>> Menu
@@ -1012,6 +1153,8 @@ MonoBehaviour:
 >>>>>>> Stashed changes
 >>>>>>> Menu
 =======
+=======
+>>>>>>> Started working on planet selection
 <<<<<<< Updated upstream
     m_Target: 82.47561
     speed: 2
@@ -1282,8 +1425,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< Menu
+<<<<<<< Menu
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< master
+>>>>>>> Started working on planet selection
     y: 604
     width: 998
     height: 343
@@ -1291,6 +1438,7 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_ActualView: {fileID: 11}
 =======
+<<<<<<< Menu
 =======
 <<<<<<< Updated upstream
 >>>>>>> Menu
@@ -1307,6 +1455,14 @@ MonoBehaviour:
 >>>>>>> Stashed changes
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+<<<<<<< Updated upstream
+    y: 0
+    width: 734
+    height: 309
+  m_MinSize: {x: 202, y: 222}
+  m_MaxSize: {x: 4002, y: 4022}
+>>>>>>> Started working on planet selection
   m_ActualView: {fileID: 2}
 =======
     y: 632
@@ -1320,6 +1476,7 @@ MonoBehaviour:
   - {fileID: 2}
   m_Selected: 0
   m_LastSelected: 0
+<<<<<<< Menu
 =======
     x: 1494
     y: 73
@@ -1340,6 +1497,9 @@ MonoBehaviour:
   m_LastVerticalScrollValue: 0
 >>>>>>> Combat
 --- !u!114 &12
+=======
+--- !u!114 &11
+>>>>>>> Started working on planet selection
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1354,6 +1514,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< Menu
 <<<<<<< HEAD
 <<<<<<< Updated upstream
     x: 1005
@@ -1381,6 +1542,16 @@ MonoBehaviour:
   m_ActualView: {fileID: 12}
 >>>>>>> Stashed changes
 >>>>>>> Menu
+=======
+    x: 734
+    y: 0
+    width: 367
+    height: 309
+  m_MinSize: {x: 234, y: 272}
+  m_MaxSize: {x: 10004, y: 10022}
+  m_ActualView: {fileID: 12}
+>>>>>>> Started working on planet selection
+>>>>>>> Started working on planet selection
   m_Panes:
 <<<<<<< HEAD
   - {fileID: 11}
@@ -1434,14 +1605,19 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< Menu
+<<<<<<< Menu
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< master
+>>>>>>> Started working on planet selection
     x: 534
     y: 677
     width: 996
     height: 324
 =======
 <<<<<<< Updated upstream
+<<<<<<< Menu
 <<<<<<< Updated upstream
     x: 1005
     y: 581
@@ -1471,6 +1647,8 @@ MonoBehaviour:
 >>>>>>> Menu
 =======
 <<<<<<< Updated upstream
+=======
+>>>>>>> Started working on planet selection
     x: 734.4
     y: 495.2
     width: 365
@@ -1497,13 +1675,32 @@ MonoBehaviour:
     m_SearchArea: 1
     m_Folders:
 <<<<<<< Menu
+<<<<<<< Menu
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< master
+>>>>>>> Started working on planet selection
     - Assets/Sprites/Planets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
   - Assets/Sprites/Planets
+=======
+<<<<<<< Updated upstream
+    - Assets/Scripts/Facility Subclasses
+  m_ViewMode: 0
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets
+=======
+    - Assets/Sprites/Backdrop
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Sprites/Backdrop
+>>>>>>> Stashed changes
+>>>>>>> Started working on planet selection
   m_LastFoldersGridSize: -1
   m_LastProjectPath: S:\PGP\Space-Traders-and-Raider\Space Traders and Raiders
 =======
@@ -1548,13 +1745,18 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
 <<<<<<< Menu
+<<<<<<< Menu
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< master
+>>>>>>> Started working on planet selection
     m_SelectedIDs: da330000
     m_LastClickedID: 13274
     m_ExpandedIDs: 000000002c290000422f00006c2f00007a2f0000982f000072300000b8310000a832000026330000d433000000ca9a3b
 =======
 <<<<<<< Updated upstream
+<<<<<<< Menu
     m_SelectedIDs: 0a410000
     m_LastClickedID: 16650
     m_ExpandedIDs: ffffffff000000003e2f0000902f0000942f000074300000a2300000d4310000a832000024330000a2330000d6330000
@@ -1590,6 +1792,8 @@ MonoBehaviour:
 >>>>>>> Menu
 =======
 <<<<<<< Updated upstream
+=======
+>>>>>>> Started working on planet selection
     m_SelectedIDs: a82f0000
     m_LastClickedID: 12200
     m_ExpandedIDs: 00000000a82f0000e02f0000fe2f0000f23000001832000008330000843300003034000034340000
@@ -1636,14 +1840,19 @@ MonoBehaviour:
       m_ResourceFile: 
   m_AssetTreeState:
 <<<<<<< Menu
+<<<<<<< Menu
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< master
+>>>>>>> Started working on planet selection
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 48420000
     m_LastClickedID: 16968
     m_ExpandedIDs: 000000002c290000422f00006c2f00007a2f0000982f0000b8310000a832000026330000d4330000
 =======
 <<<<<<< Updated upstream
+<<<<<<< Menu
 <<<<<<< Updated upstream
     scrollPos: {x: 0, y: 13}
     m_SelectedIDs: 
@@ -1659,15 +1868,21 @@ MonoBehaviour:
 >>>>>>> Menu
 =======
 <<<<<<< Updated upstream
+=======
+>>>>>>> Started working on planet selection
     scrollPos: {x: 0, y: 91}
     m_SelectedIDs: dc260000
     m_LastClickedID: 9948
     m_ExpandedIDs: ffffffff00000000a82f0000d22f0000e02f0000fe2f0000f23000001832000008330000843300003034000034340000
+<<<<<<< Menu
+>>>>>>> Started working on planet selection
+=======
 >>>>>>> Started working on planet selection
 =======
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 48420000
     m_LastClickedID: 16968
+<<<<<<< Menu
 <<<<<<< Menu
     m_ExpandedIDs: 00000000222f00005a2f0000782f0000183100009a310000b83100008a3200000a330000be330000
 >>>>>>> Combat
@@ -1680,6 +1895,8 @@ MonoBehaviour:
 >>>>>>> Stashed changes
 >>>>>>> Menu
 =======
+=======
+>>>>>>> Started working on planet selection
     m_ExpandedIDs: 000000002c290000522f00007c2f00008a2f0000a82f0000c8310000b83200003633000000ca9a3b
 >>>>>>> Stashed changes
 >>>>>>> Started working on planet selection
@@ -1723,6 +1940,7 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
 <<<<<<< Menu
+<<<<<<< Menu
 <<<<<<< HEAD
 <<<<<<< HEAD
     m_SelectedInstanceIDs: 
@@ -1741,6 +1959,11 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
 >>>>>>> Combat
+=======
+<<<<<<< master
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+>>>>>>> Started working on planet selection
 =======
 <<<<<<< Updated upstream
     m_SelectedInstanceIDs: dc260000
@@ -1800,6 +2023,7 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
 <<<<<<< Menu
+<<<<<<< Menu
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1818,9 +2042,16 @@ MonoBehaviour:
 --- !u!114 &12
 >>>>>>> Stashed changes
 =======
+<<<<<<< master
+>>>>>>> Started working on planet selection
+=======
 <<<<<<< Updated upstream
   m_DirectoriesAreaWidth: 121
 =======
+<<<<<<< Menu
+=======
+>>>>>>> Started working on planet selection
+>>>>>>> Started working on planet selection
   m_DirectoriesAreaWidth: 115
 --- !u!114 &12
 >>>>>>> Started working on planet selection
@@ -1850,6 +2081,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< Menu
 <<<<<<< Menu
     x: 0
     y: 646
@@ -1888,11 +2120,22 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+=======
+<<<<<<< master
+>>>>>>> Started working on planet selection
     x: 534
     y: 677
     width: 996
     height: 324
   m_ViewDataDictionary: {fileID: 0}
+=======
+    x: 277
+    y: 705
+    width: 1316
+    height: 296
+  m_ViewDataDictionary: {fileID: 0}
+>>>>>>> Stashed changes
+>>>>>>> Started working on planet selection
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1913,13 +2156,34 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< Menu
+<<<<<<< Menu
 <<<<<<< HEAD
+=======
+<<<<<<< master
+>>>>>>> Started working on planet selection
     x: 1532
     y: 0
     width: 388
     height: 947
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+<<<<<<< Updated upstream
+    x: 1101
+    y: 0
+    width: 435
+    height: 731
+  m_MinSize: {x: 277, y: 72}
+  m_MaxSize: {x: 4002, y: 4022}
+=======
+    x: 1595
+    y: 0
+    width: 325
+    height: 947
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> Stashed changes
+>>>>>>> Started working on planet selection
   m_ActualView: {fileID: 14}
 =======
 <<<<<<< Updated upstream
@@ -1991,19 +2255,51 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< Menu
+<<<<<<< Menu
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< master
+>>>>>>> Started working on planet selection
     x: 1532
     y: 73
     width: 386
     height: 928
   m_ViewDataDictionary: {fileID: 0}
+=======
+<<<<<<< Updated upstream
+    x: 1100.8
+    y: 73.6
+    width: 433
+    height: 712
+  m_ViewDataDictionary: {fileID: 0}
+  m_OpenAddComponentMenu: 0
+  m_ObjectsLockedBeforeSerialization: []
+  m_InstanceIDsLockedBeforeSerialization: 
+  m_LockTracker:
+    m_IsLocked: 0
+  m_PreviewResizer:
+    m_CachedPref: 147
+    m_ControlHash: -371814159
+    m_PrefName: Preview_InspectorPreview
+  m_PreviewWindow: {fileID: 0}
+=======
+    x: 1595
+    y: 73
+    width: 323
+    height: 928
+  m_ViewDataDictionary: {fileID: 0}
+>>>>>>> Started working on planet selection
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
+<<<<<<< master
       m_ExpandedIDs: 74fbffff
+=======
+      m_ExpandedIDs: f2f0ffffd63c0000
+>>>>>>> Started working on planet selection
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2019,7 +2315,11 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
+<<<<<<< master
         m_ClientGUIView: {fileID: 13}
+=======
+        m_ClientGUIView: {fileID: 0}
+>>>>>>> Started working on planet selection
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -2027,6 +2327,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4ee08786081ac664083e357d44d01b4f
+<<<<<<< Menu
 =======
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -2109,5 +2410,9 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4ee08786081ac664083e357d44d01b4f
+=======
+<<<<<<< master
+=======
+>>>>>>> Started working on planet selection
 >>>>>>> Stashed changes
 >>>>>>> Started working on planet selection
