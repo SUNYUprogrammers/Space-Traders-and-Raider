@@ -141,10 +141,13 @@ public class GameManager : MonoBehaviour
             //print("Click " + Input.GetKey(KeyCode.LeftControl) + Input.GetKey(KeyCode.LeftShift));
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out hit))                                                         //If selection found
+            bool hitSomething = false;
+            int layerMask = 1 << 8; //Ships
+            if (Physics.Raycast(ray, out hit, layerMask))                                                         //If selection found
             {
                 //print("You selected " + hit.transform.name+" : "+this.transform.name);               //Ensure you picked right object
-                if (hit.transform.gameObject.GetComponent<Ship_Class>() != null /*&& hit.transform.name == this.transform.name*/)
+                //The object hit is a Ship
+                if (hit.transform.gameObject.GetComponent<Ship_Class>() != null) //&& hit.transform.name == this.transform.name)
                 {                                                                                      //If current player owns ship and is only left clicking
                     if (hit.transform.gameObject.GetComponent<Ship_Class>().faction == currentPlayer.playerFaction && !Input.GetKey(KeyCode.LeftControl) && !Input.GetKey(KeyCode.LeftShift))
                     {
@@ -204,8 +207,25 @@ public class GameManager : MonoBehaviour
                             }
                         }
                     }
+                    hitSomething = true;
 
+                //The object hit is a system
                 }
+            }
+            layerMask = layerMask << 1; //next layer is systems
+            if(!hitSomething && Physics.Raycast(ray, out hit, layerMask)){
+              hitSomething = true;
+              if (hit.transform.gameObject.GetComponent<SelectableSystem>() != null){
+                print("ss hit");
+                SelectableSystem ss = hit.transform.gameObject.GetComponent<SelectableSystem>() as SelectableSystem;
+                if(ss.isSelectable()){
+                  if(ss.isSelected()){
+                    ss.deselect();
+                  } else {
+                    ss.select();
+                  }
+                }
+              }
             }
         }
         if(false)
@@ -270,6 +290,7 @@ public class GameManager : MonoBehaviour
 
         stackerRunning = false;
     }
+
     public void endTurn()
     {
         print(currentPlayer.playerFaction);

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 892764602595998206}
   - component: {fileID: 892764602595998201}
   - component: {fileID: 892764602595998200}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Range
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -134,7 +134,7 @@ GameObject:
   m_Component:
   - component: {fileID: 892764603547101798}
   - component: {fileID: 6178595980461732946}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -214,7 +214,7 @@ GameObject:
   m_Component:
   - component: {fileID: 892764603587425043}
   - component: {fileID: 892764603587425042}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Hostile Marker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -296,7 +296,7 @@ GameObject:
   - component: {fileID: 892764603599711433}
   - component: {fileID: 892764603599711432}
   - component: {fileID: 892764603599711435}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Starter Ship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -347,8 +347,12 @@ MonoBehaviour:
   moves_left: 0
   pos: {x: 0, y: 0, z: 0}
   hostile: {fileID: 892764603587425042}
+  gm: {fileID: 0}
   shipsInStack: []
   selectFromStack: 0
+  trade:
+  - 
+  - 
   ship: {fileID: 6178595980461732946}
 --- !u!65 &892764603599711432
 BoxCollider:
