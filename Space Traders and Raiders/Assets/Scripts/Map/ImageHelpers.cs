@@ -1,3 +1,6 @@
+//Found here https://answers.unity.com/questions/1008802/merge-multiple-png-images-one-on-top-of-the-other.html
+// Credit to Bunny83 on Unity.com
+
 using UnityEngine;
 
 public static class ImageHelpers
