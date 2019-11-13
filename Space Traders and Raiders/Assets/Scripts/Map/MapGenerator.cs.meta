@@ -9,6 +9,8 @@ MonoImporter:
   - greenSystem: {fileID: 21300000, guid: c9987281b0a4cb8408868313a6dd178b, type: 3}
   - blueSystem: {fileID: 21300000, guid: 32fb189f50724c949a54fa85a6810ea6, type: 3}
   - redSystem: {fileID: 21300000, guid: 2374db6853864644394c0dc7ed75274a, type: 3}
+  - tilePrefab: {fileID: 4200237318045957497, guid: 7913e7ed6932bc6439b8e7e1fb1f870d,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

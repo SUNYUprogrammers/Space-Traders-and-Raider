@@ -734,8 +734,12 @@ MonoBehaviour:
   moves_left: 0
   pos: {x: 0, y: 0, z: 0}
   hostile: {fileID: 1888681400}
+  gm: {fileID: 0}
   shipsInStack: []
   selectFromStack: 0
+  trade:
+  - 
+  - 
   ship: {fileID: 0}
 --- !u!4 &261871296
 Transform:
@@ -864,6 +868,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   currentPlayer: {fileID: 0}
+  x_max: 0
+  y_max: 0
+  x_min: 0
+  y_min: 0
 --- !u!4 &302040101
 Transform:
   m_ObjectHideFlags: 0
@@ -1636,10 +1644,65 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8386359321180623468, guid: 9e782ae5371142e46931806ca1522d8b,
         type: 3}
+      propertyPath: planets.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8386359321180623468, guid: 9e782ae5371142e46931806ca1522d8b,
+        type: 3}
       propertyPath: tilePrefab
       value: 
       objectReference: {fileID: 4200237318045957497, guid: 7913e7ed6932bc6439b8e7e1fb1f870d,
         type: 3}
+    - target: {fileID: 8386359321180623468, guid: 9e782ae5371142e46931806ca1522d8b,
+        type: 3}
+      propertyPath: blueSystem
+      value: 
+      objectReference: {fileID: 2800000, guid: 32fb189f50724c949a54fa85a6810ea6, type: 3}
+    - target: {fileID: 8386359321180623468, guid: 9e782ae5371142e46931806ca1522d8b,
+        type: 3}
+      propertyPath: emptySystem
+      value: 
+      objectReference: {fileID: 2800000, guid: 93e4aa34628c1ac498786e89048120a1, type: 3}
+    - target: {fileID: 8386359321180623468, guid: 9e782ae5371142e46931806ca1522d8b,
+        type: 3}
+      propertyPath: greenSystem
+      value: 
+      objectReference: {fileID: 2800000, guid: c9987281b0a4cb8408868313a6dd178b, type: 3}
+    - target: {fileID: 8386359321180623468, guid: 9e782ae5371142e46931806ca1522d8b,
+        type: 3}
+      propertyPath: redSystem
+      value: 
+      objectReference: {fileID: 2800000, guid: 2374db6853864644394c0dc7ed75274a, type: 3}
+    - target: {fileID: 8386359321180623468, guid: 9e782ae5371142e46931806ca1522d8b,
+        type: 3}
+      propertyPath: yellowSystem
+      value: 
+      objectReference: {fileID: 2800000, guid: 0ab2e3aa4678d5d459a75013c0b77294, type: 3}
+    - target: {fileID: 8386359321180623468, guid: 9e782ae5371142e46931806ca1522d8b,
+        type: 3}
+      propertyPath: planets.Array.data[0]
+      value: 
+      objectReference: {fileID: 2800000, guid: feb559329fc9ef1409c866a34bc8eb35, type: 3}
+    - target: {fileID: 8386359321180623468, guid: 9e782ae5371142e46931806ca1522d8b,
+        type: 3}
+      propertyPath: planets.Array.data[1]
+      value: 
+      objectReference: {fileID: 2800000, guid: 660acb16b9dc05e43a0c88d6e456c1f7, type: 3}
+    - target: {fileID: 8386359321180623468, guid: 9e782ae5371142e46931806ca1522d8b,
+        type: 3}
+      propertyPath: planets.Array.data[2]
+      value: 
+      objectReference: {fileID: 2800000, guid: 992cacb62bddeef4cacf84fc83f06b81, type: 3}
+    - target: {fileID: 8386359321180623468, guid: 9e782ae5371142e46931806ca1522d8b,
+        type: 3}
+      propertyPath: planets.Array.data[3]
+      value: 
+      objectReference: {fileID: 2800000, guid: 4d05202e9c2bd664f98b12c0c8637a3d, type: 3}
+    - target: {fileID: 8386359321180623468, guid: 9e782ae5371142e46931806ca1522d8b,
+        type: 3}
+      propertyPath: planets.Array.data[4]
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e782ae5371142e46931806ca1522d8b, type: 3}
 --- !u!1 &1345572424

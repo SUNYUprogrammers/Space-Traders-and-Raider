@@ -7,7 +7,7 @@ public class Frigate_Class : Ship_Class
     private new void Awake()
     {
         power = 1;
-		ship_type = "Frigate";
+	      ship_type = "Frigate";
         size = 5;
         pos = this.gameObject.transform.position;
 
