@@ -24,16 +24,22 @@ public class MapGenerator : MonoBehaviour
     [SerializeField] private Vector2Int size = new Vector2Int(2, 2);
 
     //System display sprites
-    public Sprite emptySystem;
+    [SerializeField] private Texture2D[] planets;
 
-    public Sprite yellowSystem;
-    public Sprite greenSystem;
-    public Sprite blueSystem;
-    public Sprite redSystem;
+
+    // public Texture2D emptySystem;
+    //
+    // public Texture2D yellowSystem;
+    // public Texture2D greenSystem;
+    // public Texture2D blueSystem;
+    // public Texture2D redSystem;
+
 
     [SerializeField] private GameObject tilePrefab;
 
-
+    static private float ColorOverlayOpacity = .1f;
+    static private float ColorOverlayBorderOpacity = .5f;
+    static private int   Borderthickness = 3;
     void Start()
     {
         sectors = new Sector[size.x, size.y];
@@ -57,27 +63,61 @@ public class MapGenerator : MonoBehaviour
                                 sys.tile = newTile;
                             }
                         }
-                        switch (theSystem)
-                        {
+
+                        if(theSystem != SystemType.EMPTY){
+                          Texture2D col = new Texture2D(128, 128, TextureFormat.RGBA32, false);
+
+
+                          Color c = new Color(0f, 0f, 0f, ColorOverlayOpacity);
+                          switch(theSystem){
                             case SystemType.YELLOW:
-                                renderer.sprite = yellowSystem;
-                                break;
-
-                            case SystemType.GREEN:
-                                renderer.sprite = greenSystem;
-                                break;
-
-                            case SystemType.BLUE:
-                                renderer.sprite = blueSystem;
-                                break;
+                              c.r = 1f;
+                              c.g = 1f;
+                            break;
 
                             case SystemType.RED:
-                                renderer.sprite = redSystem;
-                                break;
+                              c.r = 1f;
+                            break;
 
-                            case SystemType.EMPTY:
-                                renderer.sprite = emptySystem;
-                                break;
+                            case SystemType.BLUE:
+                              c.b = 1f;
+                            break;
+
+                            case SystemType.GREEN:
+                              c.g = 1f;
+                            break;
+                          }
+                          Color cb = new Color(c.r, c.g, c.b, ColorOverlayBorderOpacity);
+                          for(int yT = 0; yT < col.height; yT ++){
+                            for(int xT = 0; xT < col.width; xT ++){
+                              if(yT < Borderthickness || yT > col.height - Borderthickness || xT < Borderthickness || xT > col.width - Borderthickness){
+                                col.SetPixel(xT, yT, cb);
+                              } else {
+                                col.SetPixel(xT, yT, c);
+                              }
+                            }
+                          }
+                          col.Apply();
+
+                          Texture2D tex = ImageHelpers.AlphaBlend(planets[Random.Range(0, planets.Length)], col);
+
+                          renderer.sprite = Sprite.Create(tex, new Rect(0f, 0f, tex.width, tex.height), new Vector2(.5f, .5f), 128);
+                        } else {
+                          Color c = new Color(1f, 1f, 1f, ColorOverlayOpacity);
+                          Color cb = new Color(1f, 1f, 1f, ColorOverlayBorderOpacity);
+                          Texture2D col = new Texture2D(128, 128, TextureFormat.RGBA32, false);
+                          for(int yT = 0; yT < col.height; yT ++){
+                            for(int xT = 0; xT < col.width; xT ++){
+                              if(yT < Borderthickness || yT > col.height - Borderthickness || xT < Borderthickness || xT > col.width - Borderthickness){
+                                col.SetPixel(xT, yT, cb);
+                              } else {
+                                col.SetPixel(xT, yT, c);
+                              }
+                            }
+                          }
+                          col.Apply();
+                          renderer.sprite = Sprite.Create(col, new Rect(0f, 0f, col.width, col.height), new Vector2(.5f, .5f), 128);
+                          // renderer.color = ;
                         }
                     }
                 }
