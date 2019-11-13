@@ -47,8 +47,7 @@ public class Player_Class : MonoBehaviour
         playerFaction = playerName;
     }
 
-
-    //Increments Resources based on Home System
+    //Increments Resources based on System
     public void setResources(StarSystem sys)
     {
         if (sys != homeSystem)
