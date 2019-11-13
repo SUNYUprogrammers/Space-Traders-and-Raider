@@ -57,8 +57,14 @@ public class MapGenerator : MonoBehaviour
                                 sys.tile = newTile;
                             }
                         }
-                        switch (theSystem)
-                        {
+
+                        if(theSystem != SystemType.EMPTY){
+                          SelectableSystem ss = newTile.AddComponent(typeof(SelectableSystem)) as SelectableSystem;
+                          Texture2D col = new Texture2D(128, 128, TextureFormat.RGBA32, false);
+
+
+                          Color c = new Color(0f, 0f, 0f, ColorOverlayOpacity);
+                          switch(theSystem){
                             case SystemType.YELLOW:
                                 renderer.sprite = yellowSystem;
                                 break;
