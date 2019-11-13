@@ -5,7 +5,7 @@ using UnityEngine;
 public class TradeCenter_Class : Facilities_Class
 {
     public int[] x, y;
-
+    public int tier_temp;
     public GameManager gm;
 
     // Start is called before the first frame update
@@ -17,14 +17,18 @@ public class TradeCenter_Class : Facilities_Class
 
         type = 4;
         tier = 2;                                       //Set to two for sake of example, should start at 1 in actual game
-
+        tier_temp = tier;
         calcArea();
     }
 
     // Update is called once per frame
     new public void Update()
     {
-        
+        if(tier_temp != tier)
+        {
+            calcArea();
+            tier_temp = tier;
+        }
     }
 
     override public string getTypeString()
@@ -36,10 +40,13 @@ public class TradeCenter_Class : Facilities_Class
     {
         int i,j;
 
-        print("Tier is " + tier + " " + ( Mathf.Pow((float)(2*(tier-1)+1),2) ) );
+        //print("Tier is " + tier + " " + ( Mathf.Pow((float)(2*(tier-1)+1),2) ) );
 
-        x = new int[(int)Mathf.Pow((float)(2 * (tier - 1) + 1), 2)];            //1 3  5  7
-        y = new int[(int)Mathf.Pow((float)(2 * (tier - 1) + 1), 2)];            //1 9 25 49
+        x = new int[(int)(2 * (tier - 1) + 1)];            //1 3  5  7
+        y = new int[(int)(2 * (tier - 1) + 1)];            
+
+        //x = new int[(int)Mathf.Pow((float)(2 * (tier - 1) + 1), 2)];            
+        //y = new int[(int)Mathf.Pow((float)(2 * (tier - 1) + 1), 2)];            //1 9 25 49
 
         if (tier == 1)
         {
@@ -48,9 +55,9 @@ public class TradeCenter_Class : Facilities_Class
         }
         else
         {
-            for (i = -tier; i < tier+1; i++)
+            for (i = -(tier-1); i < (tier-1)+1; i++)
             {
-                for (j = -tier; j < tier+1; j++)
+                for (j = -(tier-1); j < (tier-1)+1; j++)
                 {
                     //print(i+", "+j);
 
@@ -59,39 +66,46 @@ public class TradeCenter_Class : Facilities_Class
                         print((int)tile.position.x + i + " is out of bounds");
                         if ((int)tile.position.x + i < gm.x_min)
                         {
-                            x[i+tier] = (int)tile.position.x + i - gm.x_min + gm.x_max +1;
+                            x[i+(tier-1)] = (int)tile.position.x + i - gm.x_min + gm.x_max +1;
                         }
                         if ((int)tile.position.x + i > gm.x_max)
                         {
-                            x[i + tier]  = (int)tile.position.x + i - gm.x_max + gm.x_min -1;
+                            x[i + (tier-1)]  = (int)tile.position.x + i - gm.x_max + gm.x_min -1;
                         }
 ;                   }
                     else
                     {
-                        x[i + tier] = (int)tile.position.x + i;
+                        x[i + (tier-1)] = (int)tile.position.x + i;
                     }
                     if (gm.y_min > ((int)tile.position.y + j) || ((int)tile.position.y + j) > gm.y_max)
                     {
                         print((int)tile.position.y + j + " is out of bounds");
                         if ((int)tile.position.y + j < gm.y_min)
                         {
-                            y[j + tier] = (int)tile.position.y + j - gm.y_min + gm.y_max +1;
+                            y[j + (tier-1)] = (int)tile.position.y + j - gm.y_min + gm.y_max +1;
                         }
                         if ((int)tile.position.y + j > gm.y_max)
                         {
-                            y[j + tier] = (int)tile.position.y + j - gm.y_max + gm.y_min -1;
+                            y[j + (tier-1)] = (int)tile.position.y + j - gm.y_max + gm.y_min -1;
                         }
 ;
                     }
                     else
                     {
-                        y[j + tier] = (int)tile.position.y + j;
+                        //print(j + (tier-1));
+                        y[j + (tier-1)] = (int)tile.position.y + j;
                     }
-                    print("X " + x[i + tier] + ", Y " + y[j + tier]);
-                    GameObject temp = Instantiate((GameObject)Resources.Load("HomeSystem"), new Vector3(x[i+tier],y[j+tier],0), new Quaternion());
+                    //print("X " + x[i + (tier-1)] + ", Y " + y[j + (tier-1)]);
+                    GameObject temp = Instantiate((GameObject)Resources.Load("TradeRange"), new Vector3(x[i+(tier-1)],y[j+(tier-1)],0), new Quaternion());
                     temp.GetComponent<SpriteRenderer>().color = self;
+                    temp.GetComponent<TradeRange_Detect>().faction = faction;
+                    if(temp.transform.position == tile.position)
+                    {
+                        temp.GetComponent<SpriteRenderer>().enabled = false;
+                    }
                 }
             }
         }
+        gm.checkTrade();
     }
 }

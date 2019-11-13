@@ -36,7 +36,7 @@ abstract public class Ship_Class : MonoBehaviour
 
     public Ship_Class[] shipsInStack;
     public int selectFromStack = 0;
-
+    public string[] trade = new string[2];
     public SpriteRenderer ship;
     public void Awake()
     {
@@ -97,6 +97,8 @@ abstract public class Ship_Class : MonoBehaviour
             pos_temp.x = Mathf.RoundToInt(pos_temp.x);
             pos_temp.y = Mathf.RoundToInt(pos_temp.y);
             MoveShipTo((int)pos_temp.x, (int)pos_temp.y);
+
+            gm.checkTrade();
         }
 
         if (selected)
@@ -220,6 +222,7 @@ abstract public class Ship_Class : MonoBehaviour
 
             pos = temp;
             gameObject.transform.position = pos;                                        //Set new position
+            gm.checkTrade();
         }
         else
         {
