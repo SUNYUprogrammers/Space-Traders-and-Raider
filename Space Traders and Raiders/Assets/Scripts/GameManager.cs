@@ -119,7 +119,7 @@ public class GameManager : MonoBehaviour
             if (pos == i.pos)
             {
                 shipStack[j] = i;
-               //print("Overlap "+shipStack[j].name);//what ship is overlapped
+                //print("Overlap "+shipStack[j].name);//what ship is overlapped
                 j++;
             }
         }
