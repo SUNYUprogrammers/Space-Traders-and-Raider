@@ -123,7 +123,7 @@ abstract public class Ship_Class : MonoBehaviour
     {
         int temp_move = moves_left;
 
-        if (x != 0 || y != 0)                                                       //If a move is being attempted, calculate if movement is possible 
+        if (x != 0 || y != 0)                                                       //If a move is being attempted, calculate if movement is possible
         {
             float x_temp = x;
             float y_temp = y;

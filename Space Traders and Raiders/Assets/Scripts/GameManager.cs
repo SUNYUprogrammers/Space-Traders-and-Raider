@@ -238,7 +238,7 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
-       
+
     }
 
     public void ShipStacker(Vector3 pos)
@@ -303,8 +303,10 @@ public class GameManager : MonoBehaviour
                 if (temp.currentTurn)
                 {
                     currentPlayer = temp;
-                    this.scanSystems();
+                    Debug.Log(hud);
                     hud.updateHUD();
+                    Debug.Log(this);
+                    this.scanSystems();
                 }
             }
             turnsSoFar++;
@@ -316,7 +318,7 @@ public class GameManager : MonoBehaviour
         {
             GameObject.Find("confirm").GetComponent<Canvas>().enabled=true;
         }
-        
+
     }
 
     private void scanSystems()
@@ -351,4 +353,3 @@ public class GameManager : MonoBehaviour
         owner.chargeResources(cost1[upgrade_lvl,type], cost2[upgrade_lvl, type], cost3[upgrade_lvl, type]);
     }
 }
-
