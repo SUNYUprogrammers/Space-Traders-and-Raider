@@ -5,7 +5,10 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 =======
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
+<<<<<<< HEAD
 >>>>>>> Menu
+=======
+>>>>>>> Combat
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{EDC221DC-32D4-9F15-B062-D66B5509D8F4}"
 EndProject
 Global

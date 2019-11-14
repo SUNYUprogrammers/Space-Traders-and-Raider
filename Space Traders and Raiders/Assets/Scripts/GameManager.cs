@@ -255,7 +255,7 @@ public class GameManager : MonoBehaviour
             if (pos == i.pos)
             {
                 shipStack[j] = i;
-               //print("Overlap "+shipStack[j].name);//what ship is overlapped
+                //print("Overlap "+shipStack[j].name);//what ship is overlapped
                 j++;
             }
         }
@@ -266,11 +266,6 @@ public class GameManager : MonoBehaviour
                 //print("Ship " + i.name);//Name of ship overlapped
                 i.shipsInStack = shipStack;
             }
-        }
-        if (true)
-        {
-            Combat_Class name = GameObject.FindObjectOfType<Combat_Class>();
-            name.Combat(shipStack);
         }
 
         stackerRunning = false;

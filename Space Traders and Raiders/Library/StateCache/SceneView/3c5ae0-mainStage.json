@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":507.2130126953125,"y":121.62081146240235,"z":-123.0},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":708.2510986328125,"orthographic":true}
 =======
 <<<<<<< Updated upstream
@@ -7,3 +8,6 @@
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":-78.42616271972656,"y":-3.8302955627441408,"z":54.04747009277344},"rotation":{"x":-0.011369078420102597,"y":0.3834891617298126,"z":-0.004719530697911978,"w":-0.9234755635261536},"size":133.35598754882813,"orthographic":false}
 >>>>>>> Stashed changes
 >>>>>>> Menu
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":false,"audioPlay":false,"sceneViewState":{"showFog":false,"showMaterialUpdate":false,"showSkybox":false,"showFlares":false,"showImageEffects":false,"showParticleSystems":false},"in2DMode":true,"pivot":{"x":480.3738098144531,"y":314.75555419921877,"z":-407.375},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":694.246826171875,"orthographic":true}
+>>>>>>> Combat
