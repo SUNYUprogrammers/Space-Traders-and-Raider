@@ -64,11 +64,16 @@
      <Compile Include="Assets\Scripts\Facility Subclasses\Shipyard_Class.cs" />
      <Compile Include="Assets\Scripts\Facility Subclasses\TradeCenter_Class.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\HUD_Scripts\BattleshipHoverMenu.cs" />
+     <Compile Include="Assets\Scripts\HUD_Scripts\CruiserHoverMenu.cs" />
+     <Compile Include="Assets\Scripts\HUD_Scripts\DestroyerHoverMenu.cs" />
+     <Compile Include="Assets\Scripts\HUD_Scripts\DreadnoughtHoverMenu.cs" />
      <Compile Include="Assets\Scripts\HUD_Scripts\FrigateHoverMenu.cs" />
      <Compile Include="Assets\Scripts\HUD_Scripts\HUD.cs" />
      <Compile Include="Assets\Scripts\HUD_Scripts\HUDHoverMenu.cs" />
      <Compile Include="Assets\Scripts\HUD_Scripts\IHUDHoverable.cs" />
      <Compile Include="Assets\Scripts\HUD_Scripts\MenuEntry.cs" />
+     <Compile Include="Assets\Scripts\HUD_Scripts\NotificationsDisplay.cs" />
      <Compile Include="Assets\Scripts\Map\ImageHelpers.cs" />
      <Compile Include="Assets\Scripts\Map\MapGenerator.cs" />
      <Compile Include="Assets\Scripts\Map\Sector.cs" />

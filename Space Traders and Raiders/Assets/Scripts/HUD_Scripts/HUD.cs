@@ -4,42 +4,29 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
+
 public class HUD : MonoBehaviour
 {
 
     public static List<RaycastResult> raycastResults;
-    [SerializeField] private Text victoryPoints;
-    [SerializeField] private Text achievement;
-    [SerializeField] private Text wealth;
-    [SerializeField] private Text power;
-    [SerializeField] private Text minerals;
+    [SerializeField] private Text victoryPointsText;
+    [SerializeField] private Text wealthText;
+    [SerializeField] private Text achievementText;
+    [SerializeField] private Text powerText;
+    [SerializeField] private Text mineralText;
     [SerializeField] private Text turnNumber;
+
+    [SerializeField] private NotificationsDisplay notifications;
 
 
 
     void Update()
     {
         raycastResults = GetEventSystemRaycastResults();
-        //Debug.Log(raycastResults);
         //checkForHUDHoverOver();
     }
 
-    void Start() {
-        updateHUD();
-    }
 
-    public void updateHUD() {
-        GameManager gm = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
-        Player_Class currentPlayer = gm.currentPlayer;
-        victoryPoints.text = "" + currentPlayer.calcVictoryPoints();
-        wealth.text = "" + currentPlayer.getWealth();
-        achievement.text = "" + currentPlayer.getAchievement();
-        power.text = "" + currentPlayer.getPower();
-        minerals.text = "" + (currentPlayer.getCommonMineral() + currentPlayer.getRareMineral() + currentPlayer.getVeryRareMineral());
-        turnNumber.text = "" + 1; //TODO replace 1 with proper method call
-    } 
-
-    
     /*public static void checkForHUDHoverOver() {
         raycastResults = GetEventSystemRaycastResults();
         for(int i = 0; i < raycastResults.Count; i++) {
@@ -51,12 +38,23 @@ public class HUD : MonoBehaviour
         }
     }*/
 
+    public void updateHUD() {
+
+        GameManager manager = FindObjectOfType<GameManager>();
+        Player_Class player = manager.currentPlayer;
+        victoryPointsText.text = player.calcVictoryPoints().ToString();
+        wealthText.text = player.getWealth().ToString();
+        achievementText.text = player.getAchievement().ToString();
+        mineralText.text = (player.getCommonMineral() + player.getRareMineral() + player.getVeryRareMineral()).ToString();
+        powerText.text = player.getPower().ToString();
+        turnNumber.text = manager.turnsSoFar.ToString();
+
+        notifications.refreshNotificationsDisplay(player);
+    }
+
     public static bool IsPointerOverUIElement(GameObject obj)
     {
-        if(raycastResults == null)
-        {
-            Debug.Log("rayCastResults is null.... Don't know why. Too little time at the moment. Fix me. Please. I'm begging you.");
-        }
+        
         for (int index = 0; index < raycastResults.Count; index++)
         {
             RaycastResult curRaycastResult = raycastResults[index];
@@ -66,8 +64,28 @@ public class HUD : MonoBehaviour
         }
         return false;
     }
+
+    public void addNotificationForPlayer(Player_Class player, string notification) {
+        notifications.addNotificationForPlayer(player, notification);
+    }
+
+    public void addNotificationForActivePlayer(string notification) {
+        GameManager manager = FindObjectOfType<GameManager>();
+        Player_Class player = manager.currentPlayer;
+        notifications.addNotificationForPlayer(player, notification);
+        notifications.refreshNotificationsDisplay(player);
+    }
+
+    public void clearNotifcationsForCurrentPlayer() {
+        GameManager manager = FindObjectOfType<GameManager>();
+        Player_Class player = manager.currentPlayer;
+        notifications.clearNotificationsForPlayer(player);
+        notifications.refreshNotificationsDisplay(player);
+    }
+
+
     ///Gets all event system raycast results of current mouse or touch position.
-    public List<RaycastResult> GetEventSystemRaycastResults()
+    static List<RaycastResult> GetEventSystemRaycastResults()
     {
         PointerEventData eventData = new PointerEventData(EventSystem.current);
         eventData.position = Input.mousePosition;
@@ -75,4 +93,5 @@ public class HUD : MonoBehaviour
         EventSystem.current.RaycastAll(eventData, raycastResults);
         return raycastResults;
     }
+
 }
