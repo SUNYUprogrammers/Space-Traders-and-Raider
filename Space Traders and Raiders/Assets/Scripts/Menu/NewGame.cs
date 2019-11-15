@@ -19,7 +19,7 @@ public class NewGame : MonoBehaviour
 
     private void OnMouseDown()
     {
-        //print("New game");//This is left in for future debugging
+        print("New game");//This is left in for future debugging
         SceneManager.LoadScene("Nov 15");
     }
 }
