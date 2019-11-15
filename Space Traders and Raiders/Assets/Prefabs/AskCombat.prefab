@@ -483,7 +483,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1532283000891971637}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
@@ -548,25 +548,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e651da421972cfe4fb9e5f4908d110b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ship_type: 
-  selected: 0
-  faction: 
-  power: 0
-  parts_list: []
-  ship_speed: 0
-  rangeIndicator: {fileID: 0}
-  moves_left: 0
-  pos: {x: 0, y: 0, z: 0}
-  hostile: {fileID: 0}
-  gm: {fileID: 0}
-  shipsInStack: []
-  selectFromStack: 0
-  trade:
-  - 
-  - 
-  ship: {fileID: 0}
   good: []
   bad: []
+  shipsStack: []
   CombatUI: {fileID: 0}
   Askcombat: {fileID: 1532283000891971641}
 --- !u!1 &1532283001402484697

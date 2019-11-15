@@ -21,20 +21,21 @@ public class Combat_Class : MonoBehaviour
     private Ship_Class defender;
     public Canvas CombatUI;
     public Canvas Askcombat;
+    bool combat = false;;
+    bool Switch = false;
     public void Start()
     {
-        gm = GameObject.FindObjectOfType<GameManager>();
-        
+        gm = GameObject.FindObjectOfType<GameManager>(); 
     }
 
     public void askCombat(Ship_Class[] shipsInStack,int len)
     {
+        Askcombat.enabled = true;
         shipsStack = new Ship_Class[len];
         int j = 0;
-        Askcombat.GetComponent<Canvas>().enabled = true;
         foreach(Ship_Class i in shipsInStack) 
         {
-           // print("askcombat function    " + i);
+            //print("askcombat function    " + i);
             shipsStack[j] = i;
             //print("hope " + shipsStack[j]);
             j++;
@@ -44,19 +45,23 @@ public class Combat_Class : MonoBehaviour
 
     public void Retreat()
     {
-        Askcombat.GetComponent<Canvas>().enabled = false;
+        Askcombat.enabled = false;
     }
 
     public void Combat()
     {
-        print(shipsStack.Length);
+        combat = true;
+       // print(shipsStack.Length);
         Retreat();
-        CombatUI.GetComponent<Canvas>().enabled = true;
+        CombatUI.enabled = true;
 
+        
         good = new Ship_Class[shipsStack.Length];
         bad = new Ship_Class[shipsStack.Length];
 
-        print("Combat");
+        //print("Size of good " + good.Length);
+        //print("Size of bad " + bad.Length);
+        //print("Combat");
         seprate(shipsStack);
 
        /* for (int i = 0; i <= good.Length; i++)
@@ -75,10 +80,12 @@ public class Combat_Class : MonoBehaviour
                 if(i.faction == gm.currentPlayer.playerFaction)
                 {
                     good[z] = i;
+                    //print(good[z].name);
                     z++;
                 } else
                 {
-                    bad[y] = i;
+                    bad[y] = i;                   
+                    //print(bad[y].name);
                     y++;
                 }
            }
@@ -87,7 +94,7 @@ public class Combat_Class : MonoBehaviour
 
     public void EndCombat()
     {
-        CombatUI.GetComponent<Canvas>().enabled = false;
+        CombatUI.enabled = false;
     }
 
     public void GetAttackerShip(int place)
@@ -138,4 +145,19 @@ public class Combat_Class : MonoBehaviour
     {
         print("does something still thinking bout it");
     }
+
+    public void Update()
+    {
+        //print("update combat");
+        if (combat)
+        {
+            
+            if (attacker != null && defender != null && Switch == false)
+            {
+                print(attacker.name + " destroys a compenent " + defender.name);
+            }
+        }
+    }
 }
+
+
