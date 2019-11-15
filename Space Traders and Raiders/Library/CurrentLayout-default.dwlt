@@ -38,6 +38,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< master
     x: 1251
     y: 0
     width: 392
@@ -49,7 +50,22 @@ MonoBehaviour:
   - {fileID: 14}
   m_Selected: 0
   m_LastSelected: 0
+=======
+    x: 0
+    y: 30
+    width: 1920
+    height: 947
+  m_MinSize: {x: 683, y: 494}
+  m_MaxSize: {x: 14004, y: 14044}
+  vertical: 0
+<<<<<<< Updated upstream
+  controlID: 118
+>>>>>>> added the new font and changed the menus to have it
 --- !u!114 &3
+=======
+  controlID: 78
+--- !u!114 &4
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -68,12 +84,30 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< master
     width: 1643
     height: 670
   m_MinSize: {x: 481, y: 222}
   m_MaxSize: {x: 8006, y: 4022}
   vertical: 0
   controlID: 330
+=======
+    width: 389
+    height: 947
+<<<<<<< Updated upstream
+  m_MinSize: {x: 277, y: 72}
+  m_MaxSize: {x: 4002, y: 4022}
+  m_ActualView: {fileID: 14}
+=======
+  m_MinSize: {x: 202, y: 222}
+  m_MaxSize: {x: 4002, y: 4022}
+  m_ActualView: {fileID: 15}
+>>>>>>> Stashed changes
+  m_Panes:
+  - {fileID: 14}
+  m_Selected: 0
+  m_LastSelected: 0
+>>>>>>> added the new font and changed the menus to have it
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -90,6 +124,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< Updated upstream
     y: 0
     width: 277
     height: 947
@@ -101,6 +136,16 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &5
+=======
+    y: 30
+    width: 1920
+    height: 947
+  m_MinSize: {x: 683, y: 494}
+  m_MaxSize: {x: 14004, y: 14044}
+  vertical: 0
+  controlID: 76
+--- !u!114 &6
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -174,7 +219,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 544}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &8
 MonoBehaviour:
@@ -243,7 +288,40 @@ MonoBehaviour:
   m_MinSize: {x: 481, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
+<<<<<<< master
   controlID: 37
+=======
+<<<<<<< Updated upstream
+  controlID: 51
+--- !u!114 &10
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 4}
+  - {fileID: 11}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1531
+    height: 573
+  m_MinSize: {x: 406, y: 222}
+  m_MaxSize: {x: 8006, y: 4022}
+  vertical: 0
+  controlID: 52
+=======
+  controlID: 77
+>>>>>>> Stashed changes
+>>>>>>> added the new font and changed the menus to have it
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -343,14 +421,34 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scripts
   m_LastFoldersGridSize: -1
+<<<<<<< master
   m_LastProjectPath: D:\Space-Traders-and-Raider\Space Traders and Raiders
+=======
+<<<<<<< Updated upstream
+  m_LastProjectPath: C:\Space-Traders-and-Raider\Space Traders and Raiders
+=======
+  m_LastProjectPath: F:\Space-Traders-and-Raider\Space Traders and Raiders
+>>>>>>> Stashed changes
+>>>>>>> added the new font and changed the menus to have it
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< master
     m_SelectedIDs: a6390000
     m_LastClickedID: 14758
     m_ExpandedIDs: 0000000032290000ce340000fa34000008350000283500000c360000663700008637000066380000e6380000a639000000ca9a3b
+=======
+<<<<<<< Updated upstream
+    m_SelectedIDs: aa430000
+    m_LastClickedID: 17322
+    m_ExpandedIDs: 000000003e3f0000923f0000963f000078400000a6400000dc410000b04200002c430000aa430000de43000000ca9a3b
+=======
+    m_SelectedIDs: 12340000
+    m_LastClickedID: 13330
+    m_ExpandedIDs: 000000003c290000782f0000a42f0000b22f0000d22f0000b6300000103200003032000010330000903300005034000000ca9a3b
+>>>>>>> Stashed changes
+>>>>>>> added the new font and changed the menus to have it
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -378,7 +476,15 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< master
     m_ExpandedIDs: 0000000032290000ce340000fa34000008350000283500000c360000663700008637000066380000e6380000a6390000
+=======
+<<<<<<< Updated upstream
+    m_ExpandedIDs: 000000003e3f0000923f0000963f000078400000a6400000dc410000b04200002c430000aa430000de430000
+=======
+    m_ExpandedIDs: 000000003c290000782f0000a42f0000b22f0000d22f0000b63000001032000030320000103300009033000050340000
+>>>>>>> Stashed changes
+>>>>>>> added the new font and changed the menus to have it
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -433,7 +539,7 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 115
+  m_DirectoriesAreaWidth: 197
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -499,9 +605,21 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< master
       m_SelectedIDs: f8e5ffff
       m_LastClickedID: -6664
       m_ExpandedIDs: 3ceaffffa4eeffffa6f6ffff30f9ffff2cfaffffcc3e0000
+=======
+<<<<<<< Updated upstream
+      m_SelectedIDs: 52430000
+      m_LastClickedID: 0
+      m_ExpandedIDs: c4f6fffffcf6ffff32f7ffffaaf7ffff6ef8ffff
+=======
+      m_SelectedIDs: 12320000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 70f2ffffc0f4ffff9ef6ffff6afbffff0436000008360000323700003e370000c4370000ce370000
+>>>>>>> Stashed changes
+>>>>>>> added the new font and changed the menus to have it
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -561,9 +679,21 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< master
     m_Target: {x: 601.76556, y: 274.51917, z: -176.27359}
     speed: 2
     m_Value: {x: 652.11395, y: 280.64258, z: -96.14701}
+=======
+<<<<<<< Updated upstream
+    m_Target: {x: 10.971771, y: 0.5441816, z: 5.5330925}
+    speed: 2
+    m_Value: {x: 10.971771, y: 0.5441816, z: 5.5330925}
+=======
+    m_Target: {x: 1.2576455, y: 0.11611557, z: -245.54688}
+    speed: 2
+    m_Value: {x: 1.2576455, y: 0.11611557, z: -245.54688}
+>>>>>>> Stashed changes
+>>>>>>> added the new font and changed the menus to have it
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -596,9 +726,21 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< master
     m_Target: 729.4254
     speed: 2
     m_Value: 931.4806
+=======
+<<<<<<< Updated upstream
+    m_Target: 34.227554
+    speed: 2
+    m_Value: 32.75364
+=======
+    m_Target: 22.667994
+    speed: 2
+    m_Value: 22.667994
+>>>>>>> Stashed changes
+>>>>>>> added the new font and changed the menus to have it
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -617,7 +759,15 @@ MonoBehaviour:
     m_DynamicClip: 1
     m_OcclusionCulling: 0
   m_ShowGlobalGrid: 1
+<<<<<<< master
   m_LastSceneViewRotation: {x: 0.23444161, y: -0.37914503, z: -0.0999241, w: -0.8895543}
+=======
+<<<<<<< Updated upstream
+  m_LastSceneViewRotation: {x: 0, y: 0, z: 0, w: 0}
+=======
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+>>>>>>> Stashed changes
+>>>>>>> added the new font and changed the menus to have it
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 

@@ -1,5 +1,13 @@
 sceneSetups:
+<<<<<<< master
 - path: Assets/Scenes/WIP/Combat_Test.unity
+=======
+<<<<<<< Updated upstream
+- path: Assets/Scenes/Compile/OptionMenu.unity
+=======
+- path: Assets/Scenes/Compile/Nov 15.unity
+>>>>>>> Stashed changes
+>>>>>>> added the new font and changed the menus to have it
   isLoaded: 1
   isActive: 1
   isSubScene: 0
