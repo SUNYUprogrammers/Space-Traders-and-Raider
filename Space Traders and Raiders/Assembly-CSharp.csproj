@@ -1223,6 +1223,7 @@
     <Reference Include="System.Resources.Reader">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.6f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Reader.dll</HintPath>
     </Reference>
+<<<<<<< HEAD
     <Reference Include="System.Resources.ResourceManager">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.6f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.ResourceManager.dll</HintPath>
     </Reference>
@@ -1399,6 +1400,50 @@
 =======
 =======
 =======
+=======
+  </ItemGroup>
+  <ItemGroup>
+<<<<<<< HEAD
+<<<<<<< master
+=======
+=======
+>>>>>>> Planet_Selection
+<<<<<<< Updated upstream
+    <Compile Include="Assets\Scripts\Combat_Class.cs" />
+    <Compile Include="Assets\Scripts\Component_Class.cs" />
+    <Compile Include="Assets\Scripts\Facilities_Class.cs" />
+    <Compile Include="Assets\Scripts\Facility Subclasses\Barracks_Class.cs" />
+    <Compile Include="Assets\Scripts\Facility Subclasses\Mine_Class.cs" />
+    <Compile Include="Assets\Scripts\Facility Subclasses\SDS_Class.cs" />
+    <Compile Include="Assets\Scripts\Facility Subclasses\Shipyard_Class.cs" />
+    <Compile Include="Assets\Scripts\Facility Subclasses\TradeCenter_Class.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\HUD_Scripts\FrigateHoverMenu.cs" />
+    <Compile Include="Assets\Scripts\HUD_Scripts\HUD.cs" />
+    <Compile Include="Assets\Scripts\HUD_Scripts\HUDHoverMenu.cs" />
+    <Compile Include="Assets\Scripts\HUD_Scripts\IHUDHoverable.cs" />
+    <Compile Include="Assets\Scripts\HUD_Scripts\MenuEntry.cs" />
+    <Compile Include="Assets\Scripts\Map\MapGenerator.cs" />
+    <Compile Include="Assets\Scripts\Map\Sector.cs" />
+    <Compile Include="Assets\Scripts\Map\StarSystem.cs" />
+    <Compile Include="Assets\Scripts\Movement_Conflict_Detect.cs" />
+    <Compile Include="Assets\Scripts\Parallax.cs" />
+    <Compile Include="Assets\Scripts\Player_Class.cs" />
+    <Compile Include="Assets\Scripts\Ship Component Subclasses\AntiMissile_Class.cs" />
+    <Compile Include="Assets\Scripts\Ship Component Subclasses\Armour_Class.cs" />
+    <Compile Include="Assets\Scripts\Ship Component Subclasses\Beam_Class.cs" />
+    <Compile Include="Assets\Scripts\Ship Component Subclasses\Colonization_Class.cs" />
+    <Compile Include="Assets\Scripts\Ship Component Subclasses\Missile_Class.cs" />
+    <Compile Include="Assets\Scripts\Ship Component Subclasses\Repair_Class.cs" />
+    <Compile Include="Assets\Scripts\Ship Component Subclasses\Shield_Class.cs" />
+    <Compile Include="Assets\Scripts\Ship Component Subclasses\Thruster_Class.cs" />
+    <Compile Include="Assets\Scripts\Ship Type Subclasses\Battleship_Class.cs" />
+    <Compile Include="Assets\Scripts\Ship Type Subclasses\Cruiser_Class.cs" />
+    <Compile Include="Assets\Scripts\Ship Type Subclasses\Destroyer_Class.cs" />
+    <Compile Include="Assets\Scripts\Ship Type Subclasses\Dreadnought_Class.cs" />
+    <Compile Include="Assets\Scripts\Ship Type Subclasses\Frigate_Class.cs" />
+    <Compile Include="Assets\Scripts\Ship_Class.cs" />
+>>>>>>> Planet_Selection
     <Compile Include="Assets\Scripts\TradeRange_Detect.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Space-Traders-and-Raider/Space Traders and Raiders/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
@@ -1989,8 +2034,15 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.3f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
 =======
+<<<<<<< HEAD
 >>>>>>> Started working on planet selection
 >>>>>>> Started working on planet selection
+=======
+<<<<<<< HEAD
+>>>>>>> Started working on planet selection
+=======
+>>>>>>> Planet_Selection
+>>>>>>> Planet_Selection
      <Compile Include="Assets\Scripts\Combat_Class.cs" />
      <Compile Include="Assets\Scripts\Component_Class.cs" />
      <Compile Include="Assets\Scripts\Facilities_Class.cs" />
@@ -2012,16 +2064,27 @@
      <Compile Include="Assets\Scripts\Movement_Conflict_Detect.cs" />
      <Compile Include="Assets\Scripts\Parallax.cs" />
      <Compile Include="Assets\Scripts\Player_Class.cs" />
+<<<<<<< HEAD
 <<<<<<< Menu
      <Compile Include="Assets\Scripts\Selectables\SelectableGameObject.cs" />
      <Compile Include="Assets\Scripts\Selectables\SelectableSystem.cs" />
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> Planet_Selection
 <<<<<<< master
 =======
      <Compile Include="Assets\Scripts\Selectables\SelectableGameObject.cs" />
      <Compile Include="Assets\Scripts\Selectables\SelectableSystem.cs" />
 >>>>>>> Started working on planet selection
+<<<<<<< HEAD
 >>>>>>> Started working on planet selection
+=======
+=======
+     <Compile Include="Assets\Scripts\Selectables\SelectableGameObject.cs" />
+     <Compile Include="Assets\Scripts\Selectables\SelectableSystem.cs" />
+>>>>>>> Planet_Selection
+>>>>>>> Planet_Selection
      <Compile Include="Assets\Scripts\Ship Component Subclasses\AntiMissile_Class.cs" />
      <Compile Include="Assets\Scripts\Ship Component Subclasses\Armour_Class.cs" />
      <Compile Include="Assets\Scripts\Ship Component Subclasses\Beam_Class.cs" />
@@ -2625,6 +2688,7 @@
  <Reference Include="System.Xml.Serialization">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.5f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
+<<<<<<< HEAD
 <<<<<<< Menu
 =======
 <<<<<<< master
@@ -2632,6 +2696,16 @@
 >>>>>>> Started working on planet selection
 >>>>>>> Stashed changes
 >>>>>>> Started working on planet selection
+=======
+<<<<<<< HEAD
+<<<<<<< master
+=======
+>>>>>>> Stashed changes
+>>>>>>> Started working on planet selection
+=======
+>>>>>>> Stashed changes
+>>>>>>> Planet_Selection
+>>>>>>> Planet_Selection
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
