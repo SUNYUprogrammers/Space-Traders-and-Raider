@@ -707,8 +707,11 @@
     <Compile Include="Assets\Scripts\Combat_Class.cs" />
     <Compile Include="Assets\Scripts\Component_Class.cs" />
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <Compile Include="Assets\Scripts\GameManager.cs" />
 =======
+=======
+>>>>>>> Stashed changes
     <Compile Include="Assets\Scripts\Facilities_Class.cs" />
     <Compile Include="Assets\Scripts\Facility Subclasses\Barracks_Class.cs" />
     <Compile Include="Assets\Scripts\Facility Subclasses\Mine_Class.cs" />
@@ -720,6 +723,9 @@
     <Compile Include="Assets\Scripts\HUD_Scripts\CruiserHoverMenu.cs" />
     <Compile Include="Assets\Scripts\HUD_Scripts\DestroyerHoverMenu.cs" />
     <Compile Include="Assets\Scripts\HUD_Scripts\DreadnoughtHoverMenu.cs" />
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     <Compile Include="Assets\Scripts\HUD_Scripts\FrigateHoverMenu.cs" />
     <Compile Include="Assets\Scripts\HUD_Scripts\HUD.cs" />
@@ -727,6 +733,11 @@
     <Compile Include="Assets\Scripts\HUD_Scripts\IHUDHoverable.cs" />
     <Compile Include="Assets\Scripts\HUD_Scripts\MenuEntry.cs" />
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+    <Compile Include="Assets\Scripts\HUD_Scripts\NotificationsDisplay.cs" />
+    <Compile Include="Assets\Scripts\Map\ImageHelpers.cs" />
+>>>>>>> Stashed changes
 =======
     <Compile Include="Assets\Scripts\HUD_Scripts\NotificationsDisplay.cs" />
     <Compile Include="Assets\Scripts\Map\ImageHelpers.cs" />
@@ -741,6 +752,10 @@
     <Compile Include="Assets\Scripts\Menu\Options.cs" />
     <Compile Include="Assets\Scripts\Movement_Conflict_Detect.cs" />
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+    <Compile Include="Assets\Scripts\Parallax.cs" />
+>>>>>>> Stashed changes
 =======
     <Compile Include="Assets\Scripts\Parallax.cs" />
 >>>>>>> Stashed changes
@@ -760,6 +775,10 @@
     <Compile Include="Assets\Scripts\Ship Type Subclasses\Frigate_Class.cs" />
     <Compile Include="Assets\Scripts\Ship_Class.cs" />
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+    <Compile Include="Assets\Scripts\TradeRange_Detect.cs" />
+>>>>>>> Stashed changes
 =======
     <Compile Include="Assets\Scripts\TradeRange_Detect.cs" />
 >>>>>>> Stashed changes
