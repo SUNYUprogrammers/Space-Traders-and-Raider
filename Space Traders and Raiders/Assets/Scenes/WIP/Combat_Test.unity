@@ -1120,6 +1120,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: AskCombat
       objectReference: {fileID: 0}
+    - target: {fileID: 1532283000891971641, guid: fc44089edad5cd740b67f3e3654ff6b2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1532283000891971636, guid: fc44089edad5cd740b67f3e3654ff6b2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1133,22 +1138,22 @@ PrefabInstance:
     - target: {fileID: 1532283000891971636, guid: fc44089edad5cd740b67f3e3654ff6b2,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 57.25333
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1532283000891971636, guid: fc44089edad5cd740b67f3e3654ff6b2,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1532283000891971636, guid: fc44089edad5cd740b67f3e3654ff6b2,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1532283000891971636, guid: fc44089edad5cd740b67f3e3654ff6b2,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1532283000891971636, guid: fc44089edad5cd740b67f3e3654ff6b2,
         type: 3}
@@ -1178,12 +1183,12 @@ PrefabInstance:
     - target: {fileID: 1532283000891971636, guid: fc44089edad5cd740b67f3e3654ff6b2,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -122.544815
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1532283000891971636, guid: fc44089edad5cd740b67f3e3654ff6b2,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -163.2652
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1532283000891971636, guid: fc44089edad5cd740b67f3e3654ff6b2,
         type: 3}
