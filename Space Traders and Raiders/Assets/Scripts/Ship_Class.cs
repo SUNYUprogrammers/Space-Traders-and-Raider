@@ -15,7 +15,7 @@ abstract public class Ship_Class : MonoBehaviour
 
     protected int size;                         //How many slots the ship has
     [SerializeField]
-    protected Component_Class[] parts_list;     //What component is in each slot
+    public Component_Class[] parts_list;     //What component is in each slot
     [SerializeField]
     protected int ship_speed;                   //How fast can the ship move, calculated from stored thrusters
     [SerializeField]
