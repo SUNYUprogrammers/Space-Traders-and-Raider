@@ -8,6 +8,7 @@ public class Beam_Class : Component_Class
     public override void Awake()
     {
         type = "Beam";
+        health = 2;
     }
 
     // Update is called once per frame

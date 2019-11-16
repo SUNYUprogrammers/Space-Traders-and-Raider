@@ -11,7 +11,7 @@ abstract public class Ship_Class : MonoBehaviour
     [SerializeField]
     public string faction;
 
-    public int power;
+    public int power;//apprently this is health
 
     protected int size;                         //How many slots the ship has
     
@@ -90,7 +90,7 @@ abstract public class Ship_Class : MonoBehaviour
             temp.z = 10f;
             temp = Camera.main.ScreenToWorldPoint(temp);                                                                    //Find coord to move to
 
-            print("Move ship to: " + temp.x + " " + temp.y);
+           // print("Move ship to: " + temp.x + " " + temp.y);
             pos_temp.x = temp.x - pos_temp.x;
             pos_temp.y = temp.y - pos_temp.y;
             //print("Move ship in direction: " + (int)pos_temp.x + " " + (int)pos_temp.y);
@@ -340,7 +340,7 @@ abstract public class Ship_Class : MonoBehaviour
                             ship_speed = +1;
                     }
                 }
-            }
+            }     
         }
     }
     //test

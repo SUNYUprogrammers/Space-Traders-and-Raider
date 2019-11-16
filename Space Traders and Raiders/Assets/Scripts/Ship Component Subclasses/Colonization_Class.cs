@@ -8,6 +8,7 @@ public class Colonization_Class : Component_Class
     public override void Awake()
     {
         type = "Colonization";
+        health = 2;
     }
 
     // Update is called once per frame

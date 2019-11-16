@@ -162,6 +162,9 @@ public class Player_Class : MonoBehaviour
                     temp2.GetComponent<Ship_Class>().ship.color = PlayerColor;
                     temp2.GetComponent<Ship_Class>().faction = "Player1";
                     temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Thruster_Class>(),0);
+                    temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Beam_Class>(),1);//ADD FOR COMBAT
+                    temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Shield_Class>(),2);//ADD FOR COMBAT
+
 
                     //Spawn in facilities here
                     homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<Mine_Class>(),false);
@@ -177,6 +180,8 @@ public class Player_Class : MonoBehaviour
                     temp2.GetComponent<Ship_Class>().ship.color = PlayerColor;
                     temp2.GetComponent<Ship_Class>().faction = "Player2";
                     temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Thruster_Class>(), 0);
+                    temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Beam_Class>(),1);//ADD FOR COMBAT
+                    temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Shield_Class>(),2);//ADD FOR COMBAT
 
                     homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<Mine_Class>(),false);
                     homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<Shipyard_Class>(),false);

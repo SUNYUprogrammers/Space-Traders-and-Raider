@@ -8,6 +8,8 @@ abstract public class Component_Class : MonoBehaviour
     protected string type;
     [SerializeField]
     protected string faction;
+    [SerializeField]
+    protected int health;
     //[SerializeField]
     //protected int tier;
     public string getType()
@@ -24,6 +26,15 @@ abstract public class Component_Class : MonoBehaviour
     public void setFaction(string i)
     {
         faction = i;
+    }
+
+    public int gethealth()
+    {
+        return health;
+    }
+    public void dechealth()
+    {
+        health--;
     }
 
     /*public int getTier()
@@ -45,6 +56,6 @@ abstract public class Component_Class : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+            
     }
 }

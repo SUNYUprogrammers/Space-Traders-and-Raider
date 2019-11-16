@@ -8,6 +8,7 @@ public class Repair_Class : Component_Class
     public override void Awake()
     {
         type = "Repair";
+        health = 2;
     }
 
     // Update is called once per frame
