@@ -12,7 +12,7 @@ abstract public class Ship_Class : MonoBehaviour
     public string faction;
 
     public int power;//apprently this is health
-
+    public bool hasAttacked = false; //used in combat, otherwise dont touch values
     protected int size;                         //How many slots the ship has
     
     public Component_Class[] parts_list;     //What component is in each slot

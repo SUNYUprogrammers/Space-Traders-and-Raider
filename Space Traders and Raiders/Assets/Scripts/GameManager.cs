@@ -156,7 +156,7 @@ public class GameManager : MonoBehaviour
                         {
                             if (i != null && true/*faction == factionCurrent*/)
                             {
-                                print("Cycle through and select " + i.name+" from "+ hit.transform.gameObject.name);
+                               //print("Cycle through and select " + i.name+" from "+ hit.transform.gameObject.name);
 
                                 if (hit.transform.gameObject.GetComponent<Ship_Class>().selected == true)
                                     i.selected = false;
@@ -179,14 +179,14 @@ public class GameManager : MonoBehaviour
                         {
                             if (true/*faction == factionCurrent*/ && i != null)
                             {
-                                print("Ship from stack " + i.name);
+                                //print("Ship from stack " + i.name);
 
                                 //print("");
 
                                 if (hit.transform.gameObject.GetComponent<Ship_Class>().shipsInStack[hit.transform.gameObject.GetComponent<Ship_Class>().
                                     selectFromStack] == i)
                                 {
-                                    print("Selected " + i.name);
+                                    //print("Selected " + i.name);
                                     i.selected = true;
                                 }
                                 else
@@ -272,7 +272,7 @@ public class GameManager : MonoBehaviour
     }
     public void endTurn()
     {
-        print(currentPlayer.playerFaction);
+        //print(currentPlayer.playerFaction);
 
         bool movesLeft = false;
         foreach (Ship_Class temp in currentPlayer.playerShips)
@@ -287,7 +287,7 @@ public class GameManager : MonoBehaviour
                 temp.selected = false;
             }
         }
-        print(movesLeft);
+        //print(movesLeft);
         if (movesLeft == false || GameObject.Find("confirm").GetComponent<Canvas>().enabled == true)
         {
             players[0].currentTurn = !players[0].currentTurn;
