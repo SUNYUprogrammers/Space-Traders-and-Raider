@@ -431,19 +431,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ship_type: 
   selected: 0
-  faction: Player2
+  faction: 
   power: 0
-  parts_list:
-  - {fileID: 261871292}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  parts_list: []
   ship_speed: 0
-  rangeIndicator: {fileID: 1263531751}
+  rangeIndicator: {fileID: 0}
   moves_left: 0
   pos: {x: 0, y: 0, z: 0}
-  hostile: {fileID: 1888681400}
+  hostile: {fileID: 0}
   gm: {fileID: 0}
   shipsInStack: []
   selectFromStack: 0
@@ -574,9 +569,22 @@ MonoBehaviour:
   stackerRunning: 0
   hud: {fileID: 221353951}
   turnsSoFar: 0
-  players:
-  - {fileID: 0}
-  - {fileID: 0}
+  factions:
+  - Player1
+  - Player2
+  homeSystems:
+  - {fileID: 21300000, guid: 0c2e7b9c239d51d41967fdc0825f6a76, type: 3}
+  - {fileID: 21300000, guid: 33742486f79574344b137138e3a548e6, type: 3}
+  - {fileID: 21300000, guid: 40afefaa9b5a7d9459142d8c40148236, type: 3}
+  - {fileID: 21300000, guid: d578e2a6a4567244f896926e0e6f79bb, type: 3}
+  - {fileID: 21300000, guid: 37e744e8fc847604c96b5692f92b63ef, type: 3}
+  tradeRadius:
+  - {fileID: 21300000, guid: 4270bf986f9126b40adf80320b7e1b1a, type: 3}
+  - {fileID: 21300000, guid: d07c5cd40e5ec8b4db4f1c0a933bbc50, type: 3}
+  - {fileID: 21300000, guid: 5deba0be14121d440a911bef0800d595, type: 3}
+  - {fileID: 21300000, guid: 9ecaac40ce9e201468cbf0254fa5d6c5, type: 3}
+  - {fileID: 21300000, guid: cd1b34f35d581bf499f17048bd5d8877, type: 3}
+  players: []
   currentPlayer: {fileID: 0}
   x_max: 0
   y_max: 0
@@ -1441,7 +1449,7 @@ PrefabInstance:
     - target: {fileID: 8386359321180623468, guid: 9e782ae5371142e46931806ca1522d8b,
         type: 3}
       propertyPath: planets.Array.size
-      value: 4
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8386359321180623468, guid: 9e782ae5371142e46931806ca1522d8b,
         type: 3}
@@ -1478,27 +1486,57 @@ PrefabInstance:
         type: 3}
       propertyPath: planets.Array.data[0]
       value: 
-      objectReference: {fileID: 2800000, guid: feb559329fc9ef1409c866a34bc8eb35, type: 3}
+      objectReference: {fileID: 2800000, guid: 42b91182b6db80d448d3ebf77203991e, type: 3}
     - target: {fileID: 8386359321180623468, guid: 9e782ae5371142e46931806ca1522d8b,
         type: 3}
       propertyPath: planets.Array.data[1]
       value: 
-      objectReference: {fileID: 2800000, guid: 660acb16b9dc05e43a0c88d6e456c1f7, type: 3}
+      objectReference: {fileID: 2800000, guid: c2f5eabd626137a4eb8c2793bd5005c3, type: 3}
     - target: {fileID: 8386359321180623468, guid: 9e782ae5371142e46931806ca1522d8b,
         type: 3}
       propertyPath: planets.Array.data[2]
       value: 
-      objectReference: {fileID: 2800000, guid: 992cacb62bddeef4cacf84fc83f06b81, type: 3}
+      objectReference: {fileID: 2800000, guid: f20201b37ff793a4a896018cba38a310, type: 3}
     - target: {fileID: 8386359321180623468, guid: 9e782ae5371142e46931806ca1522d8b,
         type: 3}
       propertyPath: planets.Array.data[3]
       value: 
-      objectReference: {fileID: 2800000, guid: 4d05202e9c2bd664f98b12c0c8637a3d, type: 3}
+      objectReference: {fileID: 2800000, guid: bb224c66c3de33d4c82c78bb4c60b15b, type: 3}
     - target: {fileID: 8386359321180623468, guid: 9e782ae5371142e46931806ca1522d8b,
         type: 3}
       propertyPath: planets.Array.data[4]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2800000, guid: 239f33bd18e485948a9ee8fad8b1fabb, type: 3}
+    - target: {fileID: 8386359321180623468, guid: 9e782ae5371142e46931806ca1522d8b,
+        type: 3}
+      propertyPath: planets.Array.data[5]
+      value: 
+      objectReference: {fileID: 2800000, guid: 518c2dd9287eaa043baf717c7364e52d, type: 3}
+    - target: {fileID: 8386359321180623468, guid: 9e782ae5371142e46931806ca1522d8b,
+        type: 3}
+      propertyPath: planets.Array.data[6]
+      value: 
+      objectReference: {fileID: 2800000, guid: feb559329fc9ef1409c866a34bc8eb35, type: 3}
+    - target: {fileID: 8386359321180623468, guid: 9e782ae5371142e46931806ca1522d8b,
+        type: 3}
+      propertyPath: planets.Array.data[7]
+      value: 
+      objectReference: {fileID: 2800000, guid: 660acb16b9dc05e43a0c88d6e456c1f7, type: 3}
+    - target: {fileID: 8386359321180623468, guid: 9e782ae5371142e46931806ca1522d8b,
+        type: 3}
+      propertyPath: planets.Array.data[8]
+      value: 
+      objectReference: {fileID: 2800000, guid: 992cacb62bddeef4cacf84fc83f06b81, type: 3}
+    - target: {fileID: 8386359321180623468, guid: 9e782ae5371142e46931806ca1522d8b,
+        type: 3}
+      propertyPath: planets.Array.data[9]
+      value: 
+      objectReference: {fileID: 2800000, guid: 4d05202e9c2bd664f98b12c0c8637a3d, type: 3}
+    - target: {fileID: 8386359321180623468, guid: 9e782ae5371142e46931806ca1522d8b,
+        type: 3}
+      propertyPath: planets.Array.data[10]
+      value: 
+      objectReference: {fileID: 2800000, guid: cda1f8e4692981842a15200c400029e2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e782ae5371142e46931806ca1522d8b, type: 3}
 --- !u!1 &1345572424
@@ -1903,27 +1941,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e651da421972cfe4fb9e5f4908d110b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ship_type: 
-  selected: 0
-  faction: 
-  power: 0
-  parts_list: []
-  ship_speed: 0
-  rangeIndicator: {fileID: 0}
-  moves_left: 0
-  pos: {x: 0, y: 0, z: 0}
-  hostile: {fileID: 0}
-  gm: {fileID: 0}
-  shipsInStack: []
-  selectFromStack: 0
-  trade:
-  - 
-  - 
-  ship: {fileID: 0}
   good: []
   bad: []
-  CombatUI: {fileID: 830759425}
-  Askcombat: {fileID: 884741630}
+  shipsStack: []
+  CombatUI: {fileID: 0}
+  Askcombat: {fileID: 0}
 --- !u!4 &2128332387
 Transform:
   m_ObjectHideFlags: 0

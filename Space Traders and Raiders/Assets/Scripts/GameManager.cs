@@ -9,6 +9,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] HUD hud;
 
     public int turnsSoFar = 0;
+
+    public string[] factions;
+
+    public Sprite[] homeSystems;
+    public Sprite[] tradeRadius;
+
     public Player_Class[] players;
     public Player_Class currentPlayer;
 
@@ -33,10 +39,11 @@ public class GameManager : MonoBehaviour
         y_max = 4;
         y_min = -3;
 
-        players[0] = this.gameObject.AddComponent<Player_Class>();
-        players[0].playerFaction = "Player1";
-        players[1] = this.gameObject.AddComponent<Player_Class>();
-        players[1].playerFaction = "Player2";
+        players = new Player_Class[factions.Length];
+        for(int i = 0; i < players.Length; i ++){
+          players[i] = this.gameObject.AddComponent<Player_Class>();
+          players[i].playerFaction = factions[i];
+        }
 
         currentPlayer = players[0];
         players[0].currentTurn = true;
@@ -245,7 +252,7 @@ public class GameManager : MonoBehaviour
             m = 0;
             foreach (TradeCenter_Class i in temp)
             {
-                for (j = 0; j < i.x.Length; j++)
+                for (j = 0; i.x != null && j < i.x.Length; j++)
                 {
                     for (l = 0; l < i.y.Length; l++)
                     {
@@ -367,5 +374,17 @@ public class GameManager : MonoBehaviour
     public void calcResources(int upgrade_lvl, int type, Player_Class owner)
     {
         owner.chargeResources(cost1[upgrade_lvl,type], cost2[upgrade_lvl, type], cost3[upgrade_lvl, type]);
+    }
+
+    public int getFactionIndex(string faction){
+      int ret = -1;
+
+      for(int i = 0; i < factions.Length && ret < 0; i ++){
+        if(faction.Equals(factions[i])){
+          ret = i;
+        }
+      }
+
+      return ret;
     }
 }

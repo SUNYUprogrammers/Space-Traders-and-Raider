@@ -66,7 +66,7 @@ public class MapGenerator : MonoBehaviour
 
                         if(theSystem != SystemType.EMPTY){
                           SelectableSystem ss = newTile.AddComponent(typeof(SelectableSystem)) as SelectableSystem;
-                          Texture2D col = new Texture2D(128, 128, TextureFormat.RGBA32, false);
+                          Texture2D col = new Texture2D(132, 132, TextureFormat.RGBA32, false);
 
 
                           Color c = new Color(0f, 0f, 0f, ColorOverlayOpacity);
