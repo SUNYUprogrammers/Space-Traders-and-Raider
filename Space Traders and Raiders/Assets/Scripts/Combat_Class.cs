@@ -39,8 +39,9 @@ public class Combat_Class : MonoBehaviour
     
     int goods;
     int bads;
-    int numofbeam, numofmissle, numofsheild, numofantimissle,numofarmor = 0;
+    int numofbeam, numofmissle, numofsheild, numofantimissle,numofarmor,number,attrows,attcolms,defrows, defcolms  = 0;
     int loc;
+
     public void Start()
     {
         gm = GameObject.FindObjectOfType<GameManager>(); 
@@ -78,8 +79,8 @@ public class Combat_Class : MonoBehaviour
     {
         foreach(Ship_Class i in shipsStack)
         {
-            print(i.faction);
-            print(gm.currentPlayer.playerFaction);
+           // print(i.faction);
+            //print(gm.currentPlayer.playerFaction);
             if(i.faction == gm.currentPlayer.playerFaction)
             {
                 goods++;
@@ -97,7 +98,7 @@ public class Combat_Class : MonoBehaviour
         Retreat();
         CombatUI.enabled = true;
         count();
-        print(goods + "      " + bads);
+       // print(goods + "      " + bads);
         good = new Ship_Class[goods];
         bad = new Ship_Class[bads];
         //print("Size of good " + good.Length);
@@ -117,39 +118,38 @@ public class Combat_Class : MonoBehaviour
 
     private void dica(Ship_Class[] ss)//haha germany get it
     {
-        int y = 0;
-        int z = 0;
         foreach(Ship_Class i in ss)
         {
             if(i != null)
             {
+                attcolms = 0;
                 foreach(Component_Class d in i.parts_list)
                 {
                 //print(d);
-                    attlist[y,z] = 2;
-                    z++;
+                    attlist[attrows,attcolms] = 2;
+                    attcolms++;
                 }
-                y++;
-                z = 0;
+                attrows++;
             }
         }
+        
     }
 
     private void dicd(Ship_Class[] bb)
     {
-        int y = 0;
-        int z = 0;
+         
         foreach(Ship_Class i in bb)
         {
             if(i != null)
             {
+                defcolms = 0;
                 foreach(Component_Class d in i.parts_list)
                 {
-                    attlist[y,z] = 2;
-                    z++;
+                    deflist[defrows,defcolms] = 2;
+                    defcolms++;
                 }
-                y++;
-                z=0;
+                defrows++;
+
             }
             
         }
@@ -203,12 +203,39 @@ public class Combat_Class : MonoBehaviour
                     
                     break;
                 case 1:
+                    attacker = good[place];
+                    spota = place;
+                    if(!Switchsides)
+                    {
+                        atwo.interactable = false;
+                    }
                     break;
                 case 2:
+                    attacker = good[place];
+                    spota = place;
+                   // print(aone);
+                    if(!Switchsides)
+                    {
+                        athree.interactable = false;
+                    }
                     break;
                 case 3:
+                    attacker = good[place];
+                    spota = place;
+                   // print(aone);
+                    if(!Switchsides)
+                    {
+                        afour.interactable = false;
+                    }
                     break;
                 case 4:
+                    attacker = good[place];
+                    spota = place;
+                   // print(aone);
+                    if(!Switchsides)
+                    {
+                        afive.interactable = false;
+                    }
                     break;
 
 
@@ -230,12 +257,36 @@ public class Combat_Class : MonoBehaviour
                     }
                     break;
                 case 1:
+                    defender = bad[place];
+                    spotd = place;
+                    if(Switchsides)
+                    {
+                        btwo.interactable = false;
+                    }
                     break;
                 case 2:
+                     defender = bad[place];
+                    spotd = place;
+                    if(Switchsides)
+                    {
+                        bone.interactable = false;
+                    }
                     break;
                 case 3:
+                     defender = bad[place];
+                    spotd = place;
+                    if(Switchsides)
+                    {
+                        bone.interactable = false;
+                    }
                     break;
                 case 4:
+                     defender = bad[place];
+                    spotd = place;
+                    if(Switchsides)
+                    {
+                        bone.interactable = false;
+                    }
                     break;
 
 
@@ -269,6 +320,9 @@ public class Combat_Class : MonoBehaviour
             //print(Switch);
             if (attacker != null && defender != null && Switchsides == false)//Attacker Turn(Initante Combat)
             {
+                print("Attacker Turn");
+                enableattackerbuttons();
+                enabledefenderbuttons();
                 FindWeapons(attacker.parts_list);
                 FindDefense(defender.parts_list);
                 print(numofbeam + "  " + numofmissle + "  " + numofsheild + "   " + numofantimissle);
@@ -303,7 +357,7 @@ public class Combat_Class : MonoBehaviour
                                     else
                                     {
                                         print("Compoents under attack");
-                                        int number = Random.Range(0,4); //this array stores def compoents health
+                                        number = Random.Range(0,4); //this array stores def compoents health
                                         switch(deflist[spotd,number]) 
                                         {
                                             case 2:
@@ -324,8 +378,8 @@ public class Combat_Class : MonoBehaviour
                                 }
                             }
                             else
-                            {
-                                print("Damage was done");
+                            { 
+                                print("Damage was done"); 
                                    if(numofarmor != 0)//armor has to be DESTROYED
                                     {
                                         print("armor is under attack");
@@ -339,7 +393,7 @@ public class Combat_Class : MonoBehaviour
                                     else
                                     {
                                         print("Compoents under attack");
-                                        int number = Random.Range(0,4); //this array stores def compoents health
+                                        number = Random.Range(0,4); //this array stores def compoents health
                                         switch(deflist[spotd,number]) 
                                         {
                                             case 2:
@@ -367,6 +421,7 @@ public class Combat_Class : MonoBehaviour
                     }
                     else if(numofmissle != 0)//Missile Attacks
                     {
+                        numofmissle--;
                         if(Random.Range(0,100) >= 50)//50% of hitting with a hitting
                         {
                             if(numofantimissle != 0)//do they have an anti missile
@@ -388,7 +443,7 @@ public class Combat_Class : MonoBehaviour
                                     else
                                     {
                                         print("Compoents under attack");
-                                        int number = Random.Range(0,4); //this array stores def compoents health
+                                        number = Random.Range(0,4); //this array stores def compoents health
                                         switch(deflist[spotd,number]) 
                                         {
                                             case 2:
@@ -423,7 +478,7 @@ public class Combat_Class : MonoBehaviour
                                 else
                                 {
                                     print("Compoents under attack");
-                                    int number = Random.Range(0,4); //this array stores def compoents health
+                                    number = Random.Range(0,4); //this array stores def compoents health
                                     switch(deflist[spotd,number]) 
                                     {
                                         case 2:
@@ -449,7 +504,7 @@ public class Combat_Class : MonoBehaviour
                         }
                     }
                     
-                }
+                }//end for loop
                 attacker.hasAttacked = true;
                 attacker = null;
                 defender = null;
@@ -468,13 +523,208 @@ public class Combat_Class : MonoBehaviour
                 }
                 
             }
-           //print(Switchsides);
+            //print(Switchsides);
             if (attacker != null && defender != null && Switchsides == true)//Defender attacks Attacker
             {
                 enableattackerbuttons();
                 enabledefenderbuttons();
                 print("defender turn");
+                FindWeapons(defender.parts_list);
+                FindDefense(attacker.parts_list);
+                print(numofbeam + "  " + numofmissle + "  " + numofsheild + "   " + numofantimissle);
+                int weaps = numofbeam + numofmissle;
+                for(int i = 0; i < weaps;i++)
+                {
+                    if(numofbeam != 0)
+                    {
+                        numofbeam--;
+                        if(Random.Range(0,100) <= 50)
+                        {
+                            if(numofsheild !=0)
+                            {
+                                numofsheild--;
+                                if(Random.Range(0,100) >= 50)//50% of blocking, if its more then 50 then block 
+                                {
+                                    print("Damage was blocked");
+                                }
+                                else
+                                {
+                                     print("Damage was done");
+                                    if(numofarmor != 0)//armor has to be DESTROYED
+                                    {
+                                        
+                                        print("armor is under attack");
+                                        Findarmor(attacker.parts_list);
+                                        attlist[spota,loc]--; //minus 1 health to armor
+                                        if(attlist[spota,loc] == 0)
+                                        {
+                                            numofarmor--;
+                                        } 
+                                    }
+                                    else//after armor is destroyed
+                                    {
+                                        print("Compoents under attack");
+                                        number = Random.Range(0,4); //this array stores def compoents health
+                                        switch(attlist[spota,number]) 
+                                        {
+                                            case 2:
+                                                attlist[spota,number] = 1;//Compoent has lost 1 health
+                                                print(attlist[spota,number] + "has lost 1 health");
+                                                break;
+                                            case 1: 
+                                                attlist[spota,number] = 0;//Component has been destroyed
+                                                 print(attlist[spotd,number] + "Component has been destroyed");
+                                                break;
+                                            default:
+                                                attlist[spota,number] = -1;//Ship takes a hull hit
+                                                 print(attlist[spota,number] + "Ship took a hull hit");
+                                                break;
+                                        }
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                   print("Damage was done"); 
+                                   if(numofarmor != 0)//armor has to be DESTROYED
+                                    {
+                                        print("armor is under attack");
+                                        Findarmor(attacker.parts_list);
+                                        attlist[spota,loc]--; //minus 1 health to armor
+                                        if(attlist[spota,loc] == 0)
+                                        {
+                                            numofarmor--;
+                                        } 
+                                    }
+                                    else
+                                    {
+                                        print("Compoents under attack");
+                                        int number = Random.Range(0,4); //this array stores def compoents health
+                                        switch(attlist[spota,number]) 
+                                        {
+                                            case 2:
+                                                attlist[spota,number] = 1;//Compoent has lost 1 health
+                                                print(attlist[spota,number] + "has lost 1 health");
+                                                break;
+                                            case 1: 
+                                                attlist[spota,number] = 0;//Component has been destroyed
+                                                 print(attlist[spota,number] + "Component has been destroyed");
+                                                break;
+                                            default:
+                                                attlist[spota,number] = -1;//Ship takes a hull hit
+                                                 print(attlist[spota,number] + "Ship took a hull hit");
+                                                break;     
+                                        }
+                                    }
+                            }
+                        }
+                        else
+                        {
+                            print("Defender Attack missed");
+                        }
+                    }
+                    else if(numofmissle != 0)
+                    {
+                        numofmissle--;
+                        if(Random.Range(0,100) >= 50)//50% of hitting with a hitting
+                        {
+                            if(numofantimissle != 0)//do they have an anti missile
+                            {
+                                if(Random.Range(0,100) <= 50)//50% of blocking
+                                {
+                                    print("Iron Dome activated");
+                                }
+                                else
+                                {
+                                    print("Damage was done");
+                                    if(numofarmor != 0)
+                                    {
+                                        print("armor is under attack");
+                                        Findarmor(attacker.parts_list);
+                                        numofarmor--;
+                                        attlist[spota,loc] = 1; 
+                                    }
+                                    else
+                                    {
+                                        print("Compoents under attack");
+                                        number = Random.Range(0,4); //this array stores def compoents health
+                                        switch(attlist[spota,number]) 
+                                        {
+                                            case 2:
+                                                attlist[spotd,number] = 1;//Compoent has lost 1 health
+                                                print(attlist[spota,number] + "has lost 1 health");
+                                                break;
+                                            case 1: 
+                                                 attlist[spotd,number] = 0;//Component has been destroyed
+                                                 print(attlist[spota,number] + "Component has been destroyed");
+                                                break;
+                                            default:
+                                                attlist[spota,number] = -1;//Ship takes a hull hit
+                                                 print(attlist[spota,number] + "Ship took a hull hit");
+                                                break;
+                                        }
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                 print("Damage was done");
+                                    if(numofarmor != 0)
+                                    {
+                                        print("armor is under attack");
+                                        Findarmor(attacker.parts_list);
+                                        numofarmor--;
+                                        attlist[spota,loc] = 1; 
+                                    }
+                                    else
+                                    {
+                                        print("Compoents under attack");
+                                        number = Random.Range(0,4); //this array stores def compoents health
+                                        switch(attlist[spota,number]) 
+                                        {
+                                            case 2:
+                                                attlist[spota,number] = 1;//Compoent has lost 1 health
+                                                print(attlist[spota,number] + "has lost 1 health");
+                                                break;
+                                            case 1: 
+                                                 attlist[spota,number] = 0;//Component has been destroyed
+                                                 print(attlist[spota,number] + "Component has been destroyed");
+                                                break;
+                                            default:
+                                                attlist[spota,number] = -1;//Ship takes a hull hit
+                                                 print(attlist[spota,number] + "Ship took a hull hit");
+                                                break;
+                                        }
+                                    }
+                            }
+                        }
+                        else
+                        {
+                            print("Your missiles were a dud");
+                        }
+                    }
+                }//endforloop
+                defender.hasAttacked = true;
+                attacker = null;
+                defender = null;
+                resetweaps();
+                 calcdamges(); //remove later
             }
+            value = 0;
+            foreach (Ship_Class i in bad)
+            {
+                if(i.hasAttacked == true && i != null)
+                {
+                    value++;
+                }
+                if(value == bad.Length)
+                {
+                    Switchsides = false;
+                }
+                
+            }
+            resetattackbools();
+           
 
 
         }
@@ -602,10 +852,41 @@ public class Combat_Class : MonoBehaviour
         numofmissle = 0;
         numofsheild = 0;
     }
+
+    public void resetattackbools()
+    {
+        foreach(Ship_Class i in shipsStack)
+        {
+            if(i != null)
+            {
+                i.hasAttacked = false;
+            }
+        }
+    }
    
+    public void calcdamges()
+    {
+        for(int i = 0; i <= defrows;i++)
+        {
+            for(int j = 0; j <= defcolms;j++)
+            {
+                print(deflist[i,j]);
+            }
+        }
 
-
+        for(int i = 0; i <= attrows;i++)
+        {
+            for(int j = 0; j <= attcolms;j++)
+            {
+                print(attlist[i,j]);
+            }
+        }
+    }
 }
+
+    
+
+
 
    
 
