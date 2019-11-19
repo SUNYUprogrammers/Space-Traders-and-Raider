@@ -316,6 +316,7 @@ abstract public class Ship_Class : MonoBehaviour
 
     public void installComponent(Component_Class i, int j)
     {
+        print(i);
         i.setFaction(this.faction);
 
         if (i.getType() == "")
