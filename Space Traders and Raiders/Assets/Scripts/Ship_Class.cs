@@ -338,9 +338,13 @@ abstract public class Ship_Class : MonoBehaviour
                     if (k != null)
                     {
                         if (k.getType() == "Thruster")
-                            ship_speed = +1;
+                        {
+                            print(ship_speed+" +1 speed");
+                            ship_speed++;
+                        }
                     }
                 }
+                print("New Speed: "+ship_speed);
             }
         }
     }
