@@ -15,7 +15,7 @@ public class Beam_Class : Component_Class
     {
         if (img == null)
         {
-            img = ((GameObject)Resources.Load("Victory")).GetComponent<Image>().sprite;
+            img = ((GameObject)Resources.Load("Beam")).GetComponent<Image>().sprite;
             //img = Resources.Load("Victory") as Sprite;
             print("HEY YOU " + img);
         }

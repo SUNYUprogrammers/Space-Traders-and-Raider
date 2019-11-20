@@ -18,6 +18,7 @@ public class InstallMenu : MonoBehaviour
     public Text[] Ship_list;
     public Text[] parts_avail;
 
+    public GameObject part2;
     public Image[] part_view;
 
     // Start is called before the first frame update
@@ -61,6 +62,21 @@ public class InstallMenu : MonoBehaviour
         }
         if(selected_ship != null)
         {
+            //if(part2 != null)
+                //print(part2.name + " " + (selected_ship.getShipType() + "(Clone)"));
+            if (part2 == null || part2.name != (selected_ship.getShipType()+"(Clone)"))
+            {
+                part2 = Instantiate((GameObject)Resources.Load(selected_ship.getShipType()),this.transform);
+                int h=0;
+                foreach(Button i in part2.GetComponentsInChildren<Button>())
+                {
+                    print("Button " + i.name + " " + h);
+                    i.onClick.AddListener(() => install(int.Parse(i.name)));
+                    part_view[h] = i.GetComponent<Image>();
+                    h++;
+                }
+            }
+
             int u = 0;
             //part_view = new Image[selected_ship.parts_list.Length];
             foreach(Component_Class i in selected_ship.parts_list)
