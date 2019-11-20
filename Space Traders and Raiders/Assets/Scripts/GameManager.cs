@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public bool stackerRunning;
 
-    public GameObject planetUI;
+    public Canvas planetUI;
     [SerializeField] HUD hud;
 
     public int turnsSoFar = 0;
@@ -146,7 +146,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !this.planetUI.activeSelf)                                                                //Detect player click
+        if (Input.GetMouseButtonDown(0) && !this.planetUI.enabled)                                                                //Detect player click
         {
             //print("Click " + Input.GetKey(KeyCode.LeftControl) + Input.GetKey(KeyCode.LeftShift));
             RaycastHit hit;
@@ -155,7 +155,7 @@ public class GameManager : MonoBehaviour
             int layerMask = 1 << 8; //Ships
             if (Physics.Raycast(ray, out hit, layerMask))                                                         //If selection found
             {
-                //print("You selected " + hit.transform.name+" : "+this.transform.name);               //Ensure you picked right object
+                print("You selected " + hit.transform.name+" : "+this.transform.name);               //Ensure you picked right object
                 //The object hit is a Ship
                 if (hit.transform.gameObject.GetComponent<Ship_Class>() != null) //&& hit.transform.name == this.transform.name)
                 {                                                //If current player owns ship and is only left clicking
@@ -240,8 +240,10 @@ public class GameManager : MonoBehaviour
 
               }
             }
-        } else if(Input.GetMouseButtonDown(0)){  //The planetUI is up
-
+        }
+        else if(Input.GetMouseButtonDown(0))
+        {  //The planetUI is up
+            print("UI is still up");
         }
         if(false)
         {

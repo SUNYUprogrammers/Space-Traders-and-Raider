@@ -36,7 +36,7 @@ public class MapGenerator : MonoBehaviour
 
 
     [SerializeField] private GameObject tilePrefab;
-    public GameObject planetUI;
+    public Canvas planetUI;
 
     static private float ColorOverlayOpacity = .1f;
     static private float ColorOverlayBorderOpacity = .5f;

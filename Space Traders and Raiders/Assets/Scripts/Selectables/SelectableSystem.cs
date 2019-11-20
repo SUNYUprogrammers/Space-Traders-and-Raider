@@ -4,23 +4,26 @@ using UnityEngine;
 
 public class SelectableSystem : SelectableGameObject
 {
-  public GameObject planetUI;
+  public Canvas planetUI;
 
-  public void select(){
+  new public void select()
+  {
     this.selected = true;
 
-    planetUI.SetActive(true);
+    planetUI.enabled = true;
   }
 
-  public void deselect(){
+  new public void deselect()
+  {
     this.selected = false;
 
-    planetUI.SetActive(false);
+    planetUI.enabled = false;
   }
 
-  public void setSelected(bool s){
+  new public void setSelected(bool s)
+  {
     this.selected = s;
 
-    planetUI.SetActive(s);
+    planetUI.enabled = s;
   }
 }
