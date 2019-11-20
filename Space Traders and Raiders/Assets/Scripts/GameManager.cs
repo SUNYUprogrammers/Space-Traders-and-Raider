@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public bool stackerRunning;
 
+    public GameObject planetUI;
     [SerializeField] HUD hud;
 
     public int turnsSoFar = 0;
@@ -29,6 +30,8 @@ public class GameManager : MonoBehaviour
     public int y_max;
     public int x_min;
     public int y_min;
+
+    private TurnRenderController[] tRenCons = new TurnRenderController[0];
 
     // Start is called before the first frame update
     void Awake()
@@ -143,7 +146,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))                                                                //Detect player click
+        if (Input.GetMouseButtonDown(0) && !this.planetUI.activeSelf)                                                                //Detect player click
         {
             //print("Click " + Input.GetKey(KeyCode.LeftControl) + Input.GetKey(KeyCode.LeftShift));
             RaycastHit hit;
@@ -155,7 +158,7 @@ public class GameManager : MonoBehaviour
                 //print("You selected " + hit.transform.name+" : "+this.transform.name);               //Ensure you picked right object
                 //The object hit is a Ship
                 if (hit.transform.gameObject.GetComponent<Ship_Class>() != null) //&& hit.transform.name == this.transform.name)
-                {                                                                                      //If current player owns ship and is only left clicking
+                {                                                //If current player owns ship and is only left clicking
                     if (hit.transform.gameObject.GetComponent<Ship_Class>().faction == currentPlayer.playerFaction && !Input.GetKey(KeyCode.LeftControl) && !Input.GetKey(KeyCode.LeftShift))
                     {
                         hit.transform.gameObject.GetComponent<Ship_Class>().selected = !hit.transform.gameObject.GetComponent<Ship_Class>().selected;
@@ -215,16 +218,18 @@ public class GameManager : MonoBehaviour
                         }
                     }
                     hitSomething = true;
-
-                //The object hit is a system
                 }
             }
             layerMask = layerMask << 1; //next layer is systems
             if(!hitSomething && Physics.Raycast(ray, out hit, layerMask)){
               hitSomething = true;
               if (hit.transform.gameObject.GetComponent<SelectableSystem>() != null){
-                print("ss hit");
                 SelectableSystem ss = hit.transform.gameObject.GetComponent<SelectableSystem>() as SelectableSystem;
+                for(int i = 0; i < systems.Length; i ++){
+                  if((systems[i].tile.GetComponent<SelectableSystem>() as SelectableSystem) != (ss)){
+                    (systems[i].tile.GetComponent<SelectableSystem>() as SelectableSystem).deselect();
+                  }
+                }
                 if(ss.isSelectable()){
                   if(ss.isSelected()){
                     ss.deselect();
@@ -232,8 +237,11 @@ public class GameManager : MonoBehaviour
                     ss.select();
                   }
                 }
+
               }
             }
+        } else if(Input.GetMouseButtonDown(0)){  //The planetUI is up
+
         }
         if(false)
         {
@@ -300,7 +308,7 @@ public class GameManager : MonoBehaviour
 
     public void endTurn()
     {
-        print(currentPlayer.playerFaction);
+        print(tRenCons);
 
         bool movesLeft = false;
         foreach (Ship_Class temp in currentPlayer.playerShips)
@@ -328,6 +336,7 @@ public class GameManager : MonoBehaviour
                     currentPlayer = temp;
                     Debug.Log(hud);
                     hud.updateHUD();
+                    updateTurnRenderControllers();
                     Debug.Log(this);
                     this.scanSystems();
                 }
@@ -344,6 +353,12 @@ public class GameManager : MonoBehaviour
 
     }
 
+    private void updateTurnRenderControllers(){
+      for(int i = 0; i < tRenCons.Length; i ++){
+        tRenCons[i].endTurn();
+      }
+    }
+
     private void scanSystems()
     {
         foreach(StarSystem sys in systems)
@@ -358,6 +373,14 @@ public class GameManager : MonoBehaviour
         systems.CopyTo(temp, 0);
         systems = temp;
         systems[systems.Length - 1] = theSys;
+    }
+
+    public void registerTurnRenderController(TurnRenderController theCon){
+      print("Registering " + theCon);
+      TurnRenderController[] temp = new TurnRenderController[tRenCons.Length +1];
+      tRenCons.CopyTo(temp, 0);
+      tRenCons = temp;
+      tRenCons[tRenCons.Length -1] = theCon;
     }
 
     public StarSystem getVacantSystem()

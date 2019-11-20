@@ -104,6 +104,7 @@
      <Compile Include="Assets\Scripts\Ship Type Subclasses\Frigate_Class.cs" />
      <Compile Include="Assets\Scripts\Ship_Class.cs" />
      <Compile Include="Assets\Scripts\TradeRange_Detect.cs" />
+     <Compile Include="Assets\Scripts\TurnRenderController.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>F:/Space-Traders-and-Raider/Space Traders and Raiders/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

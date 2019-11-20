@@ -152,10 +152,12 @@ public class Player_Class : MonoBehaviour
             print(homeSystem.getPosition());
             GameObject temp = Instantiate((GameObject)Resources.Load("HomeSystem"), homeSystem.getTransform());
             GameObject temp2 = Instantiate((GameObject)Resources.Load("Starter Ship"), homeSystem.getTransform());
+            temp.GetComponent<TurnRenderController>().setup(playerFaction);
+
             this.playerShips[0] = temp2.GetComponent<Ship_Class>();
             temp.GetComponent<SpriteRenderer>().sprite = gm.homeSystems[gm.getFactionIndex(playerFaction)];
             temp2.GetComponent<Ship_Class>().ship.color = PlayerColor;
-            temp2.GetComponent<Ship_Class>().faction = "Player1";
+            temp2.GetComponent<Ship_Class>().faction = playerFaction;
             temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Thruster_Class>(),0);
 
             //Spawn in facilities here
