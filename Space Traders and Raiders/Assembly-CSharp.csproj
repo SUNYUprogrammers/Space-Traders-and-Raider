@@ -82,6 +82,10 @@
     <Compile Include="Assets\Scripts\HUD_Scripts\IHUDHoverable.cs" />
     <Compile Include="Assets\Scripts\HUD_Scripts\MenuEntry.cs" />
     <Compile Include="Assets\Scripts\HUD_Scripts\NotificationsDisplay.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Assets\Scripts\InstallMenu.cs" />
+>>>>>>> ComponentInstall
     <Compile Include="Assets\Scripts\Map\ImageHelpers.cs" />
     <Compile Include="Assets\Scripts\Map\MapGenerator.cs" />
     <Compile Include="Assets\Scripts\Map\Sector.cs" />
@@ -94,8 +98,11 @@
     <Compile Include="Assets\Scripts\Movement_Conflict_Detect.cs" />
     <Compile Include="Assets\Scripts\Parallax.cs" />
     <Compile Include="Assets\Scripts\Player_Class.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\Selectables\SelectableGameObject.cs" />
     <Compile Include="Assets\Scripts\Selectables\SelectableSystem.cs" />
+=======
+>>>>>>> ComponentInstall
     <Compile Include="Assets\Scripts\Ship Component Subclasses\AntiMissile_Class.cs" />
     <Compile Include="Assets\Scripts\Ship Component Subclasses\Armour_Class.cs" />
     <Compile Include="Assets\Scripts\Ship Component Subclasses\Beam_Class.cs" />
@@ -111,7 +118,10 @@
     <Compile Include="Assets\Scripts\Ship Type Subclasses\Frigate_Class.cs" />
     <Compile Include="Assets\Scripts\Ship_Class.cs" />
     <Compile Include="Assets\Scripts\TradeRange_Detect.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\TurnRenderController.cs" />
+=======
+>>>>>>> ComponentInstall
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Space-Traders-and-Raider/Space Traders and Raiders/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
