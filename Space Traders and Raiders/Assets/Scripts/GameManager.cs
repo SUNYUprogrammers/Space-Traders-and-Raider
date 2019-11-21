@@ -6,9 +6,16 @@ public class GameManager : MonoBehaviour
 {
     public bool stackerRunning;
 
+    public Canvas planetUI;
     [SerializeField] HUD hud;
 
     public int turnsSoFar = 0;
+
+    public string[] factions;
+
+    public Sprite[] homeSystems;
+    public Sprite[] tradeRadius;
+
     public Player_Class[] players;
     public Player_Class currentPlayer;
 
@@ -24,6 +31,8 @@ public class GameManager : MonoBehaviour
     public int x_min;
     public int y_min;
 
+    private TurnRenderController[] tRenCons = new TurnRenderController[0];
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -33,10 +42,11 @@ public class GameManager : MonoBehaviour
         y_max = 4;
         y_min = -3;
 
-        players[0] = this.gameObject.AddComponent<Player_Class>();
-        players[0].playerFaction = "Player1";
-        players[1] = this.gameObject.AddComponent<Player_Class>();
-        players[1].playerFaction = "Player2";
+        players = new Player_Class[factions.Length];
+        for(int i = 0; i < players.Length; i ++){
+          players[i] = this.gameObject.AddComponent<Player_Class>();
+          players[i].playerFaction = factions[i];
+        }
 
         currentPlayer = players[0];
         players[0].currentTurn = true;
@@ -136,16 +146,19 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))                                                                //Detect player click
+        if (Input.GetMouseButtonDown(0) && !this.planetUI.enabled)                                                                //Detect player click
         {
             //print("Click " + Input.GetKey(KeyCode.LeftControl) + Input.GetKey(KeyCode.LeftShift));
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out hit))                                                         //If selection found
+            bool hitSomething = false;
+            int layerMask = 1 << 8; //Ships
+            if (Physics.Raycast(ray, out hit, layerMask))                                                         //If selection found
             {
-                //print("You selected " + hit.transform.name+" : "+this.transform.name);               //Ensure you picked right object
-                if (hit.transform.gameObject.GetComponent<Ship_Class>() != null /*&& hit.transform.name == this.transform.name*/)
-                {                                                                                      //If current player owns ship and is only left clicking
+                print("You selected " + hit.transform.name+" : "+this.transform.name);               //Ensure you picked right object
+                //The object hit is a Ship
+                if (hit.transform.gameObject.GetComponent<Ship_Class>() != null) //&& hit.transform.name == this.transform.name)
+                {                                                //If current player owns ship and is only left clicking
                     if (hit.transform.gameObject.GetComponent<Ship_Class>().faction == currentPlayer.playerFaction && !Input.GetKey(KeyCode.LeftControl) && !Input.GetKey(KeyCode.LeftShift))
                     {
                         hit.transform.gameObject.GetComponent<Ship_Class>().selected = !hit.transform.gameObject.GetComponent<Ship_Class>().selected;
@@ -204,9 +217,33 @@ public class GameManager : MonoBehaviour
                             }
                         }
                     }
-
+                    hitSomething = true;
                 }
             }
+            layerMask = layerMask << 1; //next layer is systems
+            if(!hitSomething && Physics.Raycast(ray, out hit, layerMask)){
+              hitSomething = true;
+              if (hit.transform.gameObject.GetComponent<SelectableSystem>() != null){
+                SelectableSystem ss = hit.transform.gameObject.GetComponent<SelectableSystem>() as SelectableSystem;
+                for(int i = 0; i < systems.Length; i ++){
+                  if((systems[i].tile.GetComponent<SelectableSystem>() as SelectableSystem) != (ss)){
+                    (systems[i].tile.GetComponent<SelectableSystem>() as SelectableSystem).deselect();
+                  }
+                }
+                if(ss.isSelectable()){
+                  if(ss.isSelected()){
+                    ss.deselect();
+                  } else {
+                    ss.select();
+                  }
+                }
+
+              }
+            }
+        }
+        else if(Input.GetMouseButtonDown(0))
+        {  //The planetUI is up
+            print("UI is still up");
         }
         if(false)
         {
@@ -225,7 +262,7 @@ public class GameManager : MonoBehaviour
             m = 0;
             foreach (TradeCenter_Class i in temp)
             {
-                for (j = 0; j < i.x.Length; j++)
+                for (j = 0; i.x != null && j < i.x.Length; j++)
                 {
                     for (l = 0; l < i.y.Length; l++)
                     {
@@ -270,9 +307,10 @@ public class GameManager : MonoBehaviour
 
         stackerRunning = false;
     }
+
     public void endTurn()
     {
-        print(currentPlayer.playerFaction);
+        print(tRenCons);
 
         bool movesLeft = false;
         foreach (Ship_Class temp in currentPlayer.playerShips)
@@ -300,6 +338,7 @@ public class GameManager : MonoBehaviour
                     currentPlayer = temp;
                     Debug.Log(hud);
                     hud.updateHUD();
+                    updateTurnRenderControllers();
                     Debug.Log(this);
                     this.scanSystems();
                 }
@@ -314,6 +353,12 @@ public class GameManager : MonoBehaviour
             GameObject.Find("confirm").GetComponent<Canvas>().enabled=true;
         }
 
+    }
+
+    private void updateTurnRenderControllers(){
+      for(int i = 0; i < tRenCons.Length; i ++){
+        tRenCons[i].endTurn();
+      }
     }
 
     private void scanSystems()
@@ -332,6 +377,14 @@ public class GameManager : MonoBehaviour
         systems[systems.Length - 1] = theSys;
     }
 
+    public void registerTurnRenderController(TurnRenderController theCon){
+      print("Registering " + theCon);
+      TurnRenderController[] temp = new TurnRenderController[tRenCons.Length +1];
+      tRenCons.CopyTo(temp, 0);
+      tRenCons = temp;
+      tRenCons[tRenCons.Length -1] = theCon;
+    }
+
     public StarSystem getVacantSystem()
     {
         int id = Random.Range(0, systems.Length);
@@ -346,5 +399,17 @@ public class GameManager : MonoBehaviour
     public void calcResources(int upgrade_lvl, int type, Player_Class owner)
     {
         owner.chargeResources(cost1[upgrade_lvl,type], cost2[upgrade_lvl, type], cost3[upgrade_lvl, type]);
+    }
+
+    public int getFactionIndex(string faction){
+      int ret = -1;
+
+      for(int i = 0; i < factions.Length && ret < 0; i ++){
+        if(faction.Equals(factions[i])){
+          ret = i;
+        }
+      }
+
+      return ret;
     }
 }

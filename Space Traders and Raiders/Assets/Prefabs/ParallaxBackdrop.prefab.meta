@@ -1,8 +1,24 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< master
+<<<<<<< HEAD
 guid: f5783d478ff5c764bbfff09319a1721b
 =======
 guid: c547b240b5dce904da2b7b278a3cb916
+>>>>>>> Menu
+=======
+<<<<<<< Updated upstream
+guid: c547b240b5dce904da2b7b278a3cb916
+=======
+guid: f5783d478ff5c764bbfff09319a1721b
+>>>>>>> Stashed changes
+>>>>>>> added the new font and changed the menus to have it
+=======
+<<<<<<< Updated upstream
+guid: c547b240b5dce904da2b7b278a3cb916
+=======
+guid: f5783d478ff5c764bbfff09319a1721b
+>>>>>>> Stashed changes
 >>>>>>> Menu
 PrefabImporter:
   externalObjects: {}

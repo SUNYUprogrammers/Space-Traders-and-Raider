@@ -36,6 +36,7 @@ public class MapGenerator : MonoBehaviour
 
 
     [SerializeField] private GameObject tilePrefab;
+    public Canvas planetUI;
 
     static private float ColorOverlayOpacity = .1f;
     static private float ColorOverlayBorderOpacity = .5f;
@@ -65,7 +66,9 @@ public class MapGenerator : MonoBehaviour
                         }
 
                         if(theSystem != SystemType.EMPTY){
-                          Texture2D col = new Texture2D(128, 128, TextureFormat.RGBA32, false);
+                          SelectableSystem ss = newTile.AddComponent(typeof(SelectableSystem)) as SelectableSystem;
+                          ss.planetUI = this.planetUI;
+                          Texture2D col = new Texture2D(132, 132, TextureFormat.RGBA32, false);
 
 
                           Color c = new Color(0f, 0f, 0f, ColorOverlayOpacity);

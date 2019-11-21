@@ -19,7 +19,7 @@ public class Player_Class : MonoBehaviour
 
     public string[] trade = new string[2];
 
-    public Color PlayerColor;
+    public Color PlayerColor = new Color(1,1,1,1);
 
     //Determines what ships the player owns
     public Ship_Class[] getPlayerShips(string faction)
@@ -47,8 +47,7 @@ public class Player_Class : MonoBehaviour
         playerFaction = playerName;
     }
 
-
-    //Increments Resources based on Home System
+    //Increments Resources based on System
     public void setResources(StarSystem sys)
     {
         if (sys != homeSystem)
@@ -153,38 +152,22 @@ public class Player_Class : MonoBehaviour
             print(homeSystem.getPosition());
             GameObject temp = Instantiate((GameObject)Resources.Load("HomeSystem"), homeSystem.getTransform());
             GameObject temp2 = Instantiate((GameObject)Resources.Load("Starter Ship"), homeSystem.getTransform());
+            temp.GetComponent<TurnRenderController>().setup(playerFaction);
+
             this.playerShips[0] = temp2.GetComponent<Ship_Class>();
-            switch (this.playerFaction)
-            {
-                case "Player1":
-                    this.PlayerColor = new Color(1, 0, 1, 1);
-                    temp.GetComponent<SpriteRenderer>().color = PlayerColor;
-                    temp2.GetComponent<Ship_Class>().ship.color = PlayerColor;
-                    temp2.GetComponent<Ship_Class>().faction = "Player1";
-                    temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Thruster_Class>(),0);
+            temp.GetComponent<SpriteRenderer>().sprite = gm.homeSystems[gm.getFactionIndex(playerFaction)];
+            temp2.GetComponent<Ship_Class>().ship.color = PlayerColor;
+            temp2.GetComponent<Ship_Class>().faction = playerFaction;
+            temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Thruster_Class>(),0);
 
-                    //Spawn in facilities here
-                    homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<Mine_Class>(),false);
-                    homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<Shipyard_Class>(),false);
-                    homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<SDS_Class>(),false);
-                    homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<Barracks_Class>(),false);
-                    homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<TradeCenter_Class>(),false);
-                    break;
+            //Spawn in facilities here
+            homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<Mine_Class>(),false);
+            homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<Shipyard_Class>(),false);
+            homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<SDS_Class>(),false);
+            homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<Barracks_Class>(),false);
+            homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<TradeCenter_Class>(),false);
 
-                case "Player2":
-                    this.PlayerColor = new Color(0, 1, 1, 1);
-                    temp.GetComponent<SpriteRenderer>().color = PlayerColor;
-                    temp2.GetComponent<Ship_Class>().ship.color = PlayerColor;
-                    temp2.GetComponent<Ship_Class>().faction = "Player2";
-                    temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Thruster_Class>(), 0);
 
-                    homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<Mine_Class>(),false);
-                    homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<Shipyard_Class>(),false);
-                    homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<SDS_Class>(),false);
-                    homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<Barracks_Class>(),false);
-                    homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<TradeCenter_Class>(),false);
-                    break;
-            }
             temp2.GetComponent<Ship_Class>().newTurn();
         }
     }

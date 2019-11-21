@@ -43,9 +43,9 @@ public class TradeCenter_Class : Facilities_Class
         //print("Tier is " + tier + " " + ( Mathf.Pow((float)(2*(tier-1)+1),2) ) );
 
         x = new int[(int)(2 * (tier - 1) + 1)];            //1 3  5  7
-        y = new int[(int)(2 * (tier - 1) + 1)];            
+        y = new int[(int)(2 * (tier - 1) + 1)];
 
-        //x = new int[(int)Mathf.Pow((float)(2 * (tier - 1) + 1), 2)];            
+        //x = new int[(int)Mathf.Pow((float)(2 * (tier - 1) + 1), 2)];
         //y = new int[(int)Mathf.Pow((float)(2 * (tier - 1) + 1), 2)];            //1 9 25 49
 
         if (tier == 1)
@@ -72,7 +72,7 @@ public class TradeCenter_Class : Facilities_Class
                         {
                             x[i + (tier-1)]  = (int)tile.position.x + i - gm.x_max + gm.x_min -1;
                         }
-;                   }
+                    }
                     else
                     {
                         x[i + (tier-1)] = (int)tile.position.x + i;
@@ -88,7 +88,6 @@ public class TradeCenter_Class : Facilities_Class
                         {
                             y[j + (tier-1)] = (int)tile.position.y + j - gm.y_max + gm.y_min -1;
                         }
-;
                     }
                     else
                     {
@@ -97,7 +96,7 @@ public class TradeCenter_Class : Facilities_Class
                     }
                     //print("X " + x[i + (tier-1)] + ", Y " + y[j + (tier-1)]);
                     GameObject temp = Instantiate((GameObject)Resources.Load("TradeRange"), new Vector3(x[i+(tier-1)],y[j+(tier-1)],0), new Quaternion());
-                    temp.GetComponent<SpriteRenderer>().color = self;
+                    temp.GetComponent<SpriteRenderer>().sprite = gm.tradeRadius[gm.getFactionIndex(faction)];
                     temp.GetComponent<TradeRange_Detect>().faction = faction;
                     if(temp.transform.position == tile.position)
                     {

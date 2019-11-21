@@ -54,8 +54,8 @@ public class HUD : MonoBehaviour
 
     public static bool IsPointerOverUIElement(GameObject obj)
     {
-        
-        for (int index = 0; index < raycastResults.Count; index++)
+
+        for (int index = 0; raycastResults != null && index < raycastResults.Count; index++)
         {
             RaycastResult curRaycastResult = raycastResults[index];
             if (curRaycastResult.gameObject == obj) {
