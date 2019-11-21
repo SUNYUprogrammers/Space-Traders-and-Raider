@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+
 abstract public class Component_Class : MonoBehaviour
 {
     [SerializeField]
@@ -10,9 +10,6 @@ abstract public class Component_Class : MonoBehaviour
     protected string faction;
     //[SerializeField]
     //protected int tier;
-    [SerializeField]
-    public Sprite img;
-
     public string getType()
     {
         //print("Returning "+type);
@@ -27,11 +24,6 @@ abstract public class Component_Class : MonoBehaviour
     public void setFaction(string i)
     {
         faction = i;
-    }
-
-    public Sprite getSprite()
-    {
-        return img;
     }
 
     /*public int getTier()
@@ -53,11 +45,6 @@ abstract public class Component_Class : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (img == null)
-        {
-            img = ((GameObject)Resources.Load("Victory")).GetComponent<Image>().sprite;                 //Placeholder Image
-            //img = Resources.Load("Victory") as Sprite;
-            print("HEY YOU " + img);
-        }
+        
     }
 }

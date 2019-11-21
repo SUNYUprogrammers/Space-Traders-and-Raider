@@ -14,17 +14,60 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 3}
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - {fileID: 13}
+=======
+  - {fileID: 5}
+>>>>>>> Combat
+=======
+<<<<<<< Updated upstream
   - {fileID: 14}
+=======
+  - {fileID: 13}
+>>>>>>> Stashed changes
+>>>>>>> Menu
   m_Position:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1536
-    height: 731
+    width: 1920
+    height: 947
+<<<<<<< HEAD
+<<<<<<< HEAD
   m_MinSize: {x: 713, y: 494}
   m_MaxSize: {x: 18008, y: 14044}
   vertical: 0
-  controlID: 13650
+  controlID: 107
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+  m_MinSize: {x: 711, y: 494}
+  m_MaxSize: {x: 18006, y: 14044}
+  vertical: 0
+  controlID: 10024
+=======
+  m_MinSize: {x: 713, y: 494}
+  m_MaxSize: {x: 18008, y: 14044}
+  vertical: 0
+  controlID: 135
+>>>>>>> Stashed changes
+<<<<<<< HEAD
+>>>>>>> Menu
+=======
+  m_MinSize: {x: 681, y: 472}
+  m_MaxSize: {x: 14002, y: 14022}
+  vertical: 0
+  controlID: 92
+>>>>>>> Combat
+=======
+=======
+  m_MinSize: {x: 677, y: 444}
+  m_MaxSize: {x: 12002, y: 8044}
+  vertical: 0
+  controlID: 8098
+>>>>>>> Stashed changes
+>>>>>>> Menu
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -46,26 +89,86 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD
+    x: 534
+    y: 73
+    width: 996
+    height: 585
+=======
     x: 0
-    y: 473.6
-    width: 821
-    height: 312
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    y: 581
+    width: 1005
+    height: 420
+=======
+    y: 620
+    width: 917
+    height: 381
+>>>>>>> Stashed changes
+<<<<<<< HEAD
+>>>>>>> Menu
+=======
+    x: 277
+    y: 73
+    width: 1641
+    height: 654
+>>>>>>> Combat
+=======
+=======
+    y: 646
+    width: 1531
+    height: 355
+>>>>>>> Stashed changes
+>>>>>>> Menu
   m_ViewDataDictionary: {fileID: 0}
   m_VSyncEnabled: 0
   m_MaximizeOnPlay: 1
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 05000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_TargetDisplay: 0
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -209.6
-    m_HBaseRangeMax: 209.6
-    m_VBaseRangeMin: -118
-    m_VBaseRangeMax: 118
+<<<<<<< HEAD
+<<<<<<< HEAD
+    m_HBaseRangeMin: -498
+    m_HBaseRangeMax: 498
+    m_VBaseRangeMin: -280
+    m_VBaseRangeMax: 280
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    m_HBaseRangeMin: -358
+    m_HBaseRangeMax: 358
+    m_VBaseRangeMin: -201.5
+    m_VBaseRangeMax: 201.5
+=======
+    m_HBaseRangeMin: -323.5
+    m_HBaseRangeMax: 323.5
+    m_VBaseRangeMin: -182
+    m_VBaseRangeMax: 182
+>>>>>>> Stashed changes
+<<<<<<< HEAD
+>>>>>>> Menu
+=======
+    m_HBaseRangeMin: -566
+    m_HBaseRangeMax: 566
+    m_VBaseRangeMin: -318.5
+    m_VBaseRangeMax: 318.5
+>>>>>>> Combat
+=======
+=======
+    m_HBaseRangeMin: -765.5
+    m_HBaseRangeMax: 765.5
+    m_VBaseRangeMin: -169
+    m_VBaseRangeMax: 169
+>>>>>>> Stashed changes
+>>>>>>> Menu
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -83,25 +186,106 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
-      width: 821
-      height: 295
+<<<<<<< HEAD
+<<<<<<< HEAD
+      width: 996
+      height: 568
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 410.5, y: 147.5}
+    m_Translation: {x: 498, y: 284}
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+      width: 1005
+      height: 403
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 502.5, y: 201.5}
+=======
+      width: 917
+      height: 364
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 458.5, y: 182}
+>>>>>>> Stashed changes
+<<<<<<< HEAD
+>>>>>>> Menu
+=======
+      width: 1641
+      height: 637
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 820.5, y: 318.5}
+>>>>>>> Combat
+=======
+=======
+      width: 1531
+      height: 338
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 765.5, y: 169}
+>>>>>>> Stashed changes
+>>>>>>> Menu
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -410.5
-      y: -147.5
-      width: 821
-      height: 295
+<<<<<<< HEAD
+<<<<<<< HEAD
+      x: -498
+      y: -284
+      width: 996
+      height: 568
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+      x: -502.5
+      y: -201.5
+      width: 1005
+      height: 403
+=======
+      x: -458.5
+      y: -182
+      width: 917
+      height: 364
+>>>>>>> Stashed changes
+<<<<<<< HEAD
+>>>>>>> Menu
+=======
+      x: -820.5
+      y: -318.5
+      width: 1641
+      height: 637
+>>>>>>> Combat
+=======
+=======
+      x: -765.5
+      y: -169
+      width: 1531
+      height: 338
+>>>>>>> Stashed changes
+>>>>>>> Menu
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 1026.25, y: 390}
+<<<<<<< HEAD
+<<<<<<< HEAD
+  m_LastWindowPixelSize: {x: 996, y: 585}
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+  m_LastWindowPixelSize: {x: 1005, y: 420}
+=======
+  m_LastWindowPixelSize: {x: 917, y: 381}
+>>>>>>> Stashed changes
+<<<<<<< HEAD
+>>>>>>> Menu
+=======
+  m_LastWindowPixelSize: {x: 1641, y: 654}
+>>>>>>> Combat
+=======
+=======
+  m_LastWindowPixelSize: {x: 1531, y: 355}
+>>>>>>> Stashed changes
+>>>>>>> Menu
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -114,23 +298,26 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_EditorHideFlags: 0
+<<<<<<< HEAD
+=======
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 4}
-  - {fileID: 10}
+  m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1162
-    height: 731
-  m_MinSize: {x: 436, y: 494}
-  m_MaxSize: {x: 14006, y: 14044}
-  vertical: 1
-  controlID: 13651
+    width: 277
+    height: 947
+  m_MinSize: {x: 202, y: 222}
+  m_MaxSize: {x: 4002, y: 4022}
+  m_ActualView: {fileID: 4}
+  m_Panes:
+  - {fileID: 4}
+  m_Selected: 0
+  m_LastSelected: 0
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,24 +326,240 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Hierarchy
+    m_Image: {fileID: -590624980919486359, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 73
+    width: 277
+    height: 928
+  m_ViewDataDictionary: {fileID: 0}
+  m_SceneHierarchy:
+    m_TreeViewState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 70f1ffffeaf1ffff76f4ffff3afbffff
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 3}
+      m_SearchString: 
+    m_ExpandedScenes: []
+    m_CurrenRootInstanceID: 0
+    m_LockTracker:
+      m_IsLocked: 0
+    m_CurrentSortingName: TransformSorting
+  m_WindowGUID: 4ee08786081ac664083e357d44d01b4f
+--- !u!114 &5
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
   m_EditorHideFlags: 0
+>>>>>>> Combat
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 5}
-  - {fileID: 8}
+<<<<<<< HEAD
+  - {fileID: 4}
+  - {fileID: 6}
+=======
+  - {fileID: 6}
+  - {fileID: 12}
+>>>>>>> Combat
+  m_Position:
+    serializedVersion: 2
+    x: 277
+    y: 0
+<<<<<<< HEAD
+<<<<<<< HEAD
+    width: 1532
+    height: 947
+  m_MinSize: {x: 511, y: 494}
+  m_MaxSize: {x: 14006, y: 14044}
+  vertical: 0
+  controlID: 61
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    width: 1348
+    height: 947
+  m_MinSize: {x: 434, y: 494}
+  m_MaxSize: {x: 14004, y: 14044}
+  vertical: 1
+  controlID: 10025
+=======
+    width: 1376
+=======
+    width: 1531
+>>>>>>> Stashed changes
+    height: 947
+  m_MinSize: {x: 402, y: 444}
+  m_MaxSize: {x: 8002, y: 8044}
+  vertical: 1
+<<<<<<< Updated upstream
+  controlID: 100
+>>>>>>> Stashed changes
+<<<<<<< HEAD
+>>>>>>> Menu
+=======
+=======
+  controlID: 8099
+>>>>>>> Stashed changes
+>>>>>>> Menu
+--- !u!114 &4
+=======
+    width: 1643
+    height: 947
+  m_MinSize: {x: 479, y: 472}
+  m_MaxSize: {x: 10000, y: 14022}
+  vertical: 1
+  controlID: 93
+--- !u!114 &6
+>>>>>>> Combat
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+<<<<<<< HEAD
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1162
-    height: 400
-  m_MinSize: {x: 406, y: 222}
-  m_MaxSize: {x: 8006, y: 4022}
-  vertical: 0
-  controlID: 13652
+    width: 534
+    height: 947
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 5}
+  m_Panes:
+  - {fileID: 5}
+  m_Selected: 0
+  m_LastSelected: 0
 --- !u!114 &5
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Inspector
+    m_Image: {fileID: -6905738622615590433, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 73
+    width: 534
+    height: 928
+  m_ViewDataDictionary: {fileID: 0}
+  m_OpenAddComponentMenu: 0
+  m_ObjectsLockedBeforeSerialization: []
+  m_InstanceIDsLockedBeforeSerialization: 
+  m_LockTracker:
+    m_IsLocked: 0
+  m_PreviewResizer:
+    m_CachedPref: 278
+    m_ControlHash: -371814159
+    m_PrefName: Preview_InspectorPreview
+  m_PreviewWindow: {fileID: 0}
+--- !u!114 &6
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+=======
+>>>>>>> Combat
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 7}
+  - {fileID: 10}
+  m_Position:
+    serializedVersion: 2
+    x: 534
+    y: 0
+<<<<<<< HEAD
+<<<<<<< HEAD
+    width: 998
+    height: 947
+  m_MinSize: {x: 234, y: 494}
+  m_MaxSize: {x: 10004, y: 14044}
+  vertical: 1
+  controlID: 62
+--- !u!114 &7
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    width: 1348
+    height: 508
+=======
+    width: 1531
+    height: 573
+>>>>>>> Stashed changes
+  m_MinSize: {x: 402, y: 222}
+  m_MaxSize: {x: 8002, y: 4022}
+  vertical: 0
+  controlID: 8077
+--- !u!114 &5
+>>>>>>> Menu
+=======
+    width: 1643
+    height: 673
+  m_MinSize: {x: 479, y: 222}
+  m_MaxSize: {x: 8004, y: 4022}
+  vertical: 0
+  controlID: 87
+--- !u!114 &7
+>>>>>>> Combat
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -173,17 +576,45 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 824
-    height: 400
+<<<<<<< HEAD
+<<<<<<< HEAD
+    width: 998
+    height: 604
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 2}
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    width: 1009
+    height: 508
+=======
+    width: 1147
+    height: 573
+>>>>>>> Stashed changes
   m_MinSize: {x: 202, y: 222}
   m_MaxSize: {x: 4002, y: 4022}
   m_ActualView: {fileID: 6}
+>>>>>>> Menu
   m_Panes:
-  - {fileID: 6}
-  - {fileID: 7}
-  m_Selected: 0
+  - {fileID: 8}
+  - {fileID: 2}
+  - {fileID: 9}
+  m_Selected: 1
+=======
+    width: 1217
+    height: 673
+  m_MinSize: {x: 204, y: 222}
+  m_MaxSize: {x: 4004, y: 4022}
+  m_ActualView: {fileID: 2}
+  m_Panes:
+  - {fileID: 8}
+  - {fileID: 9}
+  - {fileID: 2}
+  m_Selected: 2
+>>>>>>> Combat
   m_LastSelected: 0
---- !u!114 &6
+--- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -204,24 +635,83 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD
+    x: 534
+    y: 73
+    width: 996
+    height: 656
+=======
     x: 0
-    y: 73.6
-    width: 824
-    height: 381
+    y: 73
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    width: 1009
+    height: 489
+=======
+    width: 924
+    height: 528
+>>>>>>> Stashed changes
+>>>>>>> Menu
+=======
+    x: 277
+    y: 73
+    width: 1215
+    height: 654
+>>>>>>> Combat
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
-  m_WindowGUID: c275653d789947a4b92761b3383b1436
+  m_WindowGUID: 3c5ae082392f4da4f96503777dc4451f
+<<<<<<< HEAD
+  m_Gizmos: 0
+  m_SceneIsLit: 0
+=======
+=======
+    width: 1147
+    height: 554
+  m_ViewDataDictionary: {fileID: 0}
+  m_ShowContextualTools: 0
+  m_WindowGUID: 6464141f144a80b4190a80180eaae809
+>>>>>>> Stashed changes
   m_Gizmos: 1
   m_SceneIsLit: 1
+>>>>>>> Menu
   m_SceneLighting: 1
   m_2DMode: 1
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 283.1409, y: 153.65454, z: 5.7620397}
+<<<<<<< HEAD
+<<<<<<< HEAD
+    m_Target: {x: -1.0079064, y: 0.107228756, z: -10.256992}
     speed: 2
-    m_Value: {x: 283.1409, y: 153.65454, z: 5.7620397}
+    m_Value: {x: -1.0079064, y: 0.107228756, z: -10.256992}
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    m_Target: {x: 59.278736, y: -9.054105, z: -1.955287}
+    speed: 2
+    m_Value: {x: 59.278736, y: -9.054105, z: -1.955287}
+=======
+    m_Target: {x: 42.93821, y: -1.8434734, z: -11.008154}
+    speed: 2
+    m_Value: {x: 42.93821, y: -1.8434734, z: -11.008154}
+>>>>>>> Stashed changes
+<<<<<<< HEAD
+>>>>>>> Menu
+=======
+    m_Target: {x: 738.4469, y: 313.02084, z: -95.80503}
+    speed: 2
+    m_Value: {x: 738.4469, y: 313.02084, z: -95.80503}
+>>>>>>> Combat
+=======
+=======
+    m_Target: {x: 0.99053955, y: 0.81074417, z: 18.113895}
+    speed: 2
+    m_Value: {x: 0.99053955, y: 0.81074417, z: 18.113895}
+>>>>>>> Stashed changes
+>>>>>>> Menu
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -250,13 +740,46 @@ MonoBehaviour:
       speed: 2
       m_Value: 1
   m_Rotation:
-    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    m_Target: {x: 0.021089604, y: 0.49716908, z: -0.012086741, w: 0.8673306}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: 1}
+    m_Value: {x: 0.021089286, y: 0.49716154, z: -0.012086558, w: 0.8673175}
   m_Size:
-    m_Target: 180.25989
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    m_Target: 33.404354
     speed: 2
-    m_Value: 180.25989
+    m_Value: 33.404354
+=======
+=======
+<<<<<<< Updated upstream
+>>>>>>> Menu
+    m_Target: 15.780506
+    speed: 2
+    m_Value: 15.780506
+=======
+    m_Target: {x: -0.16304667, y: 0.019827724, z: -0.003279288, w: -0.9864209}
+    speed: 2
+    m_Value: {x: -0.16304551, y: 0.019827582, z: -0.0032792646, w: -0.9864139}
+  m_Size:
+    m_Target: 22
+    speed: 2
+    m_Value: 22
+>>>>>>> Stashed changes
+<<<<<<< HEAD
+>>>>>>> Menu
+=======
+    m_Target: 950.0245
+    speed: 2
+    m_Value: 950.0245
+>>>>>>> Combat
+=======
+=======
+    m_Target: 24.952732
+    speed: 2
+    m_Value: 24.952732
+>>>>>>> Stashed changes
+>>>>>>> Menu
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -275,14 +798,22 @@ MonoBehaviour:
     m_DynamicClip: 1
     m_OcclusionCulling: 0
   m_ShowGlobalGrid: 1
-  m_LastSceneViewRotation: {x: 0.011686578, y: 0.024592768, z: 0.00028756936, w: -0.9996302}
+<<<<<<< HEAD
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+=======
+<<<<<<< Updated upstream
+  m_LastSceneViewRotation: {x: 0, y: 0, z: 0, w: 1}
+=======
+  m_LastSceneViewRotation: {x: 0, y: 0, z: 0, w: 0}
+>>>>>>> Stashed changes
+>>>>>>> Menu
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &7
+--- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -290,25 +821,43 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12111, guid: 0000000000000000e000000000000000, type: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 400, y: 100}
-  m_MaxSize: {x: 2048, y: 2048}
+  m_MinSize: {x: 275, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: Asset Store
-    m_Image: {fileID: 357073275683767465, guid: 0000000000000000d000000000000000,
+    m_Text: Inspector
+    m_Image: {fileID: -6905738622615590433, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 468
-    y: 181
-    width: 973
-    height: 501
+    x: 384
+    y: 73
+    width: 1534
+    height: 656
   m_ViewDataDictionary: {fileID: 0}
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 --- !u!114 &8
+=======
+  m_OpenAddComponentMenu: 0
+  m_ObjectsLockedBeforeSerialization: []
+  m_InstanceIDsLockedBeforeSerialization: 
+  m_LockTracker:
+    m_IsLocked: 0
+  m_PreviewResizer:
+    m_CachedPref: -147
+    m_ControlHash: 1412526313
+    m_PrefName: Preview_InspectorPreview
+  m_PreviewWindow: {fileID: 0}
+  m_LastInspectedObjectInstanceID: -1
+  m_LastVerticalScrollValue: 0
+--- !u!114 &10
+>>>>>>> Combat
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -323,18 +872,47 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 824
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    x: 1009
+=======
+    x: 1147
+>>>>>>> Stashed changes
     y: 0
-    width: 338
-    height: 400
+    width: 384
+    height: 573
   m_MinSize: {x: 204, y: 222}
   m_MaxSize: {x: 4004, y: 4022}
   m_ActualView: {fileID: 9}
+<<<<<<< Updated upstream
+=======
+    x: 924
+    y: 0
+    width: 452
+    height: 547
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 8}
+>>>>>>> Stashed changes
+=======
+<<<<<<< HEAD
+    x: 1217
+    y: 0
+    width: 426
+    height: 673
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 11}
+>>>>>>> Combat
+=======
+>>>>>>> Stashed changes
+>>>>>>> Menu
   m_Panes:
-  - {fileID: 9}
+  - {fileID: 11}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &9
+--- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -343,29 +921,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 200, y: 200}
+  m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: Hierarchy
-    m_Image: {fileID: -590624980919486359, guid: 0000000000000000d000000000000000,
+    m_Text: Inspector
+    m_Image: {fileID: -6905738622615590433, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 824
-    y: 73.6
-    width: 336
-    height: 381
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    x: 1009
+=======
+    x: 1147
+>>>>>>> Stashed changes
+    y: 73
+    width: 382
+    height: 554
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 36}
+      scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 28fbffff3e3600006c360000903600009c3600007c37000086370000aa370000be370000c8370000ea370000
+      m_ExpandedIDs: 9454ffff5857ffffc65fffff28e8ffff6afbffff123600002c360000d2360000887d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -388,7 +972,15 @@ MonoBehaviour:
     m_LockTracker:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
-  m_WindowGUID: 621c2866877b1ba4d8713ca18a21d4e0
+<<<<<<< Updated upstream
+  m_WindowGUID: 4ee08786081ac664083e357d44d01b4f
+<<<<<<< HEAD
+>>>>>>> Menu
+=======
+=======
+  m_WindowGUID: 2bd74d41ffdea9f4db0df8b853d07ed1
+>>>>>>> Stashed changes
+>>>>>>> Menu
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -397,7 +989,10 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+<<<<<<< Updated upstream
   m_EditorHideFlags: 0
+<<<<<<< HEAD
+=======
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -407,14 +1002,25 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 400
-    width: 1162
-    height: 331
+<<<<<<< Updated upstream
+    y: 508
+    width: 1348
+    height: 439
+  m_MinSize: {x: 434, y: 272}
+  m_MaxSize: {x: 14004, y: 10022}
+  vertical: 0
+  controlID: 9956
+--- !u!114 &11
+=======
+    y: 547
+    width: 1376
+    height: 400
   m_MinSize: {x: 436, y: 272}
   m_MaxSize: {x: 14006, y: 10022}
   vertical: 0
-  controlID: 13617
---- !u!114 &11
+  controlID: 101
+--- !u!114 &10
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -422,7 +1028,10 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
+=======
+>>>>>>> Stashed changes
+  m_EditorHideFlags: 1
+>>>>>>> Menu
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -430,16 +1039,52 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
+<<<<<<< HEAD
+    y: 604
+    width: 998
+    height: 343
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_ActualView: {fileID: 11}
+=======
+=======
+<<<<<<< Updated upstream
+>>>>>>> Menu
     y: 0
-    width: 821
-    height: 331
-  m_MinSize: {x: 202, y: 222}
-  m_MaxSize: {x: 4002, y: 4022}
+<<<<<<< Updated upstream
+    width: 1005
+    height: 439
+=======
+    width: 917
+    height: 400
+>>>>>>> Stashed changes
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 2}
   m_Selected: 0
   m_LastSelected: 0
+=======
+    x: 1494
+    y: 73
+    width: 424
+    height: 654
+  m_ViewDataDictionary: {fileID: 0}
+  m_OpenAddComponentMenu: 0
+  m_ObjectsLockedBeforeSerialization: []
+  m_InstanceIDsLockedBeforeSerialization: 
+  m_LockTracker:
+    m_IsLocked: 0
+  m_PreviewResizer:
+    m_CachedPref: 147
+    m_ControlHash: -371814159
+    m_PrefName: Preview_InspectorPreview
+  m_PreviewWindow: {fileID: 0}
+  m_LastInspectedObjectInstanceID: -1
+  m_LastVerticalScrollValue: 0
+>>>>>>> Combat
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -455,18 +1100,65 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 821
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+    x: 1005
     y: 0
-    width: 341
-    height: 331
+    width: 343
+    height: 439
   m_MinSize: {x: 234, y: 272}
   m_MaxSize: {x: 10004, y: 10022}
+=======
+    x: 0
+    y: 673
+    width: 1643
+    height: 274
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
+>>>>>>> Combat
   m_ActualView: {fileID: 13}
+=======
+    x: 917
+    y: 0
+    width: 459
+    height: 400
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_ActualView: {fileID: 12}
+>>>>>>> Stashed changes
+>>>>>>> Menu
   m_Panes:
-  - {fileID: 13}
+<<<<<<< HEAD
+  - {fileID: 11}
+  - {fileID: 12}
   m_Selected: 0
-  m_LastSelected: 0
+  m_LastSelected: 1
+--- !u!114 &11
+=======
+  - {fileID: 13}
+  - {fileID: 14}
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &13
+<<<<<<< HEAD
+>>>>>>> Combat
+=======
+=======
+    y: 573
+    width: 1531
+    height: 374
+  m_MinSize: {x: 202, y: 222}
+  m_MaxSize: {x: 4002, y: 4022}
+  m_ActualView: {fileID: 2}
+  m_Panes:
+  - {fileID: 11}
+  - {fileID: 2}
+  - {fileID: 12}
+  m_Selected: 1
+  m_LastSelected: 0
+--- !u!114 &11
+>>>>>>> Stashed changes
+>>>>>>> Menu
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -487,10 +1179,41 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 820.8
-    y: 473.6
-    width: 339
-    height: 312
+<<<<<<< HEAD
+<<<<<<< HEAD
+    x: 534
+    y: 677
+    width: 996
+    height: 324
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    x: 1005
+    y: 581
+    width: 341
+    height: 420
+=======
+    x: 917
+    y: 620
+    width: 457
+    height: 381
+>>>>>>> Stashed changes
+<<<<<<< HEAD
+>>>>>>> Menu
+=======
+    x: 277
+    y: 746
+    width: 1641
+    height: 255
+>>>>>>> Combat
+=======
+=======
+    x: 0
+    y: 646
+    width: 1531
+    height: 355
+>>>>>>> Stashed changes
+>>>>>>> Menu
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -504,20 +1227,82 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders: []
-  m_ViewMode: 0
+    m_Folders:
+<<<<<<< HEAD
+<<<<<<< HEAD
+    - Assets/Sprites/Planets
+  m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Sprites/Planets
+  m_LastFoldersGridSize: -1
+  m_LastProjectPath: S:\PGP\Space-Traders-and-Raider\Space Traders and Raiders
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    - Assets/Scripts/Menu
+=======
+    - Assets/Prefabs
+>>>>>>> Stashed changes
+  m_ViewMode: 0
+  m_StartGridSize: 64
+  m_LastFolders: []
+  m_LastFoldersGridSize: -1
+  m_LastProjectPath: F:\Space-Traders-and-Raider\Space Traders and Raiders
+>>>>>>> Menu
+=======
+    - Assets/Prefabs
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Prefabs
+  m_LastFoldersGridSize: -1
+  m_LastProjectPath: D:\Space-Traders-and-Raider\Space Traders and Raiders
+>>>>>>> Combat
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
+<<<<<<< HEAD
+    m_SelectedIDs: da330000
+    m_LastClickedID: 13274
+    m_ExpandedIDs: 000000002c290000422f00006c2f00007a2f0000982f000072300000b8310000a832000026330000d433000000ca9a3b
+=======
+<<<<<<< Updated upstream
+    m_SelectedIDs: 0a410000
+    m_LastClickedID: 16650
+    m_ExpandedIDs: ffffffff000000003e2f0000902f0000942f000074300000a2300000d4310000a832000024330000a2330000d6330000
+=======
+    m_SelectedIDs: a82f0000
+    m_LastClickedID: 12200
+    m_ExpandedIDs: 00000000542f00007e2f00008c2f0000aa2f000050310000d2310000f2310000c632000046330000c6330000fe33000002340000
+>>>>>>> Stashed changes
+<<<<<<< HEAD
+>>>>>>> Menu
+=======
+    m_SelectedIDs: 18310000
+    m_LastClickedID: 12568
+    m_ExpandedIDs: 00000000222f00005a2f0000782f0000183100009a310000b83100008a3200000a330000ba330000be33000000ca9a3b
+>>>>>>> Combat
+=======
+=======
+    - Assets/Scenes/Compile
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Scenes/Compile
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Space-Traders-and-Raider\Space Traders and Raiders
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 843d0000
-    m_LastClickedID: 15748
-    m_ExpandedIDs: ffffffff00000000342900009a2f0000f62f0000de3000003c3200003e330000c033000088340000ea3a0000
+    scrollPos: {x: 0, y: 33}
+    m_SelectedIDs: 12340000
+    m_LastClickedID: 13330
+    m_ExpandedIDs: 000000003c290000782f0000a42f0000b22f0000d22f0000b6300000103200003032000010330000903300005034000000ca9a3b
+>>>>>>> Stashed changes
+>>>>>>> Menu
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -533,7 +1318,19 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
+<<<<<<< HEAD
+<<<<<<< HEAD
       m_ClientGUIView: {fileID: 0}
+=======
+      m_ClientGUIView: {fileID: 12}
+>>>>>>> Combat
+=======
+<<<<<<< Updated upstream
+      m_ClientGUIView: {fileID: 11}
+=======
+      m_ClientGUIView: {fileID: 0}
+>>>>>>> Stashed changes
+>>>>>>> Menu
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -542,10 +1339,41 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
+<<<<<<< HEAD
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 6c360000
+    m_SelectedIDs: 48420000
+    m_LastClickedID: 16968
+    m_ExpandedIDs: 000000002c290000422f00006c2f00007a2f0000982f0000b8310000a832000026330000d4330000
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    scrollPos: {x: 0, y: 13}
+    m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000342900009a2f0000f62f0000de3000003c3200003e330000c033000088340000ea3a0000
+    m_ExpandedIDs: ffffffff000000003e2f0000902f0000942f000074300000a2300000d4310000a832000024330000a2330000d6330000
+=======
+    scrollPos: {x: 0, y: 3}
+    m_SelectedIDs: 6e360000
+    m_LastClickedID: 0
+    m_ExpandedIDs: ffffffff00000000542f00007e2f00008c2f0000aa2f000050310000d2310000f2310000c632000046330000c6330000fe33000002340000
+>>>>>>> Stashed changes
+<<<<<<< HEAD
+>>>>>>> Menu
+=======
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 48420000
+    m_LastClickedID: 16968
+    m_ExpandedIDs: 00000000222f00005a2f0000782f0000183100009a310000b83100008a3200000a330000be330000
+>>>>>>> Combat
+=======
+=======
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 000000003c290000782f0000a42f0000b22f0000d22f0000b6300000103200003032000010330000903300005034000000ca9a3b
+>>>>>>> Stashed changes
+>>>>>>> Menu
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -561,7 +1389,22 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
+<<<<<<< HEAD
+      m_ClientGUIView: {fileID: 10}
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
       m_ClientGUIView: {fileID: 12}
+=======
+      m_ClientGUIView: {fileID: 11}
+>>>>>>> Stashed changes
+<<<<<<< HEAD
+>>>>>>> Menu
+=======
+=======
+      m_ClientGUIView: {fileID: 0}
+>>>>>>> Stashed changes
+>>>>>>> Menu
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -570,10 +1413,35 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 6c360000
-    m_LastClickedInstanceID: 13932
+<<<<<<< HEAD
+<<<<<<< HEAD
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+=======
+    m_SelectedInstanceIDs: 6e360000
+    m_LastClickedInstanceID: 13934
+>>>>>>> Stashed changes
+>>>>>>> Menu
+=======
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+>>>>>>> Combat
     m_HadKeyboardFocusLastEvent: 0
+<<<<<<< HEAD
+    m_ExpandedInstanceIDs: c62300000e3f0000123f0000
+=======
+=======
+    m_SelectedInstanceIDs: 10840000
+    m_LastClickedInstanceID: 33808
+    m_HadKeyboardFocusLastEvent: 1
+>>>>>>> Stashed changes
     m_ExpandedInstanceIDs: c6230000
+>>>>>>> Menu
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -589,7 +1457,19 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
+<<<<<<< HEAD
+<<<<<<< HEAD
+      m_ClientGUIView: {fileID: 10}
+=======
+      m_ClientGUIView: {fileID: 12}
+>>>>>>> Combat
+=======
+<<<<<<< Updated upstream
+      m_ClientGUIView: {fileID: 11}
+=======
       m_ClientGUIView: {fileID: 0}
+>>>>>>> Stashed changes
+>>>>>>> Menu
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -600,34 +1480,23 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> Menu
   m_DirectoriesAreaWidth: 115
+--- !u!114 &12
+=======
+  m_DirectoriesAreaWidth: 121
 --- !u!114 &14
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 1162
-    y: 0
-    width: 374
-    height: 731
-  m_MinSize: {x: 277, y: 72}
-  m_MaxSize: {x: 4002, y: 4022}
-  m_ActualView: {fileID: 15}
-  m_Panes:
-  - {fileID: 15}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &15
+<<<<<<< HEAD
+>>>>>>> Combat
+=======
+=======
+  m_DirectoriesAreaWidth: 260
+--- !u!114 &12
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -636,22 +1505,186 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< Updated upstream
+=======
+  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 275, y: 50}
+  m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: Inspector
-    m_Image: {fileID: -6905738622615590433, guid: 0000000000000000d000000000000000,
+    m_Text: Console
+    m_Image: {fileID: 111653112392082826, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1162.4
-    y: 73.6
-    width: 372
-    height: 712
+    x: 0
+    y: 646
+    width: 1531
+    height: 355
+  m_ViewDataDictionary: {fileID: 0}
+--- !u!114 &13
+>>>>>>> Menu
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+<<<<<<< HEAD
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Console
+    m_Image: {fileID: 111653112392082826, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 534
+    y: 677
+    width: 996
+    height: 324
+  m_ViewDataDictionary: {fileID: 0}
+--- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+=======
+  m_EditorHideFlags: 1
+>>>>>>> Stashed changes
+>>>>>>> Menu
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+<<<<<<< HEAD
+    x: 1532
+    y: 0
+    width: 388
+    height: 947
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 14}
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    x: 1348
+=======
+    x: 1531
+>>>>>>> Stashed changes
+    y: 0
+    width: 389
+    height: 947
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 14}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Menu
+  m_Panes:
+  - {fileID: 14}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &14
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Hierarchy
+    m_Image: {fileID: -590624980919486359, guid: 0000000000000000d000000000000000,
+=======
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Console
+    m_Image: {fileID: 111653112392082826, guid: 0000000000000000d000000000000000,
+>>>>>>> Combat
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD
+    x: 1532
+    y: 73
+    width: 386
+    height: 928
+  m_ViewDataDictionary: {fileID: 0}
+  m_SceneHierarchy:
+    m_TreeViewState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 74fbffff
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 13}
+      m_SearchString: 
+    m_ExpandedScenes: []
+    m_CurrenRootInstanceID: 0
+    m_LockTracker:
+      m_IsLocked: 0
+    m_CurrentSortingName: TransformSorting
+  m_WindowGUID: 4ee08786081ac664083e357d44d01b4f
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    x: 1348
+    y: 73
+    width: 570
+=======
+    x: 1376
+    y: 73
+    width: 542
+>>>>>>> Stashed changes
+=======
+    x: 1531
+    y: 73
+    width: 387
+>>>>>>> Stashed changes
+    height: 928
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
   m_ObjectsLockedBeforeSerialization: []
@@ -663,3 +1696,13 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
+  m_LastInspectedObjectInstanceID: 33808
+  m_LastVerticalScrollValue: 0
+>>>>>>> Menu
+=======
+    x: 277
+    y: 746
+    width: 1641
+    height: 255
+  m_ViewDataDictionary: {fileID: 0}
+>>>>>>> Combat

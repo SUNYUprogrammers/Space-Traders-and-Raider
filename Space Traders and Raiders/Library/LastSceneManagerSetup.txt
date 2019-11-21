@@ -1,6 +1,5 @@
 sceneSetups:
 <<<<<<< HEAD
-<<<<<<< HEAD
 <<<<<<< master
 - path: Assets/Scenes/WIP/Combat_Test.unity
 =======
@@ -25,9 +24,6 @@ sceneSetups:
 - path: Assets/Scenes/Compile/MainMenu.unity
 >>>>>>> Stashed changes
 >>>>>>> Menu
-=======
-- path: Assets/Scenes/Compile/Nov 15.unity
->>>>>>> ComponentInstall
   isLoaded: 1
   isActive: 1
   isSubScene: 0
