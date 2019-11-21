@@ -55,7 +55,7 @@ public class InstallMenu : MonoBehaviour
                 }
             }
         }
-        print(selector+" "+ships[selector]);
+        //print(selector+" "+ships[selector]);
         if(ships[selector] != null)                                                                 //If button has ship associated with it, select it
         {
             selected_ship = ships[selector];

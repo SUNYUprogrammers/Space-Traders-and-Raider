@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class MapGenerator : MonoBehaviour
 {
@@ -55,23 +53,31 @@ public class MapGenerator : MonoBehaviour
                     {
                         GameObject newTile = Instantiate(tilePrefab, new Vector3((i - size.x/2) * 4f + ((float)x/size.x*2f), (j - size.y / 2) * 4f + ((float)y /size.y*2f) + 1, 0), Quaternion.identity);
                         //newTile.transform.localScale = newTile.transform.localScale * (1f/((size.x+size.y)/2f));
+                        
                         SpriteRenderer renderer = newTile.GetComponent("SpriteRenderer") as SpriteRenderer;
                         SystemType theSystem = SystemType.EMPTY;
-                        foreach (StarSystem sys in sectors[i, j].getSystems()) {
+                        StarSystem systemHolder = null;
+
+                        foreach (StarSystem sys in sectors[i, j].getSystems())
+                        {
                             if(sys.getPosition().x == x && sys.getPosition().y == y)
                             {
                                 theSystem = sys.getType();
                                 sys.tile = newTile;
+                                //newTile.GetComponent<SelectableSystem>().self = sys;
+                                systemHolder = sys;
                             }
+                            //newTile.GetComponent<SelectableSystem>().self = sys;
                         }
 
-                        if(theSystem != SystemType.EMPTY){
+                        if (theSystem != SystemType.EMPTY)
+                        {
                           SelectableSystem ss = newTile.AddComponent(typeof(SelectableSystem)) as SelectableSystem;
                           ss.planetUI = this.planetUI;
                           Texture2D col = new Texture2D(132, 132, TextureFormat.RGBA32, false);
-
-
-                          Color c = new Color(0f, 0f, 0f, ColorOverlayOpacity);
+                          newTile.GetComponent<SelectableSystem>().self = systemHolder;//theSystem;//sectors[i,j].getSystems();
+                            systemHolder.sel = newTile.GetComponent<SelectableSystem>();
+                            Color c = new Color(0f, 0f, 0f, ColorOverlayOpacity);
                           switch(theSystem){
                             case SystemType.YELLOW:
                               c.r = 1f;

@@ -8,6 +8,7 @@ public class Barracks_Class : Facilities_Class
     new public void Start()
     {
         type = 3;
+        //print("GET TYPE H/e " + this.getType());
         tier = 1;
     }
 

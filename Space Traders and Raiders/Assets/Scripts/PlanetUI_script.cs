@@ -85,7 +85,8 @@ public class PlanetUI_script : MonoBehaviour
         if (facil[i] != null)
         {
             temp = facil[i];
-            self.GetComponent<StarSystem>().buildFacility(temp, true);
+            self.GetComponent<SelectableSystem>().buildFacility(temp, true);
+            
         }
         else
         {
@@ -95,35 +96,35 @@ public class PlanetUI_script : MonoBehaviour
                     if(true)
                     {
                         temp = self.AddComponent<Mine_Class>();
-                        self.GetComponent<StarSystem>().buildFacility(temp, false);
+                        self.GetComponent<SelectableSystem>().buildFacility(temp, false);
                     }
                     break;
                 case 1:
                     if (true)
                     {
                         temp = self.AddComponent<Shipyard_Class>();
-                        self.GetComponent<StarSystem>().buildFacility(temp, false);
+                        self.GetComponent<SelectableSystem>().buildFacility(temp, false);
                     }
                     break;
                 case 2:
                     if (true)
                     {
                         temp = self.AddComponent<SDS_Class>();
-                        self.GetComponent<StarSystem>().buildFacility(temp, false);
+                        self.GetComponent<SelectableSystem>().buildFacility(temp, false);
                     }
                     break;
                 case 3:
                     if (true)
                     {
                         temp = self.AddComponent<Barracks_Class>();
-                        self.GetComponent<StarSystem>().buildFacility(temp, false);
+                        self.GetComponent<SelectableSystem>().buildFacility(temp, false);
                     }
                     break;
                 case 4:
                     if (true)
                     {
                         temp = self.AddComponent<TradeCenter_Class>();
-                        self.GetComponent<StarSystem>().buildFacility(temp, false);
+                        self.GetComponent<SelectableSystem>().buildFacility(temp, false);
                     }
                     break;
             }

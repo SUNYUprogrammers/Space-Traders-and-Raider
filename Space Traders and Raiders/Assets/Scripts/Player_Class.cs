@@ -149,6 +149,7 @@ public class Player_Class : MonoBehaviour
         {
             this.homeSystem = gm.getVacantSystem();
             homeSystem.owner = this;
+            
             print(homeSystem.getPosition());
             GameObject temp = Instantiate((GameObject)Resources.Load("HomeSystem"), homeSystem.getTransform());
             GameObject temp2 = Instantiate((GameObject)Resources.Load("Starter Ship"), homeSystem.getTransform());
@@ -161,11 +162,11 @@ public class Player_Class : MonoBehaviour
             temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Thruster_Class>(),0);
 
             //Spawn in facilities here
-            homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<Mine_Class>(),false);
-            homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<Shipyard_Class>(),false);
-            homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<SDS_Class>(),false);
-            homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<Barracks_Class>(),false);
-            homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<TradeCenter_Class>(),false);
+            homeSystem.sel.buildFacility(homeSystem.tile.gameObject.AddComponent<Mine_Class>(),false,this);
+            homeSystem.sel.buildFacility(homeSystem.tile.gameObject.AddComponent<Shipyard_Class>(),false,this);
+            homeSystem.sel.buildFacility(homeSystem.tile.gameObject.AddComponent<SDS_Class>(),false,this);
+            homeSystem.sel.buildFacility(homeSystem.tile.gameObject.AddComponent<Barracks_Class>(),false,this);
+            homeSystem.sel.buildFacility(homeSystem.tile.gameObject.AddComponent<TradeCenter_Class>(),false,this);
 
 
             temp2.GetComponent<Ship_Class>().newTurn();
