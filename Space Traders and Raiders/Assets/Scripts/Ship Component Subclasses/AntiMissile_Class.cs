@@ -8,7 +8,6 @@ public class AntiMissile_Class : Component_Class
     public override void Awake()
     {
         type = "Anti Missile";
-        health = 2;
     }
 
     // Update is called once per frame

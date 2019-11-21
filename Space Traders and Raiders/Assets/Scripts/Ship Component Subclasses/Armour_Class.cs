@@ -8,7 +8,6 @@ public class Armour_Class : Component_Class
     public override void Awake()
     {
         type = "Armour";
-        health = 2;
     }
 
     // Update is called once per frame

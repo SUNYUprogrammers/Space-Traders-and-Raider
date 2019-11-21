@@ -8,8 +8,7 @@ public class Thruster_Class : Component_Class
     // Start is called before the first frame update
     public override void Awake()
     {
-        type = "Thruster"; 
-        health = 2;      
+        type = "Thruster";      
     }
 
     // Update is called once per frame

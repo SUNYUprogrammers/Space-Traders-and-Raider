@@ -45,6 +45,7 @@ public class Combat_Class : MonoBehaviour
     public void Start()
     {
         gm = GameObject.FindObjectOfType<GameManager>(); 
+        
         //aone = GameObject.Find("aone").GetComponent<Button>();
         //bone = GameObject.Find("bone").GetComponent<Button>();
         //atwo = GameObject.Find("atwo").GetComponent<Button>();
@@ -110,6 +111,7 @@ public class Combat_Class : MonoBehaviour
 
         enableattackerbuttons();
         enabledefenderbuttons();
+        Switchsides = false;
         combat = true;
 
        /* for (int i = 0; i <= good.Length; i++)
@@ -166,7 +168,7 @@ public class Combat_Class : MonoBehaviour
                 //print(i.faction + "          " + gm.currentPlayer.playerFaction);
                 if(i.faction == gm.currentPlayer.playerFaction)
                 {
-                    good[z] = i;
+                    good[z] = i;//ATTACKER
                     //print(good[z].name);
                     z++;
                 } else
@@ -183,7 +185,8 @@ public class Combat_Class : MonoBehaviour
     {
         //if player == current.faction 
         CombatUI = GameObject.Find("CombatGUI").GetComponent<Canvas>();
-        CombatUI.enabled = false;
+        if(!Switchsides)
+            CombatUI.enabled = false;
     }
 
     public void GetAttackerShip(int place)
@@ -292,11 +295,6 @@ public class Combat_Class : MonoBehaviour
 
             }
     }
-    public void Attack()
-    {
-        print("does something still thinking bout it");
-    }
-
 
     // Engine -- ingore
     //Armour -- TARGET FIRST 
@@ -437,8 +435,11 @@ public class Combat_Class : MonoBehaviour
                                     {
                                         print("armor is under attack");
                                         Findarmor(defender.parts_list);
-                                        numofarmor--;
-                                        deflist[spotd,loc] = 1; 
+                                        deflist[spotd,loc]--; //minus 1 health to armor
+                                        if(deflist[spotd,loc] == 0)
+                                        {
+                                            numofarmor--;
+                                        } 
                                     }
                                     else
                                     {
@@ -469,7 +470,7 @@ public class Combat_Class : MonoBehaviour
                                 {
                                     print("armor is under attack");
                                     Findarmor(defender.parts_list);
-                                    deflist[spotd,loc]--; //minus 1 health to armor
+                                   deflist[spotd,loc]--; //minus 1 health to armor
                                     if(deflist[spotd,loc] == 0)
                                     {
                                         numofarmor--;
@@ -641,8 +642,11 @@ public class Combat_Class : MonoBehaviour
                                     {
                                         print("armor is under attack");
                                         Findarmor(attacker.parts_list);
-                                        numofarmor--;
-                                        attlist[spota,loc] = 1; 
+                                        attlist[spota,loc]--; //minus 1 health to armor
+                                        if(attlist[spota,loc] == 0)
+                                        {
+                                            numofarmor--;
+                                        } 
                                     }
                                     else
                                     {
@@ -673,8 +677,11 @@ public class Combat_Class : MonoBehaviour
                                     {
                                         print("armor is under attack");
                                         Findarmor(attacker.parts_list);
-                                        numofarmor--;
-                                        attlist[spota,loc] = 1; 
+                                         attlist[spota,loc]--; //minus 1 health to armor
+                                        if(attlist[spota,loc] == 0)
+                                        {
+                                            numofarmor--;
+                                        } 
                                     }
                                     else
                                     {
@@ -708,8 +715,9 @@ public class Combat_Class : MonoBehaviour
                 attacker = null;
                 defender = null;
                 resetweaps();
-                 calcdamges(); //remove later
+                 
             }
+           
             value = 0;
             foreach (Ship_Class i in bad)
             {
@@ -724,6 +732,7 @@ public class Combat_Class : MonoBehaviour
                 
             }
             resetattackbools();
+            calcdamges(); //good spot
            
 
 
@@ -780,7 +789,7 @@ public class Combat_Class : MonoBehaviour
             {
                 if(i.getType() == "Armour")
                 {
-                    i.dechealth();
+                   // i.dechealth();
                     break;
                 }
             }
@@ -864,13 +873,30 @@ public class Combat_Class : MonoBehaviour
         }
     }
    
+
+
+   //WORK ON INTERFACEING WITH SHIP_CLASS AND COMPOENT_CLASS
     public void calcdamges()
     {
         for(int i = 0; i <= defrows;i++)
         {
             for(int j = 0; j <= defcolms;j++)
             {
-                print(deflist[i,j]);
+                switch(deflist[defrows,defcolms])
+                {
+                    case 1:
+                        //bad[i].parts_list[j].health = 1; set Compoent health to 1
+                        break;
+                    case 0:
+                        //compoent becomes disabled --Allows for Repair Module to fix it -- Unknown if being added
+                        break;
+                    case -1:
+                        //Compoenet is disabled + ship takes a hull hit --In current game state(Frigates only) this signels end of combat
+                        break;
+
+                        
+                }
+                
             }
         }
 
@@ -878,8 +904,25 @@ public class Combat_Class : MonoBehaviour
         {
             for(int j = 0; j <= attcolms;j++)
             {
-                print(attlist[i,j]);
+                 switch(attlist[attrows,attcolms])
+                {
+                    case 1:
+                        //good[i].parts_list[j].health = 1; set Compoent health to 1
+                        break;
+                    case 0:
+                        //compoent becomes disabled --Allows for Repair Module to fix it -- Unknown if being added
+                        break;
+                    case -1:
+                        //Compoenet is disabled + ship takes a hull hit --In current game state(Frigates only) this signels end of combat
+                        break; 
+                }
             }
+        }
+
+        if(good.Length == 0 || bad.Length == 0)//check if either array is destroyed, ships are destroyed in switch functions
+        {
+            combat = false;
+            CombatUI.enabled = false;
         }
     }
 }
