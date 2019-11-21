@@ -43,4 +43,5 @@ abstract public class Facilities_Class : MonoBehaviour
     {
         return tier;
     }
+
 }

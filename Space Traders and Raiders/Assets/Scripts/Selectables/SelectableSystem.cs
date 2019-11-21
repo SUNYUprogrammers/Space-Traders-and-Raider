@@ -11,6 +11,7 @@ public class SelectableSystem : SelectableGameObject
     this.selected = true;
 
     planetUI.enabled = true;
+    planetUI.GetComponent<PlanetUI_script>().onSelect(this.gameObject);
   }
 
   new public void deselect()
@@ -18,6 +19,7 @@ public class SelectableSystem : SelectableGameObject
     this.selected = false;
 
     planetUI.enabled = false;
+    planetUI.GetComponent<PlanetUI_script>().onSelect(null);
   }
 
   new public void setSelected(bool s)

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StarSystem
+public class StarSystem 
 {
     public Player_Class owner;
     GameManager gm;
