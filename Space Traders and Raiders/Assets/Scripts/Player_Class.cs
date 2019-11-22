@@ -149,7 +149,7 @@ public class Player_Class : MonoBehaviour
         {
             this.homeSystem = gm.getVacantSystem();
             homeSystem.owner = this;
-            
+
             print(homeSystem.getPosition());
             GameObject temp = Instantiate((GameObject)Resources.Load("HomeSystem"), homeSystem.getTransform());
             GameObject temp2 = Instantiate((GameObject)Resources.Load("Starter Ship"), homeSystem.getTransform());
@@ -172,11 +172,11 @@ public class Player_Class : MonoBehaviour
 
 
                     //Spawn in facilities here
-                    homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<Mine_Class>(),false);
-                    homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<Shipyard_Class>(),false);
-                    homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<SDS_Class>(),false);
-                    homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<Barracks_Class>(),false);
-                    homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<TradeCenter_Class>(),false);
+                    homeSystem.sel.buildFacility(homeSystem.tile.gameObject.AddComponent<Mine_Class>(),false);
+                    homeSystem.sel.buildFacility(homeSystem.tile.gameObject.AddComponent<Shipyard_Class>(),false);
+                    homeSystem.sel.buildFacility(homeSystem.tile.gameObject.AddComponent<SDS_Class>(),false);
+                    homeSystem.sel.buildFacility(homeSystem.tile.gameObject.AddComponent<Barracks_Class>(),false);
+                    homeSystem.sel.buildFacility(homeSystem.tile.gameObject.AddComponent<TradeCenter_Class>(),false);
                     break;
 
                 case "Player2":
@@ -190,6 +190,8 @@ public class Player_Class : MonoBehaviour
                     //temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Beam_Class>(),1);//ADD FOR COMBAT
                     //temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Shield_Class>(),2);//ADD FOR COMBAT
                     temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Armour_Class>(),3);
+                    break;
+                }
 
             temp2.GetComponent<Ship_Class>().newTurn();
         }
