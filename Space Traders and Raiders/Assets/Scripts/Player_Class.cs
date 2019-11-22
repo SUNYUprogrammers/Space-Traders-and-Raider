@@ -164,6 +164,7 @@ public class Player_Class : MonoBehaviour
                     temp2.GetComponent<Ship_Class>().ship.color = PlayerColor;
                     temp2.GetComponent<Ship_Class>().faction = "Player1";
                     temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Thruster_Class>(),0);
+                    temp2.GetComponent<Ship_Class>().moves_left = temp2.GetComponent<Ship_Class>().ship_speed;
                     //temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Missile_Class>(),1);
                     //temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<AntiMissile_Class>(),2);
                     //temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Beam_Class>(),1);//ADD FOR COMBAT
@@ -185,6 +186,7 @@ public class Player_Class : MonoBehaviour
                     temp2.GetComponent<Ship_Class>().ship.color = PlayerColor;
                     temp2.GetComponent<Ship_Class>().faction = "Player2";
                     temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Thruster_Class>(), 0);
+                    temp2.GetComponent<Ship_Class>().moves_left = temp2.GetComponent<Ship_Class>().ship_speed;
                     //temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Missile_Class>(),1);
                     //temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<AntiMissile_Class>(),2);
                     //temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Beam_Class>(),1);//ADD FOR COMBAT
