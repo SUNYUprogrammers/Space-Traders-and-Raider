@@ -546,7 +546,7 @@ public class Combat_Class : MonoBehaviour
                 }
                 if(value == good.Length)
                 {
-                    Switchsides = true;
+                     Switchsides = true;
                      enableEndCombat();
                      Combattext.text = bad[0].faction + " is on the <color=red>attack</color>";
                     //Combattext.text = players.
@@ -990,3 +990,11 @@ public class Combat_Class : MonoBehaviour
 
 
 
+
+
+
+
+
+
+
+//I did it mom
