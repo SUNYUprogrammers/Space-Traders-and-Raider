@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< master
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":false,"showMaterialUpdate":false,"showSkybox":false,"showFlares":false,"showImageEffects":false,"showParticleSystems":false},"in2DMode":true,"pivot":{"x":601.7655639648438,"y":274.5191650390625,"z":-176.27359008789063},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":729.4254150390625,"orthographic":true}
 =======
@@ -11,3 +12,6 @@
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":false,"showMaterialUpdate":false,"showSkybox":false,"showFlares":false,"showImageEffects":false,"showParticleSystems":false},"in2DMode":true,"pivot":{"x":122.78670501708985,"y":142.22967529296876,"z":-97.34505462646485},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":446.2692565917969,"orthographic":true}
 >>>>>>> ComponentInstall
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":false,"showMaterialUpdate":false,"showSkybox":false,"showFlares":false,"showImageEffects":false,"showParticleSystems":false},"in2DMode":true,"pivot":{"x":289.8111877441406,"y":381.2506408691406,"z":-177.61463928222657},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":560.4541015625,"orthographic":true}
+>>>>>>> Official_Trading_WIP

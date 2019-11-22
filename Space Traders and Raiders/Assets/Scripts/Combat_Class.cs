@@ -27,6 +27,7 @@ public class Combat_Class : MonoBehaviour
         
     }
 
+
     public void askCombat(Ship_Class[] shipsInStack,int len)
     {
         shipsStack = new Ship_Class[len];
