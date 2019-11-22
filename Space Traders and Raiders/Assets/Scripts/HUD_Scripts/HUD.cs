@@ -13,9 +13,12 @@ public class HUD : MonoBehaviour
     [SerializeField] private Text wealthText;
     [SerializeField] private Text achievementText;
     [SerializeField] private Text powerText;
-    [SerializeField] private Text mineralText;
-    [SerializeField] private Text turnNumber;
+    [SerializeField] private Text commonMineralText;
+    [SerializeField] private Text uncommonMineralText;
+    [SerializeField] private Text rareMineralText;
 
+    //[SerializeField] private Text turnNumber;
+    [SerializeField] private ShipInfo shipInfo;
     [SerializeField] private NotificationsDisplay notifications;
 
 
@@ -45,17 +48,27 @@ public class HUD : MonoBehaviour
         victoryPointsText.text = player.calcVictoryPoints().ToString();
         wealthText.text = player.getWealth().ToString();
         achievementText.text = player.getAchievement().ToString();
-        mineralText.text = (player.getCommonMineral() + player.getRareMineral() + player.getVeryRareMineral()).ToString();
-        powerText.text = player.getPower().ToString();
-        turnNumber.text = manager.turnsSoFar.ToString();
-
+        commonMineralText.text = player.getCommonMineral().ToString();
+        uncommonMineralText.text = player.getRareMineral().ToString();
+        rareMineralText.text = player.getVeryRareMineral().ToString();
+        //turnNumber.text = manager.turnsSoFar.ToString();
+        
+        clearShipInfo();
         notifications.refreshNotificationsDisplay(player);
+
+    }
+
+    public void updateShipInfo(Ship_Class ship, int colorIndex) {
+        shipInfo.updateDisplay(ship, colorIndex);
+    }
+
+    public void clearShipInfo() {
+        shipInfo.clearDisplay();
     }
 
     public static bool IsPointerOverUIElement(GameObject obj)
     {
-
-        for (int index = 0; raycastResults != null && index < raycastResults.Count; index++)
+        for (int index = 0; index < raycastResults.Count; index++)
         {
             RaycastResult curRaycastResult = raycastResults[index];
             if (curRaycastResult.gameObject == obj) {
@@ -92,6 +105,10 @@ public class HUD : MonoBehaviour
         List<RaycastResult> raycastResults = new List<RaycastResult>();
         EventSystem.current.RaycastAll(eventData, raycastResults);
         return raycastResults;
+    }
+
+    public ShipInfo getShipInfoDisplay() {
+        return shipInfo;
     }
 
 }

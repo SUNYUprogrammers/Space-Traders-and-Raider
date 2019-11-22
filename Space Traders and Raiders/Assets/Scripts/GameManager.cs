@@ -161,7 +161,11 @@ public class GameManager : MonoBehaviour
                 {                                                //If current player owns ship and is only left clicking
                     if (hit.transform.gameObject.GetComponent<Ship_Class>().faction == currentPlayer.playerFaction && !Input.GetKey(KeyCode.LeftControl) && !Input.GetKey(KeyCode.LeftShift))
                     {
-                        hit.transform.gameObject.GetComponent<Ship_Class>().selected = !hit.transform.gameObject.GetComponent<Ship_Class>().selected;
+                        if(hit.transform.gameObject.GetComponent<Ship_Class>().selected = !hit.transform.gameObject.GetComponent<Ship_Class>().selected){
+                          hud.updateShipInfo( hit.transform.gameObject.GetComponent<Ship_Class>(), this.getFactionIndex(hit.transform.gameObject.GetComponent<Ship_Class>().faction));
+                        } else {
+                          hud.clearShipInfo();
+                        }
                     }                                                                                  //If current player owns ship and is only shift left clicking
                     if (true/*faction == factionCurrent*/ && !Input.GetKey(KeyCode.LeftControl) && Input.GetKey(KeyCode.LeftShift))
                     {

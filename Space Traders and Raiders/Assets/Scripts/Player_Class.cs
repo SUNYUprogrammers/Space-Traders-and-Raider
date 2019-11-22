@@ -14,7 +14,7 @@ public class Player_Class : MonoBehaviour
     protected StarSystem[] systemsOwned;
     protected int Wealth = 0, Power = 0, Achievement = 0;
     public string playerFaction;
-    public Ship_Class[] playerShips = new Ship_Class[2];
+    public Ship_Class[] playerShips = new Ship_Class[1];
     public bool currentTurn = false;
 
     public string[] trade = new string[2];

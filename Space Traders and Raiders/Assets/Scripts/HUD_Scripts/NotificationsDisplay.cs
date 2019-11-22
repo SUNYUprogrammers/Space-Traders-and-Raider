@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class NotificationsDisplay : MonoBehaviour
 {
     private Dictionary<Player_Class, List<string>> playerToNotificationsMap;
-    const int NOTIFICATIONS_LIST_MAX_SIZE = 5;
+    const int NOTIFICATIONS_LIST_MAX_SIZE = 4;
 
     [SerializeField] private GameObject notificationPanelPrefab;
 

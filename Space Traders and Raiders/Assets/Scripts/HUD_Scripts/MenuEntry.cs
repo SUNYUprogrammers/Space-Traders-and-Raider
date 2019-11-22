@@ -12,6 +12,8 @@ public class MenuEntry : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
     public float expansionRate;
     public Ship_Class ship;
 
+
+
     void Update()
     {
         handleOpenAndClose();
@@ -37,7 +39,14 @@ public class MenuEntry : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
     {
         if(!open) return;
         ship.selected = !ship.selected;
-        Debug.Log(ship.getShipType());
+
+        GameManager manager = GameObject.FindObjectOfType<GameManager>();
+
+        if(ship.selected) {
+            GameObject.FindObjectOfType<HUD>().getShipInfoDisplay().updateDisplay(ship, manager.getFactionIndex(ship.faction));
+        }
+
+
     }
 
     public void OnPointerEnter(PointerEventData eventData)

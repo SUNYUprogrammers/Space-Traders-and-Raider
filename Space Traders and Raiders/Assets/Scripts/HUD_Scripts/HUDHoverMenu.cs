@@ -14,7 +14,7 @@ public abstract class HUDHoverMenu : MonoBehaviour, IHUDHoverable
     protected float expansionRate = 7;
     protected float iconBufferSpace = 5;
     protected float initialBufferspace = 10; //the buffer space between the first icon and edge of the menu
-    protected float closedX;
+    protected float closedXBackground;
     protected float initialCloseDelay = .5f;
     protected float closeDelay = .5f;
     private List<MenuEntry> menuEntries;
@@ -25,6 +25,8 @@ public abstract class HUDHoverMenu : MonoBehaviour, IHUDHoverable
     private float waitTimeBeforeClose = 1f;
     private float currentClosetimer = 0;
 
+    private Canvas canvas;
+
     void Awake() {
         opening = false;
         menuEntries = new List<MenuEntry>();
@@ -32,9 +34,14 @@ public abstract class HUDHoverMenu : MonoBehaviour, IHUDHoverable
     }
 
     void Start() {
-        closedX = background.rectTransform.position.x;
+        canvas = GameObject.FindObjectOfType<Canvas>();
+        Vector3 backgroundClosedRelative = canvas.transform.InverseTransformPoint(background.rectTransform.position);
+        closedXBackground = backgroundClosedRelative.x;
+
         //Debug.Log("closedX: " + closedX);
     }
+
+
 
     protected abstract void createMenuItems();
 
@@ -56,15 +63,17 @@ public abstract class HUDHoverMenu : MonoBehaviour, IHUDHoverable
         }
         closeDelay = initialCloseDelay;
 
-
-        float targetX = closedX + menuEntries.Count * (entryPrefab.rectTransform.rect.width + iconBufferSpace) + initialBufferspace/2;
+        //TODO Figure out why background is not opening to desired width
+        float targetX = closedXBackground + menuEntries.Count * (GetComponent<RectTransform>().rect.width + iconBufferSpace) + initialBufferspace/2;
         //Debug.Log("pos: " + background.rectTransform.position.x);
         //Debug.Log("targetX: " + targetX);
 
-        if(background.rectTransform.position.x >= targetX) {
+        Vector3 backgroundRelative = canvas.transform.InverseTransformPoint(background.rectTransform.position);
+
+        if(backgroundRelative.x >= targetX) {
             opening = false;
             isOpen = true;
-            background.rectTransform.position = new Vector3(targetX, background.rectTransform.position.y, background.rectTransform.position.z);
+            //background.rectTransform.position = new Vector3(targetX, background.rectTransform.position.y, background.rectTransform.position.z);
             currentClosetimer = 0;
             return;
         }
@@ -87,8 +96,11 @@ public abstract class HUDHoverMenu : MonoBehaviour, IHUDHoverable
             entry.open = false;
         }
 
-        float targetX = closedX;
-        if(background.rectTransform.position.x <= targetX) {
+        float targetX = closedXBackground;
+
+        Vector3 backgroundRelative = canvas.transform.InverseTransformPoint(background.rectTransform.position);
+
+        if(backgroundRelative.x <= targetX) {
             opening = false;
             isClosed = true;
             closing = false;
@@ -108,9 +120,13 @@ public abstract class HUDHoverMenu : MonoBehaviour, IHUDHoverable
         Ship_Class[] ships = player.getPlayerShips(player.playerFaction);
 
         List<Ship_Class> matchingShips = new List<Ship_Class>();
+        Debug.Log("Length: " + ships.Length);
         foreach(Ship_Class ship in ships) {
-            //TODO clean this up with an enum or something
 
+            //TODO clean this up with an enum or something
+            Debug.Log("Ship: " + ship);
+            Debug.Log("Type: " + type);
+            Debug.Log("Ship.getType: " + ship.getShipType());
             if(ship.getShipType().Equals(type)) {
                 matchingShips.Add(ship);
             }
@@ -139,6 +155,10 @@ public abstract class HUDHoverMenu : MonoBehaviour, IHUDHoverable
 
     void Update()
     {
+
+        Canvas canvas = GameObject.FindObjectOfType<Canvas>();
+        Vector3 canvasRelative = canvas.transform.InverseTransformPoint(transform.position);
+
         if(opening) {
             openMenu();
             return;
