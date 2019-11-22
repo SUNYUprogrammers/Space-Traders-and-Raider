@@ -21,7 +21,6 @@ public class Combat_Class : MonoBehaviour
     private Ship_Class attacker;
     private Ship_Class defender;
     public Canvas CombatUI;
-    public Canvas Askcombat;
     bool combat = false;
     bool Switchsides = false;
 
@@ -65,26 +64,6 @@ public class Combat_Class : MonoBehaviour
     }
 
 
-    public void askCombat(Ship_Class[] shipsInStack,int len)
-    {
-        Askcombat.enabled = true;
-        shipsStack = new Ship_Class[len];
-        int j = 0;
-        foreach(Ship_Class i in shipsInStack) 
-        {
-            //print("askcombat function    " + i);
-            shipsStack[j] = i;
-            //print("hope " + shipsStack[j]);
-            j++;
-            
-        }
-    }
-
-    public void Retreat()
-    {
-        Askcombat.enabled = false;
-    }
-
     public void count()
     {
         goods = 0;
@@ -104,11 +83,11 @@ public class Combat_Class : MonoBehaviour
             }
         }
     }
-    public void Combat()
+    public void Combat(Ship_Class[] shipsInStack, int len)
     {
-        
-       // print(shipsStack.Length);
-        Retreat();
+        shipsStack = new Ship_Class[len];
+        shipsStack = shipsInStack;
+        // print(shipsStack.Length);
         CombatUI.enabled = true;
         count();
        // print(goods + "      " + bads);
@@ -981,7 +960,6 @@ public class Combat_Class : MonoBehaviour
 
 
    
-
 
 
 

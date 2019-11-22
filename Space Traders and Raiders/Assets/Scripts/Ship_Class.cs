@@ -366,8 +366,8 @@ abstract public class Ship_Class : MonoBehaviour
        
     public void BeginCombat()
     {
-         Combat_Class name = GameObject.FindObjectOfType<Combat_Class>();
-         name.askCombat(shipsInStack,shipsInStack.Length);
+         InteractableScript name = GameObject.FindObjectOfType<InteractableScript>();
+         name.Menu(shipsInStack,shipsInStack.Length);
     }
 }
 

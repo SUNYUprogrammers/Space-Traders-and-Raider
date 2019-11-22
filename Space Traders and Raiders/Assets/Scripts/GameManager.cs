@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     public Canvas planetUI;
     [SerializeField] HUD hud;
 
+    public InteractableScript InteractableMenu_GUI;
+    public Trade_Class Trade_Interface;
     public int turnsSoFar = 0;
 
     public string[] factions;
@@ -146,7 +148,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !this.planetUI.enabled)                                                                //Detect player click
+        if (Input.GetMouseButtonDown(0) && !this.planetUI.enabled && !Trade_Interface.GetComponent<Canvas>().enabled && !InteractableMenu_GUI.menu.enabled)   //append here to block ray cast while GUIs are up   //Detect player click
         {
             print("Click " + Input.GetKey(KeyCode.LeftControl) + Input.GetKey(KeyCode.LeftShift));
             RaycastHit hit;
