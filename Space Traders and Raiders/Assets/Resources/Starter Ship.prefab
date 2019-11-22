@@ -336,6 +336,7 @@ MonoBehaviour:
   selected: 0
   faction: 0
   power: 0
+  hasAttacked: 0
   parts_list:
   - {fileID: 0}
   - {fileID: 0}

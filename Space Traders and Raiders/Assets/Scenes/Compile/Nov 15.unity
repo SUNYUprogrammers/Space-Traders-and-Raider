@@ -1668,6 +1668,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: installMenu (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1141596536569179840, guid: 4ac4cf535e55a694497be4a6cf6ef6ae,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1141596536569179841, guid: 4ac4cf535e55a694497be4a6cf6ef6ae,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1771,11 +1776,6 @@ PrefabInstance:
     - target: {fileID: 1141596536569179841, guid: 4ac4cf535e55a694497be4a6cf6ef6ae,
         type: 3}
       propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1141596536569179840, guid: 4ac4cf535e55a694497be4a6cf6ef6ae,
-        type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4529,6 +4529,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5415161478343461130, guid: e82db7198dbd52643839a23205db3dc2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 66.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5415161478221188333, guid: e82db7198dbd52643839a23205db3dc2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -104
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e82db7198dbd52643839a23205db3dc2, type: 3}
