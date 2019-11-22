@@ -24,7 +24,7 @@ public class TradeRange_Detect : MonoBehaviour
         //print(other.name);
         if(other.GetComponent<TradeRange_Detect>() != null)
         {
-            print("In Range: "+this.faction+" "+other.GetComponent<TradeRange_Detect>().faction);
+            //print("In Range: "+this.faction+" "+other.GetComponent<TradeRange_Detect>().faction);
             foreach(Player_Class i in GameObject.FindObjectOfType<GameManager>().players)
             {
                 if(i.playerFaction == other.GetComponent<TradeRange_Detect>().faction)

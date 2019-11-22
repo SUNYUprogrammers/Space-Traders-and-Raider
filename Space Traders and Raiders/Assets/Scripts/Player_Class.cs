@@ -14,7 +14,7 @@ public class Player_Class : MonoBehaviour
     protected StarSystem[] systemsOwned;
     protected int Wealth = 0, Power = 0, Achievement = 0;
     public string playerFaction;
-    public Ship_Class[] playerShips = new Ship_Class[1];
+    public Ship_Class[] playerShips = new Ship_Class[2];
     public bool currentTurn = false;
 
     public string[] trade = new string[2];
@@ -31,7 +31,7 @@ public class Player_Class : MonoBehaviour
 
         foreach (Ship_Class i in temp)
         {
-
+            print(i);
             if (i.faction == playerFaction)
             {
                 playerShips[j] = i;
@@ -156,18 +156,40 @@ public class Player_Class : MonoBehaviour
             temp.GetComponent<TurnRenderController>().setup(playerFaction);
 
             this.playerShips[0] = temp2.GetComponent<Ship_Class>();
-            temp.GetComponent<SpriteRenderer>().sprite = gm.homeSystems[gm.getFactionIndex(playerFaction)];
-            temp2.GetComponent<Ship_Class>().ship.color = PlayerColor;
-            temp2.GetComponent<Ship_Class>().faction = playerFaction;
-            temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Thruster_Class>(),0);
+            switch (this.playerFaction)
+            {
+                case "Player1":
+                    this.PlayerColor = new Color(1, 0, 1, 1);
+                    temp.GetComponent<SpriteRenderer>().color = PlayerColor;
+                    temp2.GetComponent<Ship_Class>().ship.color = PlayerColor;
+                    temp2.GetComponent<Ship_Class>().faction = "Player1";
+                    temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Thruster_Class>(),0);
+                    temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Missile_Class>(),1);
+                    temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<AntiMissile_Class>(),2);
+                    //temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Beam_Class>(),1);//ADD FOR COMBAT
+                    //temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Shield_Class>(),2);//ADD FOR COMBAT
+                    temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Armour_Class>(),3);
 
-            //Spawn in facilities here
-            homeSystem.sel.buildFacility(homeSystem.tile.gameObject.AddComponent<Mine_Class>(),false,this);
-            homeSystem.sel.buildFacility(homeSystem.tile.gameObject.AddComponent<Shipyard_Class>(),false,this);
-            homeSystem.sel.buildFacility(homeSystem.tile.gameObject.AddComponent<SDS_Class>(),false,this);
-            homeSystem.sel.buildFacility(homeSystem.tile.gameObject.AddComponent<Barracks_Class>(),false,this);
-            homeSystem.sel.buildFacility(homeSystem.tile.gameObject.AddComponent<TradeCenter_Class>(),false,this);
 
+                    //Spawn in facilities here
+                    homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<Mine_Class>(),false);
+                    homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<Shipyard_Class>(),false);
+                    homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<SDS_Class>(),false);
+                    homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<Barracks_Class>(),false);
+                    homeSystem.buildFacility(homeSystem.tile.gameObject.AddComponent<TradeCenter_Class>(),false);
+                    break;
+
+                case "Player2":
+                    this.PlayerColor = new Color(0, 1, 1, 1);
+                    temp.GetComponent<SpriteRenderer>().color = PlayerColor;
+                    temp2.GetComponent<Ship_Class>().ship.color = PlayerColor;
+                    temp2.GetComponent<Ship_Class>().faction = "Player2";
+                    temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Thruster_Class>(), 0);
+                    temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Missile_Class>(),1);
+                    temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<AntiMissile_Class>(),2);
+                    //temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Beam_Class>(),1);//ADD FOR COMBAT
+                    //temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Shield_Class>(),2);//ADD FOR COMBAT
+                    temp2.GetComponent<Ship_Class>().installComponent(temp2.AddComponent<Armour_Class>(),3);
 
             temp2.GetComponent<Ship_Class>().newTurn();
         }
