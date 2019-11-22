@@ -100,6 +100,18 @@ public class Player_Class : MonoBehaviour
     {
         return veryRareMineral;
     }
+    public int setCommonMineral(int i)
+    {
+        return commonMineral = i;
+    }
+    public int setRareMineral(int i)
+    {
+        return rareMineral = i;
+    }
+    public int setVeryRareMineral(int i)
+    {
+        return veryRareMineral = i;
+    }
     public int getWealth()
     {
         return Wealth;

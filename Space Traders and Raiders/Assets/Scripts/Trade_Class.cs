@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class Trade_Class : MonoBehaviour
 {
     GameManager gm;
-    int PlayerRes;
-    int PlayerResRequested;
+    int PlayerCmnRes;
+    int PlayerCmnResRequested;
     int NumberHolderForPlayer1;
     int NumberHolderForPlayer2;
     public Player_Class MainTrader;
@@ -17,8 +17,8 @@ public class Trade_Class : MonoBehaviour
     public Canvas Trade_GUI;
     public Canvas TradeConfirmation;
 
-   
 
+ 
     public void TradeBtn()
     {
 
@@ -26,19 +26,11 @@ public class Trade_Class : MonoBehaviour
 
         gm = GameObject.FindObjectOfType<GameManager>();
 
-        MainTrader = gm.currentPlayer;
+       
 
-        if(MainTrader == gm.players[0])
-        {
-            SecondTrader = gm.players[1];
-        }else
-        {
-            SecondTrader = gm.players[0];
-        }
-
-        PlayerRes = (MainTrader.getRareMineral()) + (MainTrader.getCommonMineral()) + (MainTrader.getVeryRareMineral());
-        print("Resources: " + PlayerRes );
-        PlayerResRequested = (SecondTrader.getRareMineral()) + (SecondTrader.getCommonMineral()) + (SecondTrader.getVeryRareMineral());
+        //PlayerCmnRes = MainTrader.getCommonMineral();
+        //print("Resources: " + PlayerCmnRes );
+        //PlayerCmnResRequested = SecondTrader.getCommonMineral();
     }
 
     public void tradeOffer()
@@ -50,30 +42,47 @@ public class Trade_Class : MonoBehaviour
 
     public void tradeAccept()
     {
+        MainTrader = gm.currentPlayer;
+
+        if (MainTrader == gm.players[0])
+        {
+            SecondTrader = gm.players[1];
+        }
+        else
+        {
+            SecondTrader = gm.players[0];
+        }
+        PlayerCmnRes = MainTrader.getCommonMineral();
+        print("Resources: " + PlayerCmnRes);
+        PlayerCmnResRequested = SecondTrader.getCommonMineral();
         NumberHolderForPlayer1 = int.Parse(inputForPlayer1.text);
         NumberHolderForPlayer2 = int.Parse(inputForPlayer2.text);
 
-        if(NumberHolderForPlayer1 <= PlayerRes)
+        if(NumberHolderForPlayer1 <= PlayerCmnRes)
         {
             
             Trade_GUI.GetComponent<Canvas>().enabled = false;
             TradeConfirmation.GetComponent<Canvas>().enabled = true;
         }else
         {
+            print(NumberHolderForPlayer1 + "/n"+ PlayerCmnRes);
             print("Insufficient Minerals");
         }
     }
     public void tradeConfirmAccept()
     {
-        if (NumberHolderForPlayer2 <= PlayerRes)
+        if (NumberHolderForPlayer2 <= PlayerCmnRes)
         {
             Trade_GUI.GetComponent<Canvas>().enabled = false;
 
 
-            PlayerRes += NumberHolderForPlayer2;
-            PlayerRes -= NumberHolderForPlayer1;
-            PlayerResRequested -= NumberHolderForPlayer2;
-            PlayerResRequested += NumberHolderForPlayer1;
+            PlayerCmnRes += NumberHolderForPlayer2;
+            PlayerCmnRes -= NumberHolderForPlayer1;
+            PlayerCmnResRequested -= NumberHolderForPlayer2;
+            PlayerCmnResRequested += NumberHolderForPlayer1;
+
+            MainTrader.setCommonMineral(PlayerCmnRes);
+            SecondTrader.setCommonMineral(PlayerCmnResRequested);
 
         TradeConfirmation.GetComponent<Canvas>().enabled = false;
 
@@ -81,7 +90,7 @@ public class Trade_Class : MonoBehaviour
         {
             print("Insufficient Minerals");
         }
-        print(PlayerRes + "Vs" + PlayerResRequested);
+        print(PlayerCmnRes + "Vs" + PlayerCmnResRequested);
 
     }
 
