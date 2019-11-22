@@ -17,7 +17,7 @@ abstract public class Ship_Class : MonoBehaviour
     
     public Component_Class[] parts_list;     //What component is in each slot
     [SerializeField]
-    protected int ship_speed;                   //How fast can the ship move, calculated from stored thrusters
+    public int ship_speed;                   //How fast can the ship move, calculated from stored thrusters
     [SerializeField]
     protected GameObject rangeIndicator;        //How far the ship can move, represented visually
     [SerializeField]
@@ -58,11 +58,11 @@ abstract public class Ship_Class : MonoBehaviour
             {
                 print(i.getType());
                 if (i.getType() == "Thruster")
-                    ship_speed = +1;
+                    ship_speed += 1;
                 if (i.getType() == "Beam")
-                    beamDamage = +1;
+                    beamDamage += 1;
                 if (i.getType() == "Missile")
-                    missileDamage = +1;
+                    missileDamage += 1;
             }
         }
         moves_left = ship_speed;
@@ -337,7 +337,7 @@ abstract public class Ship_Class : MonoBehaviour
                     if (k != null)
                     {
                         if (k.getType() == "Thruster")
-                            ship_speed = +1;
+                            ship_speed += 1;
                     }
                 }
             }     
