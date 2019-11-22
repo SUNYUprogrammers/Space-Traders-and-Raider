@@ -22,9 +22,9 @@ public class GameManager : MonoBehaviour
     public StarSystem[] systems = new StarSystem[0];
 
     //[SerializeField]
-    static int[,] cost1 = new int[5, 5];
-    static int[,] cost2 = new int[5, 5];
-    static int[,] cost3 = new int[5, 5];
+    static int[,] cost1 = new int[5, 5];        //Min
+    static int[,] cost2 = new int[5, 5];        //Rare Min
+    static int[,] cost3 = new int[5, 5];        //V Rare Min
 
     public int x_max;                        //World border, detect when to transition when the designers figure out what to do for that
     public int y_max;

@@ -16,7 +16,7 @@ public class TradeCenter_Class : Facilities_Class
         gm = GameObject.FindObjectOfType<GameManager>();
 
         type = 4;
-        tier = 2;                                       //Set to two for sake of example, should start at 1 in actual game
+        tier = 1;                                       //Set to two for sake of example, should start at 1 in actual game
         tier_temp = tier;
         calcArea();
     }

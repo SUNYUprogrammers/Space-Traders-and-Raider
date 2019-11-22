@@ -6,7 +6,8 @@ abstract public class Facilities_Class : MonoBehaviour
 {
     public int type;
     public string faction;
-    public int tier;
+    [SerializeField]
+    protected int tier;
 
     public Transform tile;
     public Color self;
@@ -25,6 +26,7 @@ abstract public class Facilities_Class : MonoBehaviour
     abstract public string getTypeString();
     public int getType()                     //0 for mine, 1 for shipyard, 2 for SDS, 3 for Barracks, 4 for TC
     {
+        //print("TYPE GOTTEN IS " + type);
         return type;
     }
     public string getFaction()
@@ -37,10 +39,13 @@ abstract public class Facilities_Class : MonoBehaviour
     }
     public void setTier(int i)
     {
+        print("Increasing tier from " + tier + " to " + i);
         tier = i;
     }
     public int getTier()
     {
+        //print("Current tier is " + tier);
         return tier;
     }
+
 }
