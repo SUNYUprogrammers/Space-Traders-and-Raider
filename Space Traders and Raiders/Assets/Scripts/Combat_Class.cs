@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-//Working on crying but more tears.
+//Working on crying but more tears
+//Stuff to fix
+// --Create dica/b lists to include the current health of each compoment, this allows for any damaged compoents to carry over into next fights. 
+//  --Create a Function for both Attacker/Defender being attack to increase efficently
+// --Possibly find a better way of storing <Ship_Class>,<Component_Class> damage values Like [Ship_Class][Component]
 
 public class Combat_Class : MonoBehaviour
 {
@@ -20,6 +24,8 @@ public class Combat_Class : MonoBehaviour
     public Canvas Askcombat;
     bool combat = false;
     bool Switchsides = false;
+
+    bool endofround = false;
     int spota;
     int spotd;
     
@@ -37,6 +43,8 @@ public class Combat_Class : MonoBehaviour
      public Button bfour;
      public Button bfive;
     
+    public Button EndCombatbut;
+    public Text Combattext;
     int goods;
     int bads;
     int numofbeam, numofmissle, numofsheild, numofantimissle,numofarmor,number,attrows,attcolms,defrows, defcolms  = 0;
@@ -44,7 +52,7 @@ public class Combat_Class : MonoBehaviour
 
     public void Start()
     {
-        gm = GameObject.FindObjectOfType<GameManager>(); 
+        gm = GameObject.FindObjectOfType<GameManager>();
         
         //aone = GameObject.Find("aone").GetComponent<Button>();
         //bone = GameObject.Find("bone").GetComponent<Button>();
@@ -78,8 +86,11 @@ public class Combat_Class : MonoBehaviour
 
     public void count()
     {
+        goods = 0;
+        bads = 0;
         foreach(Ship_Class i in shipsStack)
         {
+            
            // print(i.faction);
             //print(gm.currentPlayer.playerFaction);
             if(i.faction == gm.currentPlayer.playerFaction)
@@ -108,7 +119,7 @@ public class Combat_Class : MonoBehaviour
         seprate(shipsStack);
         dica(good);
         dicd(bad);
-
+        Combattext.text = good[0].faction + " is on the <color=red>attack</color>";
         enableattackerbuttons();
         enabledefenderbuttons();
         Switchsides = false;
@@ -185,8 +196,21 @@ public class Combat_Class : MonoBehaviour
     {
         //if player == current.faction 
         CombatUI = GameObject.Find("CombatGUI").GetComponent<Canvas>();
-        if(!Switchsides)
-            CombatUI.enabled = false;
+        CombatUI.enabled = false;
+        good = null;
+        bad = null;
+    }
+
+    public void enableEndCombat()
+    {
+        if(Switchsides)
+        {
+            EndCombatbut.interactable = false;
+        }
+        else
+        {
+            EndCombatbut.interactable = true;
+        }
     }
 
     public void GetAttackerShip(int place)
@@ -318,6 +342,7 @@ public class Combat_Class : MonoBehaviour
             //print(Switch);
             if (attacker != null && defender != null && Switchsides == false)//Attacker Turn(Initante Combat)
             {
+               
                 print("Attacker Turn");
                 enableattackerbuttons();
                 enabledefenderbuttons();
@@ -521,6 +546,9 @@ public class Combat_Class : MonoBehaviour
                 if(value == good.Length)
                 {
                     Switchsides = true;
+                     enableEndCombat();
+                     Combattext.text = bad[0].faction + " is on the <color=red>attack</color>";
+                    //Combattext.text = players.
                 }
                 
             }
@@ -715,6 +743,8 @@ public class Combat_Class : MonoBehaviour
                 attacker = null;
                 defender = null;
                 resetweaps();
+                //good.Clear(good,0,goods);
+                //bad.Clear(bad,0,bads);
                  
             }
            
@@ -728,11 +758,19 @@ public class Combat_Class : MonoBehaviour
                 if(value == bad.Length)
                 {
                     Switchsides = false;
+                    Combattext.text = good[0].faction + " is on the <color=red>attack</color>";
+                    enableEndCombat();
                 }
                 
             }
             resetattackbools();
-            calcdamges(); //good spot
+            // calcdamges(); //good spot
+            // if(!combat)// this acutally  can't happen due to clac damages not fully impletented
+            // {
+            //     good = null;
+            //     bad = null;
+            //     //endofround = false;
+            // }
            
 
 
@@ -806,18 +844,23 @@ public class Combat_Class : MonoBehaviour
             {
                 case 4:
                     afive.interactable = true;
+                    afive.GetComponentInChildren<Text>().text  = good[4].name;
                     break;
                 case 3:
                     afour.interactable = true;
+                    afour.GetComponentInChildren<Text>().text  = good[3].name;
                     break;
                 case 2:
                     athree.interactable = true;
+                    athree.GetComponentInChildren<Text>().text  = good[2].name;
                     break;
                 case 1:
                     atwo.interactable = true;
+                    atwo.GetComponentInChildren<Text>().text  = good[1].name;
                     break;
                 case 0:
                     aone.interactable = true;
+                    aone.GetComponentInChildren<Text>().text  = good[0].name;
                     break;
                 default:
                     break;
@@ -834,18 +877,23 @@ public class Combat_Class : MonoBehaviour
             {
                 case 4:
                     bfive.interactable = true;
+                    bfive.GetComponentInChildren<Text>().text  = good[4].name;
                     break;
                 case 3:
                     bfour.interactable = true;
+                    bfour.GetComponentInChildren<Text>().text  = good[3].name;
                     break;
                 case 2:
                     bthree.interactable = true;
+                    bthree.GetComponentInChildren<Text>().text  = good[2].name;
                     break;
                 case 1:
                     btwo.interactable = true;
+                    btwo.GetComponentInChildren<Text>().text  = good[1].name;
                     break;
                 case 0:
                     bone.interactable = true;
+                    bone.GetComponentInChildren<Text>().text  = good[0].name;
                     break;
                 default:
                     break;
