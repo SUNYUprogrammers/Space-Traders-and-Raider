@@ -15,7 +15,7 @@ abstract public class Ship_Class : MonoBehaviour
 
     protected int size;                         //How many slots the ship has
     [SerializeField]
-    public Component_Class[] parts_list;     //What component is in each slot
+    protected Component_Class[] parts_list;     //What component is in each slot
     [SerializeField]
     protected int ship_speed;                   //How fast can the ship move, calculated from stored thrusters
     [SerializeField]
@@ -316,7 +316,6 @@ abstract public class Ship_Class : MonoBehaviour
 
     public void installComponent(Component_Class i, int j)
     {
-        print(i);
         i.setFaction(this.faction);
 
         if (i.getType() == "")
@@ -338,13 +337,9 @@ abstract public class Ship_Class : MonoBehaviour
                     if (k != null)
                     {
                         if (k.getType() == "Thruster")
-                        {
-                            print(ship_speed+" +1 speed");
-                            ship_speed++;
-                        }
+                            ship_speed = +1;
                     }
                 }
-                print("New Speed: "+ship_speed);
             }
         }
     }
