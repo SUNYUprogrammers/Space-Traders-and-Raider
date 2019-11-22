@@ -70,7 +70,7 @@ public class InstallMenu : MonoBehaviour
                 int h=0;
                 foreach(Button i in part2.GetComponentsInChildren<Button>())
                 {
-                    print("Button " + i.name + " " + h);
+                    //print("Button " + i.name + " " + h);
                     i.onClick.AddListener(() => install(int.Parse(i.name)));
                     part_view[h] = i.GetComponent<Image>();
                     h++;
