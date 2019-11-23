@@ -7,6 +7,8 @@ public class LayoutButton : MonoBehaviour, IPointerClickHandler
 {
     public void OnPointerClick(PointerEventData eventData)
     {
-        throw new System.NotImplementedException();
+        GameObject.FindObjectOfType<InstallMenu>().gameObject.GetComponent<Canvas>().enabled = 
+            !GameObject.FindObjectOfType<InstallMenu>().gameObject.GetComponent<Canvas>().enabled; ;
+        //throw new System.NotImplementedException();
     }
 }

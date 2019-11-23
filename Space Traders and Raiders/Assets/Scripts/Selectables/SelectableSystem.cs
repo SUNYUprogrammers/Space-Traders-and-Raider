@@ -24,6 +24,7 @@ public class SelectableSystem : SelectableGameObject
             facilities[temp] = null;
             temp++;
         }
+        gm = GameObject.FindObjectOfType<GameManager>();
 
     }
 

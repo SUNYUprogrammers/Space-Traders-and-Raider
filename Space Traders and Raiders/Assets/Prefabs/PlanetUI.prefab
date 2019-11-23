@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9114086282156695950}
   - component: {fileID: 5426569764065158694}
   - component: {fileID: 1581621897753808554}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Engine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33,10 +33,10 @@ RectTransform:
   m_Father: {fileID: 8020164985042884593}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16.200043, y: 157.48}
-  m_SizeDelta: {x: 32, y: 32}
+  m_AnchorMin: {x: 0.2928882, y: 0.88400006}
+  m_AnchorMax: {x: 0.8314079, y: 0.95900005}
+  m_AnchoredPosition: {x: -6.2000427, y: 4.4799957}
+  m_SizeDelta: {x: 6, y: 7}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &9114086282156695950
 CanvasRenderer:
@@ -143,7 +143,7 @@ GameObject:
   - component: {fileID: 7412343987817290988}
   - component: {fileID: 665283638631382810}
   - component: {fileID: 1670510858015351648}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -222,7 +222,7 @@ GameObject:
   - component: {fileID: 5430469877431235928}
   - component: {fileID: 836581049382316892}
   - component: {fileID: 5407436367512409062}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -301,7 +301,7 @@ GameObject:
   - component: {fileID: 4889409563887409198}
   - component: {fileID: 2919510824310237703}
   - component: {fileID: 2576428867751882122}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Facilities
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -327,10 +327,10 @@ RectTransform:
   m_Father: {fileID: 7974074835831364222}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.2725, y: 0.08666667}
-  m_AnchorMax: {x: 0.74875003, y: 0.90888894}
-  m_AnchoredPosition: {x: -8.5, y: 0.6164856}
-  m_SizeDelta: {x: -31.6, y: 25.8}
+  m_AnchorMin: {x: 0.18375, y: 0.08666667}
+  m_AnchorMax: {x: 0.8, y: 0.9293228}
+  m_AnchoredPosition: {x: -1.300003, y: -3.8835144}
+  m_SizeDelta: {x: -5, y: 16.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2919510824310237703
 CanvasRenderer:
@@ -382,7 +382,7 @@ GameObject:
   - component: {fileID: 3793013739588227495}
   - component: {fileID: 6984491186222355686}
   - component: {fileID: 2287005407158284622}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Barracks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -514,7 +514,7 @@ GameObject:
   - component: {fileID: 195134295334771950}
   - component: {fileID: 5467319848014892656}
   - component: {fileID: 4308113913484506671}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -594,7 +594,7 @@ GameObject:
   - component: {fileID: 7044060006158314241}
   - component: {fileID: 21284609585260320}
   - component: {fileID: 2826744545837639834}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Mine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -727,7 +727,7 @@ GameObject:
   - component: {fileID: 1652633805503746537}
   - component: {fileID: 3649008843314324460}
   - component: {fileID: 3091866039610299482}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Repair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -748,10 +748,10 @@ RectTransform:
   m_Father: {fileID: 8020164985042884593}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16.200043, y: -125.699974}
-  m_SizeDelta: {x: 32, y: 32}
+  m_AnchorMin: {x: 0.16570394, y: 0.029000001}
+  m_AnchorMax: {x: 0.8314079, y: 0.12200001}
+  m_AnchoredPosition: {x: -0.20004272, y: 0.3000183}
+  m_SizeDelta: {x: 0, y: 1}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &1652633805503746537
 CanvasRenderer:
@@ -859,7 +859,7 @@ GameObject:
   - component: {fileID: 2975558507101781959}
   - component: {fileID: 885538656288543738}
   - component: {fileID: 3225596611277774360}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Trade Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -992,7 +992,7 @@ GameObject:
   - component: {fileID: 4871453171651576856}
   - component: {fileID: 3746896790890368457}
   - component: {fileID: 3476459624693128710}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Beam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1013,10 +1013,10 @@ RectTransform:
   m_Father: {fileID: 8020164985042884593}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16.200043, y: 78}
-  m_SizeDelta: {x: 32, y: 32}
+  m_AnchorMin: {x: 0.2928882, y: 0.64400005}
+  m_AnchorMax: {x: 0.8314079, y: 0.725}
+  m_AnchoredPosition: {x: -6.2000427, y: 3}
+  m_SizeDelta: {x: 6, y: 5}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &4871453171651576856
 CanvasRenderer:
@@ -1124,7 +1124,7 @@ GameObject:
   - component: {fileID: 3641761598164582719}
   - component: {fileID: 5522582074810050924}
   - component: {fileID: 3920462124826071471}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Space Dock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1258,7 +1258,7 @@ GameObject:
   - component: {fileID: 5009878458371816477}
   - component: {fileID: 6911316607216515479}
   - component: {fileID: 7679707478437496133}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PlanetUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1391,7 +1391,7 @@ GameObject:
   - component: {fileID: 8020164985042884593}
   - component: {fileID: 2037262214022798603}
   - component: {fileID: 5018619119187093174}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Ship Componenets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1422,7 +1422,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -196, y: -5}
+  m_AnchoredPosition: {x: -276, y: -0.38432}
   m_SizeDelta: {x: 48.3, y: 333.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2037262214022798603
@@ -1475,7 +1475,7 @@ GameObject:
   - component: {fileID: 165107683209868789}
   - component: {fileID: 8185361566002728713}
   - component: {fileID: 5105198359271947784}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Static Defence System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1607,7 +1607,7 @@ GameObject:
   - component: {fileID: 1900917508121712451}
   - component: {fileID: 5628419523604009209}
   - component: {fileID: 3165939633632972784}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1687,7 +1687,7 @@ GameObject:
   - component: {fileID: 7587565615582429261}
   - component: {fileID: 5447763579854831280}
   - component: {fileID: 7055525358728819657}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1708,10 +1708,10 @@ RectTransform:
   m_Father: {fileID: 8020164985042884593}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16.200043, y: 117.460014}
-  m_SizeDelta: {x: 32, y: 32}
+  m_AnchorMin: {x: 0.2928882, y: 0.76400006}
+  m_AnchorMax: {x: 0.8314079, y: 0.84800005}
+  m_AnchoredPosition: {x: -6.2000427, y: 1.4600143}
+  m_SizeDelta: {x: 6, y: 4}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7587565615582429261
 CanvasRenderer:
@@ -1819,7 +1819,7 @@ GameObject:
   - component: {fileID: 7671356790203595870}
   - component: {fileID: 6255458818668385916}
   - component: {fileID: 7134559095159679741}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Anti-Missile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1840,10 +1840,10 @@ RectTransform:
   m_Father: {fileID: 8020164985042884593}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15.8, y: -86.3}
-  m_SizeDelta: {x: 32, y: 32}
+  m_AnchorMin: {x: 0.2928882, y: 0.15200001}
+  m_AnchorMax: {x: 0.66570395, y: 0.23900001}
+  m_AnchoredPosition: {x: -5.8, y: 0.69999695}
+  m_SizeDelta: {x: 14, y: 3}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7671356790203595870
 CanvasRenderer:
@@ -1950,7 +1950,7 @@ GameObject:
   - component: {fileID: 250268360973906704}
   - component: {fileID: 3897045455654242536}
   - component: {fileID: 6226900256086618935}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2030,7 +2030,7 @@ GameObject:
   - component: {fileID: 3129863149908867208}
   - component: {fileID: 1514169889091310880}
   - component: {fileID: 7455451810799289201}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2051,10 +2051,10 @@ RectTransform:
   m_Father: {fileID: 8020164985042884593}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16.200043, y: 38.650017}
-  m_SizeDelta: {x: 32, y: 32}
+  m_AnchorMin: {x: 0.16570394, y: 0.53300005}
+  m_AnchorMax: {x: 0.8314079, y: 0.605}
+  m_AnchoredPosition: {x: -0.20004272, y: 3.6500168}
+  m_SizeDelta: {x: 0, y: 8}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &3129863149908867208
 CanvasRenderer:
@@ -2159,7 +2159,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7679707477436209822}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Ships
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2185,8 +2185,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 83.603, y: 144.78}
+  m_SizeDelta: {x: 283.45, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7679707477744082701
 GameObject:
@@ -2199,7 +2199,7 @@ GameObject:
   - component: {fileID: 7679707477744082700}
   - component: {fileID: 7679707477744082702}
   - component: {fileID: 7679707477744082703}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2220,10 +2220,10 @@ RectTransform:
   m_Father: {fileID: 7974074835831364222}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -75.38, y: 90.19}
-  m_SizeDelta: {x: 55.63, y: 58.4}
+  m_AnchorMin: {x: 0.31625003, y: 0.71981364}
+  m_AnchorMax: {x: 0.40125003, y: 0.90888894}
+  m_AnchoredPosition: {x: 1.0699921, y: -1.4299927}
+  m_SizeDelta: {x: 7.5599976, y: 5.5699997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7679707477744082702
 CanvasRenderer:
@@ -2278,7 +2278,7 @@ GameObject:
   - component: {fileID: 7679707478211342693}
   - component: {fileID: 7679707478211342698}
   - component: {fileID: 7679707478211342699}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Planet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2299,10 +2299,10 @@ RectTransform:
   m_Father: {fileID: 7974074835831364222}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.29875, y: 0.71981364}
-  m_AnchorMax: {x: 0.37125, y: 0.92700005}
-  m_AnchoredPosition: {x: -2.2999878, y: 0.7000122}
-  m_SizeDelta: {x: 42, y: 43}
+  m_AnchorMin: {x: 0.20875001, y: 0.71981364}
+  m_AnchorMax: {x: 0.30875, y: 0.8977796}
+  m_AnchoredPosition: {x: 0.6000061, y: 1.5}
+  m_SizeDelta: {x: 58.550003, y: 56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7679707478211342698
 CanvasRenderer:
@@ -2354,7 +2354,7 @@ GameObject:
   - component: {fileID: 7679707478377352061}
   - component: {fileID: 7679707478377352034}
   - component: {fileID: 7679707478377352035}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Frigate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2377,8 +2377,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -32, y: 90.61}
-  m_SizeDelta: {x: 32, y: 41.93}
+  m_AnchoredPosition: {x: -129, y: -7.66}
+  m_SizeDelta: {x: 44.53, y: 58.35}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7679707478377352061
 CanvasRenderer:
@@ -2486,7 +2486,7 @@ GameObject:
   - component: {fileID: 7679707478821092405}
   - component: {fileID: 7679707478821092410}
   - component: {fileID: 7679707478821092411}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2508,10 +2508,10 @@ RectTransform:
   m_Father: {fileID: 7974074835831364222}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.69000006, y: 0.91600007}
-  m_AnchorMax: {x: 0.7337501, y: 0.9855818}
-  m_AnchoredPosition: {x: -0.2000122, y: 0}
-  m_SizeDelta: {x: -7.6099997, y: 3.9899998}
+  m_AnchorMin: {x: 0.76375014, y: 0.8866773}
+  m_AnchorMax: {x: 0.795, y: 0.9293228}
+  m_AnchoredPosition: {x: -0.19999695, y: 1.572998}
+  m_SizeDelta: {x: 0.7799988, y: 5.209999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7679707478821092405
 CanvasRenderer:
@@ -2618,7 +2618,7 @@ GameObject:
   - component: {fileID: 7679707479069981215}
   - component: {fileID: 7679707479069981209}
   - component: {fileID: 7679707479069981214}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2698,7 +2698,7 @@ GameObject:
   - component: {fileID: 7679707479115975382}
   - component: {fileID: 7679707479115975383}
   - component: {fileID: 7679707479115975380}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Cruiser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2721,8 +2721,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 35.1, y: 90.61}
-  m_SizeDelta: {x: 44.33, y: 41.93}
+  m_AnchoredPosition: {x: -35.63, y: -7.66}
+  m_SizeDelta: {x: 61.69, y: 58.35}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7679707479115975382
 CanvasRenderer:
@@ -2830,7 +2830,7 @@ GameObject:
   - component: {fileID: 7679707479132906278}
   - component: {fileID: 7679707479132906279}
   - component: {fileID: 7679707479132906276}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Destroyer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2853,8 +2853,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.8, y: 90.61}
-  m_SizeDelta: {x: 37.12, y: 41.93}
+  m_AnchoredPosition: {x: -85.59, y: -7.66}
+  m_SizeDelta: {x: 51.65, y: 58.35}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7679707479132906278
 CanvasRenderer:
@@ -2961,7 +2961,7 @@ GameObject:
   - component: {fileID: 7679707479194446816}
   - component: {fileID: 7679707479194446818}
   - component: {fileID: 7679707479194446819}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Facilities text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2982,10 +2982,10 @@ RectTransform:
   m_Father: {fileID: 7974074835831364222}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.29500002, y: 0.63341814}
-  m_AnchorMax: {x: 0.7075001, y: 0.68360454}
-  m_AnchoredPosition: {x: -0.301239, y: -0.6199951}
-  m_SizeDelta: {x: 0.60248, y: 2.64}
+  m_AnchorMin: {x: 0.20875001, y: 0.629}
+  m_AnchorMax: {x: 0.78125006, y: 0.68360454}
+  m_AnchoredPosition: {x: -4.119999, y: 0.38000488}
+  m_SizeDelta: {x: 8.889999, y: 0.6400001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7679707479194446818
 CanvasRenderer:
@@ -3017,10 +3017,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -3041,7 +3041,7 @@ GameObject:
   - component: {fileID: 509119663191951630}
   - component: {fileID: 5883662201029346960}
   - component: {fileID: 7784908194023462805}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Colonization
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3062,10 +3062,10 @@ RectTransform:
   m_Father: {fileID: 8020164985042884593}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16.200043, y: -47.79998}
-  m_SizeDelta: {x: 32, y: 32}
+  m_AnchorMin: {x: 0.2928882, y: 0.275}
+  m_AnchorMax: {x: 0.66570395, y: 0.35000002}
+  m_AnchoredPosition: {x: -6.2000427, y: 2.2000198}
+  m_SizeDelta: {x: 14, y: 7}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &509119663191951630
 CanvasRenderer:
@@ -3173,7 +3173,7 @@ GameObject:
   - component: {fileID: 2381820913616979787}
   - component: {fileID: 6676448033412523178}
   - component: {fileID: 8973208752331308327}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Missiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3194,10 +3194,10 @@ RectTransform:
   m_Father: {fileID: 8020164985042884593}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16.200043, y: -6.480009}
-  m_SizeDelta: {x: 32, y: 32}
+  m_AnchorMin: {x: 0.2928882, y: 0.395}
+  m_AnchorMax: {x: 0.8314079, y: 0.47300002}
+  m_AnchoredPosition: {x: -6.2000427, y: 2.519991}
+  m_SizeDelta: {x: 6, y: 6}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &2381820913616979787
 CanvasRenderer:
