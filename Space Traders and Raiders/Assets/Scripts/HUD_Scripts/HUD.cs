@@ -58,6 +58,19 @@ public class HUD : MonoBehaviour
 
     }
 
+	public void updateHUDafterTrade() {
+
+        GameManager manager = FindObjectOfType<GameManager>();
+        Player_Class player = manager.currentPlayer;
+        victoryPointsText.text = player.calcVictoryPoints().ToString();
+        wealthText.text = player.getWealth().ToString();
+        achievementText.text = player.getAchievement().ToString();
+        commonMineralText.text = player.getCommonMineral().ToString();
+        uncommonMineralText.text = player.getRareMineral().ToString();
+        rareMineralText.text = player.getVeryRareMineral().ToString();
+
+    }
+
     public void updateShipInfo(Ship_Class ship, int colorIndex) {
         shipInfo.updateDisplay(ship, colorIndex);
     }
@@ -110,5 +123,6 @@ public class HUD : MonoBehaviour
     public ShipInfo getShipInfoDisplay() {
         return shipInfo;
     }
+
 
 }
