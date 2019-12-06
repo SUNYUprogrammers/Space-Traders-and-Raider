@@ -21,6 +21,9 @@ public class Combat_Class : MonoBehaviour
     private Ship_Class attacker;
     private Ship_Class defender;
     public Canvas CombatUI;
+
+    public Sprite Menu;
+    public Sprite ButtonImage;
     bool combat = false;
     bool Switchsides = false;
 
@@ -48,6 +51,9 @@ public class Combat_Class : MonoBehaviour
     int bads;
     int numofbeam, numofmissle, numofsheild, numofantimissle,numofarmor,number,attrows,attcolms,defrows, defcolms  = 0;
     int loc;
+
+    bool allzeros1 = false;
+    bool allzeros2 = false;
 
     public void Start()
     {
@@ -93,8 +99,8 @@ public class Combat_Class : MonoBehaviour
        // print(goods + "      " + bads);
         good = new Ship_Class[goods];
         bad = new Ship_Class[bads];
-        //print("Size of good " + good.Length);
-        //print("Size of bad " + bad.Length);
+        print("Size of good " + good.Length);
+        print("Size of bad " + bad.Length);
         //print("Combat");
         seprate(shipsStack);
         dica(good);
@@ -119,7 +125,7 @@ public class Combat_Class : MonoBehaviour
                 foreach(Component_Class d in i.parts_list)
                 {
                 //print(d);
-                    attlist[attrows,attcolms] = 2;
+                    attlist[attrows,attcolms] = 1;
                     attcolms++;
                 }
                 attrows++;
@@ -138,7 +144,7 @@ public class Combat_Class : MonoBehaviour
                 defcolms = 0;
                 foreach(Component_Class d in i.parts_list)
                 {
-                    deflist[defrows,defcolms] = 2;
+                    deflist[defrows,defcolms] = 1;
                     defcolms++;
                 }
                 defrows++;
@@ -185,11 +191,15 @@ public class Combat_Class : MonoBehaviour
     {
         if(Switchsides)
         {
+            EndCombatbut.GetComponent<Image>().sprite = Menu;
             EndCombatbut.interactable = false;
+            EndCombatbut.GetComponentInChildren<Text>().text = " ";
         }
         else
         {
+            EndCombatbut.GetComponent<Image>().sprite = ButtonImage;
             EndCombatbut.interactable = true;
+            EndCombatbut.GetComponentInChildren<Text>().text = "End Combat";
         }
     }
 
@@ -199,13 +209,14 @@ public class Combat_Class : MonoBehaviour
             switch (place)
             {
                 case 0:
-                    //print(good[place].name);
+                    print(good[place].name);
                     attacker = good[place];
                     spota = place;
                    // print(aone);
                     if(!Switchsides)
                     {
                         aone.interactable = false;
+                        
                     }
                     
                     break;
@@ -329,6 +340,8 @@ public class Combat_Class : MonoBehaviour
                 FindWeapons(attacker.parts_list);
                 FindDefense(defender.parts_list);
                 print(numofbeam + "  " + numofmissle + "  " + numofsheild + "   " + numofantimissle);
+                if(numofbeam == 0 && numofmissle == 0)
+                    allzeros1 = true;
                 int weaps = numofbeam + numofmissle;
                 for (int i = 0; i < weaps; i++)
                 {
@@ -360,19 +373,15 @@ public class Combat_Class : MonoBehaviour
                                     else
                                     {
                                         print("Compoents under attack");
-                                        number = Random.Range(0,4); //this array stores def compoents health
+                                        number = Random.Range(0,defender.parts_list.Length - 1); //this array stores def compoents health
                                         switch(deflist[spotd,number]) 
                                         {
-                                            case 2:
-                                                deflist[spotd,number] = 1;//Compoent has lost 1 health
-                                                print(deflist[spotd,number] + "has lost 1 health");
-                                                break;
                                             case 1: 
                                                 deflist[spotd,number] = 0;//Component has been destroyed
                                                  print(deflist[spotd,number] + "Component has been destroyed");
                                                 break;
                                             default:
-                                                deflist[spotd,number] = -1;//Ship takes a hull hit
+                                                 deflist[spotd,number] -= 1;//Ship takes a hull hit
                                                  print(deflist[spotd,number] + "Ship took a hull hit");
                                                 break;
                                             
@@ -396,19 +405,15 @@ public class Combat_Class : MonoBehaviour
                                     else
                                     {
                                         print("Compoents under attack");
-                                        number = Random.Range(0,4); //this array stores def compoents health
+                                        number = Random.Range(0,defender.parts_list.Length - 1); //this array stores def compoents health
                                         switch(deflist[spotd,number]) 
                                         {
-                                            case 2:
-                                                deflist[spotd,number] = 1;//Compoent has lost 1 health
-                                                print(deflist[spotd,number] + "has lost 1 health");
-                                                break;
-                                            case 1: 
+                                           case 1: 
                                                 deflist[spotd,number] = 0;//Component has been destroyed
                                                  print(deflist[spotd,number] + "Component has been destroyed");
                                                 break;
                                             default:
-                                                deflist[spotd,number] = -1;//Ship takes a hull hit
+                                                 deflist[spotd,number] -= 1;//Ship takes a hull hit
                                                  print(deflist[spotd,number] + "Ship took a hull hit");
                                                 break;
                                             
@@ -449,19 +454,15 @@ public class Combat_Class : MonoBehaviour
                                     else
                                     {
                                         print("Compoents under attack");
-                                        number = Random.Range(0,4); //this array stores def compoents health
+                                        number = Random.Range(0,defender.parts_list.Length - 1); //this array stores def compoents health
                                         switch(deflist[spotd,number]) 
                                         {
-                                            case 2:
-                                                deflist[spotd,number] = 1;//Compoent has lost 1 health
-                                                print(deflist[spotd,number] + "has lost 1 health");
-                                                break;
                                             case 1: 
                                                 deflist[spotd,number] = 0;//Component has been destroyed
                                                  print(deflist[spotd,number] + "Component has been destroyed");
                                                 break;
                                             default:
-                                                deflist[spotd,number] = -1;//Ship takes a hull hit
+                                                 deflist[spotd,number] -= 1;//Ship takes a hull hit
                                                  print(deflist[spotd,number] + "Ship took a hull hit");
                                                 break;
                                         }
@@ -484,21 +485,17 @@ public class Combat_Class : MonoBehaviour
                                 else
                                 {
                                     print("Compoents under attack");
-                                    number = Random.Range(0,4); //this array stores def compoents health
+                                    number = Random.Range(0,defender.parts_list.Length - 1); //this array stores def compoents health
                                     switch(deflist[spotd,number]) 
                                     {
-                                        case 2:
-                                            deflist[spotd,number] = 1;//Compoent has lost 1 health
-                                            print(deflist[spotd,number] + "has lost 1 health");
-                                            break;
                                         case 1: 
-                                            deflist[spotd,number] = 0;//Component has been destroyed
-                                                print(deflist[spotd,number] + "Component has been destroyed");
-                                            break;
-                                        default:
-                                            deflist[spotd,number] = -1;//Ship takes a hull hit
-                                                print(deflist[spotd,number] + "Ship took a hull hit");
-                                            break;
+                                                deflist[spotd,number] = 0;//Component has been destroyed
+                                                 print(deflist[spotd,number] + "Component has been destroyed");
+                                                break;
+                                            default:
+                                                 deflist[spotd,number] -= 1;//Ship takes a hull hit
+                                                 print(deflist[spotd,number] + "Ship took a hull hit");
+                                                break;
                                         
                                     }
                                 }
@@ -541,6 +538,8 @@ public class Combat_Class : MonoBehaviour
                 FindWeapons(defender.parts_list);
                 FindDefense(attacker.parts_list);
                 print(numofbeam + "  " + numofmissle + "  " + numofsheild + "   " + numofantimissle);
+                if(numofbeam == 0 && numofmissle == 0)
+                    allzeros2 = true;
                 int weaps = numofbeam + numofmissle;
                 for(int i = 0; i < weaps;i++)
                 {
@@ -573,19 +572,16 @@ public class Combat_Class : MonoBehaviour
                                     else//after armor is destroyed
                                     {
                                         print("Compoents under attack");
-                                        number = Random.Range(0,4); //this array stores def compoents health
+                                        number = Random.Range(0,attacker.parts_list.Length -1); //this array stores def compoents health
                                         switch(attlist[spota,number]) 
                                         {
-                                            case 2:
-                                                attlist[spota,number] = 1;//Compoent has lost 1 health
-                                                print(attlist[spota,number] + "has lost 1 health");
-                                                break;
+                                            
                                             case 1: 
                                                 attlist[spota,number] = 0;//Component has been destroyed
                                                  print(attlist[spotd,number] + "Component has been destroyed");
                                                 break;
                                             default:
-                                                attlist[spota,number] = -1;//Ship takes a hull hit
+                                                attlist[spota,number] -= 1;//Ship takes a hull hit
                                                  print(attlist[spota,number] + "Ship took a hull hit");
                                                 break;
                                         }
@@ -608,21 +604,17 @@ public class Combat_Class : MonoBehaviour
                                     else
                                     {
                                         print("Compoents under attack");
-                                        int number = Random.Range(0,4); //this array stores def compoents health
+                                        int number = Random.Range(0,attacker.parts_list.Length -1); //this array stores def compoents health
                                         switch(attlist[spota,number]) 
                                         {
-                                            case 2:
-                                                attlist[spota,number] = 1;//Compoent has lost 1 health
-                                                print(attlist[spota,number] + "has lost 1 health");
-                                                break;
                                             case 1: 
                                                 attlist[spota,number] = 0;//Component has been destroyed
-                                                 print(attlist[spota,number] + "Component has been destroyed");
+                                                 print(attlist[spotd,number] + "Component has been destroyed");
                                                 break;
                                             default:
-                                                attlist[spota,number] = -1;//Ship takes a hull hit
+                                                attlist[spota,number] -= 1;//Ship takes a hull hit
                                                  print(attlist[spota,number] + "Ship took a hull hit");
-                                                break;     
+                                                break;
                                         }
                                     }
                             }
@@ -659,19 +651,15 @@ public class Combat_Class : MonoBehaviour
                                     else
                                     {
                                         print("Compoents under attack");
-                                        number = Random.Range(0,4); //this array stores def compoents health
+                                        number = Random.Range(0,attacker.parts_list.Length -1); //this array stores def compoents health
                                         switch(attlist[spota,number]) 
                                         {
-                                            case 2:
-                                                attlist[spotd,number] = 1;//Compoent has lost 1 health
-                                                print(attlist[spota,number] + "has lost 1 health");
-                                                break;
                                             case 1: 
-                                                 attlist[spotd,number] = 0;//Component has been destroyed
-                                                 print(attlist[spota,number] + "Component has been destroyed");
+                                                attlist[spota,number] = 0;//Component has been destroyed
+                                                 print(attlist[spotd,number] + "Component has been destroyed");
                                                 break;
                                             default:
-                                                attlist[spota,number] = -1;//Ship takes a hull hit
+                                                attlist[spota,number] -= 1;//Ship takes a hull hit
                                                  print(attlist[spota,number] + "Ship took a hull hit");
                                                 break;
                                         }
@@ -694,20 +682,16 @@ public class Combat_Class : MonoBehaviour
                                     else
                                     {
                                         print("Compoents under attack");
-                                        number = Random.Range(0,4); //this array stores def compoents health
+                                        number = Random.Range(0,attacker.parts_list.Length -1); //this array stores def compoents health
                                         switch(attlist[spota,number]) 
                                         {
-                                            case 2:
-                                                attlist[spota,number] = 1;//Compoent has lost 1 health
-                                                print(attlist[spota,number] + "has lost 1 health");
-                                                break;
-                                            case 1: 
-                                                 attlist[spota,number] = 0;//Component has been destroyed
-                                                 print(attlist[spota,number] + "Component has been destroyed");
+                                           case 1: 
+                                                attlist[spota,number] = 0;//Component has been destroyed
+                                                 print(attlist[spotd,number] + "Component has been destroyed");
                                                 break;
                                             default:
-                                                attlist[spota,number] = -1;//Ship takes a hull hit
-                                                 print(attlist[spota,number] + "Ship took a hull hit");
+                                                attlist[spota,number] -= 1;//Ship takes a hull hit
+                                                 print(attlist[spota,number] + " Ship took a hull hit");
                                                 break;
                                         }
                                     }
@@ -725,7 +709,7 @@ public class Combat_Class : MonoBehaviour
                 resetweaps();
                 //good.Clear(good,0,goods);
                 //bad.Clear(bad,0,bads);
-                 
+                 endofround = true;
             }
            
             value = 0;
@@ -744,13 +728,15 @@ public class Combat_Class : MonoBehaviour
                 
             }
             resetattackbools();
-            // calcdamges(); //good spot
-            // if(!combat)// this acutally  can't happen due to clac damages not fully impletented
-            // {
-            //     good = null;
-            //     bad = null;
-            //     //endofround = false;
-            // }
+
+            if(endofround)
+                calcdamges(); //good spot
+            if(!combat)// this acutally  can't happen due to clac damages not fully impletented
+            {
+                good = null;
+                bad = null;
+                //endofround = false;
+            }
            
 
 
@@ -824,23 +810,28 @@ public class Combat_Class : MonoBehaviour
             {
                 case 4:
                     afive.interactable = true;
-                    afive.GetComponentInChildren<Text>().text  = good[4].name;
+                    afive.GetComponent<Image>().sprite = ButtonImage;
+                    afive.GetComponentInChildren<Text>().text  = good[4].ship_type;
                     break;
                 case 3:
                     afour.interactable = true;
-                    afour.GetComponentInChildren<Text>().text  = good[3].name;
+                    afour.GetComponent<Image>().sprite = ButtonImage;
+                    afour.GetComponentInChildren<Text>().text  = good[3].ship_type;
                     break;
                 case 2:
                     athree.interactable = true;
-                    athree.GetComponentInChildren<Text>().text  = good[2].name;
+                    athree.GetComponent<Image>().sprite = ButtonImage;
+                    athree.GetComponentInChildren<Text>().text  = good[2].ship_type;
                     break;
                 case 1:
                     atwo.interactable = true;
-                    atwo.GetComponentInChildren<Text>().text  = good[1].name;
+                    atwo.GetComponent<Image>().sprite = ButtonImage;
+                    atwo.GetComponentInChildren<Text>().text  = good[1].ship_type;
                     break;
                 case 0:
                     aone.interactable = true;
-                    aone.GetComponentInChildren<Text>().text  = good[0].name;
+                    aone.GetComponent<Image>().sprite = ButtonImage;
+                    aone.GetComponentInChildren<Text>().text  = good[0].ship_type;
                     break;
                 default:
                     break;
@@ -857,23 +848,28 @@ public class Combat_Class : MonoBehaviour
             {
                 case 4:
                     bfive.interactable = true;
-                    bfive.GetComponentInChildren<Text>().text  = good[4].name;
+                    bfive.GetComponent<Image>().sprite = ButtonImage;
+                    bfive.GetComponentInChildren<Text>().text  = good[4].ship_type;
                     break;
                 case 3:
                     bfour.interactable = true;
-                    bfour.GetComponentInChildren<Text>().text  = good[3].name;
+                    bfour.GetComponent<Image>().sprite = ButtonImage;
+                    bfour.GetComponentInChildren<Text>().text  = good[3].ship_type;
                     break;
                 case 2:
                     bthree.interactable = true;
-                    bthree.GetComponentInChildren<Text>().text  = good[2].name;
+                    bthree.GetComponent<Image>().sprite = ButtonImage;
+                    bthree.GetComponentInChildren<Text>().text  = good[2].ship_type;
                     break;
                 case 1:
                     btwo.interactable = true;
-                    btwo.GetComponentInChildren<Text>().text  = good[1].name;
+                    btwo.GetComponent<Image>().sprite = ButtonImage;
+                    btwo.GetComponentInChildren<Text>().text  = good[1].ship_type;
                     break;
                 case 0:
                     bone.interactable = true;
-                    bone.GetComponentInChildren<Text>().text  = good[0].name;
+                    bone.GetComponent<Image>().sprite = ButtonImage;
+                    bone.GetComponentInChildren<Text>().text  = good[0].ship_type;
                     break;
                 default:
                     break;
@@ -906,21 +902,42 @@ public class Combat_Class : MonoBehaviour
    //WORK ON INTERFACEING WITH SHIP_CLASS AND COMPOENT_CLASS
     public void calcdamges()
     {
-        for(int i = 0; i <= defrows;i++)
+        int numofgood = goods;
+        int numofbad = bads;
+        print("CALC DAMAGES");
+        if(allzeros1 && allzeros2)//if both have no weapons after 1 round end
         {
-            for(int j = 0; j <= defcolms;j++)
+            combat = false;
+            CombatUI.enabled = false;
+            return;
+        }
+        for(int i = 0; i < defrows;i++)
+        {
+            for(int j = 0; j < defcolms;j++)
             {
-                switch(deflist[defrows,defcolms])
+                 //print("DEFENDER LOOP" + i + " " + j);
+                switch(deflist[i,j])
                 {
                     case 1:
-                        //bad[i].parts_list[j].health = 1; set Compoent health to 1
-                        break;
+                        //full health do nothing
+                        continue;
                     case 0:
-                        //compoent becomes disabled --Allows for Repair Module to fix it -- Unknown if being added
-                        break;
-                    case -1:
+                        bad[i].parts_list[j] = null;   //compoent is destroyed but no hull hits
+                        continue;
+                    default: //any number < 0
+                        for(int z = deflist[i,j];z < 0;z++)
+                        {
+                            bad[i].power--;
+                            if(bad[i].power == 0)
+                            {
+                                GameObject.Destroy(bad[i].gameObject);
+                                bad[i] = null;
+                                print("destroy ship");
+                                
+                            }
+                        }
                         //Compoenet is disabled + ship takes a hull hit --In current game state(Frigates only) this signels end of combat
-                        break;
+                        continue;
 
                         
                 }
@@ -928,31 +945,57 @@ public class Combat_Class : MonoBehaviour
             }
         }
 
-        for(int i = 0; i <= attrows;i++)
+        for(int i = 0; i < attrows;i++)
         {
-            for(int j = 0; j <= attcolms;j++)
+            for(int j = 0; j < attcolms;j++)
             {
-                 switch(attlist[attrows,attcolms])
+                //print("ATTACK LOOP" + i + " " + j);
+                 switch(attlist[i,j])
                 {
                     case 1:
-                        //good[i].parts_list[j].health = 1; set Compoent health to 1
-                        break;
+                        //do nothing
+                        continue;
                     case 0:
-                        //compoent becomes disabled --Allows for Repair Module to fix it -- Unknown if being added
-                        break;
-                    case -1:
+                         good[i].parts_list[j] = null;   //compoent is destroyed but no hull hits
+                        continue;
+                    default:
+                        for(int z = attlist[attrows,attcolms];z < 0;z++)
+                        {
+                            good[i].power--;
+                            if(good[i].power == 0)
+                            {
+                                print("destroy ship");
+                                GameObject.Destroy(good[i].gameObject);
+                                good[i] = null;
+                            }
+                        }
                         //Compoenet is disabled + ship takes a hull hit --In current game state(Frigates only) this signels end of combat
-                        break; 
+                        continue; 
                 }
             }
         }
-
-        if(good.Length == 0 || bad.Length == 0)//check if either array is destroyed, ships are destroyed in switch functions
+        endofround = false;
+        print( allzeros1 + "  " + allzeros2);
+        foreach(Ship_Class i in good)
+        {
+            if(i == null)
+                numofgood--;
+        }
+        foreach(Ship_Class j in bad)
+        {
+            if(j == null)
+                numofbad--;
+        }
+        print(numofgood + " " + numofbad);
+        if((numofgood == 0 || numofbad == 0))//check if either array is destroyed, ships are destroyed in switch functions
         {
             combat = false;
             CombatUI.enabled = false;
         }
     }
+
+   
+
 }
 
     

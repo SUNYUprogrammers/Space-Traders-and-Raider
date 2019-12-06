@@ -5,7 +5,7 @@ using UnityEngine;
 abstract public class Ship_Class : MonoBehaviour
 {
     [SerializeField]
-    protected string ship_type;                 //What class of ship it is
+    public string ship_type;                 //What class of ship it is
     [SerializeField]
     public bool selected;
     [SerializeField]

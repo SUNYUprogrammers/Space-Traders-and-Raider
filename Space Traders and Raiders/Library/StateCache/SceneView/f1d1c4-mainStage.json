@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":353.3992614746094,"y":234.6473846435547,"z":-372.6875},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":306.29193115234377,"orthographic":true}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":534.7943725585938,"y":281.1549072265625,"z":-482.253173828125},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":734.540771484375,"orthographic":true}
+>>>>>>> Combat
