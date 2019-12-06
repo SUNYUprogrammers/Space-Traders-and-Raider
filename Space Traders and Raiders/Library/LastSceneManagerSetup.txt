@@ -1,4 +1,5 @@
 sceneSetups:
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 - path: Assets/Scenes/Compile/Nov 15.unity
 =======
@@ -28,6 +29,9 @@ sceneSetups:
 >>>>>>> Stashed changes
 >>>>>>> Menu
 >>>>>>> Menu
+=======
+- path: Assets/Scenes/Compile/HelpMenu.unity
+>>>>>>> Stashed changes
   isLoaded: 1
   isActive: 1
   isSubScene: 0
