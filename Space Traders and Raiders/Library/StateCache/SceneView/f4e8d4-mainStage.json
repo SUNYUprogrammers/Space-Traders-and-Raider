@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":1002.5299682617188,"y":612.6377563476563,"z":-590.5606689453125},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":1406.1158447265625,"orthographic":true}
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":378.3865966796875,"y":57.09994125366211,"z":-161.39637756347657},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":771.261962890625,"orthographic":true}
@@ -7,3 +8,6 @@
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":364.2369079589844,"y":294.900390625,"z":-456.47235107421877},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":515.9947509765625,"orthographic":true}
 >>>>>>> TradeWorking
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":0.3538450002670288,"y":0.07009509205818176,"z":0.95703125},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":18.142642974853517,"orthographic":true}
+>>>>>>> Menu
