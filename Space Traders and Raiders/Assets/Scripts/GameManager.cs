@@ -255,6 +255,7 @@ public class GameManager : MonoBehaviour
         {
             //checkTrade();
         }
+		hud.updateHUDafterTrade();
     }
 
     public void checkTrade()
