@@ -12,6 +12,7 @@ abstract public class Component_Class : MonoBehaviour
     [SerializeField]
     public Sprite img;
 
+    public int health = 1;
 
     //[SerializeField]
     //protected int tier;

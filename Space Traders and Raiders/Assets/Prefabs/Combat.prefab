@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5182887334631179595}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -322.0838, y: -167.86188, z: 236.50317}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -48,6 +48,8 @@ MonoBehaviour:
   bad: []
   shipsStack: []
   CombatUI: {fileID: 5324551120393233445}
+  Menu: {fileID: 21300000, guid: 80e1995f95f9a4349a9b780e31af78dc, type: 3}
+  ButtonImage: {fileID: 21300000, guid: 747c35257b946764594497e8f7ea9274, type: 3}
   aone: {fileID: 8296504410600682936}
   atwo: {fileID: 456810851564444089}
   athree: {fileID: 2921162169882764419}
@@ -77,11 +79,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 5182887334631179588}
-    - target: {fileID: 3056851666490680258, guid: d0c00da53fa032046a08cd384e75bd83,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GetDefenderShip
-      objectReference: {fileID: 0}
     - target: {fileID: 3957440291139329761, guid: d0c00da53fa032046a08cd384e75bd83,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -95,22 +92,22 @@ PrefabInstance:
     - target: {fileID: 3957440291139329761, guid: d0c00da53fa032046a08cd384e75bd83,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 57.25333
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3957440291139329761, guid: d0c00da53fa032046a08cd384e75bd83,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3957440291139329761, guid: d0c00da53fa032046a08cd384e75bd83,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3957440291139329761, guid: d0c00da53fa032046a08cd384e75bd83,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3957440291139329761, guid: d0c00da53fa032046a08cd384e75bd83,
         type: 3}
@@ -140,12 +137,12 @@ PrefabInstance:
     - target: {fileID: 3957440291139329761, guid: d0c00da53fa032046a08cd384e75bd83,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -122.544815
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3957440291139329761, guid: d0c00da53fa032046a08cd384e75bd83,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -163.2652
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3957440291139329761, guid: d0c00da53fa032046a08cd384e75bd83,
         type: 3}
@@ -187,92 +184,12 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1011563457263495808, guid: d0c00da53fa032046a08cd384e75bd83,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3805060509772167965, guid: d0c00da53fa032046a08cd384e75bd83,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 5182887334631179588}
-    - target: {fileID: 3805060509772167965, guid: d0c00da53fa032046a08cd384e75bd83,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GetAttackerShip
-      objectReference: {fileID: 0}
-    - target: {fileID: 1779212639617465476, guid: d0c00da53fa032046a08cd384e75bd83,
-        type: 3}
-      propertyPath: CombatUI
-      value: 
-      objectReference: {fileID: 5324551120393233445}
-    - target: {fileID: 1779212639617465476, guid: d0c00da53fa032046a08cd384e75bd83,
-        type: 3}
-      propertyPath: Askcombat
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7911734997836348062, guid: d0c00da53fa032046a08cd384e75bd83,
-        type: 3}
-      propertyPath: m_Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8953444355556430694, guid: d0c00da53fa032046a08cd384e75bd83,
-        type: 3}
-      propertyPath: m_Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3452383224170986999, guid: d0c00da53fa032046a08cd384e75bd83,
-        type: 3}
-      propertyPath: m_Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8349456877822368428, guid: d0c00da53fa032046a08cd384e75bd83,
-        type: 3}
-      propertyPath: m_Text
-      value: 'End Turn
-
-'
-      objectReference: {fileID: 0}
-    - target: {fileID: 5931695233005612040, guid: d0c00da53fa032046a08cd384e75bd83,
-        type: 3}
-      propertyPath: m_Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5718088503691787506, guid: d0c00da53fa032046a08cd384e75bd83,
-        type: 3}
-      propertyPath: m_Text
-      value: '
-
-'
-      objectReference: {fileID: 0}
-    - target: {fileID: 6421936950471951230, guid: d0c00da53fa032046a08cd384e75bd83,
-        type: 3}
-      propertyPath: m_Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8576367185478439680, guid: d0c00da53fa032046a08cd384e75bd83,
-        type: 3}
-      propertyPath: m_Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 9211931466980272320, guid: d0c00da53fa032046a08cd384e75bd83,
-        type: 3}
-      propertyPath: m_Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6614148443609357648, guid: d0c00da53fa032046a08cd384e75bd83,
-        type: 3}
-      propertyPath: m_Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4510599631650900735, guid: d0c00da53fa032046a08cd384e75bd83,
-        type: 3}
-      propertyPath: m_Text
-      value: 
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1779212639617465476, guid: d0c00da53fa032046a08cd384e75bd83, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0c00da53fa032046a08cd384e75bd83, type: 3}
 --- !u!224 &8144467904489525316 stripped
 RectTransform:
